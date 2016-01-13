@@ -1,0 +1,44 @@
+<assertThread_ok>
+InstrumentationHandler.java@16:S-start-1
+StringBuffer.java@118:W-shared_16777218-1-1
+$0$
+StringBufferTest.java@18:R-buf_51-1-1
+StringBufferTest.java@18:S-lock_1000002-1
+StringBuffer.java@445:S-lock_8-1
+StringBuffer.java@143:R-count_8-1-1
+StringBuffer.java@143:S-unlock_8-1
+StringBuffer.java@446:R-count_16777218-1-1
+branch-1
+StringBuffer.java@449:R-count_16777218-1-2
+StringBuffer.java@449:S-lock_8-1
+branch-1
+StringBuffer.java@325:R-count_8-1-2
+branch-1
+branch-1
+StringBuffer.java@336:S-unlock_8-1
+StringBuffer.java@450:W-count_16777218-1-1
+$(R-count_8-1-1 + R-count_16777218-1-1)$
+StringBuffer.java@451:S-unlock_1000002-1
+StringBuffer.java@118:W-shared_16777220-1-1
+$0$
+StringBufferTest.java@18:R-buf_51-1-2
+StringBufferTest.java@18:S-lock_1000004-1
+StringBuffer.java@445:S-lock_8-1
+StringBuffer.java@143:R-count_8-1-3
+StringBuffer.java@143:S-unlock_8-1
+StringBuffer.java@446:R-count_16777220-1-1
+branch-1
+StringBuffer.java@449:R-count_16777220-1-2
+StringBuffer.java@449:S-lock_8-1
+branch-1
+StringBuffer.java@325:R-count_8-1-4
+branch-1
+<pathjpf>
+T1:((R-count_8-1-1 + R-count_16777218-1-1) <= CONST_100)
+T1:(R-count_8-1-1 >= CONST_0)
+T1:(R-count_8-1-1 <= R-count_8-1-2)
+T1:(CONST_0 <= R-count_8-1-1)
+T1:((R-count_8-1-3 + R-count_16777220-1-1) <= CONST_100)
+T1:(R-count_8-1-3 >= CONST_0)
+T1:(R-count_8-1-3 <= R-count_8-1-4)
+pathid-11011101

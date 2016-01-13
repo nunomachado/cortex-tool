@@ -1,0 +1,216 @@
+InstrumentationHandler.java@16:S-start-2
+StringBufferTest.java@26:R-buf_51-2-1
+StringBufferTest.java@26:S-lock_8-2
+StringBuffer.java@658:R-count_8-2-1
+branch-2
+StringBuffer.java@670:S-unlock_8-2
+StringBufferTest.java@27:R-buf_51-2-2
+StringBufferTest.java@27:S-lock_8-2
+StringBuffer.java@405:R-count_8-2-2
+branch-2
+StringBuffer.java@408:R-count_8-2-3
+StringBuffer.java@409:W-count_8-2-1
+$(R-count_8-2-2 + CONST_10)$
+StringBuffer.java@410:S-unlock_8-2
+StringBufferTest.java@26:R-buf_51-2-3
+StringBufferTest.java@26:S-lock_8-2
+StringBuffer.java@658:R-count_8-2-4
+branch-2
+StringBuffer.java@665:R-shared_8-2-1
+branch-2
+StringBuffer.java@667:R-count_8-2-5
+StringBuffer.java@668:R-count_8-2-6
+StringBuffer.java@668:W-count_8-2-2
+$(R-count_8-2-6 - CONST_1)$
+StringBuffer.java@670:S-unlock_8-2
+StringBufferTest.java@27:R-buf_51-2-4
+StringBufferTest.java@27:S-lock_8-2
+StringBuffer.java@405:R-count_8-2-7
+branch-2
+StringBuffer.java@408:R-count_8-2-8
+StringBuffer.java@409:W-count_8-2-3
+$(R-count_8-2-7 + CONST_10)$
+StringBuffer.java@410:S-unlock_8-2
+StringBufferTest.java@26:R-buf_51-2-5
+StringBufferTest.java@26:S-lock_8-2
+StringBuffer.java@658:R-count_8-2-9
+branch-2
+StringBuffer.java@665:R-shared_8-2-2
+branch-2
+StringBuffer.java@667:R-count_8-2-10
+StringBuffer.java@668:R-count_8-2-11
+StringBuffer.java@668:W-count_8-2-4
+$(R-count_8-2-11 - CONST_2)$
+StringBuffer.java@670:S-unlock_8-2
+StringBufferTest.java@27:R-buf_51-2-6
+StringBufferTest.java@27:S-lock_8-2
+StringBuffer.java@405:R-count_8-2-12
+branch-2
+StringBuffer.java@408:R-count_8-2-13
+StringBuffer.java@409:W-count_8-2-5
+$(R-count_8-2-12 + CONST_10)$
+StringBuffer.java@410:S-unlock_8-2
+StringBufferTest.java@26:R-buf_51-2-7
+StringBufferTest.java@26:S-lock_8-2
+StringBuffer.java@658:R-count_8-2-14
+branch-2
+StringBuffer.java@665:R-shared_8-2-3
+branch-2
+StringBuffer.java@667:R-count_8-2-15
+StringBuffer.java@668:R-count_8-2-16
+StringBuffer.java@668:W-count_8-2-6
+$(R-count_8-2-16 - CONST_3)$
+StringBuffer.java@670:S-unlock_8-2
+StringBufferTest.java@27:R-buf_51-2-8
+StringBufferTest.java@27:S-lock_8-2
+StringBuffer.java@405:R-count_8-2-17
+branch-2
+StringBuffer.java@408:R-count_8-2-18
+StringBuffer.java@409:W-count_8-2-7
+$(R-count_8-2-17 + CONST_10)$
+StringBuffer.java@410:S-unlock_8-2
+StringBufferTest.java@26:R-buf_51-2-9
+StringBufferTest.java@26:S-lock_8-2
+StringBuffer.java@658:R-count_8-2-19
+branch-2
+StringBuffer.java@665:R-shared_8-2-4
+branch-2
+StringBuffer.java@667:R-count_8-2-20
+StringBuffer.java@668:R-count_8-2-21
+StringBuffer.java@668:W-count_8-2-8
+$(R-count_8-2-21 - CONST_4)$
+StringBuffer.java@670:S-unlock_8-2
+StringBufferTest.java@27:R-buf_51-2-10
+StringBufferTest.java@27:S-lock_8-2
+StringBuffer.java@405:R-count_8-2-22
+branch-2
+StringBuffer.java@408:R-count_8-2-23
+StringBuffer.java@409:W-count_8-2-9
+$(R-count_8-2-22 + CONST_10)$
+StringBuffer.java@410:S-unlock_8-2
+StringBufferTest.java@26:R-buf_51-2-11
+StringBufferTest.java@26:S-lock_8-2
+StringBuffer.java@658:R-count_8-2-24
+branch-2
+StringBuffer.java@665:R-shared_8-2-5
+branch-2
+StringBuffer.java@667:R-count_8-2-25
+StringBuffer.java@668:R-count_8-2-26
+StringBuffer.java@668:W-count_8-2-10
+$(R-count_8-2-26 - CONST_5)$
+StringBuffer.java@670:S-unlock_8-2
+StringBufferTest.java@27:R-buf_51-2-12
+StringBufferTest.java@27:S-lock_8-2
+StringBuffer.java@405:R-count_8-2-27
+branch-2
+StringBuffer.java@408:R-count_8-2-28
+StringBuffer.java@409:W-count_8-2-11
+$(R-count_8-2-27 + CONST_10)$
+StringBuffer.java@410:S-unlock_8-2
+StringBufferTest.java@26:R-buf_51-2-13
+StringBufferTest.java@26:S-lock_8-2
+StringBuffer.java@658:R-count_8-2-29
+branch-2
+StringBuffer.java@665:R-shared_8-2-6
+branch-2
+StringBuffer.java@667:R-count_8-2-30
+StringBuffer.java@668:R-count_8-2-31
+StringBuffer.java@668:W-count_8-2-12
+$(R-count_8-2-31 - CONST_6)$
+StringBuffer.java@670:S-unlock_8-2
+StringBufferTest.java@27:R-buf_51-2-14
+StringBufferTest.java@27:S-lock_8-2
+StringBuffer.java@405:R-count_8-2-32
+branch-2
+StringBuffer.java@408:R-count_8-2-33
+StringBuffer.java@409:W-count_8-2-13
+$(R-count_8-2-32 + CONST_10)$
+StringBuffer.java@410:S-unlock_8-2
+StringBufferTest.java@26:R-buf_51-2-15
+StringBufferTest.java@26:S-lock_8-2
+StringBuffer.java@658:R-count_8-2-34
+branch-2
+StringBuffer.java@665:R-shared_8-2-7
+branch-2
+StringBuffer.java@667:R-count_8-2-35
+StringBuffer.java@668:R-count_8-2-36
+StringBuffer.java@668:W-count_8-2-14
+$(R-count_8-2-36 - CONST_7)$
+StringBuffer.java@670:S-unlock_8-2
+StringBufferTest.java@27:R-buf_51-2-16
+StringBufferTest.java@27:S-lock_8-2
+StringBuffer.java@405:R-count_8-2-37
+branch-2
+StringBuffer.java@408:R-count_8-2-38
+StringBuffer.java@409:W-count_8-2-15
+$(R-count_8-2-37 + CONST_10)$
+StringBuffer.java@410:S-unlock_8-2
+StringBufferTest.java@26:R-buf_51-2-17
+StringBufferTest.java@26:S-lock_8-2
+StringBuffer.java@658:R-count_8-2-39
+branch-2
+StringBuffer.java@665:R-shared_8-2-8
+branch-2
+StringBuffer.java@667:R-count_8-2-40
+StringBuffer.java@668:R-count_8-2-41
+StringBuffer.java@668:W-count_8-2-16
+$(R-count_8-2-41 - CONST_8)$
+StringBuffer.java@670:S-unlock_8-2
+StringBufferTest.java@27:R-buf_51-2-18
+StringBufferTest.java@27:S-lock_8-2
+StringBuffer.java@405:R-count_8-2-42
+branch-2
+StringBuffer.java@408:R-count_8-2-43
+StringBuffer.java@409:W-count_8-2-17
+$(R-count_8-2-42 + CONST_10)$
+StringBuffer.java@410:S-unlock_8-2
+StringBufferTest.java@26:R-buf_51-2-19
+StringBufferTest.java@26:S-lock_8-2
+StringBuffer.java@658:R-count_8-2-44
+branch-2
+StringBuffer.java@665:R-shared_8-2-9
+branch-2
+StringBuffer.java@667:R-count_8-2-45
+StringBuffer.java@668:R-count_8-2-46
+StringBuffer.java@668:W-count_8-2-18
+$(R-count_8-2-46 - CONST_9)$
+StringBuffer.java@670:S-unlock_8-2
+StringBufferTest.java@27:R-buf_51-2-20
+StringBufferTest.java@27:S-lock_8-2
+StringBuffer.java@405:R-count_8-2-47
+branch-2
+StringBuffer.java@408:R-count_8-2-48
+StringBuffer.java@409:W-count_8-2-19
+$(R-count_8-2-47 + CONST_10)$
+StringBuffer.java@410:S-unlock_8-2
+<pathjpf>
+T2:(CONST_0 <= R-count_8-2-1)
+T2:((R-count_8-2-2 + CONST_10) <= CONST_100)
+T2:(CONST_1 <= R-count_8-2-4)
+T2:(R-shared_8-2-1 == CONST_0)
+T2:((R-count_8-2-7 + CONST_10) <= CONST_100)
+T2:(CONST_2 <= R-count_8-2-9)
+T2:(R-shared_8-2-2 == CONST_0)
+T2:((R-count_8-2-12 + CONST_10) <= CONST_100)
+T2:(CONST_3 <= R-count_8-2-14)
+T2:(R-shared_8-2-3 == CONST_0)
+T2:((R-count_8-2-17 + CONST_10) <= CONST_100)
+T2:(CONST_4 <= R-count_8-2-19)
+T2:(R-shared_8-2-4 == CONST_0)
+T2:((R-count_8-2-22 + CONST_10) <= CONST_100)
+T2:(CONST_5 <= R-count_8-2-24)
+T2:(R-shared_8-2-5 == CONST_0)
+T2:((R-count_8-2-27 + CONST_10) <= CONST_100)
+T2:(CONST_6 <= R-count_8-2-29)
+T2:(R-shared_8-2-6 == CONST_0)
+T2:((R-count_8-2-32 + CONST_10) <= CONST_100)
+T2:(CONST_7 <= R-count_8-2-34)
+T2:(R-shared_8-2-7 == CONST_0)
+T2:((R-count_8-2-37 + CONST_10) <= CONST_100)
+T2:(CONST_8 <= R-count_8-2-39)
+T2:(R-shared_8-2-8 == CONST_0)
+T2:((R-count_8-2-42 + CONST_10) <= CONST_100)
+T2:(CONST_9 <= R-count_8-2-44)
+T2:(R-shared_8-2-9 == CONST_0)
+T2:((R-count_8-2-47 + CONST_10) <= CONST_100)
+pathid-111111111111111111111111111111

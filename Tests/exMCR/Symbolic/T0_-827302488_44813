@@ -1,0 +1,20 @@
+<assertThread_ok>
+Main.java@11:W-l_51-0-1
+$609$
+Main.java@12:W-x_51-0-1
+$0$
+Main.java@13:W-y_51-0-1
+$0$
+Main.java@14:W-bug_51-0-1
+$0$
+Main.java@20:S-fork_1-0
+Main.java@21:S-fork_2-0
+Main.java@22:S-fork_3-0
+Main.java@25:S-join_1-0
+Main.java@26:S-join_2-0
+Main.java@27:S-join_3-0
+Main.java@33:R-bug_51-0-1
+branch-0
+<pathjpf>
+T0:(R-bug_51-0-1 == CONST_0)
+pathid-11

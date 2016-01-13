@@ -1,0 +1,9 @@
+InstrumentationHandler.java@16:S-start-1
+airline.java@113:R-Num_Of_Seats_Sold_51-1-1
+airline.java@113:W-Num_Of_Seats_Sold_51-1-1
+$(R-Num_Of_Seats_Sold_51-1-1 + CONST_1)$
+airline.java@116:R-Num_Of_Seats_Sold_51-1-2
+branch-1
+<pathjpf>
+T1:(R-Num_Of_Seats_Sold_51-1-2 <= CONST_5)
+pathid-11

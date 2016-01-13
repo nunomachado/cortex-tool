@@ -1,0 +1,3 @@
+# mode property file for running JPF on ReentrantLockPerformanceTest example
+
+target = ReentrantLockPerformanceTest

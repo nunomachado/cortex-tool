@@ -1,0 +1,124 @@
+InstrumentationHandler.java@16:S-start-4
+Trelease.java@15:R-flag_51-4-1
+branch-4
+Trelease.java@15:R-request_counter_51-4-1
+branch-4
+Trelease.java@15:R-flag_51-4-2
+branch-4
+Trelease.java@15:R-request_counter_51-4-2
+branch-4
+Trelease.java@15:R-flag_51-4-3
+branch-4
+Trelease.java@21:R-rel_counter_lock_51-4-1
+Trelease.java@23:R-request_counter_51-4-3
+branch-4
+Manager.java@106:R-notes_lock_51-4-1
+Manager.java@110:R-num_of_notes_set_51-4-1
+Manager.java@110:W-num_of_notes_set_51-4-1
+$(R-num_of_notes_set_51-4-1 + CONST_1)$
+Trelease.java@53:W-flag_51-4-1
+$1$
+Manager.java@123:R-notes_lock_51-4-2
+Manager.java@125:R-num_of_notes_set_51-4-2
+branch-4
+Trelease.java@57:R-rel_counter_lock_51-4-2
+Trelease.java@61:R-released_counter_51-4-1
+Trelease.java@61:W-released_counter_51-4-1
+$(R-released_counter_51-4-1 + CONST_1)$
+Manager.java@106:R-notes_lock_51-4-3
+Manager.java@115:R-num_of_notes_set_51-4-3
+Manager.java@115:W-num_of_notes_set_51-4-2
+$(R-num_of_notes_set_51-4-3 + CONST_-1)$
+Trelease.java@29:R-request_counter_51-4-4
+branch-4
+Trelease.java@29:R-flag_51-4-4
+branch-4
+Trelease.java@29:R-request_counter_51-4-5
+branch-4
+Trelease.java@15:R-flag_51-4-5
+branch-4
+Trelease.java@21:R-rel_counter_lock_51-4-3
+Trelease.java@23:R-request_counter_51-4-6
+branch-4
+Manager.java@106:R-notes_lock_51-4-4
+Manager.java@110:R-num_of_notes_set_51-4-4
+Manager.java@110:W-num_of_notes_set_51-4-3
+$(R-num_of_notes_set_51-4-4 + CONST_1)$
+Trelease.java@53:W-flag_51-4-2
+$1$
+Manager.java@123:R-notes_lock_51-4-5
+Manager.java@125:R-num_of_notes_set_51-4-5
+branch-4
+Trelease.java@57:R-rel_counter_lock_51-4-4
+Trelease.java@61:R-released_counter_51-4-2
+Trelease.java@61:W-released_counter_51-4-2
+$(R-released_counter_51-4-2 + CONST_1)$
+Manager.java@106:R-notes_lock_51-4-6
+Manager.java@115:R-num_of_notes_set_51-4-6
+Manager.java@115:W-num_of_notes_set_51-4-4
+$(R-num_of_notes_set_51-4-6 + CONST_-1)$
+Trelease.java@29:R-request_counter_51-4-7
+branch-4
+Trelease.java@29:R-flag_51-4-6
+branch-4
+Trelease.java@29:R-request_counter_51-4-8
+branch-4
+Trelease.java@15:R-flag_51-4-7
+branch-4
+Trelease.java@21:R-rel_counter_lock_51-4-5
+Trelease.java@23:R-request_counter_51-4-9
+branch-4
+Manager.java@106:R-notes_lock_51-4-7
+Manager.java@110:R-num_of_notes_set_51-4-7
+Manager.java@110:W-num_of_notes_set_51-4-5
+$(R-num_of_notes_set_51-4-7 + CONST_1)$
+Trelease.java@53:W-flag_51-4-3
+$1$
+Manager.java@123:R-notes_lock_51-4-8
+Manager.java@125:R-num_of_notes_set_51-4-8
+branch-4
+Trelease.java@57:R-rel_counter_lock_51-4-6
+Trelease.java@61:R-released_counter_51-4-3
+Trelease.java@61:W-released_counter_51-4-3
+$(R-released_counter_51-4-3 + CONST_1)$
+Manager.java@106:R-notes_lock_51-4-9
+Manager.java@115:R-num_of_notes_set_51-4-9
+Manager.java@115:W-num_of_notes_set_51-4-6
+$(R-num_of_notes_set_51-4-9 + CONST_-1)$
+Trelease.java@29:R-request_counter_51-4-10
+branch-4
+Trelease.java@29:R-flag_51-4-8
+branch-4
+Trelease.java@29:R-request_counter_51-4-11
+branch-4
+Trelease.java@15:R-flag_51-4-9
+branch-4
+Trelease.java@21:R-rel_counter_lock_51-4-7
+Trelease.java@23:R-request_counter_51-4-12
+branch-4
+<pathjpf>
+T4:(R-flag_51-4-1 != CONST_0)
+T4:(R-request_counter_51-4-1 > CONST_0)
+T4:(R-flag_51-4-2 != CONST_0)
+T4:(R-request_counter_51-4-2 > CONST_0)
+T4:(R-flag_51-4-3 == CONST_0)
+T4:(R-request_counter_51-4-3 > CONST_0)
+T4:(R-num_of_notes_set_51-4-2 == CONST_1)
+T4:(R-request_counter_51-4-3 == R-request_counter_51-4-4)
+T4:(R-flag_51-4-4 != CONST_0)
+T4:(R-request_counter_51-4-3 != R-request_counter_51-4-5)
+T4:(R-flag_51-4-5 == CONST_0)
+T4:(R-request_counter_51-4-6 > CONST_0)
+T4:(R-num_of_notes_set_51-4-5 == CONST_1)
+T4:(R-request_counter_51-4-6 == R-request_counter_51-4-7)
+T4:(R-flag_51-4-6 != CONST_0)
+T4:(R-request_counter_51-4-6 != R-request_counter_51-4-8)
+T4:(R-flag_51-4-7 == CONST_0)
+T4:(R-request_counter_51-4-9 > CONST_0)
+T4:(R-num_of_notes_set_51-4-8 == CONST_1)
+T4:(R-request_counter_51-4-9 == R-request_counter_51-4-10)
+T4:(R-flag_51-4-8 != CONST_0)
+T4:(R-request_counter_51-4-9 != R-request_counter_51-4-11)
+T4:(R-flag_51-4-9 == CONST_0)
+T4:(R-request_counter_51-4-12 <= CONST_0)
+pathid-1010110001110001110001111

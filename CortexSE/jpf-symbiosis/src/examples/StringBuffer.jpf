@@ -1,0 +1,15 @@
+target=jdk_StringBuffer.StringBufferTest
+target_args=
+classpath=/home/symbiosis/work/cortex/CortexTransformer/CortexJPF;\
+		  /home/symbiosis/work/cortex/CortexSE/jpf-symbiosis/build/main;\
+		  /home/symbiosis/work/cortex/CortexSE/jpf-core/build/main;\
+		  /home/symbiosis/work/cortex/CortexSE/jpf-symbc/build/main;
+sourcepath=~/work/cortex/Tests/stringbuffer/src
+symbolic.dp=no_solver
+symbolic.string_dp_timeout_ms=0
+listener=pt.tecnico.jpf.symbiosis.SymbiosisListener
+symbiosis.bbtrace=/home/symbiosis/work/cortex/Tests/stringbuffer/PRuns/sbuf_1013795815_0.ok
+symbiosis.sharedAccesses=/home/symbiosis/work/cortex/CortexTransformer/CortexJPF/jdk_StringBuffer.StringBufferTest.accesses
+symbiosis.tracefolder=/home/symbiosis/work/cortex/Tests/stringbuffer/Symbolic
+#cortex.flipfile=/home/symbiosis/work/cortex/CortexSolver/tmp/flipFile.txt
+search.class=.search.heuristic.BFSHeuristic

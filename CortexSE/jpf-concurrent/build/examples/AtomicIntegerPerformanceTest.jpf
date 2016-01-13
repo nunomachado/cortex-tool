@@ -1,0 +1,7 @@
+# mode property file for running JPF on AtomicIntegerPerformanceTest example
+
+target=AtomicIntegerPerformanceTest
+
+classpath=build/examples;
+sourcepath=src/examples    
+vm.peer.packages=gov.nasa.jpf.concurrent,<model>,gov.nasa.jpf.jvm,<default>

@@ -1,0 +1,88 @@
+<assertThread_fail>
+Loader.java@46:W-array_607-0-1
+$10$
+Loader.java@46:W-array_608-0-1
+$9$
+Loader.java@46:W-array_609-0-1
+$8$
+Loader.java@46:W-array_610-0-1
+$7$
+Loader.java@46:W-array_611-0-1
+$6$
+Loader.java@46:W-array_612-0-1
+$5$
+Loader.java@46:W-array_613-0-1
+$4$
+Loader.java@46:W-array_614-0-1
+$3$
+Loader.java@46:W-array_615-0-1
+$2$
+Loader.java@46:W-array_616-0-1
+$1$
+NewThread.java@19:W-endd_81-0-1
+$0$
+Loader.java@52:S-fork_1-0
+Loader.java@55:R-endd_81-0-1
+branch-0
+Loader.java@61:W-n_bugs_51-0-1
+$0$
+Loader.java@63:R-array_607-0-1
+Loader.java@63:R-array_608-0-1
+branch-0
+Loader.java@64:R-n_bugs_51-0-1
+Loader.java@64:W-n_bugs_51-0-2
+$(R-n_bugs_51-0-1 + CONST_1)$
+Loader.java@63:R-array_608-0-2
+Loader.java@63:R-array_609-0-1
+branch-0
+Loader.java@63:R-array_609-0-2
+Loader.java@63:R-array_610-0-1
+branch-0
+Loader.java@64:R-n_bugs_51-0-2
+Loader.java@64:W-n_bugs_51-0-3
+$(R-n_bugs_51-0-2 + CONST_1)$
+Loader.java@63:R-array_610-0-2
+Loader.java@63:R-array_611-0-1
+branch-0
+Loader.java@64:R-n_bugs_51-0-3
+Loader.java@64:W-n_bugs_51-0-4
+$(R-n_bugs_51-0-3 + CONST_1)$
+Loader.java@63:R-array_611-0-2
+Loader.java@63:R-array_612-0-1
+branch-0
+Loader.java@64:R-n_bugs_51-0-4
+Loader.java@64:W-n_bugs_51-0-5
+$(R-n_bugs_51-0-4 + CONST_1)$
+Loader.java@63:R-array_612-0-2
+Loader.java@63:R-array_613-0-1
+branch-0
+Loader.java@64:R-n_bugs_51-0-5
+Loader.java@64:W-n_bugs_51-0-6
+$(R-n_bugs_51-0-5 + CONST_1)$
+Loader.java@63:R-array_613-0-2
+Loader.java@63:R-array_614-0-1
+branch-0
+Loader.java@63:R-array_614-0-2
+Loader.java@63:R-array_615-0-1
+branch-0
+Loader.java@64:R-n_bugs_51-0-6
+Loader.java@64:W-n_bugs_51-0-7
+$(R-n_bugs_51-0-6 + CONST_1)$
+Loader.java@63:R-array_615-0-2
+Loader.java@63:R-array_616-0-1
+branch-0
+Loader.java@69:R-n_bugs_51-0-7
+branch-0
+<pathjpf>
+T0:(R-endd_81-0-1 != CONST_0)
+T0:(R-array_607-0-1 > R-array_608-0-1)
+T0:(R-array_608-0-2 <= R-array_609-0-1)
+T0:(R-array_609-0-2 > R-array_610-0-1)
+T0:(R-array_610-0-2 > R-array_611-0-1)
+T0:(R-array_611-0-2 > R-array_612-0-1)
+T0:(R-array_612-0-2 > R-array_613-0-1)
+T0:(R-array_613-0-2 <= R-array_614-0-1)
+T0:(R-array_614-0-2 > R-array_615-0-1)
+T0:(R-array_615-0-2 <= R-array_616-0-1)
+T0:(R-n_bugs_51-0-7 != CONST_0)
+pathid-100100001010

@@ -1,0 +1,63 @@
+InstrumentationHandler.java@16:S-start-1
+GarageManager.java@486:R-this$0_657-1-1
+GarageManager.java@486:R-status_609-1-1
+GarageManager.java@486:S-lock_288-1
+GarageManager.java@488:R-this$0_657-1-2
+GarageManager.java@488:R-status_609-1-2
+GarageManager.java@288:R-managerArrived_648-1-1
+branch-1
+GarageManager.java@494:R-this$0_657-1-3
+GarageManager.java@494:R-status_609-1-3
+GarageManager.java@288:R-managerArrived_648-1-2
+branch-1
+GarageManager.java@486:S-unlock_288-1
+GarageManager.java@486:R-this$0_657-1-4
+GarageManager.java@486:R-status_609-1-4
+GarageManager.java@486:S-lock_288-1
+GarageManager.java@488:R-this$0_657-1-5
+GarageManager.java@488:R-status_609-1-5
+GarageManager.java@288:R-managerArrived_648-1-3
+branch-1
+GarageManager.java@494:R-this$0_657-1-6
+GarageManager.java@494:R-status_609-1-6
+GarageManager.java@288:R-managerArrived_648-1-4
+branch-1
+GarageManager.java@486:S-unlock_288-1
+GarageManager.java@551:R-workerName_657-1-1
+GarageManager.java@555:W-taskTime_657-1-1
+$1000$
+GarageManager.java@556:W-working_657-1-1
+$1$
+GarageManager.java@558:R-this$0_657-1-7
+GarageManager.java@558:R-status_609-1-7
+GarageManager.java@558:S-lock_288-1
+GarageManager.java@560:R-this$0_657-1-8
+GarageManager.java@560:R-status_609-1-8
+GarageManager.java@293:R-workersInTask_648-1-1
+GarageManager.java@293:W-workersInTask_648-1-1
+$(R-workersInTask_648-1-1 + CONST_-1)$
+GarageManager.java@558:S-unlock_288-1
+GarageManager.java@406:R-this$0_657-1-9
+GarageManager.java@406:R-status_609-1-9
+GarageManager.java@406:S-lock_288-1
+GarageManager.java@408:R-this$0_657-1-10
+GarageManager.java@408:R-status_609-1-10
+GarageManager.java@408:R-taskTime_657-1-1
+GarageManager.java@408:W-taskTime_649-1-1
+$(R-taskTime_657-1-1 / CONST_200)$
+GarageManager.java@406:S-unlock_288-1
+GarageManager.java@413:R-working_657-1-1
+branch-1
+GarageManager.java@414:R-this$0_657-1-11
+GarageManager.java@19:W-bugOccured_609-1-1
+$1$
+GarageManager.java@416:R-printedCard_51-1-1
+GarageManager.java@416:W-printedCard_51-1-1
+$(R-printedCard_51-1-1 + CONST_1)$
+<pathjpf>
+T1:(R-managerArrived_648-1-1 != CONST_0)
+T1:(R-managerArrived_648-1-2 == CONST_0)
+T1:(R-managerArrived_648-1-3 != CONST_0)
+T1:(R-managerArrived_648-1-4 != CONST_0)
+T1:(R-working_657-1-1 == CONST_0)
+pathid-111100

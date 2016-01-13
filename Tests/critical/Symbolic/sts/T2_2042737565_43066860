@@ -1,0 +1,23 @@
+InstrumentationHandler.java@16:S-start-2
+Critical.java@45:W-bug_608-2-1
+$0$
+Critical.java@64:R-t_608-2-1
+Critical.java@64:W-turn_603-2-1
+$1$
+Critical.java@66:R-t_608-2-2
+Critical.java@66:R-turn_603-2-1
+branch-2
+Critical.java@66:R-t_608-2-3
+Critical.java@66:R-turn_603-2-2
+branch-2
+Critical.java@66:R-t_608-2-4
+Critical.java@66:R-turn_603-2-3
+branch-2
+Critical.java@68:R-t_608-2-5
+Critical.java@68:W-turn_603-2-2
+$0$
+<pathjpf>
+T2:(R-turn_603-2-1 != CONST_1)
+T2:(R-turn_603-2-2 != CONST_1)
+T2:(R-turn_603-2-3 == CONST_1)
+pathid-1110

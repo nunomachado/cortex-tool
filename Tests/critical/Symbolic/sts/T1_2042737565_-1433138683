@@ -1,0 +1,43 @@
+<assertThread_ok>
+InstrumentationHandler.java@16:S-start-1
+Critical.java@45:W-bug_607-1-1
+$0$
+Critical.java@48:R-t_607-1-1
+Critical.java@48:W-turn_603-1-1
+$0$
+Critical.java@50:R-t_607-1-2
+Critical.java@50:R-turn_603-1-1
+branch-1
+Critical.java@52:R-t_607-1-3
+Critical.java@52:R-turn_603-1-2
+branch-1
+Critical.java@50:R-t_607-1-4
+Critical.java@50:R-turn_603-1-3
+branch-1
+Critical.java@52:R-t_607-1-5
+Critical.java@52:R-turn_603-1-4
+branch-1
+Critical.java@50:R-t_607-1-6
+Critical.java@50:R-turn_603-1-5
+branch-1
+Critical.java@52:R-t_607-1-7
+Critical.java@52:R-turn_603-1-6
+branch-1
+Critical.java@50:R-t_607-1-8
+Critical.java@50:R-turn_603-1-7
+branch-1
+Critical.java@56:R-t_607-1-9
+Critical.java@56:W-turn_603-1-2
+$1$
+Critical.java@58:R-bug_607-1-1
+branch-1
+<pathjpf>
+T1:(R-turn_603-1-1 != CONST_0)
+T1:(R-turn_603-1-2 != CONST_0)
+T1:(R-turn_603-1-3 != CONST_0)
+T1:(R-turn_603-1-4 != CONST_0)
+T1:(R-turn_603-1-5 != CONST_0)
+T1:(R-turn_603-1-6 != CONST_0)
+T1:(R-turn_603-1-7 == CONST_0)
+T1:(R-bug_607-1-1 == CONST_0)
+pathid-111111101

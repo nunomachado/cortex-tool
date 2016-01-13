@@ -1,0 +1,45 @@
+<assertThread_ok>
+InstrumentationHandler.java@16:S-start-4
+IBM_Airlines.java@108:R-_piper_631-4-1
+IBM_Airlines.java@108:R-_name_631-4-1
+IBM_Airlines.java@108:S-lock_272-4
+Piper.java@51:R-_last_626-4-1
+Piper.java@51:R-_first_626-4-1
+branch-4
+Piper.java@59:R-_last_626-4-2
+Piper.java@59:W-_last_627-4-1
+$R-_name_631-4-1$
+Piper.java@64:R-_fillCount_83-4-1
+Piper.java@64:W-_fillCount_83-4-1
+$(R-_fillCount_83-4-1 + CONST_-1)$
+Piper.java@65:R-_fillCount_83-4-2
+branch-4
+Piper.java@70:R-_last_626-4-3
+Piper.java@70:W-_last_626-4-1
+$((R-_last_626-4-3 + CONST_1) % CONST_2)$
+Piper.java@72:S-signalall_272-4
+Piper.java@74:S-unlock_272-4
+IBM_Airlines.java@108:R-_piper_631-4-2
+IBM_Airlines.java@108:R-_name_631-4-2
+IBM_Airlines.java@108:S-lock_272-4
+Piper.java@51:R-_last_626-4-4
+Piper.java@51:R-_first_626-4-2
+branch-4
+Piper.java@59:R-_last_626-4-5
+Piper.java@59:W-_last_627-4-2
+$R-_name_631-4-2$
+Piper.java@64:R-_fillCount_83-4-3
+Piper.java@64:W-_fillCount_83-4-2
+$(R-_fillCount_83-4-3 + CONST_-1)$
+Piper.java@65:R-_fillCount_83-4-4
+branch-4
+Piper.java@110:R-_emptyCount_83-4-1
+branch-4
+Piper.java@111:R-_emptyCount_83-4-2
+<pathjpf>
+T4:(((R-_last_626-4-1 + CONST_1) % CONST_2) != R-_first_626-4-1)
+T4:(R-_fillCount_83-4-2 != CONST_0)
+T4:(((R-_last_626-4-4 + CONST_1) % CONST_2) != R-_first_626-4-2)
+T4:(R-_fillCount_83-4-4 == CONST_0)
+T4:(R-_emptyCount_83-4-1 < CONST_2)
+pathid-111101

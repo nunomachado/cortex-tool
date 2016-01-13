@@ -1,0 +1,136 @@
+InstrumentationHandler.java@16:S-start-1
+TicketsOrderSim.java@100:R-seats_num_51-1-1
+branch-1
+TicketsOrderSim.java@101:R-seats_647-1-1
+TicketsOrderSim.java@101:R-ticket_252-1-1
+TicketsOrderSim.java@101:R-empty_629-1-1
+branch-1
+TicketsOrderSim.java@102:R-seats_647-1-2
+TicketsOrderSim.java@103:R-seats_647-1-3
+TicketsOrderSim.java@103:R-ticket_252-1-2
+TicketsOrderSim.java@103:R-empty_629-1-2
+branch-1
+TicketsOrderSim.java@104:R-seats_647-1-4
+TicketsOrderSim.java@104:R-ticket_252-1-3
+TicketsOrderSim.java@72:W-empty_629-1-1
+$0$
+TicketsOrderSim.java@73:W-flight_629-1-1
+$74721$
+TicketsOrderSim.java@74:W-airline_629-1-1
+$8888$
+TicketsOrderSim.java@75:W-status_629-1-1
+$Sold$
+TicketsOrderSim.java@76:W-agent_name_629-1-1
+$0$
+TicketsOrderSim.java@100:R-seats_num_51-1-2
+branch-1
+TicketsOrderSim.java@101:R-seats_648-1-1
+TicketsOrderSim.java@101:R-ticket_635-1-1
+TicketsOrderSim.java@101:R-empty_648-1-1
+branch-1
+TicketsOrderSim.java@102:R-seats_648-1-2
+TicketsOrderSim.java@103:R-seats_648-1-3
+TicketsOrderSim.java@103:R-ticket_635-1-2
+TicketsOrderSim.java@103:R-empty_648-1-2
+branch-1
+TicketsOrderSim.java@104:R-seats_648-1-4
+TicketsOrderSim.java@104:R-ticket_635-1-3
+TicketsOrderSim.java@72:W-empty_648-1-1
+$0$
+TicketsOrderSim.java@73:W-flight_648-1-1
+$74721$
+TicketsOrderSim.java@74:W-airline_648-1-1
+$8888$
+TicketsOrderSim.java@75:W-status_648-1-1
+$Sold$
+TicketsOrderSim.java@76:W-agent_name_648-1-1
+$0$
+TicketsOrderSim.java@100:R-seats_num_51-1-3
+branch-1
+TicketsOrderSim.java@101:R-seats_649-1-1
+TicketsOrderSim.java@101:R-ticket_649-1-1
+TicketsOrderSim.java@101:R-empty_650-1-1
+branch-1
+TicketsOrderSim.java@102:R-seats_649-1-2
+TicketsOrderSim.java@103:R-seats_649-1-3
+TicketsOrderSim.java@103:R-ticket_649-1-2
+TicketsOrderSim.java@103:R-empty_650-1-2
+branch-1
+TicketsOrderSim.java@104:R-seats_649-1-4
+TicketsOrderSim.java@104:R-ticket_649-1-3
+TicketsOrderSim.java@72:W-empty_650-1-1
+$0$
+TicketsOrderSim.java@73:W-flight_650-1-1
+$74721$
+TicketsOrderSim.java@74:W-airline_650-1-1
+$8888$
+TicketsOrderSim.java@75:W-status_650-1-1
+$Sold$
+TicketsOrderSim.java@76:W-agent_name_650-1-1
+$0$
+TicketsOrderSim.java@100:R-seats_num_51-1-4
+branch-1
+TicketsOrderSim.java@101:R-seats_650-1-1
+TicketsOrderSim.java@101:R-ticket_651-1-1
+TicketsOrderSim.java@101:R-empty_652-1-1
+branch-1
+TicketsOrderSim.java@102:R-seats_650-1-2
+TicketsOrderSim.java@103:R-seats_650-1-3
+TicketsOrderSim.java@103:R-ticket_651-1-2
+TicketsOrderSim.java@103:R-empty_652-1-2
+branch-1
+TicketsOrderSim.java@104:R-seats_650-1-4
+TicketsOrderSim.java@104:R-ticket_651-1-3
+TicketsOrderSim.java@72:W-empty_652-1-1
+$0$
+TicketsOrderSim.java@73:W-flight_652-1-1
+$74721$
+TicketsOrderSim.java@74:W-airline_652-1-1
+$8888$
+TicketsOrderSim.java@75:W-status_652-1-1
+$Sold$
+TicketsOrderSim.java@76:W-agent_name_652-1-1
+$0$
+TicketsOrderSim.java@100:R-seats_num_51-1-5
+branch-1
+TicketsOrderSim.java@101:R-seats_651-1-1
+TicketsOrderSim.java@101:R-ticket_653-1-1
+TicketsOrderSim.java@101:R-empty_654-1-1
+branch-1
+TicketsOrderSim.java@102:R-seats_651-1-2
+TicketsOrderSim.java@103:R-seats_651-1-3
+TicketsOrderSim.java@103:R-ticket_653-1-2
+TicketsOrderSim.java@103:R-empty_654-1-2
+branch-1
+TicketsOrderSim.java@104:R-seats_651-1-4
+TicketsOrderSim.java@104:R-ticket_653-1-3
+TicketsOrderSim.java@72:W-empty_654-1-1
+$0$
+TicketsOrderSim.java@73:W-flight_654-1-1
+$74721$
+TicketsOrderSim.java@74:W-airline_654-1-1
+$8888$
+TicketsOrderSim.java@75:W-status_654-1-1
+$Sold$
+TicketsOrderSim.java@76:W-agent_name_654-1-1
+$0$
+TicketsOrderSim.java@100:R-seats_num_51-1-6
+branch-1
+<pathjpf>
+T1:(CONST_0 < R-seats_num_51-1-1)
+T1:(R-empty_629-1-1 != CONST_0)
+T1:(R-empty_629-1-2 != CONST_0)
+T1:(CONST_1 < R-seats_num_51-1-2)
+T1:(R-empty_648-1-1 != CONST_0)
+T1:(R-empty_648-1-2 != CONST_0)
+T1:(CONST_2 < R-seats_num_51-1-3)
+T1:(R-empty_650-1-1 != CONST_0)
+T1:(R-empty_650-1-2 != CONST_0)
+T1:(CONST_3 < R-seats_num_51-1-4)
+T1:(R-empty_652-1-1 != CONST_0)
+T1:(R-empty_652-1-2 != CONST_0)
+T1:(CONST_4 < R-seats_num_51-1-5)
+T1:(R-empty_654-1-1 != CONST_0)
+T1:(R-empty_654-1-2 != CONST_0)
+T1:(CONST_5 >= R-seats_num_51-1-6)
+pathid-11001001001001000

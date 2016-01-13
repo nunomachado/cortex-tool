@@ -1,0 +1,37 @@
+StringBuffer.java@118:W-shared_606-0-1
+$0$
+StringBuffer.java@133:S-lock_25e-0
+StringBuffer.java@405:R-count_606-0-1
+branch-0
+StringBuffer.java@408:R-count_606-0-2
+StringBuffer.java@409:W-count_606-0-1
+$(R-count_606-0-1 + CONST_4)$
+StringBuffer.java@410:S-unlock_25e-0
+StringBuffer.java@454:W-NULL_81-0-1
+$606$
+StringBuffer.java@118:W-shared_8-0-1
+$0$
+StringBufferTest.java@10:W-buf_51-0-1
+$8$
+StringBufferTest.java@11:R-buf_51-0-1
+StringBufferTest.java@11:S-lock_8-0
+StringBuffer.java@909:R-count_8-0-1
+branch-0
+StringBuffer.java@920:R-count_8-0-2
+branch-0
+StringBuffer.java@923:R-shared_8-0-1
+branch-0
+StringBuffer.java@925:R-count_8-0-3
+StringBuffer.java@927:W-count_8-0-1
+$(R-count_8-0-2 + CONST_10)$
+StringBuffer.java@928:S-unlock_8-0
+StringBufferTest.java@32:S-fork_1-0
+StringBufferTest.java@33:S-fork_2-0
+StringBufferTest.java@34:S-join_1-0
+StringBufferTest.java@35:S-join_2-0
+<pathjpf>
+T0:((R-count_606-0-1 + CONST_4) <= CONST_20)
+T0:(CONST_0 <= R-count_8-0-1)
+T0:((R-count_8-0-2 + CONST_10) <= CONST_100)
+T0:(R-shared_8-0-1 == CONST_0)
+pathid-11111

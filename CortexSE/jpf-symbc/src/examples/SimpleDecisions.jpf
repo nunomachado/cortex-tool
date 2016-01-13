@@ -1,0 +1,12 @@
+target=SimpleDecisions
+classpath=${jpf-symbc}/build/examples
+sourcepath=${jpf-symbc}/src/examples
+symbolic.method = SimpleDecisions.test(sym)
+symbolic.min_int=-100
+symbolic.max_int=100
+symbolic.debug=on
+#vm.storage.class=nil
+#listener = .symbc.SymbolicListener
+listener = .listener.ChoiceTracker
+choice.trace = ${jpf-symbc}/trace.manu
+choice.log = ${jpf-symbc}/log.manu

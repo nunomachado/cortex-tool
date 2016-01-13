@@ -1,0 +1,34 @@
+InstrumentationHandler.java@16:S-start-3
+Trelease.java@15:R-flag_51-3-1
+branch-3
+Trelease.java@15:R-request_counter_51-3-1
+branch-3
+Trelease.java@15:R-flag_51-3-2
+branch-3
+Trelease.java@15:R-request_counter_51-3-2
+branch-3
+Trelease.java@15:R-flag_51-3-3
+branch-3
+Trelease.java@15:R-request_counter_51-3-3
+branch-3
+Trelease.java@15:R-flag_51-3-4
+branch-3
+Trelease.java@15:R-request_counter_51-3-4
+branch-3
+Trelease.java@15:R-flag_51-3-5
+branch-3
+Trelease.java@21:R-rel_counter_lock_51-3-1
+Trelease.java@23:R-request_counter_51-3-5
+branch-3
+<pathjpf>
+T3:(R-flag_51-3-1 != CONST_0)
+T3:(R-request_counter_51-3-1 > CONST_0)
+T3:(R-flag_51-3-2 != CONST_0)
+T3:(R-request_counter_51-3-2 > CONST_0)
+T3:(R-flag_51-3-3 != CONST_0)
+T3:(R-request_counter_51-3-3 > CONST_0)
+T3:(R-flag_51-3-4 != CONST_0)
+T3:(R-request_counter_51-3-4 > CONST_0)
+T3:(R-flag_51-3-5 == CONST_0)
+T3:(R-request_counter_51-3-5 <= CONST_0)
+pathid-10101010111

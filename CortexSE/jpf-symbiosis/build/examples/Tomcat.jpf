@@ -1,0 +1,16 @@
+target=org.apache.catalina.loader.TestWebappClassLoader
+#target_args=
+classpath=/Users/nunomachado/Dropbox/workspace/SymbiosisTransformer/SymbiosisJPF;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-symbiosis/build/main;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-core/build/main;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-symbc/build/main;\
+		  /Users/nunomachado/Dropbox/workspace/Tomcat5.5.2_bug37458/bin;
+sourcepath=/Users/nunomachado/Dropbox/workspace/Tomcat5.5.2_bug37458;
+symbolic.dp=no_solver
+#symbolic.string_dp=automata
+symbolic.string_dp_timeout_ms=0
+#vm.por.sync_detection=false
+listener=pt.tecnico.jpf.symbiosis.SymbiosisListener
+symbiosis.bbtrace=/Users/nunomachado/Dropbox/workspace/SymbiosisRuntime/traces/tomcat_trace.txt
+symbiosis.sharedAccesses=/Users/nunomachado/Dropbox/workspace/SymbiosisTransformer/SymbiosisJPF/org.apache.catalina.loader.TestWebappClassLoader.accesses
+symbiosis.tracefolder=/Users/nunomachado/Dropbox/workspace/jpf-symbiosis/traces/tomcat/

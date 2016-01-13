@@ -1,0 +1,72 @@
+InstrumentationHandler.java@16:S-start-4
+Bank.java@85:R-accounts_613-4-1
+Bank.java@85:R-Balance_647-4-1
+Bank.java@85:W-Balance_647-4-1
+$(R-Balance_647-4-1 + CONST_1)$
+Bank.java@86:R-Bank_Total_51-4-1
+Bank.java@88:W-Bank_Total_51-4-1
+$(R-Bank_Total_51-4-1 + CONST_1)$
+Bank.java@85:R-accounts_613-4-2
+Bank.java@85:R-Balance_647-4-2
+Bank.java@85:W-Balance_647-4-2
+$(R-Balance_647-4-2 + CONST_1)$
+Bank.java@86:R-Bank_Total_51-4-2
+Bank.java@88:W-Bank_Total_51-4-2
+$(R-Bank_Total_51-4-2 + CONST_1)$
+Bank.java@85:R-accounts_613-4-3
+Bank.java@85:R-Balance_647-4-3
+Bank.java@85:W-Balance_647-4-3
+$(R-Balance_647-4-3 + CONST_1)$
+Bank.java@86:R-Bank_Total_51-4-3
+Bank.java@88:W-Bank_Total_51-4-3
+$(R-Bank_Total_51-4-3 + CONST_1)$
+Bank.java@85:R-accounts_613-4-4
+Bank.java@85:R-Balance_647-4-4
+Bank.java@85:W-Balance_647-4-4
+$(R-Balance_647-4-4 + CONST_1)$
+Bank.java@86:R-Bank_Total_51-4-4
+Bank.java@88:W-Bank_Total_51-4-4
+$(R-Bank_Total_51-4-4 + CONST_1)$
+Bank.java@85:R-accounts_613-4-5
+Bank.java@85:R-Balance_647-4-5
+Bank.java@85:W-Balance_647-4-5
+$(R-Balance_647-4-5 + CONST_1)$
+Bank.java@86:R-Bank_Total_51-4-5
+Bank.java@88:W-Bank_Total_51-4-5
+$(R-Bank_Total_51-4-5 + CONST_1)$
+Bank.java@85:R-accounts_613-4-6
+Bank.java@85:R-Balance_647-4-6
+Bank.java@85:W-Balance_647-4-6
+$(R-Balance_647-4-6 + CONST_1)$
+Bank.java@86:R-Bank_Total_51-4-6
+Bank.java@88:W-Bank_Total_51-4-6
+$(R-Bank_Total_51-4-6 + CONST_1)$
+Bank.java@85:R-accounts_613-4-7
+Bank.java@85:R-Balance_647-4-7
+Bank.java@85:W-Balance_647-4-7
+$(R-Balance_647-4-7 + CONST_1)$
+Bank.java@86:R-Bank_Total_51-4-7
+Bank.java@88:W-Bank_Total_51-4-7
+$(R-Bank_Total_51-4-7 + CONST_1)$
+Bank.java@85:R-accounts_613-4-8
+Bank.java@85:R-Balance_647-4-8
+Bank.java@85:W-Balance_647-4-8
+$(R-Balance_647-4-8 + CONST_1)$
+Bank.java@86:R-Bank_Total_51-4-8
+Bank.java@88:W-Bank_Total_51-4-8
+$(R-Bank_Total_51-4-8 + CONST_1)$
+Bank.java@85:R-accounts_613-4-9
+Bank.java@85:R-Balance_647-4-9
+Bank.java@85:W-Balance_647-4-9
+$(R-Balance_647-4-9 + CONST_1)$
+Bank.java@86:R-Bank_Total_51-4-9
+Bank.java@88:W-Bank_Total_51-4-9
+$(R-Bank_Total_51-4-9 + CONST_1)$
+Bank.java@85:R-accounts_613-4-10
+Bank.java@85:R-Balance_647-4-10
+Bank.java@85:W-Balance_647-4-10
+$(R-Balance_647-4-10 + CONST_1)$
+Bank.java@86:R-Bank_Total_51-4-10
+Bank.java@88:W-Bank_Total_51-4-10
+$(R-Bank_Total_51-4-10 + CONST_1)$
+

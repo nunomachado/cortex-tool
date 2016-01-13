@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="build/examples" path="src/examples"/>
+	<classpathentry kind="src" path="src/peers"/>
+	<classpathentry kind="src" path="src/main"/>
+	<classpathentry kind="src" path="src/classes"/>
+	<classpathentry kind="src" output="build/tests" path="src/tests"/>
+	<classpathentry kind="lib" path="/Users/nunomachado/Dropbox/workspace/jpf-symbc/lib/bcel.jar"/>
+	<classpathentry kind="lib" path="/Users/nunomachado/Dropbox/workspace/jpf-core/lib/junit-4.10.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jpf-core"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="build/main"/>
+</classpath>

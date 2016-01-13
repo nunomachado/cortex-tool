@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#main class and arguments of the test case
+MAIN=bouvlesort.Loader
+ARGS="out.txt low"
+
+#add "--no-init" when we don't want to instrument <init> and <clinit> methods
+NO_INIT=
+
+#output folder to store the production run traces
+PRFOLDER=~/work/cortex/Tests/loader/PRuns
+FULLREC=
+
+#path to the production run output trace
+TRACE=$PRFOLDER/loader
+
+#path to program's Java PathFinder configuration file
+JPFFILE=~/work/cortex/CortexSE/jpf-symbiosis/src/examples/Loader.jpf
+
+#Symbolic execution timeout (in seconds)
+JPFTIMEOUT=10
+
+#cortex search parameters
+CORTEX_D=11
+CORTEX_N=0
+
+#CortexSolver: add "--csr" to apply context switch reduction
+CSR=--csr 
+

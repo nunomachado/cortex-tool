@@ -1,0 +1,47 @@
+<assertThread_ok>
+airline.java@25:W-Num_Of_Seats_Sold_51-0-1
+$0$
+airline.java@26:W-StopSales_607-0-1
+$0$
+airline.java@52:R-StopSales_607-0-1
+branch-0
+airline.java@61:S-fork_1-0
+airline.java@52:R-StopSales_607-0-2
+branch-0
+airline.java@61:S-fork_2-0
+airline.java@52:R-StopSales_607-0-3
+branch-0
+airline.java@61:S-fork_3-0
+airline.java@52:R-StopSales_607-0-4
+branch-0
+airline.java@61:S-fork_4-0
+airline.java@52:R-StopSales_607-0-5
+branch-0
+airline.java@61:S-fork_5-0
+airline.java@52:R-StopSales_607-0-6
+branch-0
+airline.java@61:S-fork_6-0
+airline.java@52:R-StopSales_607-0-7
+branch-0
+airline.java@61:S-fork_7-0
+airline.java@52:R-StopSales_607-0-8
+branch-0
+airline.java@53:R-Num_Of_Seats_Sold_51-0-1
+airline.java@53:W-Num_Of_Seats_Sold_51-0-2
+$(R-Num_Of_Seats_Sold_51-0-1 + CONST_-1)$
+airline.java@54:R-Num_Of_Seats_Sold_51-0-2
+airline.java@85:R-Num_Of_Seats_Sold_51-0-3
+airline.java@86:R-Num_Of_Seats_Sold_51-0-4
+branch-0
+airline.java@87:R-Num_Of_Seats_Sold_51-0-5
+<pathjpf>
+T0:(R-StopSales_607-0-1 == CONST_0)
+T0:(R-StopSales_607-0-2 == CONST_0)
+T0:(R-StopSales_607-0-3 == CONST_0)
+T0:(R-StopSales_607-0-4 == CONST_0)
+T0:(R-StopSales_607-0-5 == CONST_0)
+T0:(R-StopSales_607-0-6 == CONST_0)
+T0:(R-StopSales_607-0-7 == CONST_0)
+T0:(R-StopSales_607-0-8 != CONST_0)
+T0:(R-Num_Of_Seats_Sold_51-0-4 <= CONST_5)
+pathid-1111111101

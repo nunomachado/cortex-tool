@@ -1,0 +1,92 @@
+InstrumentationHandler.java@16:S-start-2
+GarageManager.java@486:R-this$0_10-2-1
+GarageManager.java@486:R-status_609-2-1
+GarageManager.java@486:S-lock_288-2
+GarageManager.java@488:R-this$0_10-2-2
+GarageManager.java@488:R-status_609-2-2
+GarageManager.java@288:R-managerArrived_648-2-1
+branch-2
+GarageManager.java@494:R-this$0_10-2-3
+GarageManager.java@494:R-status_609-2-3
+GarageManager.java@288:R-managerArrived_648-2-2
+branch-2
+GarageManager.java@486:S-unlock_288-2
+GarageManager.java@486:R-this$0_10-2-4
+GarageManager.java@486:R-status_609-2-4
+GarageManager.java@486:S-lock_288-2
+GarageManager.java@488:R-this$0_10-2-5
+GarageManager.java@488:R-status_609-2-5
+GarageManager.java@288:R-managerArrived_648-2-3
+branch-2
+GarageManager.java@494:R-this$0_10-2-6
+GarageManager.java@494:R-status_609-2-6
+GarageManager.java@288:R-managerArrived_648-2-4
+branch-2
+GarageManager.java@486:S-unlock_288-2
+GarageManager.java@486:R-this$0_10-2-7
+GarageManager.java@486:R-status_609-2-7
+GarageManager.java@486:S-lock_288-2
+GarageManager.java@488:R-this$0_10-2-8
+GarageManager.java@488:R-status_609-2-8
+GarageManager.java@288:R-managerArrived_648-2-5
+branch-2
+GarageManager.java@486:S-unlock_288-2
+GarageManager.java@486:R-this$0_10-2-9
+GarageManager.java@486:R-status_609-2-9
+GarageManager.java@486:S-lock_288-2
+GarageManager.java@488:R-this$0_10-2-10
+GarageManager.java@488:R-status_609-2-10
+GarageManager.java@288:R-managerArrived_648-2-6
+branch-2
+GarageManager.java@486:S-unlock_288-2
+GarageManager.java@486:R-this$0_10-2-11
+GarageManager.java@486:R-status_609-2-11
+GarageManager.java@486:S-lock_288-2
+GarageManager.java@488:R-this$0_10-2-12
+GarageManager.java@488:R-status_609-2-12
+GarageManager.java@288:R-managerArrived_648-2-7
+branch-2
+GarageManager.java@494:R-this$0_10-2-13
+GarageManager.java@494:R-status_609-2-13
+GarageManager.java@288:R-managerArrived_648-2-8
+branch-2
+GarageManager.java@486:S-unlock_288-2
+GarageManager.java@551:R-workerName_10-2-1
+GarageManager.java@555:W-taskTime_10-2-1
+$1400$
+GarageManager.java@556:W-working_10-2-1
+$1$
+GarageManager.java@558:R-this$0_10-2-14
+GarageManager.java@558:R-status_609-2-14
+GarageManager.java@558:S-lock_288-2
+GarageManager.java@560:R-this$0_10-2-15
+GarageManager.java@560:R-status_609-2-15
+GarageManager.java@293:R-workersInTask_648-2-1
+GarageManager.java@293:W-workersInTask_648-2-1
+$(R-workersInTask_648-2-1 + CONST_-1)$
+GarageManager.java@558:S-unlock_288-2
+GarageManager.java@406:R-this$0_10-2-16
+GarageManager.java@406:R-status_609-2-16
+GarageManager.java@406:S-lock_288-2
+GarageManager.java@408:R-this$0_10-2-17
+GarageManager.java@408:R-status_609-2-17
+GarageManager.java@408:R-taskTime_10-2-1
+GarageManager.java@408:W-taskTime_650-2-1
+$(R-taskTime_10-2-1 / CONST_200)$
+GarageManager.java@406:S-unlock_288-2
+GarageManager.java@413:R-working_10-2-1
+branch-2
+GarageManager.java@416:R-printedCard_51-2-1
+GarageManager.java@416:W-printedCard_51-2-1
+$(R-printedCard_51-2-1 + CONST_1)$
+<pathjpf>
+T2:(R-managerArrived_648-2-1 != CONST_0)
+T2:(R-managerArrived_648-2-2 == CONST_0)
+T2:(R-managerArrived_648-2-3 != CONST_0)
+T2:(R-managerArrived_648-2-4 == CONST_0)
+T2:(R-managerArrived_648-2-5 == CONST_0)
+T2:(R-managerArrived_648-2-6 == CONST_0)
+T2:(R-managerArrived_648-2-7 != CONST_0)
+T2:(R-managerArrived_648-2-8 != CONST_0)
+T2:(R-working_10-2-1 != CONST_0)
+pathid-1111100101

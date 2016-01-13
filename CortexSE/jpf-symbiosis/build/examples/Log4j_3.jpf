@@ -1,0 +1,18 @@
+target=org.apache.log4j.TestThrowableStrRep
+target_args=
+classpath=/Users/nunomachado/Dropbox/workspace/SymbiosisTransformer/SymbiosisJPF;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-symbiosis/build/main;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-core/build/main;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-symbc/build/main;\
+		  /Users/nunomachado/Dropbox/workspace/Log4j_3/bin;
+sourcepath=/Users/nunomachado/Dropbox/workspace/Pool107/src
+symbolic.dp=no_solver
+symbolic.string_dp_timeout_ms=0
+listener=pt.tecnico.jpf.symbiosis.SymbiosisListener
+symbiosis.bbtrace=/Users/nunomachado/Dropbox/workspace/SymbiosisRuntime/traces/log4j_-672376421_1.ok
+symbiosis.sharedAccesses=/Users/nunomachado/Dropbox/workspace/SymbiosisTransformer/SymbiosisJPF/org.apache.log4j.TestThrowableStrRep.accesses
+symbiosis.tracefolder=/Users/nunomachado/Dropbox/workspace/jpf-symbiosis/traces/log4j_3/
+#cortex.flipfile=/Users/nunomachado/Dropbox/Cortex_idea/cortexsolver/cortexsolver/tmp/flipFile.txt
+search.class=.search.heuristic.BFSHeuristic
+#symbolic.lazy=on
+#symbolic.lazy.subtypes = true 

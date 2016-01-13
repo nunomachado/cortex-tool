@@ -1,0 +1,15 @@
+target=bank.Bank
+target_args=
+classpath=/Users/nunomachado/Dropbox/workspace/SymbiosisTransformer/SymbiosisJPF;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-symbiosis/build/main;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-core/build/main;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-symbc/build/main;
+sourcepath=/Users/nunomachado/Dropbox/workspace/transformer-leap-0.1/test
+symbolic.dp=no_solver
+#symbolic.string_dp=automata
+symbolic.string_dp_timeout_ms=0
+#vm.por.sync_detection=false
+listener=pt.tecnico.jpf.symbiosis.SymbiosisListener
+symbiosis.bbtrace=/Users/nunomachado/Dropbox/workspace/SymbiosisRuntime/traces/antiBank_trace.txt
+symbiosis.sharedAccesses=/Users/nunomachado/Dropbox/workspace/SymbiosisTransformer/SymbiosisJPF/bank.Bank.accesses
+symbiosis.tracefolder=/Users/nunomachado/Dropbox/workspace/jpf-symbiosis/traces/anti_bank/

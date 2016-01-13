@@ -1,0 +1,33 @@
+InstrumentationHandler.java@16:S-start-3
+IBM_Airlines.java@133:R-_Piper_252-3-1
+IBM_Airlines.java@133:S-lock_272-3
+Piper.java@79:R-_first_626-3-1
+Piper.java@79:R-_last_626-3-1
+branch-3
+Piper.java@82:S-wait_272-3
+Piper.java@79:R-_first_626-3-2
+Piper.java@79:R-_last_626-3-2
+branch-3
+Piper.java@87:R-_first_626-3-3
+Piper.java@87:R-_first_627-3-1
+Piper.java@90:R-_emptyCount_83-3-1
+Piper.java@90:W-_emptyCount_83-3-1
+$(R-_emptyCount_83-3-1 + CONST_-1)$
+Piper.java@96:R-_first_626-3-4
+Piper.java@96:W-_first_626-3-1
+$((R-_first_626-3-4 + CONST_1) % CONST_2)$
+Piper.java@98:S-signalall_272-3
+Piper.java@101:S-unlock_272-3
+IBM_Airlines.java@133:R-_Piper_252-3-2
+IBM_Airlines.java@133:S-lock_272-3
+Piper.java@79:R-_first_626-3-5
+Piper.java@79:R-_last_626-3-3
+branch-3
+Piper.java@82:S-wait_272-3
+Piper.java@79:R-_first_626-3-6
+Piper.java@79:R-_last_626-3-4
+<pathjpf>
+T3:(R-_first_626-3-1 == R-_last_626-3-1)
+T3:(R-_first_626-3-2 != R-_last_626-3-2)
+T3:(R-_first_626-3-5 == R-_last_626-3-3)
+pathid-1101

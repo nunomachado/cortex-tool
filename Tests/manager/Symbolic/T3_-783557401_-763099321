@@ -1,0 +1,68 @@
+InstrumentationHandler.java@16:S-start-3
+Trelease.java@15:R-flag_51-3-1
+branch-3
+Trelease.java@15:R-request_counter_51-3-1
+branch-3
+Trelease.java@15:R-flag_51-3-2
+branch-3
+Trelease.java@15:R-request_counter_51-3-2
+branch-3
+Trelease.java@15:R-flag_51-3-3
+branch-3
+Trelease.java@21:R-rel_counter_lock_51-3-1
+Trelease.java@23:R-request_counter_51-3-3
+branch-3
+Manager.java@106:R-notes_lock_51-3-1
+Manager.java@110:R-num_of_notes_set_51-3-1
+Manager.java@110:W-num_of_notes_set_51-3-1
+$(R-num_of_notes_set_51-3-1 + CONST_1)$
+Trelease.java@53:W-flag_51-3-1
+$1$
+Manager.java@123:R-notes_lock_51-3-2
+Manager.java@125:R-num_of_notes_set_51-3-2
+branch-3
+Trelease.java@57:R-rel_counter_lock_51-3-2
+Trelease.java@61:R-released_counter_51-3-1
+Trelease.java@61:W-released_counter_51-3-1
+$(R-released_counter_51-3-1 + CONST_1)$
+Manager.java@106:R-notes_lock_51-3-3
+Manager.java@115:R-num_of_notes_set_51-3-3
+Manager.java@115:W-num_of_notes_set_51-3-2
+$(R-num_of_notes_set_51-3-3 + CONST_-1)$
+Trelease.java@29:R-request_counter_51-3-4
+branch-3
+Trelease.java@29:R-flag_51-3-4
+branch-3
+Trelease.java@29:R-request_counter_51-3-5
+branch-3
+Trelease.java@15:R-flag_51-3-5
+branch-3
+Trelease.java@15:R-request_counter_51-3-6
+branch-3
+Trelease.java@15:R-flag_51-3-6
+branch-3
+Trelease.java@15:R-request_counter_51-3-7
+branch-3
+Trelease.java@15:R-flag_51-3-7
+branch-3
+Trelease.java@21:R-rel_counter_lock_51-3-3
+Trelease.java@23:R-request_counter_51-3-8
+branch-3
+<pathjpf>
+T3:(R-flag_51-3-1 != CONST_0)
+T3:(R-request_counter_51-3-1 > CONST_0)
+T3:(R-flag_51-3-2 != CONST_0)
+T3:(R-request_counter_51-3-2 > CONST_0)
+T3:(R-flag_51-3-3 == CONST_0)
+T3:(R-request_counter_51-3-3 > CONST_0)
+T3:(R-num_of_notes_set_51-3-2 == CONST_1)
+T3:(R-request_counter_51-3-3 == R-request_counter_51-3-4)
+T3:(R-flag_51-3-4 != CONST_0)
+T3:(R-request_counter_51-3-3 != R-request_counter_51-3-5)
+T3:(R-flag_51-3-5 != CONST_0)
+T3:(R-request_counter_51-3-6 > CONST_0)
+T3:(R-flag_51-3-6 != CONST_0)
+T3:(R-request_counter_51-3-7 > CONST_0)
+T3:(R-flag_51-3-7 == CONST_0)
+T3:(R-request_counter_51-3-8 <= CONST_0)
+pathid-10101100011010111

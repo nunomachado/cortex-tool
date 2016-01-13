@@ -1,0 +1,15 @@
+target=mergesortbug.MergeSortBug
+target_args=out.txt,4,88,99,0,12,14,2,1,30,10,10,7,15,3,13,66,78,100
+classpath=/Users/nunomachado/Dropbox/workspace/SymbiosisTransformer/SymbiosisJPF;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-symbiosis/build/main;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-core/build/main;\
+		  /Users/nunomachado/Dropbox/workspace/jpf-symbc/build/main;
+sourcepath=/Users/nunomachado/Dropbox/workspace/transformer-leap-0.1/test
+symbolic.dp=no_solver
+#symbolic.string_dp=automata
+symbolic.string_dp_timeout_ms=0
+#vm.por.sync_detection=false
+listener=pt.tecnico.jpf.symbiosis.SymbiosisListener
+symbiosis.bbtrace=/Users/nunomachado/Dropbox/workspace/SymbiosisRuntime/traces/mergesortbug_trace.txt
+symbiosis.sharedAccesses=/Users/nunomachado/Dropbox/workspace/SymbiosisTransformer/SymbiosisJPF/mergesortbug.MergeSortBug.accesses
+symbiosis.tracefolder=/Users/nunomachado/Dropbox/workspace/jpf-symbiosis/traces/mergesortbug/

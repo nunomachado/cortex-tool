@@ -1,0 +1,73 @@
+Symbolic (Java) PathFinder:
+---------------------------
+
+This JPF extension provides symbolic execution for Java bytecode.
+It performs a non-standard interpretation of byte-codes.
+Currently, it allows symbolic execution on methods with arguments of basic types
+(int, long, double, boolean, etc.). Symbolic input globals and method
+pre-conditions are specified via user annotations (see symbc/examples and
+symbc/test).
+
+To run it, specify the following JPF configuration variables:
+
+
++vm.insn_factory.class=gov.nasa.jpf.symbc.SymbolicInstructionFactory
++jpf.listener=gov.nasa.jpf.symbc.SymbolicListener
++symbolic.method=<your method under test>(sym#sym#con)
++vm.peer.packages=gov.nasa.jpf.symbc,gov.nasa.jpf.jvm
++symbolic.dp=iasolver
+<your main class>
+
+
+You can specify multiple methods to be executed symbolically as follows:
+
+symbolic.method=<list of methods to be executed symbolically separated by ",">
+
+If a method, "test", has three parameters, (e.g., test(arg1, arg2, arg3)) you can tell JPF to execute test symbolically, but only arg1 and arg2 as symbolic values by using the following property specification:
+
+symbolic.method=test(sym#sym#con)
+
+You can pick which decision procedure to choose (if unspecified, choco is used
+as default):
+
+symbolic.dp=$SOLVER
+
+where $SOLVER is one of the following: {no_solver,choco,choco2,iasolver,cvc3,cvc3bitvec,yices,coral}.
+Look at the "Problem*" classes in the package gov.nasa.jpf.symbc.numeric.solvers for more
+info about each one of them. 
+
+More information about choco and iasolver can be found here:
+
+http://choco.sourceforge.net/download.html
+
+http://www.cs.brandeis.edu/~tim/Applets/IAsolver.html
+
+If you run jpf outside eclipse, you should compile your class under test with debug option on ("javac -g").
+
+A paper describing Symbolic PathFinder appeared at ISSTA'08:
+
+Title: Combining Unit-level Symbolic Execution and System-level Concrete
+Execution for Testing NASA Software,
+Authors: C. S. Pasareanu, P. C. Mehlitz, D. H. Bushnell, K. Gundy-Burlet,
+M. Lowry, S. Person, M. Pape.
+
+
+A new option was added to implement lazy initialization (see [TACAS'03] paper)
+
+symbolic.lazy=on
+
+(default is off)
+-- for now it is incompatible with Strings
+
+
+
+New options have been added, to specify min/max values for symbolic variables
+and also to give the default for don't care values.
+
+symbolic.minint=-100
+symbolic.maxint=100
+symbolic.minreal=-1000.0
+symbolic.maxreal=1000.0
+symbolic.undefined=0
+
+

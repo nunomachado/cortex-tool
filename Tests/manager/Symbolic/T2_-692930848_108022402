@@ -1,0 +1,118 @@
+InstrumentationHandler.java@16:S-start-2
+Trelease.java@15:R-flag_51-2-1
+branch-2
+Trelease.java@21:R-rel_counter_lock_51-2-1
+Trelease.java@23:R-request_counter_51-2-1
+branch-2
+Manager.java@106:R-notes_lock_51-2-1
+Manager.java@110:R-num_of_notes_set_51-2-1
+Manager.java@110:W-num_of_notes_set_51-2-1
+$(R-num_of_notes_set_51-2-1 + CONST_1)$
+Trelease.java@53:W-flag_51-2-1
+$1$
+Manager.java@123:R-notes_lock_51-2-2
+Manager.java@125:R-num_of_notes_set_51-2-2
+branch-2
+Trelease.java@57:R-rel_counter_lock_51-2-2
+Trelease.java@61:R-released_counter_51-2-1
+Trelease.java@61:W-released_counter_51-2-1
+$(R-released_counter_51-2-1 + CONST_1)$
+Manager.java@106:R-notes_lock_51-2-3
+Manager.java@115:R-num_of_notes_set_51-2-3
+Manager.java@115:W-num_of_notes_set_51-2-2
+$(R-num_of_notes_set_51-2-3 + CONST_-1)$
+Trelease.java@29:R-request_counter_51-2-2
+branch-2
+Trelease.java@29:R-flag_51-2-2
+branch-2
+Trelease.java@29:R-request_counter_51-2-3
+branch-2
+Trelease.java@15:R-flag_51-2-3
+branch-2
+Trelease.java@21:R-rel_counter_lock_51-2-3
+Trelease.java@23:R-request_counter_51-2-4
+branch-2
+Manager.java@106:R-notes_lock_51-2-4
+Manager.java@110:R-num_of_notes_set_51-2-4
+Manager.java@110:W-num_of_notes_set_51-2-3
+$(R-num_of_notes_set_51-2-4 + CONST_1)$
+Trelease.java@53:W-flag_51-2-2
+$1$
+Manager.java@123:R-notes_lock_51-2-5
+Manager.java@125:R-num_of_notes_set_51-2-5
+branch-2
+Trelease.java@57:R-rel_counter_lock_51-2-4
+Trelease.java@61:R-released_counter_51-2-2
+Trelease.java@61:W-released_counter_51-2-2
+$(R-released_counter_51-2-2 + CONST_1)$
+Manager.java@106:R-notes_lock_51-2-6
+Manager.java@115:R-num_of_notes_set_51-2-6
+Manager.java@115:W-num_of_notes_set_51-2-4
+$(R-num_of_notes_set_51-2-6 + CONST_-1)$
+Trelease.java@29:R-request_counter_51-2-5
+branch-2
+Trelease.java@29:R-flag_51-2-4
+branch-2
+Trelease.java@29:R-request_counter_51-2-6
+branch-2
+Trelease.java@15:R-flag_51-2-5
+branch-2
+Trelease.java@21:R-rel_counter_lock_51-2-5
+Trelease.java@23:R-request_counter_51-2-7
+branch-2
+Manager.java@106:R-notes_lock_51-2-7
+Manager.java@110:R-num_of_notes_set_51-2-7
+Manager.java@110:W-num_of_notes_set_51-2-5
+$(R-num_of_notes_set_51-2-7 + CONST_1)$
+Trelease.java@53:W-flag_51-2-3
+$1$
+Manager.java@123:R-notes_lock_51-2-8
+Manager.java@125:R-num_of_notes_set_51-2-8
+branch-2
+Trelease.java@57:R-rel_counter_lock_51-2-6
+Trelease.java@61:R-released_counter_51-2-3
+Trelease.java@61:W-released_counter_51-2-3
+$(R-released_counter_51-2-3 + CONST_1)$
+Manager.java@106:R-notes_lock_51-2-9
+Manager.java@115:R-num_of_notes_set_51-2-9
+Manager.java@115:W-num_of_notes_set_51-2-6
+$(R-num_of_notes_set_51-2-9 + CONST_-1)$
+Trelease.java@29:R-request_counter_51-2-8
+branch-2
+Trelease.java@29:R-flag_51-2-6
+branch-2
+Trelease.java@29:R-request_counter_51-2-9
+branch-2
+Trelease.java@15:R-flag_51-2-7
+branch-2
+Trelease.java@15:R-request_counter_51-2-10
+branch-2
+Trelease.java@15:R-flag_51-2-8
+branch-2
+Trelease.java@21:R-rel_counter_lock_51-2-7
+Trelease.java@23:R-request_counter_51-2-11
+branch-2
+<pathjpf>
+T2:(R-flag_51-2-1 == CONST_0)
+T2:(R-request_counter_51-2-1 > CONST_0)
+T2:(R-num_of_notes_set_51-2-2 == CONST_1)
+T2:(R-request_counter_51-2-1 == R-request_counter_51-2-2)
+T2:(R-flag_51-2-2 != CONST_0)
+T2:(R-request_counter_51-2-1 != R-request_counter_51-2-3)
+T2:(R-flag_51-2-3 == CONST_0)
+T2:(R-request_counter_51-2-4 > CONST_0)
+T2:(R-num_of_notes_set_51-2-5 == CONST_1)
+T2:(R-request_counter_51-2-4 == R-request_counter_51-2-5)
+T2:(R-flag_51-2-4 != CONST_0)
+T2:(R-request_counter_51-2-4 != R-request_counter_51-2-6)
+T2:(R-flag_51-2-5 == CONST_0)
+T2:(R-request_counter_51-2-7 > CONST_0)
+T2:(R-num_of_notes_set_51-2-8 == CONST_1)
+T2:(R-request_counter_51-2-7 == R-request_counter_51-2-8)
+T2:(R-flag_51-2-6 != CONST_0)
+T2:(R-request_counter_51-2-7 != R-request_counter_51-2-9)
+T2:(R-flag_51-2-7 != CONST_0)
+T2:(R-request_counter_51-2-10 > CONST_0)
+T2:(R-flag_51-2-8 == CONST_0)
+T2:(R-request_counter_51-2-11 <= CONST_0)
+pathid-11000111000111000110111
