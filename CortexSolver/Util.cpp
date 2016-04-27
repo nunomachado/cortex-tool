@@ -10,6 +10,7 @@
 #include "Parameters.h"
 #include <sstream>
 #include <string>
+#include <cstring>
 //#include <iostream>
 #include <sys/types.h>
 #include <fcntl.h>
@@ -17,6 +18,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fstream>
+#include <limits.h>
+
 
 
 #define READ 0
@@ -42,7 +45,8 @@ void util::saveVarValues2File(std::string filename, std::map<std::string, std::s
     {
         outFile << it->first << endl;
         outFile << it->second << endl;
-    }    outFile.close();
+    }
+    outFile.close();
     
 }
 
@@ -329,6 +333,11 @@ bool util::subsetComparator(vector<int> a, vector<int> b)
     }
 }
 
+bool util::clockOperationComparator(ClockOperation cop1, ClockOperation cop2)
+{
+    return (cop1.getLine() < cop2.getLine());
+}
+
 /**
  * Read line from pipe.
  */
@@ -346,3 +355,13 @@ string util::readLinePipe(int procR)
     return ret;
 }
 
+//get configuration file
+std::string util::getConfigFile()
+{
+    char path[LINEMAX];
+    getcwd(path, 255);
+    strcat(path, "/cortex.config");
+    //printf("%s\n", path);
+
+    return path;
+}

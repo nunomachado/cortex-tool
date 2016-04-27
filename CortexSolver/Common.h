@@ -13,6 +13,7 @@
 #include <vector>
 #include <map>
 #include <stack>
+#include <set>
 #include "Operations.h"
 
 //global vars
@@ -21,20 +22,22 @@ extern std::map<std::string, std::string > solutionValuesFail;
 extern std::map<std::string, std::string > solutionValuesAlt;
 extern std::map<std::string,std::string> solutionValues; // stores values of SMT solution
 extern std::map<std::string, std::vector<Operation*> > operationsByThread;    //map thread id -> vector with thread's operations
-extern std::vector<Operation*> failScheduleOrd; // vector to store the fail schedules operations in order
-extern std::vector<std::string> altScheduleOrd;    // vector to store the alternate schedules operations in order, TODO std::vector<Operation*>
-
+extern std::vector<Operation*> failScheduleOrd;     // vector to store the fail schedules operations in order
+extern std::vector<std::string> altScheduleOrd;     // vector to store the alternate schedules operations in order, TODO std::vector<Operation*>
 
 extern std::map<std::string, std::vector<RWOperation> > readset;              //map var id -> vector with variable's read operations
 extern std::map<std::string, std::vector<RWOperation> > writeset;             //map var id -> vector with variable's write operations
 extern std::map<std::string, std::vector<LockPairOperation> > lockpairset;    //map object id -> vector with object's lock pair operations
-extern std::map<std::string, SyncOperation> startset;                    //map thread id -> thread's start operation
-extern std::map<std::string, SyncOperation> exitset;                     //map thread id -> thread's exit operation
+extern std::map<std::string, SyncOperation> startset;                         //map thread id -> thread's start operation
+extern std::map<std::string, SyncOperation> exitset;                          //map thread id -> thread's exit operation
 extern std::map<std::string, std::vector<SyncOperation> > forkset;            //map thread id -> vector with thread's fork operations
 extern std::map<std::string, std::vector<SyncOperation> > joinset;            //map thread id -> vector with thread's join operations
 extern std::map<std::string, std::vector<SyncOperation> > waitset;            //map object id -> vector with object's wait operations
 extern std::map<std::string, std::vector<SyncOperation> > signalset;          //map object id -> vector with object's signal operations
-extern std::map<std::string, std::vector<SyncOperation> > barrierset;          //map object id -> vector with object's signal operations
+extern std::map<std::string, std::vector<SyncOperation> > barrierset;         //map object id -> vector with object's signal operations
+extern std::map<std::string, std::vector<std::string> > bbClockTraces;        //map execution id -> vector basic block clocks (sorted in ascending order)
+extern std::set<std::string> usedBBClocks;                                    //set containing the basic block clocks observed in the parsed thread traces
+extern std::map<std::string, std::string> satClocks;                          //map label -> clock SMT constraint (used to refine the SMT const. system in the presence of conflicting clock const.)
 extern std::vector<SyncOperation> syncset;
 extern std::vector<PathOperation> pathset;
 extern std::map<std::string, std::map<std::string, std::stack<LockPairOperation> > > lockpairStack;   //map object id -> (map thread id -> stack with incomplete locking pairs)
@@ -43,6 +46,8 @@ extern std::string unsatCoreStr; //string containing the whole unsat core expres
 extern std::vector<int> unsatCore;  //vector to store the core (i.e. the constraints) of an unsat model (this is only used in the bug-fixing mode, to store which events of the failing schedule cause the non-bug condition to be unsat)
 //std::map<std::string, std::vector<Operation*> > operationsByThread;    //map thread id -> vector with thread's operations
 extern std::vector<std::string> bugCondOps; //operations/events that appear in the bug condition
+
+extern const std::string usageOpts;    //string describing the commands to use Cortex
 
 //vars to measure solving time
 extern time_t startTime;

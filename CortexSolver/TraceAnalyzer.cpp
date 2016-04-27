@@ -28,12 +28,18 @@ TraceAnalyzer::TraceAnalyzer()
 {
     attempts = 1;
     bflips = 0;
-
+    
     if(cortex_D != -1){
         MAXDIST = cortex_D;
     }
+    else{
+        cortex_D = MAXDIST;
+    }
     if(cortex_N != -1){
         MAXBFS = cortex_N;
+    }
+    else{
+        cortex_N = MAXBFS;
     }
     
 
@@ -196,8 +202,77 @@ void TraceAnalyzer::loadTraces()
             initComb[tid] = pathid;
             cout << ">> T"<<tid<<pathid << "\n";
         }
-    }
     
+         //load clock traces (if there are any)
+        if(bbClockTraces.empty()){
+            cout << "[Analyzer] Loading clock traces...\n";
+            loadClockTraces();
+        }
+    
+    }
+}
+
+void TraceAnalyzer::loadClockTraces()
+{
+    //load clock traces (if there are any)
+    DIR* dirFile = opendir(symbFolderPath.c_str());
+    if ( dirFile )
+    {
+        struct dirent* hFile;
+        while (( hFile = readdir( dirFile )) != NULL )
+        {
+            if ( !strcmp( hFile->d_name, "."  )) continue;
+            if ( !strcmp( hFile->d_name, ".." )) continue;
+            
+            // in linux hidden files all start with '.'
+            if (hFile->d_name[0] == '.' ) continue;
+            
+            if ( strstr( hFile->d_name, "clock" ))
+            {
+                char filename[250];
+                strcpy(filename, hFile->d_name);
+                //std::cerr << "found a clock trace file: " << filename << endl;
+                
+                //std::map<std::string, std::vector<std::string> > bbClockTraces;
+                
+                //** parse execution id to serve as key in the map
+                string shortname = util::extractFileBasename(filename);
+                string execid = shortname.substr(shortname.find("_")+1);
+                
+                //** parse thread's path id (which corresponds to the last line in the thread's symbolic trace file)
+                ifstream fin;
+                fin.open(symbFolderPath+"/"+filename);
+                if (!fin.good())
+                {
+                    string tmpDir = symbFolderPath.substr(0,symbFolderPath.find_last_of("\n"));
+                    fin.open(tmpDir+"/"+filename);
+                    if (!fin.good())
+                    {
+                        //check if file is in the original folder (i.e. it wasn't synthesized)
+                        util::print_state(fin);
+                        cerr << " -> Error opening file "<< symbFolderPath+"/"+filename <<".\n";
+                        fin.close();
+                        exit(0);
+                    }
+                }
+                
+                std::cout << ">> Parsing clock trace for execution " << execid << endl;
+                
+                // read each line of the file
+                while (!fin.eof())
+                {
+                    // read an entire line into memory
+                    char buf[MAX_LINE_SIZE];
+                    fin.getline(buf, MAX_LINE_SIZE);
+                    string event = buf;
+                    if(!event.empty()){
+                        //cout << "-> "<< event << endl;
+                        bbClockTraces[execid].push_back(event);
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -252,8 +327,9 @@ void TraceAnalyzer::updateFlipMap()
             bfs++;
             return;
         }
-         else{
-            bflips++;
+        else{
+            bflips++; //update number of branch flips
+            //cout << ">> BRANCH FLIPS: "<< bflips << endl;
             bfs = 0;
         }
     }
@@ -270,34 +346,6 @@ void TraceAnalyzer::updateFlipMap()
     }
     combSet.erase(combSet.begin()); //advance to the next combination
     
-    /*cout << "COMBINATION: ";
-    for(int i = 0; i < flipMap.size(); i++){
-        cout << flipMap[i];
-    }
-    cout << endl;//*/
-    
-    
-    //SOLUTION USING BITS
-    //first case
-   /* if(combCount == 0){
-        combCount = 1;
-    }
-    else{
-        if(combCount > 0 && bfs < MAXBFS){
-            bfs++;
-            return;
-        }
-        else
-            bfs = 0;
-    }
-    
-    //cout << "COMBINATION: ";
-    for(int d = 0; d < flipMap.size(); d++){
-        flipMap[d] = getBit(combCount, d);
-        //cout << flipMap[d];
-    }
-    //cout << endl;
-    combCount++;//*/
 }
 
 /*
@@ -347,6 +395,7 @@ void TraceAnalyzer::flipBranch(map<string,string> *traceComb)
         cmgen->addForkStartConstraints(forkset, startset);
         cmgen->addJoinExitConstraints(joinset, exitset);
         cmgen->addWaitSignalConstraints(waitset, signalset);
+        cmgen->addBBClockConstraints();
         cmgen->addBarrierConstraints(barrierset,operationsByThread);
         cout << "\n### SOLVING CONSTRAINT MODEL: Z3\n";
         success = cmgen->solve();
@@ -372,6 +421,7 @@ void TraceAnalyzer::flipBranch(map<string,string> *traceComb)
         pathset.clear();
         lockpairStack.clear();
         operationsByThread.clear();
+        usedBBClocks.clear();
         cmgen->closeSolver();
         
         scheduleLIB::printSch(failScheduleOrd);
@@ -642,11 +692,11 @@ void TraceAnalyzer::getNextTraceCombination(map<string,string> *traceComb)
     
     // 3) if we don't have any PCs to flip, return the next combination of traces;
     //    otherwise, return a combination with the conflicting PC flipped
-    if(pconds.empty() || pconds.size() >= 2 || (pconds.size() <= 2 && !confBug)){
+    if(pconds.empty() || pconds.size() > 2 || (pconds.size() <= 2 && !confBug)){
         if(pconds.empty()){
             cout << "[Analyzer] Unsat core does not have PCs. Flip the branch closest to the assertion.\n";
         }
-        else if(pconds.size() >= 2){
+        else if(pconds.size() > 2){
             cout << "[Analyzer] Unsat core has too many PCs. Flip the branch closest to the assertion instead.\n";
         }
         else{

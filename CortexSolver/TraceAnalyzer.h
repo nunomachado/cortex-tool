@@ -39,6 +39,7 @@ public:
     TraceAnalyzer();
     ~TraceAnalyzer() {}
     void loadTraces();
+    void loadClockTraces(); //loads the traces with basic block clocks 
     bool hasNext();   //indicates whether there are non-attempted combinations of per-thread left to test
     void getNextTraceCombination(std::map<std::string, std::string> *traceComb); //returns a combination of per-thread paths to test in the solver (one execution path per thread)
     

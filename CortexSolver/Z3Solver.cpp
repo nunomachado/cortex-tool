@@ -196,6 +196,19 @@ bool Z3Solver::checkSat()
                 int lastConst = unsatCore.front();
                 unsatCore.push_back(lastConst+1);
             }
+            
+            //refine clock constraints if they appear in the unsat core
+            if(!satClocks.empty())
+            {
+                size_t found = line.find("CLC");
+                while(found!=std::string::npos)
+                {
+                    size_t end = line.find_first_of(" )",found+1);
+                    string label = line.substr(found,end-found);
+                    satClocks.erase(label); //remove unsat clock constraint
+                    found = line.find("CLC", end);
+                }
+            }
         }
         line = readLinePipe();
     }

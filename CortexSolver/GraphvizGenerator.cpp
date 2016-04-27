@@ -190,7 +190,8 @@ string getVarNameFromCodeLine(string codeLine)
 string getLockVarName(string filename, int line)
 {
     string codeLine = "lock";
-    //string codeLine = graphgen::getCodeLine(line, filename,"lock"); //NUNO: COMMENTED THIS TO AVOID ERRORS IN CORTEX
+    if(!sourceFilePath.empty())
+        codeLine = graphgen::getCodeLine(line, filename,"lock"); //search for actual line of code
     return getVarNameFromCodeLine(codeLine);
 }
 
@@ -733,7 +734,7 @@ void cutOffOrphans( vector<ThreadSegment>* segsFail, vector<ThreadSegment>* segs
             //check whether the head operations are involved in a dependency or not; stop pruning if so
             for(vector<int>::iterator tmpit = fit->dependencies.begin(); tmpit != fit->dependencies.end(); ++tmpit){
                 if(fit->initPos == *tmpit){
-                    isDependency = true; // <<<< CHECK FOR DEPEDENCIES ON ALT DEPENDENCIES AS WELL
+                    isDependency = true; // <<<< CHECK ON ALT DEPENDENCIES AS WELL
                     break;
                 }
             }
@@ -769,7 +770,7 @@ void cutOffOrphans( vector<ThreadSegment>* segsFail, vector<ThreadSegment>* segs
             //we don't want to print the failure and exit operations
             if(!isDependency &&
                (op.find("Assert")!=string::npos
-               || op.find("exit")!=string::npos)){
+                || op.find("exit")!=string::npos)){
                 fit = segsAlt->erase(fit);
             }
             else
@@ -811,7 +812,7 @@ void graphgen::genGraphSchedule(vector<string> failSchedule, EventPair invPair, 
     //**    4) mark as "bold" the segments that became bigger in the alt schedule
     
     // Compute thread segments for both schedules
-    vector<ThreadSegment> segsFail = computeSegments(failSchedule, &exclusiveFailIds);     // ---- segments for failing schedule
+    vector<ThreadSegment> segsFail = computeSegments(failSchedule, &exclusiveFailIds);    // ---- segments for failing schedule
     vector<ThreadSegment> segsAlt = computeSegments(altSchedule, &exclusiveAltIds);       // ---- segments for alt schedule
     
     if(dspFlag!="noCuts")
@@ -1013,7 +1014,8 @@ string makeInstrFriendly(string instruction){
             return friendlyInstr;
         }
         string codeLine = instruction;
-        //string codeLine = graphgen::getCodeLine(line, filename, ""); //NUNO: COMMENTED THIS TO AVOID ERRORS IN CORTEX
+        if(!sourceFilePath.empty())
+            codeLine = graphgen::getCodeLine(line, filename, ""); //search for actual line of code
         friendlyInstr = filename+" L"+codeLine;
     }
     //cout << friendlyInstr << endl;
@@ -1164,7 +1166,7 @@ void drawHeader(ofstream &outFile, string bugSolution)
     outFile << "digraph G {\n\tcenter=1;\n\tranksep=.25; size = \"7.5,10\";\n\tnode [shape=record]\n\n";
     outFile << "labelloc=top;\n";
     outFile << "labeljust=left;\n";
-    //outFile << "label=\"FOUND BUG AVOIDING SCHEDULE:\\n" << bugSolution << "\"\n\n";
+    outFile << "label=\"FOUND BUG AVOIDING SCHEDULE:\\n" << bugSolution << "\"\n\n";
 }
 
 
@@ -1222,7 +1224,8 @@ void drawAllSegments(ofstream &outFile, vector<ThreadSegment> segsSch, vector<st
             //we don't want to print the failure and exit operations
             int finalPositionOp = (int) op.find("&");
             if(op.substr(0,finalPositionOp).find ("Assert")!=string::npos // a problem occurred when e.g.: the filename was "simpleAssert"
-               || op.substr(0,finalPositionOp).find("exit")!=string::npos){
+               || op.substr(0,finalPositionOp).find("exit")!=string::npos
+               || (!sourceFilePath.empty() && op.substr(0,finalPositionOp).find("branch")!=string::npos)){
                 continue;
             }
             if(j < seg.endPos-1)
@@ -1263,7 +1266,7 @@ void drawAllSegments(ofstream &outFile, vector<ThreadSegment> segsSch, vector<st
     for(map<string,string>::const_iterator it = exclusiveAux.begin(); it!=exclusiveAux.end(); ++it)
     {
         outFile << opToPort[(nodeType + it->second)] <<" -> "<< opToPort[(nodeType + it->first)] <<" [color=" + lineColor
-        + ", fontcolor="+ lineColor + ", style=bold] ;\n\n\n";
+        + ", fontcolor="+ lineColor + ", style=bold, label=\"" << getVarValue(it->first, schType) << "\"] ;\n\n\n";
     }
 }
 

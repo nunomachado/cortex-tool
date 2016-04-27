@@ -24,8 +24,9 @@ std::string sourceFilePath = "";
 std::string dspFlag = "";
 std::string jpfFile = "";
 std::string jpftimeout = "";
-int cortex_N = -1;
+int cortex_N = -2;
 int cortex_D = -1;
 bool useCSR = false;
 bool failedExec = false;
+
   

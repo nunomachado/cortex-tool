@@ -39,15 +39,89 @@ AvisoEventVector fulltrace; //sorted vector containing all avisoEvents
 
 
 /**
+ *  Parse configuration file.
+ */
+void parse_configFile()
+{
+    ifstream fin;
+    string path = util::getConfigFile();
+    //cout << path << endl;
+    fin.open(path);
+    if (fin.good())
+    {
+        while (!fin.eof())
+        {
+            // read an entire line into memory
+            char lineTMP[MAX_LINE_SIZE];
+            fin.getline(lineTMP, MAX_LINE_SIZE);
+            
+            if(lineTMP[0] == '#')
+                continue;
+            
+            string line = lineTMP;
+            string key = line.substr(0,line.find("="));
+            string value = line.substr(line.find("=")+1);
+            //cout << "-> "<< key << ", " << value << endl;
+            
+            if(key == "trace-folder" && !value.empty()){
+                symbFolderPath = value;
+            }
+            else if(key == "source" && !value.empty()){
+                sourceFilePath = value;
+            }
+            else if(key == "jpf-timeout" && !value.empty()){
+                jpftimeout = value;
+            }
+            else if(key == "jpf-file" && !value.empty()){
+                jpfFile = value;
+            }
+            else if(key == "model" && !value.empty()){
+                formulaFile = value;
+            }
+            else if(key == "solution" && !value.empty()){
+                solutionFile = value;
+            }
+            else if(key == "with-solver" && !value.empty()){
+                solverPath = value;
+            }
+            else if(key == "cortex-n" && !value.empty()){
+                cortex_N = util::intValueOf(value);
+            }
+            else if(key == "cortex-d" && !value.empty()){
+                cortex_D = util::intValueOf(value);
+            }
+            else if(key == "dsp-mode" && value == "true"){
+                dspMode = true;
+            }
+            else if(key == "alt-sch" && !value.empty()){
+                solutionAltFile = value;
+            }
+            else if(key == "debug" && value == "true"){
+                debug = true;
+            }
+            else if(key == "csr" && value == "true"){
+                useCSR = true;
+            }
+        }
+        
+    }
+    else{
+        util::print_state(fin);
+        cerr << ">> Error opening configuration file: "<< path <<".\n";
+        fin.close();
+        exit(1);
+    }
+}
+
+/**
  *  Parse the input arguments.
  */
 void parse_args(int argc, char *const* argv)
 {
     int c;
-    
-    if(argc < 5)
+    if(argc < 5 && symbFolderPath.empty())
     {
-        cerr << "Not enough arguments.\nUsage:\n#FAILING SCHEDULE FINDING MODE\n--trace-folder=/path/to/symbolic/traces/folder \n--with-solver=/path/to/solver/executable \n--model=/path/to/output/constraint/model/file \n--solution=/path/to/output/solution/file \n--debug (print optional debug info)\n\n#ROOT CAUSE FINDING MODE\n--dsp-mode (this flag must be set on in order to run in root cause finding mode) \n--model=/path/to/input/constraint/model/file\n--solution=/path/to/input/solution/file \n--with-solver=/path/to/solver/executable \n--debug (print optional debug info)\n";
+        cerr << ">> Not enough arguments. Usage:\n\n" << usageOpts;
         exit(1);
     }
     
@@ -69,7 +143,8 @@ void parse_args(int argc, char *const* argv)
             {"jpf-timeout", required_argument, 0, 't'},
             {"cortex-n", required_argument, 0, 'n'},
             {"cortex-d", required_argument, 0, 'x'},
-	    {"csr", required_argument, 0, 'c'},
+            {"csr", required_argument, 0, 'c'},
+            {"help", no_argument, 0, 'h'},
             {"", }
             
             
@@ -85,6 +160,10 @@ void parse_args(int argc, char *const* argv)
         
         switch (c)
         {
+            case 'h':
+                cout << ">> Usage:\n\n" << usageOpts;
+                exit(EXIT_SUCCESS);
+                
             case 'd':
                 debug = true;
                 break;
@@ -119,7 +198,7 @@ void parse_args(int argc, char *const* argv)
             case 'p':
                 dspMode = true;
                 break;
-	    case 'c':
+            case 'c':
                 useCSR = true;
                 break;
             case 'u':
@@ -177,7 +256,6 @@ void parse_args(int argc, char *const* argv)
         exit(1);
     }
     
-    //** pretty print
     //** pretty print
     if(dspMode)
         cout << "# MODE: FIND BUG'S ROOT CAUSE\n";
@@ -401,13 +479,46 @@ void parse_constraints(string symbFilePath)
                     break;
                 }
             }
-                
-            case 'p':  //indicates that is a branch
+           
+            case 'p':  //indicates that is a path condition
             {
                 string tmp = buf;
                 //make sure that this is a path condition and not the name of the file
                 if(tmp.find("@")==string::npos){
                     break; //the path id is already being read in TraceAnalyzer.loadTraces
+                }
+            }
+                
+            case 'c': //indicates that is a BB clock
+            {
+                string tmp = buf;
+                //make sure that this is a path condition and not the name of the file
+                if(tmp.find("@")==string::npos){
+                    //parse thread id
+                    size_t init = tmp.find_first_of("-")+1;
+                    size_t end = tmp.find_first_of("-", init);
+                    string tid = tmp.substr(init,end-init);
+                    //parse bbid (stored as var in Operation)
+                    init = tmp.find_first_of("-", end)+1;
+                    end = tmp.find_first_of("-", init);
+                    string bbid = tmp.substr(init,end-init);
+                    //parse var id
+                    init = tmp.find_first_of("-", end)+1;
+                    end = tmp.find_first_of("-", init);
+                    int varid = util::intValueOf(tmp.substr(init,end-init));
+                    //parse clock (stored as line in Operation)
+                    init = tmp.find_first_of("-", end)+1;
+                    end = tmp.find_first_of("-", init);
+                    int clock = util::intValueOf(tmp.substr(init,end-init));
+                    
+                    ClockOperation* cop = new ClockOperation();
+                    cop->setThreadId(tid);
+                    cop->setVariableName(bbid);
+                    cop->setVariableId(varid);
+                    cop->setLine(clock);
+                    operationsByThread[tid].push_back(cop); 
+                    usedBBClocks.insert(cop->getOrderConstraintName());
+                    break;
                 }
             }
                 
@@ -995,6 +1106,7 @@ void cleanDataStructures()
     signalset.clear();
     syncset.clear();
     pathset.clear();
+    usedBBClocks.clear();
     lockpairStack.clear();
     operationsByThread.clear();
 }
@@ -1113,58 +1225,73 @@ void printDataStructures()
 bool verifyConstraintModel(ConstModelGen *cmgen, const map<string, string>& traceComb)
 {
     bool success = false;
+    size_t hasUnsatClocks = 1; //used to check whether the model was refined due to conflicting clock constraints (if so, repeat the solving)
+    int conflictClocks = 0;
     
-    cout << "\n### GENERATING CONSTRAINT MODEL\n";
-    cmgen->openOutputFile(); //** opens a new file to store the model
-    
-    cout << "[Solver] Adding memory-order constraints...\n";
-    cmgen->addMemoryOrderConstraints(operationsByThread);
-    
-    cout << "[Solver] Adding read-write constraints...\n";
-    cmgen->addReadWriteConstraints(readset,writeset,operationsByThread);
-    
-    cout << "[Solver] Adding path constraints...\n";
-    cmgen->addPathConstraints(pathset, !failedExec); //invert bug condition if the traces are from a successful execution
-    
-    cout << "[Solver] Adding locking-order constraints...\n";
-    cmgen->addLockingConstraints(lockpairset);
-    
-    cout << "[Solver] Adding fork/start constraints...\n";
-    cmgen->addForkStartConstraints(forkset, startset);
-    
-    cout << "[Solver] Adding join/exit constraints...\n";
-    cmgen->addJoinExitConstraints(joinset, exitset);
-    
-    cout << "[Solver] Adding wait/signal constraints...\n";
-    cmgen->addWaitSignalConstraints(waitset, signalset);
-    
-    cout << "[Solver] Adding barrier constraints...\n";
-    cmgen->addBarrierConstraints(barrierset,operationsByThread);
-    
-    /* cout << "[Solver] Adding Aviso constraints...\n";
-     cmgen->addAvisoConstraints(operationsByThread, fulltrace);
-     //*/
-    cout << "\n### SOLVING CONSTRAINT MODEL: Z3\n";
-    success = cmgen->solve();
-    
-    if(success)
-    {
-        cout<< "\n\n>> FAILING SCHEDULE:" << endl;
-        scheduleLIB::printSch(failScheduleOrd);
+    while(!success && hasUnsatClocks > 0){
         
-        Schedule simpleSch;
-        if(useCSR){
-            simpleSch = scheduleLIB::scheduleSimplify(failScheduleOrd,cmgen);
-            cout<< "\n\n>> NEW SCHEDULE (with Context Switch Reduction):" << endl;
-            scheduleLIB::printSch(failScheduleOrd);
+        cout << "\n### GENERATING CONSTRAINT MODEL\n";
+        cmgen->openOutputFile(); //** opens a new file to store the model
+        
+        cout << "[Solver] Adding memory-order constraints...\n";
+        cmgen->addMemoryOrderConstraints(operationsByThread);
+        
+        cout << "[Solver] Adding read-write constraints...\n";
+        cmgen->addReadWriteConstraints(readset,writeset,operationsByThread);
+        
+        cout << "[Solver] Adding path constraints...\n";
+        cmgen->addPathConstraints(pathset, !failedExec); //invert bug condition if the traces are from a successful execution
+        
+        cout << "[Solver] Adding locking-order constraints...\n";
+        cmgen->addLockingConstraints(lockpairset);
+        
+        cout << "[Solver] Adding fork/start constraints...\n";
+        cmgen->addForkStartConstraints(forkset, startset);
+        
+        cout << "[Solver] Adding join/exit constraints...\n";
+        cmgen->addJoinExitConstraints(joinset, exitset);
+        
+        cout << "[Solver] Adding wait/signal constraints...\n";
+        cmgen->addWaitSignalConstraints(waitset, signalset);
+        
+        cout << "[Solver] Adding barrier constraints...\n";
+        cmgen->addBarrierConstraints(barrierset,operationsByThread);
+        
+        cout << "[Solver] Adding clock constraints...\n";
+        cmgen->addBBClockConstraints();
+        
+        /* cout << "[Solver] Adding Aviso constraints...\n";
+         cmgen->addAvisoConstraints(operationsByThread, fulltrace);
+         //*/
+        
+        hasUnsatClocks = satClocks.size();
+        cout << "\n### SOLVING CONSTRAINT MODEL: Z3\n";
+        success = cmgen->solve();
+        hasUnsatClocks = hasUnsatClocks - satClocks.size();
+        if(hasUnsatClocks > 0){
+            conflictClocks += hasUnsatClocks;
+            cout << "[Solver] Unsat Core has conflicting clock constraints -> refine the model and repeat solving (conflicting constraints: "<< conflictClocks <<" of "<< (conflictClocks+satClocks.size()) <<")" << endl;
         }
-        else
-            simpleSch = failScheduleOrd;
-        scheduleLIB::saveScheduleFile(solutionFile,scheduleLIB::schedule2string(simpleSch),traceComb);
+        
+        if(success)
+        {
+            cout<< "\n\n>> FAILING SCHEDULE:" << endl;
+            scheduleLIB::printSch(failScheduleOrd);
+            
+            Schedule simpleSch;
+            if(useCSR){
+                simpleSch = scheduleLIB::scheduleSimplify(failScheduleOrd,cmgen);
+                cout<< "\n\n>> NEW SCHEDULE (with Context Switch Reduction):" << endl;
+                scheduleLIB::printSch(failScheduleOrd);
+            }
+            else
+                simpleSch = failScheduleOrd;
+            scheduleLIB::saveScheduleFile(solutionFile,scheduleLIB::schedule2string(simpleSch),traceComb);
+        }
+        
+        //** clean data structures
+        cmgen->resetSolver();
     }
-    
-    //** clean data structures
-    cmgen->resetSolver();
     
     return success;
 }
@@ -1228,7 +1355,7 @@ bool findFailingSchedule()
         foundBug = verifyConstraintModel(cmgen,traceComb);
         
         if(foundBug){
-	    cout << "\n[Analyzer] #Attempts to find failing schedule: 0 (bug is schedule-dependent)" << endl;
+            cout << "\n[Analyzer] #Attempts to find failing schedule: 0 (bug is schedule-dependent)" << endl;
             return true;
         }
     }
@@ -1270,7 +1397,7 @@ bool findFailingSchedule()
     cout << ">> Cortex search parameters (D: "<< cortex_D <<", N:"<< (cortex_N+1) <<")" << endl; //add 1 to cortex_N to account for the initial decrement
     cout << ">> #Attempts to find failing schedule: " << (analyzer->attempts-1) << endl;
     cout << ">> #Branch flips: " << (analyzer->bflips) << "\n\n";
-
+    
     return foundBug;
 }
 
@@ -1682,7 +1809,6 @@ bool findBugRootCause(map<EventPair, vector<string>>* altSchedules)
             if(success)
             {
                 cout << "\n>> FOUND BUG AVOIDING SCHEDULE:\n" << bugCauseToString(invPair, solution);
-                //altSchedules[invPair] = bugCore;
                 (*altSchedules)[invPair] = newSchedule;
                 break;
             }
@@ -1756,6 +1882,7 @@ bool findBugRootCause(map<EventPair, vector<string>>* altSchedules)
             cmgen->addJoinExitConstraints(joinset, exitset);
             cmgen->addWaitSignalConstraints(waitset, signalset);
             cmgen->addBarrierConstraints(barrierset,operationsByThread);
+            cmgen->addBBClockConstraints();
             cout << "\n### SOLVING CONSTRAINT MODEL: Z3\n";
             success = cmgen->solve();
             
@@ -1779,6 +1906,8 @@ bool findBugRootCause(map<EventPair, vector<string>>* altSchedules)
 
 int main(int argc, char *const* argv)
 {
+    //parse parameters
+    parse_configFile();
     parse_args(argc, argv);
     
     map<EventPair, vector<string> > altSchedules; //set used to store the event pairs that yield a sat non-failing alternative schedule
@@ -1791,6 +1920,7 @@ int main(int argc, char *const* argv)
          cout << it->first << " : " << it-> second << endl;
          }*/
         
+        
         if(foundBug){
             //save variable values to file
             string fname = solutionFile.substr(0,solutionFile.find_last_of("."))+"_values.txt";
@@ -1799,9 +1929,9 @@ int main(int argc, char *const* argv)
     }
     else //find alternate schedule and generate DSP
     {
-        //load variable values from file
-        string fname = solutionFile.substr(0,solutionFile.find_last_of("."))+"_values.txt";
-        solutionValuesFail = util::loadVarValuesFromFile(fname);
+        //load variable values for failing schedule
+        string valFile = solutionFile.substr(0,solutionFile.find_last_of("."))+"_values.txt";
+        solutionValuesFail = util::loadVarValuesFromFile(valFile);
         
         bool success;
         
@@ -1814,6 +1944,11 @@ int main(int argc, char *const* argv)
                 solutionFile.insert(solutionFile.find(".txt"),"ALT");
                 map<string,string> tmp;
                 scheduleLIB::saveScheduleFile(solutionFile,altScheduleOrd, tmp); //TODO: is tracecomb null in here?
+                
+                //save variable values to file
+                string fname = solutionFile.substr(0,solutionFile.find_last_of("."))+"_values.txt";
+                util::saveVarValues2File(fname,solutionValues);
+                solutionValuesAlt = solutionValues;
             }
         }
         else{
@@ -1824,6 +1959,10 @@ int main(int argc, char *const* argv)
             loadScheduleFromFile(solutionFile, &solution, &tmp);
             cout << ">> Loading alternate schedule from file: "<< solutionAltFile <<"\n";
             loadScheduleFromFile(solutionAltFile,&altScheduleOrd,&tmp);
+            
+            //load variable values for failing schedule
+            valFile = solutionAltFile.substr(0,solutionAltFile.find_last_of("."))+"_values.txt";
+            solutionValuesAlt = util::loadVarValuesFromFile(valFile);
             
             //create dummy event pair
             EventPair ep;
@@ -1836,7 +1975,6 @@ int main(int argc, char *const* argv)
         //print data-dependencies and stats only when Symbiosis has found an alternate schedule
         if(success)
         {
-            solutionValuesAlt = solutionValues;
             graphgen::drawAllGraph(altSchedules, solution);
         }
     }

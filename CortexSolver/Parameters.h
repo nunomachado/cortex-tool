@@ -32,4 +32,5 @@ extern bool useCSR;                 //apply context switch reduction to the full
 extern int cortex_D;    //Cortex: maximum number of branches away from the assertion that are allowed to be flipped for exploration purposes
 extern int cortex_N;    //Cortex: maximum number of shortest paths (according to BFS) to be tested with a prefix corresponding to the flipped branch
 
+
 #endif /* defined(__symbiosisSolver__Parameters__) */

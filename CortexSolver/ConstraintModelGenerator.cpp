@@ -33,6 +33,7 @@ void ConstModelGen::createZ3Solver(){
     numMO = 0;
     numPO = 0;
     numPC = 0;
+    numCLC = 0;
     numUnkownVars = 0;
 };
 
@@ -628,6 +629,83 @@ void ConstModelGen::addBarrierConstraints(map<string, vector<SyncOperation> > ba
 }
 
 
+void ConstModelGen::addBBClockConstraints()
+{
+    z3solver.writeLineZ3("(echo \"CLOCK CONSTRAINTS -----\")\n");
+    int labelCounter = 0;
+    numCLC = 0;
+    string constraint;
+   
+    if(satClocks.empty()){ //create constraints from scratch if satClocks is empty
+        for(map<string, vector<string> >::iterator execit = bbClockTraces.begin(); execit != bbClockTraces.end(); ++execit)
+        {
+            vector<string> clktrace = execit->second;
+            int i = 0;
+            while(i < clktrace.size())
+            {
+                //check if the first clock is in any of the thread traces (in order to avoid non-existing constraints)
+                while(usedBBClocks.find(clktrace[i]) == usedBBClocks.end()){
+                    i++;
+                    //cout << "inc i: "<< i;
+                    if(i == clktrace.size()){
+                        break;
+                    }
+                }
+                
+                if(i < clktrace.size()-1)
+                {
+                    int j = i+1;
+                    //check if the second clock is in any of the thread traces (in order to avoid non-existing constraints)
+                    while(j < clktrace.size() &&
+                          (usedBBClocks.find(clktrace[j]) == usedBBClocks.end() || clktrace[j] == clktrace[i])){
+                        j++;
+                        //cout << ", inc j: "<< j << endl;
+                    }
+                    if(j == clktrace.size()){
+                        break;
+                    }
+                    
+                    constraint = z3solver.cLt(clktrace[i],clktrace[j]);     //const: clock1 < clock2
+                    string label = "CLC"+util::stringValueOf(labelCounter); //label to uniquely identify this constraint
+                    satClocks[label] = constraint;                          //store constraint to allow unsat core refinement of clock constraints in subsequent iterations
+                    labelCounter++;
+                    numCLC++; //increase number of clock constraints
+                    z3solver.writeLineZ3(z3solver.postNamedAssert(constraint,label));
+                    
+                    //update iterators
+                    if(j > i+1){
+                        i = j;
+                    }
+                    else{
+                        i++;
+                    }
+                }
+                else{
+                    i++;
+                }
+            }
+        }
+    }
+    else{ //use clock constraints after refining the previous unsat core
+        
+        for(map<string, string>::iterator clkit = satClocks.begin(); clkit != satClocks.end(); ++clkit){
+            string label = clkit->first;
+            constraint = clkit->second;
+            numCLC++; //increase number of clock constraints
+            z3solver.writeLineZ3(z3solver.postNamedAssert(constraint,label));
+        }
+    }
+    
+    //i) criar model e ser der unsat core, repetir processo retirando as clock const até nao dar mais unsat -> fazer isto no
+    //verifyConstraintModel antes de criar o modelo final que será enviado para o solver;
+    //ii) ter estrutura satClocks que guarda os clocks que forem vistos como sendo sat (usar o indice da label
+    // como indice do array para permitir rapidamente perceber quais sao os errados;
+    //iii) neste metodo addBBClockConstriants, adiciona-se directamente as que sobraram no unsat core
+    //FOR THIS TO WORK WELL WE NEED TO PARSE ALL THREAD TRACES FROM THE SAME EXECUTION ID
+    
+}
+
+
 void ConstModelGen::addAvisoConstraints(std::map<std::string, std::vector<Operation*> > operationsByThread, AvisoEventVector fulltrace)
 {
     z3solver.writeLineZ3("(echo \"AVISO CONSTRAINTS -----\")\n");
@@ -660,12 +738,13 @@ void ConstModelGen::addAvisoConstraints(std::map<std::string, std::vector<Operat
     z3solver.writeLineZ3(z3solver.postNamedAssert(z3solver.cLt(constraint),label));
 }
 
+
 void ConstModelGen::openOutputFile(){
     z3solver.openOutputFile();
 }
 
 bool ConstModelGen::solve(){
-    double total = numMO + numLO + numPC + numPO + numRW;
+    double total = numMO + numLO + numPC + numPO + numRW + numCLC;
     cout << "   TYPE\t| #CONSTRAINTS\n";
     cout << "--------------------------\n";
     cout << "Memory\t|\t" << numMO << "\t("<< (numMO/total)<<"%)\n";
@@ -673,6 +752,7 @@ bool ConstModelGen::solve(){
     cout << "Locking\t|\t" << numLO << "\t("<< (numLO/total)<<"%)\n";
     cout << "PartialOrd\t|\t" << numPO << "\t("<< (numPO/total)<<"%)\n";
     cout << "Path\t\t|\t" << numPC << "\t("<< (numPC/total)<<"%)\n";
+    cout << "Clock\t\t|\t" << numCLC << "\t("<< (numCLC/total)<<"%)\n";
     cout << "\n>> #CONSTRAINTS: " << total << "\n";
     cout << ">> #UNKNOWN VARS: " << numUnkownVars << "\n\n";
     return z3solver.solve();
@@ -683,6 +763,13 @@ bool ConstModelGen::solveWithSolution(vector<string> solution, bool invertBugCon
 }
 
 void ConstModelGen::resetSolver(){
+    numLO = 0;
+    numRW = 0;
+    numMO = 0;
+    numPO = 0;
+    numPC = 0;
+    numCLC = 0;
+    numUnkownVars = 0;
     z3solver.reset();
 }
 

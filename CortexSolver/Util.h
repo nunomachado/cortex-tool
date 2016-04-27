@@ -30,14 +30,14 @@ namespace util{
     std::string extractFileBasename(std::string name);          //from a path to file like a/b/c.txt, extracts the basename c.txt
     std::string extractFileBasename(char* path);                //from a path to file like a/b/c.txt, extracts the basename c.txt
     bool isClosedExpression(std::string expr);                  //returns true if an expression is closed, i.e. its number of '(' == number of ')'
-    const std::string getcwd();                           //returns the path of the current working directory
     
     std::string parseThreadId(std::string operation);       //parses the threadId of an operation
     std::string parseVar(std::string operation);       //parses the variable of an operation
     bool filenameComparator(std::string a, std::string b);   //comparator to sort filenames in ascending order of their length
     std::string readLinePipe(int procR);                //read line from pipe
     bool subsetComparator(std::vector<int> a, std::vector<int> b); //comparator to sort subsets of values in ascending order of their size
-    
+    bool clockOperationComparator(ClockOperation cop1, ClockOperation cop2); //comparator to sort sets of ClockOperations in ascending order of their clock values
+    std::string getConfigFile();     //get path to configuration file
 }
 
 

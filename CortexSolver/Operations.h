@@ -149,6 +149,15 @@ public:
     void print();
 };
 
+
+class ClockOperation : public Operation{
+public:
+    ClockOperation();
+    
+    std::string getConstraintName();
+    std::string getOrderConstraintName();
+    void print();
+};
 #endif
 
 

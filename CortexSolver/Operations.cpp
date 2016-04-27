@@ -360,7 +360,7 @@ void SyncOperation::print()
         cout << "[" << threadId << "] " << type << "_" << var << "-" << id << "&" << filename << "@" << line << endl;
 }
 
-//** class SyncOperation ***************
+//** class BranchOperation ***************
 BranchOperation::BranchOperation() : Operation(){}
 
 string BranchOperation::getConstraintName()
@@ -377,3 +377,28 @@ void BranchOperation::print()
 {
     cout << "[" << threadId << "] branch-" << id << endl;
 }
+
+//** class ClockOperation ***************
+//var -> bbid
+//var id -> var id
+//line -> clock
+ClockOperation::ClockOperation() : Operation(){}
+
+string ClockOperation::getConstraintName()
+{
+    return ("clock-"+threadId+"-"+var+"-"+util::stringValueOf(id));
+}
+
+string ClockOperation::getOrderConstraintName()
+{
+    return ("clock-"+threadId+"-"+var+"-"+util::stringValueOf(id));
+}
+
+void ClockOperation::print()
+{
+    cout << "[" << threadId << "] clock-" << var << "-" << id << "-" << line << endl;
+}
+
+
+
+

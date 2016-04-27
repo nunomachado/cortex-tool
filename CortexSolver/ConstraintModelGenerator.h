@@ -28,6 +28,7 @@ protected:
     double numLO; //number of locking order constraints
     double numPO; //number of partial order synchronization constraints
     double numPC; //number of path constraints
+    double numCLC;//number of basic block clock constraints
     double numUnkownVars; //number of unknown variables
     
 private:
@@ -44,6 +45,7 @@ public:
     void addJoinExitConstraints(std::map<std::string, std::vector<SyncOperation> > joinset, std::map<std::string, SyncOperation> exitset);
     void addWaitSignalConstraints(std::map<std::string, std::vector<SyncOperation> > waitset, std::map<std::string, std::vector<SyncOperation> > signalset);
     void addBarrierConstraints(std::map<std::string, std::vector<SyncOperation> > barrierset, std::map<std::string, std::vector<Operation*> > operationsByThread);
+    void addBBClockConstraints();
     void addAvisoConstraints(std::map<std::string, std::vector<Operation*> > operationsByThread, AvisoEventVector fulltrace);
     void openOutputFile(); //opens a file used to store the generated model
     bool solve();   //tries to solve the model and returns true if the model has a solution
