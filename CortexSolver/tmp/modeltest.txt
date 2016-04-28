@@ -1,0 +1,228 @@
+(set-option :produce-unsat-cores true)
+(echo "MEMORY-ORDER CONSTRAINTS -----")
+
+(declare-const OS-fork_1-0-0&Critical.java@14 Int)
+(assert (>= OS-fork_1-0-0&Critical.java@14 0))
+(assert (<= OS-fork_1-0-0&Critical.java@14 33))
+(declare-const OS-fork_2-0-0&Critical.java@17 Int)
+(assert (>= OS-fork_2-0-0&Critical.java@17 0))
+(assert (<= OS-fork_2-0-0&Critical.java@17 33))
+(declare-const OS-join_1-0-0&Critical.java@20 Int)
+(assert (>= OS-join_1-0-0&Critical.java@20 0))
+(assert (<= OS-join_1-0-0&Critical.java@20 33))
+(declare-const OS-join_2-0-0&Critical.java@25 Int)
+(assert (>= OS-join_2-0-0&Critical.java@25 0))
+(assert (<= OS-join_2-0-0&Critical.java@25 33))
+(declare-const OS-exit-0&Critical.java@26 Int)
+(assert (>= OS-exit-0&Critical.java@26 0))
+(assert (<= OS-exit-0&Critical.java@26 33))
+(assert (! (< OS-fork_1-0-0&Critical.java@14 OS-fork_2-0-0&Critical.java@17 OS-join_1-0-0&Critical.java@20 OS-join_2-0-0&Critical.java@25 OS-exit-0&Critical.java@26):named MO0))
+
+(declare-const OS-start-1&InstrumentationHandler.java@16 Int)
+(assert (>= OS-start-1&InstrumentationHandler.java@16 0))
+(assert (<= OS-start-1&InstrumentationHandler.java@16 33))
+(declare-const OW-bug_607-1-1&Critical.java@45 Int)
+(assert (>= OW-bug_607-1-1&Critical.java@45 0))
+(assert (<= OW-bug_607-1-1&Critical.java@45 33))
+(declare-const OR-t_607-1-1&Critical.java@48 Int)
+(assert (>= OR-t_607-1-1&Critical.java@48 0))
+(assert (<= OR-t_607-1-1&Critical.java@48 33))
+(declare-const OW-turn_603-1-1&Critical.java@48 Int)
+(assert (>= OW-turn_603-1-1&Critical.java@48 0))
+(assert (<= OW-turn_603-1-1&Critical.java@48 33))
+(declare-const OR-t_607-1-2&Critical.java@50 Int)
+(assert (>= OR-t_607-1-2&Critical.java@50 0))
+(assert (<= OR-t_607-1-2&Critical.java@50 33))
+(declare-const OR-turn_603-1-1&Critical.java@50 Int)
+(assert (>= OR-turn_603-1-1&Critical.java@50 0))
+(assert (<= OR-turn_603-1-1&Critical.java@50 33))
+(declare-const branch-1-0 Int)
+(assert (>= branch-1-0 0))
+(assert (<= branch-1-0 33))
+(declare-const OR-t_607-1-3&Critical.java@52 Int)
+(assert (>= OR-t_607-1-3&Critical.java@52 0))
+(assert (<= OR-t_607-1-3&Critical.java@52 33))
+(declare-const OR-turn_603-1-2&Critical.java@52 Int)
+(assert (>= OR-turn_603-1-2&Critical.java@52 0))
+(assert (<= OR-turn_603-1-2&Critical.java@52 33))
+(declare-const branch-1-1 Int)
+(assert (>= branch-1-1 0))
+(assert (<= branch-1-1 33))
+(declare-const OW-bug_607-1-2&Critical.java@53 Int)
+(assert (>= OW-bug_607-1-2&Critical.java@53 0))
+(assert (<= OW-bug_607-1-2&Critical.java@53 33))
+(declare-const OR-t_607-1-4&Critical.java@50 Int)
+(assert (>= OR-t_607-1-4&Critical.java@50 0))
+(assert (<= OR-t_607-1-4&Critical.java@50 33))
+(declare-const OR-turn_603-1-3&Critical.java@50 Int)
+(assert (>= OR-turn_603-1-3&Critical.java@50 0))
+(assert (<= OR-turn_603-1-3&Critical.java@50 33))
+(declare-const branch-1-2 Int)
+(assert (>= branch-1-2 0))
+(assert (<= branch-1-2 33))
+(declare-const OR-t_607-1-5&Critical.java@56 Int)
+(assert (>= OR-t_607-1-5&Critical.java@56 0))
+(assert (<= OR-t_607-1-5&Critical.java@56 33))
+(declare-const OW-turn_603-1-2&Critical.java@56 Int)
+(assert (>= OW-turn_603-1-2&Critical.java@56 0))
+(assert (<= OW-turn_603-1-2&Critical.java@56 33))
+(declare-const OR-bug_607-1-1&Critical.java@58 Int)
+(assert (>= OR-bug_607-1-1&Critical.java@58 0))
+(assert (<= OR-bug_607-1-1&Critical.java@58 33))
+(declare-const OS-Assert-1&Critical.java@1 Int)
+(assert (>= OS-Assert-1&Critical.java@1 0))
+(assert (<= OS-Assert-1&Critical.java@1 33))
+(assert (! (< OS-start-1&InstrumentationHandler.java@16 OW-bug_607-1-1&Critical.java@45 OR-t_607-1-1&Critical.java@48 OW-turn_603-1-1&Critical.java@48 OR-t_607-1-2&Critical.java@50 OR-turn_603-1-1&Critical.java@50 branch-1-0 OR-t_607-1-3&Critical.java@52 OR-turn_603-1-2&Critical.java@52 branch-1-1 OW-bug_607-1-2&Critical.java@53 OR-t_607-1-4&Critical.java@50 OR-turn_603-1-3&Critical.java@50 branch-1-2 OR-t_607-1-5&Critical.java@56 OW-turn_603-1-2&Critical.java@56 OR-bug_607-1-1&Critical.java@58 OS-Assert-1&Critical.java@1):named MO1))
+
+(declare-const OS-start-2&InstrumentationHandler.java@16 Int)
+(assert (>= OS-start-2&InstrumentationHandler.java@16 0))
+(assert (<= OS-start-2&InstrumentationHandler.java@16 33))
+(declare-const OW-bug_608-2-1&Critical.java@45 Int)
+(assert (>= OW-bug_608-2-1&Critical.java@45 0))
+(assert (<= OW-bug_608-2-1&Critical.java@45 33))
+(declare-const OR-t_608-2-1&Critical.java@64 Int)
+(assert (>= OR-t_608-2-1&Critical.java@64 0))
+(assert (<= OR-t_608-2-1&Critical.java@64 33))
+(declare-const OW-turn_603-2-1&Critical.java@64 Int)
+(assert (>= OW-turn_603-2-1&Critical.java@64 0))
+(assert (<= OW-turn_603-2-1&Critical.java@64 33))
+(declare-const OR-t_608-2-2&Critical.java@66 Int)
+(assert (>= OR-t_608-2-2&Critical.java@66 0))
+(assert (<= OR-t_608-2-2&Critical.java@66 33))
+(declare-const OR-turn_603-2-1&Critical.java@66 Int)
+(assert (>= OR-turn_603-2-1&Critical.java@66 0))
+(assert (<= OR-turn_603-2-1&Critical.java@66 33))
+(declare-const branch-2-0 Int)
+(assert (>= branch-2-0 0))
+(assert (<= branch-2-0 33))
+(declare-const OR-t_608-2-3&Critical.java@68 Int)
+(assert (>= OR-t_608-2-3&Critical.java@68 0))
+(assert (<= OR-t_608-2-3&Critical.java@68 33))
+(declare-const OW-turn_603-2-2&Critical.java@68 Int)
+(assert (>= OW-turn_603-2-2&Critical.java@68 0))
+(assert (<= OW-turn_603-2-2&Critical.java@68 33))
+(declare-const OS-exit-2&Critical.java@69 Int)
+(assert (>= OS-exit-2&Critical.java@69 0))
+(assert (<= OS-exit-2&Critical.java@69 33))
+(assert (! (< OS-start-2&InstrumentationHandler.java@16 OW-bug_608-2-1&Critical.java@45 OR-t_608-2-1&Critical.java@64 OW-turn_603-2-1&Critical.java@64 OR-t_608-2-2&Critical.java@66 OR-turn_603-2-1&Critical.java@66 branch-2-0 OR-t_608-2-3&Critical.java@68 OW-turn_603-2-2&Critical.java@68 OS-exit-2&Critical.java@69):named MO2))
+
+(assert (distinct  OS-fork_1-0-0&Critical.java@14 OS-fork_2-0-0&Critical.java@17 OS-join_1-0-0&Critical.java@20 OS-join_2-0-0&Critical.java@25 OS-exit-0&Critical.java@26 OS-start-1&InstrumentationHandler.java@16 OW-bug_607-1-1&Critical.java@45 OR-t_607-1-1&Critical.java@48 OW-turn_603-1-1&Critical.java@48 OR-t_607-1-2&Critical.java@50 OR-turn_603-1-1&Critical.java@50 branch-1-0 OR-t_607-1-3&Critical.java@52 OR-turn_603-1-2&Critical.java@52 branch-1-1 OW-bug_607-1-2&Critical.java@53 OR-t_607-1-4&Critical.java@50 OR-turn_603-1-3&Critical.java@50 branch-1-2 OR-t_607-1-5&Critical.java@56 OW-turn_603-1-2&Critical.java@56 OR-bug_607-1-1&Critical.java@58 OS-Assert-1&Critical.java@1 OS-start-2&InstrumentationHandler.java@16 OW-bug_608-2-1&Critical.java@45 OR-t_608-2-1&Critical.java@64 OW-turn_603-2-1&Critical.java@64 OR-t_608-2-2&Critical.java@66 OR-turn_603-2-1&Critical.java@66 branch-2-0 OR-t_608-2-3&Critical.java@68 OW-turn_603-2-2&Critical.java@68 OS-exit-2&Critical.java@69))
+
+(echo "READ-WRITE CONSTRAINTS -----")
+
+(declare-const R-bug_607-1-1 Int)
+
+(declare-const R-t_607-1-1 Int)
+
+(declare-const R-t_607-1-2 Int)
+
+(declare-const R-t_607-1-3 Int)
+
+(declare-const R-t_607-1-4 Int)
+
+(declare-const R-t_607-1-5 Int)
+
+(declare-const R-t_608-2-1 Int)
+
+(declare-const R-t_608-2-2 Int)
+
+(declare-const R-t_608-2-3 Int)
+
+(declare-const R-turn_603-1-1 Int)
+
+(declare-const R-turn_603-1-2 Int)
+
+(declare-const R-turn_603-1-3 Int)
+
+(declare-const R-turn_603-2-1 Int)
+
+(declare-const InitR-bug_607-1 Int)
+
+(assert (! (or (and (= R-bug_607-1-1 InitR-bug_607-1) (< OR-bug_607-1-1&Critical.java@58 OW-bug_607-1-2&Critical.java@53))
+ (and (= R-bug_607-1-1 1) (< OW-bug_607-1-2&Critical.java@53 OR-bug_607-1-1&Critical.java@58))):named RWC0))
+
+(declare-const InitR-t_607-1 Int)
+
+(assert (! (or (and (= R-t_607-1-1 InitR-t_607-1))):named RWC1))
+
+(assert (! (or (and (= R-t_607-1-2 InitR-t_607-1))):named RWC2))
+
+(assert (! (or (and (= R-t_607-1-3 InitR-t_607-1))):named RWC3))
+
+(assert (! (or (and (= R-t_607-1-4 InitR-t_607-1))):named RWC4))
+
+(assert (! (or (and (= R-t_607-1-5 InitR-t_607-1))):named RWC5))
+
+(declare-const InitR-t_608-2 Int)
+
+(assert (! (or (and (= R-t_608-2-1 InitR-t_608-2))):named RWC6))
+
+(assert (! (or (and (= R-t_608-2-2 InitR-t_608-2))):named RWC7))
+
+(assert (! (or (and (= R-t_608-2-3 InitR-t_608-2))):named RWC8))
+
+(declare-const InitR-turn_603-1 Int)
+
+(assert (! (or (and (= R-turn_603-1-1 InitR-turn_603-1) (< OR-turn_603-1-1&Critical.java@50 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-1-1&Critical.java@50 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-1-1&Critical.java@50 OW-turn_603-2-2&Critical.java@68))
+ (and (= R-turn_603-1-1 0) (< OW-turn_603-1-1&Critical.java@48 OR-turn_603-1-1&Critical.java@50) (or (< OW-turn_603-2-1&Critical.java@64 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-1-1&Critical.java@50 OW-turn_603-2-1&Critical.java@64)) (or (< OW-turn_603-2-2&Critical.java@68 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-1-1&Critical.java@50 OW-turn_603-2-2&Critical.java@68)))
+ (and (= R-turn_603-1-1 1) (< OW-turn_603-2-1&Critical.java@64 OR-turn_603-1-1&Critical.java@50) (or (< OW-turn_603-1-1&Critical.java@48 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-1-1&Critical.java@50 OW-turn_603-1-1&Critical.java@48)) (or (< OW-turn_603-2-2&Critical.java@68 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-1-1&Critical.java@50 OW-turn_603-2-2&Critical.java@68)))
+ (and (= R-turn_603-1-1 0) (< OW-turn_603-2-2&Critical.java@68 OR-turn_603-1-1&Critical.java@50) (or (< OW-turn_603-1-1&Critical.java@48 OW-turn_603-2-2&Critical.java@68) (< OR-turn_603-1-1&Critical.java@50 OW-turn_603-1-1&Critical.java@48)) (or (< OW-turn_603-2-1&Critical.java@64 OW-turn_603-2-2&Critical.java@68) (< OR-turn_603-1-1&Critical.java@50 OW-turn_603-2-1&Critical.java@64)))):named RWC9))
+
+(assert (! (or (and (= R-turn_603-1-2 InitR-turn_603-1) (< OR-turn_603-1-2&Critical.java@52 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-1-2&Critical.java@52 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-1-2&Critical.java@52 OW-turn_603-2-2&Critical.java@68))
+ (and (= R-turn_603-1-2 0) (< OW-turn_603-1-1&Critical.java@48 OR-turn_603-1-2&Critical.java@52) (or (< OW-turn_603-2-1&Critical.java@64 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-1-2&Critical.java@52 OW-turn_603-2-1&Critical.java@64)) (or (< OW-turn_603-2-2&Critical.java@68 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-1-2&Critical.java@52 OW-turn_603-2-2&Critical.java@68)))
+ (and (= R-turn_603-1-2 1) (< OW-turn_603-2-1&Critical.java@64 OR-turn_603-1-2&Critical.java@52) (or (< OW-turn_603-1-1&Critical.java@48 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-1-2&Critical.java@52 OW-turn_603-1-1&Critical.java@48)) (or (< OW-turn_603-2-2&Critical.java@68 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-1-2&Critical.java@52 OW-turn_603-2-2&Critical.java@68)))
+ (and (= R-turn_603-1-2 0) (< OW-turn_603-2-2&Critical.java@68 OR-turn_603-1-2&Critical.java@52) (or (< OW-turn_603-1-1&Critical.java@48 OW-turn_603-2-2&Critical.java@68) (< OR-turn_603-1-2&Critical.java@52 OW-turn_603-1-1&Critical.java@48)) (or (< OW-turn_603-2-1&Critical.java@64 OW-turn_603-2-2&Critical.java@68) (< OR-turn_603-1-2&Critical.java@52 OW-turn_603-2-1&Critical.java@64)))):named RWC10))
+
+(assert (! (or (and (= R-turn_603-1-3 InitR-turn_603-1) (< OR-turn_603-1-3&Critical.java@50 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-1-3&Critical.java@50 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-1-3&Critical.java@50 OW-turn_603-2-2&Critical.java@68))
+ (and (= R-turn_603-1-3 0) (< OW-turn_603-1-1&Critical.java@48 OR-turn_603-1-3&Critical.java@50) (or (< OW-turn_603-2-1&Critical.java@64 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-1-3&Critical.java@50 OW-turn_603-2-1&Critical.java@64)) (or (< OW-turn_603-2-2&Critical.java@68 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-1-3&Critical.java@50 OW-turn_603-2-2&Critical.java@68)))
+ (and (= R-turn_603-1-3 1) (< OW-turn_603-2-1&Critical.java@64 OR-turn_603-1-3&Critical.java@50) (or (< OW-turn_603-1-1&Critical.java@48 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-1-3&Critical.java@50 OW-turn_603-1-1&Critical.java@48)) (or (< OW-turn_603-2-2&Critical.java@68 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-1-3&Critical.java@50 OW-turn_603-2-2&Critical.java@68)))
+ (and (= R-turn_603-1-3 0) (< OW-turn_603-2-2&Critical.java@68 OR-turn_603-1-3&Critical.java@50) (or (< OW-turn_603-1-1&Critical.java@48 OW-turn_603-2-2&Critical.java@68) (< OR-turn_603-1-3&Critical.java@50 OW-turn_603-1-1&Critical.java@48)) (or (< OW-turn_603-2-1&Critical.java@64 OW-turn_603-2-2&Critical.java@68) (< OR-turn_603-1-3&Critical.java@50 OW-turn_603-2-1&Critical.java@64)))):named RWC11))
+
+(declare-const InitR-turn_603-2 Int)
+
+(assert (! (or (and (= R-turn_603-2-1 InitR-turn_603-2) (< OR-turn_603-2-1&Critical.java@66 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-2-1&Critical.java@66 OW-turn_603-1-2&Critical.java@56) (< OR-turn_603-2-1&Critical.java@66 OW-turn_603-2-1&Critical.java@64))
+ (and (= R-turn_603-2-1 0) (< OW-turn_603-1-1&Critical.java@48 OR-turn_603-2-1&Critical.java@66) (or (< OW-turn_603-1-2&Critical.java@56 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-2-1&Critical.java@66 OW-turn_603-1-2&Critical.java@56)) (or (< OW-turn_603-2-1&Critical.java@64 OW-turn_603-1-1&Critical.java@48) (< OR-turn_603-2-1&Critical.java@66 OW-turn_603-2-1&Critical.java@64)))
+ (and (= R-turn_603-2-1 1) (< OW-turn_603-1-2&Critical.java@56 OR-turn_603-2-1&Critical.java@66) (or (< OW-turn_603-1-1&Critical.java@48 OW-turn_603-1-2&Critical.java@56) (< OR-turn_603-2-1&Critical.java@66 OW-turn_603-1-1&Critical.java@48)) (or (< OW-turn_603-2-1&Critical.java@64 OW-turn_603-1-2&Critical.java@56) (< OR-turn_603-2-1&Critical.java@66 OW-turn_603-2-1&Critical.java@64)))
+ (and (= R-turn_603-2-1 1) (< OW-turn_603-2-1&Critical.java@64 OR-turn_603-2-1&Critical.java@66) (or (< OW-turn_603-1-1&Critical.java@48 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-2-1&Critical.java@66 OW-turn_603-1-1&Critical.java@48)) (or (< OW-turn_603-1-2&Critical.java@56 OW-turn_603-2-1&Critical.java@64) (< OR-turn_603-2-1&Critical.java@66 OW-turn_603-1-2&Critical.java@56)))):named RWC12))
+
+(echo "PATH CONSTRAINTS -----")
+
+(assert (! (not (= R-turn_603-1-1 0)):named PC0_T1))
+
+(assert (! (= R-turn_603-1-2 0):named PC1_T1))
+
+(assert (! (= R-turn_603-1-3 0):named PC2_T1))
+
+(assert (!  (= false (= R-bug_607-1-1 0)):named PC3_T1_BUGCOND))
+
+(assert (! (= R-turn_603-2-1 1):named PC0_T2))
+
+(echo "LOCKING CONSTRAINTS -----")
+
+(echo "FORK-START CONSTRAINTS -----")
+
+(assert (! (< OS-fork_1-0-0&Critical.java@14 OS-start-1&InstrumentationHandler.java@16):named FSC0))
+
+(assert (! (< OS-fork_2-0-0&Critical.java@17 OS-start-2&InstrumentationHandler.java@16):named FSC1))
+
+(echo "JOIN-EXIT CONSTRAINTS -----")
+
+(assert (! (> OS-join_1-0-0&Critical.java@20 OS-Assert-1&Critical.java@1):named JEC0))
+
+(assert (! (> OS-join_2-0-0&Critical.java@25 OS-exit-2&Critical.java@69):named JEC1))
+
+(echo "WAIT-SIGNAL CONSTRAINTS -----")
+
+(echo "BARRIER CONSTRAINTS -----")
+
+(echo "CLOCK CONSTRAINTS -----")
+
+(check-sat)
+
+(get-model)
+
+(get-unsat-core)
+
+(echo "end")
+(reset)
+

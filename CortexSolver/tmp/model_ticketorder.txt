@@ -1,0 +1,2224 @@
+(set-option :produce-unsat-cores true)
+(echo "MEMORY-ORDER CONSTRAINTS -----")
+
+(declare-const OW-bug_occured_51-0-1&TicketsOrderSim.java@20 Int)
+(assert (>= OW-bug_occured_51-0-1&TicketsOrderSim.java@20 0))
+(assert (<= OW-bug_occured_51-0-1&TicketsOrderSim.java@20 322))
+(declare-const OW-bug_count_51-0-1&TicketsOrderSim.java@21 Int)
+(assert (>= OW-bug_count_51-0-1&TicketsOrderSim.java@21 0))
+(assert (<= OW-bug_count_51-0-1&TicketsOrderSim.java@21 322))
+(declare-const OW-seats_num_51-0-1&TicketsOrderSim.java@145 Int)
+(assert (>= OW-seats_num_51-0-1&TicketsOrderSim.java@145 0))
+(assert (<= OW-seats_num_51-0-1&TicketsOrderSim.java@145 322))
+(declare-const OR-seats_num_51-0-1&TicketsOrderSim.java@177 Int)
+(assert (>= OR-seats_num_51-0-1&TicketsOrderSim.java@177 0))
+(assert (<= OR-seats_num_51-0-1&TicketsOrderSim.java@177 322))
+(declare-const OR-seats_num_51-0-2&TicketsOrderSim.java@180 Int)
+(assert (>= OR-seats_num_51-0-2&TicketsOrderSim.java@180 0))
+(assert (<= OR-seats_num_51-0-2&TicketsOrderSim.java@180 322))
+(declare-const branch-0-0 Int)
+(assert (>= branch-0-0 0))
+(assert (<= branch-0-0 322))
+(declare-const OW-empty_629-0-1&TicketsOrderSim.java@63 Int)
+(assert (>= OW-empty_629-0-1&TicketsOrderSim.java@63 0))
+(assert (<= OW-empty_629-0-1&TicketsOrderSim.java@63 322))
+(declare-const OW-status_629-0-1&TicketsOrderSim.java@64 Int)
+(assert (>= OW-status_629-0-1&TicketsOrderSim.java@64 0))
+(assert (<= OW-status_629-0-1&TicketsOrderSim.java@64 322))
+(declare-const OW-flight_629-0-1&TicketsOrderSim.java@65 Int)
+(assert (>= OW-flight_629-0-1&TicketsOrderSim.java@65 0))
+(assert (<= OW-flight_629-0-1&TicketsOrderSim.java@65 322))
+(declare-const OW-airline_629-0-1&TicketsOrderSim.java@66 Int)
+(assert (>= OW-airline_629-0-1&TicketsOrderSim.java@66 0))
+(assert (<= OW-airline_629-0-1&TicketsOrderSim.java@66 322))
+(declare-const OW-agent_name_629-0-1&TicketsOrderSim.java@67 Int)
+(assert (>= OW-agent_name_629-0-1&TicketsOrderSim.java@67 0))
+(assert (<= OW-agent_name_629-0-1&TicketsOrderSim.java@67 322))
+(declare-const OW-ticket_252-0-1&TicketsOrderSim.java@84 Int)
+(assert (>= OW-ticket_252-0-1&TicketsOrderSim.java@84 0))
+(assert (<= OW-ticket_252-0-1&TicketsOrderSim.java@84 322))
+(declare-const OW-seats_647-0-1&TicketsOrderSim.java@181 Int)
+(assert (>= OW-seats_647-0-1&TicketsOrderSim.java@181 0))
+(assert (<= OW-seats_647-0-1&TicketsOrderSim.java@181 322))
+(declare-const OR-seats_num_51-0-3&TicketsOrderSim.java@180 Int)
+(assert (>= OR-seats_num_51-0-3&TicketsOrderSim.java@180 0))
+(assert (<= OR-seats_num_51-0-3&TicketsOrderSim.java@180 322))
+(declare-const branch-0-1 Int)
+(assert (>= branch-0-1 0))
+(assert (<= branch-0-1 322))
+(declare-const OW-empty_648-0-1&TicketsOrderSim.java@63 Int)
+(assert (>= OW-empty_648-0-1&TicketsOrderSim.java@63 0))
+(assert (<= OW-empty_648-0-1&TicketsOrderSim.java@63 322))
+(declare-const OW-status_648-0-1&TicketsOrderSim.java@64 Int)
+(assert (>= OW-status_648-0-1&TicketsOrderSim.java@64 0))
+(assert (<= OW-status_648-0-1&TicketsOrderSim.java@64 322))
+(declare-const OW-flight_648-0-1&TicketsOrderSim.java@65 Int)
+(assert (>= OW-flight_648-0-1&TicketsOrderSim.java@65 0))
+(assert (<= OW-flight_648-0-1&TicketsOrderSim.java@65 322))
+(declare-const OW-airline_648-0-1&TicketsOrderSim.java@66 Int)
+(assert (>= OW-airline_648-0-1&TicketsOrderSim.java@66 0))
+(assert (<= OW-airline_648-0-1&TicketsOrderSim.java@66 322))
+(declare-const OW-agent_name_648-0-1&TicketsOrderSim.java@67 Int)
+(assert (>= OW-agent_name_648-0-1&TicketsOrderSim.java@67 0))
+(assert (<= OW-agent_name_648-0-1&TicketsOrderSim.java@67 322))
+(declare-const OW-ticket_635-0-1&TicketsOrderSim.java@84 Int)
+(assert (>= OW-ticket_635-0-1&TicketsOrderSim.java@84 0))
+(assert (<= OW-ticket_635-0-1&TicketsOrderSim.java@84 322))
+(declare-const OW-seats_648-0-1&TicketsOrderSim.java@181 Int)
+(assert (>= OW-seats_648-0-1&TicketsOrderSim.java@181 0))
+(assert (<= OW-seats_648-0-1&TicketsOrderSim.java@181 322))
+(declare-const OR-seats_num_51-0-4&TicketsOrderSim.java@180 Int)
+(assert (>= OR-seats_num_51-0-4&TicketsOrderSim.java@180 0))
+(assert (<= OR-seats_num_51-0-4&TicketsOrderSim.java@180 322))
+(declare-const branch-0-2 Int)
+(assert (>= branch-0-2 0))
+(assert (<= branch-0-2 322))
+(declare-const OW-empty_650-0-1&TicketsOrderSim.java@63 Int)
+(assert (>= OW-empty_650-0-1&TicketsOrderSim.java@63 0))
+(assert (<= OW-empty_650-0-1&TicketsOrderSim.java@63 322))
+(declare-const OW-status_650-0-1&TicketsOrderSim.java@64 Int)
+(assert (>= OW-status_650-0-1&TicketsOrderSim.java@64 0))
+(assert (<= OW-status_650-0-1&TicketsOrderSim.java@64 322))
+(declare-const OW-flight_650-0-1&TicketsOrderSim.java@65 Int)
+(assert (>= OW-flight_650-0-1&TicketsOrderSim.java@65 0))
+(assert (<= OW-flight_650-0-1&TicketsOrderSim.java@65 322))
+(declare-const OW-airline_650-0-1&TicketsOrderSim.java@66 Int)
+(assert (>= OW-airline_650-0-1&TicketsOrderSim.java@66 0))
+(assert (<= OW-airline_650-0-1&TicketsOrderSim.java@66 322))
+(declare-const OW-agent_name_650-0-1&TicketsOrderSim.java@67 Int)
+(assert (>= OW-agent_name_650-0-1&TicketsOrderSim.java@67 0))
+(assert (<= OW-agent_name_650-0-1&TicketsOrderSim.java@67 322))
+(declare-const OW-ticket_649-0-1&TicketsOrderSim.java@84 Int)
+(assert (>= OW-ticket_649-0-1&TicketsOrderSim.java@84 0))
+(assert (<= OW-ticket_649-0-1&TicketsOrderSim.java@84 322))
+(declare-const OW-seats_649-0-1&TicketsOrderSim.java@181 Int)
+(assert (>= OW-seats_649-0-1&TicketsOrderSim.java@181 0))
+(assert (<= OW-seats_649-0-1&TicketsOrderSim.java@181 322))
+(declare-const OR-seats_num_51-0-5&TicketsOrderSim.java@180 Int)
+(assert (>= OR-seats_num_51-0-5&TicketsOrderSim.java@180 0))
+(assert (<= OR-seats_num_51-0-5&TicketsOrderSim.java@180 322))
+(declare-const branch-0-3 Int)
+(assert (>= branch-0-3 0))
+(assert (<= branch-0-3 322))
+(declare-const OW-empty_652-0-1&TicketsOrderSim.java@63 Int)
+(assert (>= OW-empty_652-0-1&TicketsOrderSim.java@63 0))
+(assert (<= OW-empty_652-0-1&TicketsOrderSim.java@63 322))
+(declare-const OW-status_652-0-1&TicketsOrderSim.java@64 Int)
+(assert (>= OW-status_652-0-1&TicketsOrderSim.java@64 0))
+(assert (<= OW-status_652-0-1&TicketsOrderSim.java@64 322))
+(declare-const OW-flight_652-0-1&TicketsOrderSim.java@65 Int)
+(assert (>= OW-flight_652-0-1&TicketsOrderSim.java@65 0))
+(assert (<= OW-flight_652-0-1&TicketsOrderSim.java@65 322))
+(declare-const OW-airline_652-0-1&TicketsOrderSim.java@66 Int)
+(assert (>= OW-airline_652-0-1&TicketsOrderSim.java@66 0))
+(assert (<= OW-airline_652-0-1&TicketsOrderSim.java@66 322))
+(declare-const OW-agent_name_652-0-1&TicketsOrderSim.java@67 Int)
+(assert (>= OW-agent_name_652-0-1&TicketsOrderSim.java@67 0))
+(assert (<= OW-agent_name_652-0-1&TicketsOrderSim.java@67 322))
+(declare-const OW-ticket_651-0-1&TicketsOrderSim.java@84 Int)
+(assert (>= OW-ticket_651-0-1&TicketsOrderSim.java@84 0))
+(assert (<= OW-ticket_651-0-1&TicketsOrderSim.java@84 322))
+(declare-const OW-seats_650-0-1&TicketsOrderSim.java@181 Int)
+(assert (>= OW-seats_650-0-1&TicketsOrderSim.java@181 0))
+(assert (<= OW-seats_650-0-1&TicketsOrderSim.java@181 322))
+(declare-const OR-seats_num_51-0-6&TicketsOrderSim.java@180 Int)
+(assert (>= OR-seats_num_51-0-6&TicketsOrderSim.java@180 0))
+(assert (<= OR-seats_num_51-0-6&TicketsOrderSim.java@180 322))
+(declare-const branch-0-4 Int)
+(assert (>= branch-0-4 0))
+(assert (<= branch-0-4 322))
+(declare-const OW-empty_654-0-1&TicketsOrderSim.java@63 Int)
+(assert (>= OW-empty_654-0-1&TicketsOrderSim.java@63 0))
+(assert (<= OW-empty_654-0-1&TicketsOrderSim.java@63 322))
+(declare-const OW-status_654-0-1&TicketsOrderSim.java@64 Int)
+(assert (>= OW-status_654-0-1&TicketsOrderSim.java@64 0))
+(assert (<= OW-status_654-0-1&TicketsOrderSim.java@64 322))
+(declare-const OW-flight_654-0-1&TicketsOrderSim.java@65 Int)
+(assert (>= OW-flight_654-0-1&TicketsOrderSim.java@65 0))
+(assert (<= OW-flight_654-0-1&TicketsOrderSim.java@65 322))
+(declare-const OW-airline_654-0-1&TicketsOrderSim.java@66 Int)
+(assert (>= OW-airline_654-0-1&TicketsOrderSim.java@66 0))
+(assert (<= OW-airline_654-0-1&TicketsOrderSim.java@66 322))
+(declare-const OW-agent_name_654-0-1&TicketsOrderSim.java@67 Int)
+(assert (>= OW-agent_name_654-0-1&TicketsOrderSim.java@67 0))
+(assert (<= OW-agent_name_654-0-1&TicketsOrderSim.java@67 322))
+(declare-const OW-ticket_653-0-1&TicketsOrderSim.java@84 Int)
+(assert (>= OW-ticket_653-0-1&TicketsOrderSim.java@84 0))
+(assert (<= OW-ticket_653-0-1&TicketsOrderSim.java@84 322))
+(declare-const OW-seats_651-0-1&TicketsOrderSim.java@181 Int)
+(assert (>= OW-seats_651-0-1&TicketsOrderSim.java@181 0))
+(assert (<= OW-seats_651-0-1&TicketsOrderSim.java@181 322))
+(declare-const OR-seats_num_51-0-7&TicketsOrderSim.java@180 Int)
+(assert (>= OR-seats_num_51-0-7&TicketsOrderSim.java@180 0))
+(assert (<= OR-seats_num_51-0-7&TicketsOrderSim.java@180 322))
+(declare-const branch-0-5 Int)
+(assert (>= branch-0-5 0))
+(assert (<= branch-0-5 322))
+(declare-const OS-fork_1-0-0&TicketsOrderSim.java@189 Int)
+(assert (>= OS-fork_1-0-0&TicketsOrderSim.java@189 0))
+(assert (<= OS-fork_1-0-0&TicketsOrderSim.java@189 322))
+(declare-const OS-fork_2-0-0&TicketsOrderSim.java@189 Int)
+(assert (>= OS-fork_2-0-0&TicketsOrderSim.java@189 0))
+(assert (<= OS-fork_2-0-0&TicketsOrderSim.java@189 322))
+(declare-const OS-fork_3-0-0&TicketsOrderSim.java@189 Int)
+(assert (>= OS-fork_3-0-0&TicketsOrderSim.java@189 0))
+(assert (<= OS-fork_3-0-0&TicketsOrderSim.java@189 322))
+(declare-const OS-join_1-0-0&TicketsOrderSim.java@194 Int)
+(assert (>= OS-join_1-0-0&TicketsOrderSim.java@194 0))
+(assert (<= OS-join_1-0-0&TicketsOrderSim.java@194 322))
+(declare-const OS-join_2-0-0&TicketsOrderSim.java@194 Int)
+(assert (>= OS-join_2-0-0&TicketsOrderSim.java@194 0))
+(assert (<= OS-join_2-0-0&TicketsOrderSim.java@194 322))
+(declare-const OS-join_3-0-0&TicketsOrderSim.java@194 Int)
+(assert (>= OS-join_3-0-0&TicketsOrderSim.java@194 0))
+(assert (<= OS-join_3-0-0&TicketsOrderSim.java@194 322))
+(declare-const OR-bug_occured_51-0-1&TicketsOrderSim.java@220 Int)
+(assert (>= OR-bug_occured_51-0-1&TicketsOrderSim.java@220 0))
+(assert (<= OR-bug_occured_51-0-1&TicketsOrderSim.java@220 322))
+(declare-const OR-bug_occured_51-0-2&TicketsOrderSim.java@221 Int)
+(assert (>= OR-bug_occured_51-0-2&TicketsOrderSim.java@221 0))
+(assert (<= OR-bug_occured_51-0-2&TicketsOrderSim.java@221 322))
+(declare-const OS-Assert-0&TicketsOrderSim.java@222 Int)
+(assert (>= OS-Assert-0&TicketsOrderSim.java@222 0))
+(assert (<= OS-Assert-0&TicketsOrderSim.java@222 322))
+(assert (! (< OW-bug_occured_51-0-1&TicketsOrderSim.java@20 OW-bug_count_51-0-1&TicketsOrderSim.java@21 OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-0-1&TicketsOrderSim.java@177 OR-seats_num_51-0-2&TicketsOrderSim.java@180 branch-0-0 OW-empty_629-0-1&TicketsOrderSim.java@63 OW-status_629-0-1&TicketsOrderSim.java@64 OW-flight_629-0-1&TicketsOrderSim.java@65 OW-airline_629-0-1&TicketsOrderSim.java@66 OW-agent_name_629-0-1&TicketsOrderSim.java@67 OW-ticket_252-0-1&TicketsOrderSim.java@84 OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_num_51-0-3&TicketsOrderSim.java@180 branch-0-1 OW-empty_648-0-1&TicketsOrderSim.java@63 OW-status_648-0-1&TicketsOrderSim.java@64 OW-flight_648-0-1&TicketsOrderSim.java@65 OW-airline_648-0-1&TicketsOrderSim.java@66 OW-agent_name_648-0-1&TicketsOrderSim.java@67 OW-ticket_635-0-1&TicketsOrderSim.java@84 OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_num_51-0-4&TicketsOrderSim.java@180 branch-0-2 OW-empty_650-0-1&TicketsOrderSim.java@63 OW-status_650-0-1&TicketsOrderSim.java@64 OW-flight_650-0-1&TicketsOrderSim.java@65 OW-airline_650-0-1&TicketsOrderSim.java@66 OW-agent_name_650-0-1&TicketsOrderSim.java@67 OW-ticket_649-0-1&TicketsOrderSim.java@84 OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_num_51-0-5&TicketsOrderSim.java@180 branch-0-3 OW-empty_652-0-1&TicketsOrderSim.java@63 OW-status_652-0-1&TicketsOrderSim.java@64 OW-flight_652-0-1&TicketsOrderSim.java@65 OW-airline_652-0-1&TicketsOrderSim.java@66 OW-agent_name_652-0-1&TicketsOrderSim.java@67 OW-ticket_651-0-1&TicketsOrderSim.java@84 OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_num_51-0-6&TicketsOrderSim.java@180 branch-0-4 OW-empty_654-0-1&TicketsOrderSim.java@63 OW-status_654-0-1&TicketsOrderSim.java@64 OW-flight_654-0-1&TicketsOrderSim.java@65 OW-airline_654-0-1&TicketsOrderSim.java@66 OW-agent_name_654-0-1&TicketsOrderSim.java@67 OW-ticket_653-0-1&TicketsOrderSim.java@84 OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_num_51-0-7&TicketsOrderSim.java@180 branch-0-5 OS-fork_1-0-0&TicketsOrderSim.java@189 OS-fork_2-0-0&TicketsOrderSim.java@189 OS-fork_3-0-0&TicketsOrderSim.java@189 OS-join_1-0-0&TicketsOrderSim.java@194 OS-join_2-0-0&TicketsOrderSim.java@194 OS-join_3-0-0&TicketsOrderSim.java@194 OR-bug_occured_51-0-1&TicketsOrderSim.java@220 OR-bug_occured_51-0-2&TicketsOrderSim.java@221 OS-Assert-0&TicketsOrderSim.java@222):named MO0))
+
+(declare-const OS-start-1&InstrumentationHandler.java@16 Int)
+(assert (>= OS-start-1&InstrumentationHandler.java@16 0))
+(assert (<= OS-start-1&InstrumentationHandler.java@16 322))
+(declare-const OR-seats_num_51-1-1&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-1-1&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-1-1&TicketsOrderSim.java@100 322))
+(declare-const branch-1-0 Int)
+(assert (>= branch-1-0 0))
+(assert (<= branch-1-0 322))
+(declare-const OR-seats_647-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_647-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_647-1-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_252-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_252-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_252-1-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_629-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_629-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_629-1-1&TicketsOrderSim.java@101 322))
+(declare-const branch-1-1 Int)
+(assert (>= branch-1-1 0))
+(assert (<= branch-1-1 322))
+(declare-const OR-seats_647-1-2&TicketsOrderSim.java@102 Int)
+(assert (>= OR-seats_647-1-2&TicketsOrderSim.java@102 0))
+(assert (<= OR-seats_647-1-2&TicketsOrderSim.java@102 322))
+(declare-const OR-seats_647-1-3&TicketsOrderSim.java@103 Int)
+(assert (>= OR-seats_647-1-3&TicketsOrderSim.java@103 0))
+(assert (<= OR-seats_647-1-3&TicketsOrderSim.java@103 322))
+(declare-const OR-ticket_252-1-2&TicketsOrderSim.java@103 Int)
+(assert (>= OR-ticket_252-1-2&TicketsOrderSim.java@103 0))
+(assert (<= OR-ticket_252-1-2&TicketsOrderSim.java@103 322))
+(declare-const OR-empty_629-1-2&TicketsOrderSim.java@103 Int)
+(assert (>= OR-empty_629-1-2&TicketsOrderSim.java@103 0))
+(assert (<= OR-empty_629-1-2&TicketsOrderSim.java@103 322))
+(declare-const branch-1-2 Int)
+(assert (>= branch-1-2 0))
+(assert (<= branch-1-2 322))
+(declare-const OR-seats_647-1-4&TicketsOrderSim.java@104 Int)
+(assert (>= OR-seats_647-1-4&TicketsOrderSim.java@104 0))
+(assert (<= OR-seats_647-1-4&TicketsOrderSim.java@104 322))
+(declare-const OR-ticket_252-1-3&TicketsOrderSim.java@104 Int)
+(assert (>= OR-ticket_252-1-3&TicketsOrderSim.java@104 0))
+(assert (<= OR-ticket_252-1-3&TicketsOrderSim.java@104 322))
+(declare-const OW-empty_629-1-1&TicketsOrderSim.java@72 Int)
+(assert (>= OW-empty_629-1-1&TicketsOrderSim.java@72 0))
+(assert (<= OW-empty_629-1-1&TicketsOrderSim.java@72 322))
+(declare-const OW-flight_629-1-1&TicketsOrderSim.java@73 Int)
+(assert (>= OW-flight_629-1-1&TicketsOrderSim.java@73 0))
+(assert (<= OW-flight_629-1-1&TicketsOrderSim.java@73 322))
+(declare-const OW-airline_629-1-1&TicketsOrderSim.java@74 Int)
+(assert (>= OW-airline_629-1-1&TicketsOrderSim.java@74 0))
+(assert (<= OW-airline_629-1-1&TicketsOrderSim.java@74 322))
+(declare-const OW-status_629-1-1&TicketsOrderSim.java@75 Int)
+(assert (>= OW-status_629-1-1&TicketsOrderSim.java@75 0))
+(assert (<= OW-status_629-1-1&TicketsOrderSim.java@75 322))
+(declare-const OW-agent_name_629-1-1&TicketsOrderSim.java@76 Int)
+(assert (>= OW-agent_name_629-1-1&TicketsOrderSim.java@76 0))
+(assert (<= OW-agent_name_629-1-1&TicketsOrderSim.java@76 322))
+(declare-const OR-seats_num_51-1-2&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-1-2&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-1-2&TicketsOrderSim.java@100 322))
+(declare-const branch-1-3 Int)
+(assert (>= branch-1-3 0))
+(assert (<= branch-1-3 322))
+(declare-const OR-seats_648-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_648-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_648-1-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_635-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_635-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_635-1-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_648-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_648-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_648-1-1&TicketsOrderSim.java@101 322))
+(declare-const branch-1-4 Int)
+(assert (>= branch-1-4 0))
+(assert (<= branch-1-4 322))
+(declare-const OR-seats_648-1-2&TicketsOrderSim.java@102 Int)
+(assert (>= OR-seats_648-1-2&TicketsOrderSim.java@102 0))
+(assert (<= OR-seats_648-1-2&TicketsOrderSim.java@102 322))
+(declare-const OR-seats_648-1-3&TicketsOrderSim.java@103 Int)
+(assert (>= OR-seats_648-1-3&TicketsOrderSim.java@103 0))
+(assert (<= OR-seats_648-1-3&TicketsOrderSim.java@103 322))
+(declare-const OR-ticket_635-1-2&TicketsOrderSim.java@103 Int)
+(assert (>= OR-ticket_635-1-2&TicketsOrderSim.java@103 0))
+(assert (<= OR-ticket_635-1-2&TicketsOrderSim.java@103 322))
+(declare-const OR-empty_648-1-2&TicketsOrderSim.java@103 Int)
+(assert (>= OR-empty_648-1-2&TicketsOrderSim.java@103 0))
+(assert (<= OR-empty_648-1-2&TicketsOrderSim.java@103 322))
+(declare-const branch-1-5 Int)
+(assert (>= branch-1-5 0))
+(assert (<= branch-1-5 322))
+(declare-const OR-seats_648-1-4&TicketsOrderSim.java@104 Int)
+(assert (>= OR-seats_648-1-4&TicketsOrderSim.java@104 0))
+(assert (<= OR-seats_648-1-4&TicketsOrderSim.java@104 322))
+(declare-const OR-ticket_635-1-3&TicketsOrderSim.java@104 Int)
+(assert (>= OR-ticket_635-1-3&TicketsOrderSim.java@104 0))
+(assert (<= OR-ticket_635-1-3&TicketsOrderSim.java@104 322))
+(declare-const OW-empty_648-1-1&TicketsOrderSim.java@72 Int)
+(assert (>= OW-empty_648-1-1&TicketsOrderSim.java@72 0))
+(assert (<= OW-empty_648-1-1&TicketsOrderSim.java@72 322))
+(declare-const OW-flight_648-1-1&TicketsOrderSim.java@73 Int)
+(assert (>= OW-flight_648-1-1&TicketsOrderSim.java@73 0))
+(assert (<= OW-flight_648-1-1&TicketsOrderSim.java@73 322))
+(declare-const OW-airline_648-1-1&TicketsOrderSim.java@74 Int)
+(assert (>= OW-airline_648-1-1&TicketsOrderSim.java@74 0))
+(assert (<= OW-airline_648-1-1&TicketsOrderSim.java@74 322))
+(declare-const OW-status_648-1-1&TicketsOrderSim.java@75 Int)
+(assert (>= OW-status_648-1-1&TicketsOrderSim.java@75 0))
+(assert (<= OW-status_648-1-1&TicketsOrderSim.java@75 322))
+(declare-const OW-agent_name_648-1-1&TicketsOrderSim.java@76 Int)
+(assert (>= OW-agent_name_648-1-1&TicketsOrderSim.java@76 0))
+(assert (<= OW-agent_name_648-1-1&TicketsOrderSim.java@76 322))
+(declare-const OR-seats_num_51-1-3&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-1-3&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-1-3&TicketsOrderSim.java@100 322))
+(declare-const branch-1-6 Int)
+(assert (>= branch-1-6 0))
+(assert (<= branch-1-6 322))
+(declare-const OR-seats_649-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_649-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_649-1-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_649-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_649-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_649-1-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_650-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_650-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_650-1-1&TicketsOrderSim.java@101 322))
+(declare-const branch-1-7 Int)
+(assert (>= branch-1-7 0))
+(assert (<= branch-1-7 322))
+(declare-const OR-seats_649-1-2&TicketsOrderSim.java@102 Int)
+(assert (>= OR-seats_649-1-2&TicketsOrderSim.java@102 0))
+(assert (<= OR-seats_649-1-2&TicketsOrderSim.java@102 322))
+(declare-const OR-seats_649-1-3&TicketsOrderSim.java@103 Int)
+(assert (>= OR-seats_649-1-3&TicketsOrderSim.java@103 0))
+(assert (<= OR-seats_649-1-3&TicketsOrderSim.java@103 322))
+(declare-const OR-ticket_649-1-2&TicketsOrderSim.java@103 Int)
+(assert (>= OR-ticket_649-1-2&TicketsOrderSim.java@103 0))
+(assert (<= OR-ticket_649-1-2&TicketsOrderSim.java@103 322))
+(declare-const OR-empty_650-1-2&TicketsOrderSim.java@103 Int)
+(assert (>= OR-empty_650-1-2&TicketsOrderSim.java@103 0))
+(assert (<= OR-empty_650-1-2&TicketsOrderSim.java@103 322))
+(declare-const branch-1-8 Int)
+(assert (>= branch-1-8 0))
+(assert (<= branch-1-8 322))
+(declare-const OR-seats_649-1-4&TicketsOrderSim.java@104 Int)
+(assert (>= OR-seats_649-1-4&TicketsOrderSim.java@104 0))
+(assert (<= OR-seats_649-1-4&TicketsOrderSim.java@104 322))
+(declare-const OR-ticket_649-1-3&TicketsOrderSim.java@104 Int)
+(assert (>= OR-ticket_649-1-3&TicketsOrderSim.java@104 0))
+(assert (<= OR-ticket_649-1-3&TicketsOrderSim.java@104 322))
+(declare-const OW-empty_650-1-1&TicketsOrderSim.java@72 Int)
+(assert (>= OW-empty_650-1-1&TicketsOrderSim.java@72 0))
+(assert (<= OW-empty_650-1-1&TicketsOrderSim.java@72 322))
+(declare-const OW-flight_650-1-1&TicketsOrderSim.java@73 Int)
+(assert (>= OW-flight_650-1-1&TicketsOrderSim.java@73 0))
+(assert (<= OW-flight_650-1-1&TicketsOrderSim.java@73 322))
+(declare-const OW-airline_650-1-1&TicketsOrderSim.java@74 Int)
+(assert (>= OW-airline_650-1-1&TicketsOrderSim.java@74 0))
+(assert (<= OW-airline_650-1-1&TicketsOrderSim.java@74 322))
+(declare-const OW-status_650-1-1&TicketsOrderSim.java@75 Int)
+(assert (>= OW-status_650-1-1&TicketsOrderSim.java@75 0))
+(assert (<= OW-status_650-1-1&TicketsOrderSim.java@75 322))
+(declare-const OW-agent_name_650-1-1&TicketsOrderSim.java@76 Int)
+(assert (>= OW-agent_name_650-1-1&TicketsOrderSim.java@76 0))
+(assert (<= OW-agent_name_650-1-1&TicketsOrderSim.java@76 322))
+(declare-const OR-seats_num_51-1-4&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-1-4&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-1-4&TicketsOrderSim.java@100 322))
+(declare-const branch-1-9 Int)
+(assert (>= branch-1-9 0))
+(assert (<= branch-1-9 322))
+(declare-const OR-seats_650-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_650-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_650-1-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_651-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_651-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_651-1-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_652-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_652-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_652-1-1&TicketsOrderSim.java@101 322))
+(declare-const branch-1-10 Int)
+(assert (>= branch-1-10 0))
+(assert (<= branch-1-10 322))
+(declare-const OR-seats_650-1-2&TicketsOrderSim.java@102 Int)
+(assert (>= OR-seats_650-1-2&TicketsOrderSim.java@102 0))
+(assert (<= OR-seats_650-1-2&TicketsOrderSim.java@102 322))
+(declare-const OR-seats_650-1-3&TicketsOrderSim.java@103 Int)
+(assert (>= OR-seats_650-1-3&TicketsOrderSim.java@103 0))
+(assert (<= OR-seats_650-1-3&TicketsOrderSim.java@103 322))
+(declare-const OR-ticket_651-1-2&TicketsOrderSim.java@103 Int)
+(assert (>= OR-ticket_651-1-2&TicketsOrderSim.java@103 0))
+(assert (<= OR-ticket_651-1-2&TicketsOrderSim.java@103 322))
+(declare-const OR-empty_652-1-2&TicketsOrderSim.java@103 Int)
+(assert (>= OR-empty_652-1-2&TicketsOrderSim.java@103 0))
+(assert (<= OR-empty_652-1-2&TicketsOrderSim.java@103 322))
+(declare-const branch-1-11 Int)
+(assert (>= branch-1-11 0))
+(assert (<= branch-1-11 322))
+(declare-const OR-seats_650-1-4&TicketsOrderSim.java@104 Int)
+(assert (>= OR-seats_650-1-4&TicketsOrderSim.java@104 0))
+(assert (<= OR-seats_650-1-4&TicketsOrderSim.java@104 322))
+(declare-const OR-ticket_651-1-3&TicketsOrderSim.java@104 Int)
+(assert (>= OR-ticket_651-1-3&TicketsOrderSim.java@104 0))
+(assert (<= OR-ticket_651-1-3&TicketsOrderSim.java@104 322))
+(declare-const OW-empty_652-1-1&TicketsOrderSim.java@72 Int)
+(assert (>= OW-empty_652-1-1&TicketsOrderSim.java@72 0))
+(assert (<= OW-empty_652-1-1&TicketsOrderSim.java@72 322))
+(declare-const OW-flight_652-1-1&TicketsOrderSim.java@73 Int)
+(assert (>= OW-flight_652-1-1&TicketsOrderSim.java@73 0))
+(assert (<= OW-flight_652-1-1&TicketsOrderSim.java@73 322))
+(declare-const OW-airline_652-1-1&TicketsOrderSim.java@74 Int)
+(assert (>= OW-airline_652-1-1&TicketsOrderSim.java@74 0))
+(assert (<= OW-airline_652-1-1&TicketsOrderSim.java@74 322))
+(declare-const OW-status_652-1-1&TicketsOrderSim.java@75 Int)
+(assert (>= OW-status_652-1-1&TicketsOrderSim.java@75 0))
+(assert (<= OW-status_652-1-1&TicketsOrderSim.java@75 322))
+(declare-const OW-agent_name_652-1-1&TicketsOrderSim.java@76 Int)
+(assert (>= OW-agent_name_652-1-1&TicketsOrderSim.java@76 0))
+(assert (<= OW-agent_name_652-1-1&TicketsOrderSim.java@76 322))
+(declare-const OR-seats_num_51-1-5&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-1-5&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-1-5&TicketsOrderSim.java@100 322))
+(declare-const branch-1-12 Int)
+(assert (>= branch-1-12 0))
+(assert (<= branch-1-12 322))
+(declare-const OR-seats_651-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_651-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_651-1-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_653-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_653-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_653-1-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_654-1-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_654-1-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_654-1-1&TicketsOrderSim.java@101 322))
+(declare-const branch-1-13 Int)
+(assert (>= branch-1-13 0))
+(assert (<= branch-1-13 322))
+(declare-const OR-seats_651-1-2&TicketsOrderSim.java@102 Int)
+(assert (>= OR-seats_651-1-2&TicketsOrderSim.java@102 0))
+(assert (<= OR-seats_651-1-2&TicketsOrderSim.java@102 322))
+(declare-const OR-seats_651-1-3&TicketsOrderSim.java@103 Int)
+(assert (>= OR-seats_651-1-3&TicketsOrderSim.java@103 0))
+(assert (<= OR-seats_651-1-3&TicketsOrderSim.java@103 322))
+(declare-const OR-ticket_653-1-2&TicketsOrderSim.java@103 Int)
+(assert (>= OR-ticket_653-1-2&TicketsOrderSim.java@103 0))
+(assert (<= OR-ticket_653-1-2&TicketsOrderSim.java@103 322))
+(declare-const OR-empty_654-1-2&TicketsOrderSim.java@103 Int)
+(assert (>= OR-empty_654-1-2&TicketsOrderSim.java@103 0))
+(assert (<= OR-empty_654-1-2&TicketsOrderSim.java@103 322))
+(declare-const branch-1-14 Int)
+(assert (>= branch-1-14 0))
+(assert (<= branch-1-14 322))
+(declare-const OR-seats_651-1-4&TicketsOrderSim.java@104 Int)
+(assert (>= OR-seats_651-1-4&TicketsOrderSim.java@104 0))
+(assert (<= OR-seats_651-1-4&TicketsOrderSim.java@104 322))
+(declare-const OR-ticket_653-1-3&TicketsOrderSim.java@104 Int)
+(assert (>= OR-ticket_653-1-3&TicketsOrderSim.java@104 0))
+(assert (<= OR-ticket_653-1-3&TicketsOrderSim.java@104 322))
+(declare-const OW-empty_654-1-1&TicketsOrderSim.java@72 Int)
+(assert (>= OW-empty_654-1-1&TicketsOrderSim.java@72 0))
+(assert (<= OW-empty_654-1-1&TicketsOrderSim.java@72 322))
+(declare-const OW-flight_654-1-1&TicketsOrderSim.java@73 Int)
+(assert (>= OW-flight_654-1-1&TicketsOrderSim.java@73 0))
+(assert (<= OW-flight_654-1-1&TicketsOrderSim.java@73 322))
+(declare-const OW-airline_654-1-1&TicketsOrderSim.java@74 Int)
+(assert (>= OW-airline_654-1-1&TicketsOrderSim.java@74 0))
+(assert (<= OW-airline_654-1-1&TicketsOrderSim.java@74 322))
+(declare-const OW-status_654-1-1&TicketsOrderSim.java@75 Int)
+(assert (>= OW-status_654-1-1&TicketsOrderSim.java@75 0))
+(assert (<= OW-status_654-1-1&TicketsOrderSim.java@75 322))
+(declare-const OW-agent_name_654-1-1&TicketsOrderSim.java@76 Int)
+(assert (>= OW-agent_name_654-1-1&TicketsOrderSim.java@76 0))
+(assert (<= OW-agent_name_654-1-1&TicketsOrderSim.java@76 322))
+(declare-const OR-seats_num_51-1-6&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-1-6&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-1-6&TicketsOrderSim.java@100 322))
+(declare-const branch-1-15 Int)
+(assert (>= branch-1-15 0))
+(assert (<= branch-1-15 322))
+(declare-const OS-exit-1&TicketsOrderSim.java@1 Int)
+(assert (>= OS-exit-1&TicketsOrderSim.java@1 0))
+(assert (<= OS-exit-1&TicketsOrderSim.java@1 322))
+(assert (! (< OS-start-1&InstrumentationHandler.java@16 OR-seats_num_51-1-1&TicketsOrderSim.java@100 branch-1-0 OR-seats_647-1-1&TicketsOrderSim.java@101 OR-ticket_252-1-1&TicketsOrderSim.java@101 OR-empty_629-1-1&TicketsOrderSim.java@101 branch-1-1 OR-seats_647-1-2&TicketsOrderSim.java@102 OR-seats_647-1-3&TicketsOrderSim.java@103 OR-ticket_252-1-2&TicketsOrderSim.java@103 OR-empty_629-1-2&TicketsOrderSim.java@103 branch-1-2 OR-seats_647-1-4&TicketsOrderSim.java@104 OR-ticket_252-1-3&TicketsOrderSim.java@104 OW-empty_629-1-1&TicketsOrderSim.java@72 OW-flight_629-1-1&TicketsOrderSim.java@73 OW-airline_629-1-1&TicketsOrderSim.java@74 OW-status_629-1-1&TicketsOrderSim.java@75 OW-agent_name_629-1-1&TicketsOrderSim.java@76 OR-seats_num_51-1-2&TicketsOrderSim.java@100 branch-1-3 OR-seats_648-1-1&TicketsOrderSim.java@101 OR-ticket_635-1-1&TicketsOrderSim.java@101 OR-empty_648-1-1&TicketsOrderSim.java@101 branch-1-4 OR-seats_648-1-2&TicketsOrderSim.java@102 OR-seats_648-1-3&TicketsOrderSim.java@103 OR-ticket_635-1-2&TicketsOrderSim.java@103 OR-empty_648-1-2&TicketsOrderSim.java@103 branch-1-5 OR-seats_648-1-4&TicketsOrderSim.java@104 OR-ticket_635-1-3&TicketsOrderSim.java@104 OW-empty_648-1-1&TicketsOrderSim.java@72 OW-flight_648-1-1&TicketsOrderSim.java@73 OW-airline_648-1-1&TicketsOrderSim.java@74 OW-status_648-1-1&TicketsOrderSim.java@75 OW-agent_name_648-1-1&TicketsOrderSim.java@76 OR-seats_num_51-1-3&TicketsOrderSim.java@100 branch-1-6 OR-seats_649-1-1&TicketsOrderSim.java@101 OR-ticket_649-1-1&TicketsOrderSim.java@101 OR-empty_650-1-1&TicketsOrderSim.java@101 branch-1-7 OR-seats_649-1-2&TicketsOrderSim.java@102 OR-seats_649-1-3&TicketsOrderSim.java@103 OR-ticket_649-1-2&TicketsOrderSim.java@103 OR-empty_650-1-2&TicketsOrderSim.java@103 branch-1-8 OR-seats_649-1-4&TicketsOrderSim.java@104 OR-ticket_649-1-3&TicketsOrderSim.java@104 OW-empty_650-1-1&TicketsOrderSim.java@72 OW-flight_650-1-1&TicketsOrderSim.java@73 OW-airline_650-1-1&TicketsOrderSim.java@74 OW-status_650-1-1&TicketsOrderSim.java@75 OW-agent_name_650-1-1&TicketsOrderSim.java@76 OR-seats_num_51-1-4&TicketsOrderSim.java@100 branch-1-9 OR-seats_650-1-1&TicketsOrderSim.java@101 OR-ticket_651-1-1&TicketsOrderSim.java@101 OR-empty_652-1-1&TicketsOrderSim.java@101 branch-1-10 OR-seats_650-1-2&TicketsOrderSim.java@102 OR-seats_650-1-3&TicketsOrderSim.java@103 OR-ticket_651-1-2&TicketsOrderSim.java@103 OR-empty_652-1-2&TicketsOrderSim.java@103 branch-1-11 OR-seats_650-1-4&TicketsOrderSim.java@104 OR-ticket_651-1-3&TicketsOrderSim.java@104 OW-empty_652-1-1&TicketsOrderSim.java@72 OW-flight_652-1-1&TicketsOrderSim.java@73 OW-airline_652-1-1&TicketsOrderSim.java@74 OW-status_652-1-1&TicketsOrderSim.java@75 OW-agent_name_652-1-1&TicketsOrderSim.java@76 OR-seats_num_51-1-5&TicketsOrderSim.java@100 branch-1-12 OR-seats_651-1-1&TicketsOrderSim.java@101 OR-ticket_653-1-1&TicketsOrderSim.java@101 OR-empty_654-1-1&TicketsOrderSim.java@101 branch-1-13 OR-seats_651-1-2&TicketsOrderSim.java@102 OR-seats_651-1-3&TicketsOrderSim.java@103 OR-ticket_653-1-2&TicketsOrderSim.java@103 OR-empty_654-1-2&TicketsOrderSim.java@103 branch-1-14 OR-seats_651-1-4&TicketsOrderSim.java@104 OR-ticket_653-1-3&TicketsOrderSim.java@104 OW-empty_654-1-1&TicketsOrderSim.java@72 OW-flight_654-1-1&TicketsOrderSim.java@73 OW-airline_654-1-1&TicketsOrderSim.java@74 OW-status_654-1-1&TicketsOrderSim.java@75 OW-agent_name_654-1-1&TicketsOrderSim.java@76 OR-seats_num_51-1-6&TicketsOrderSim.java@100 branch-1-15 OS-exit-1&TicketsOrderSim.java@1):named MO1))
+
+(declare-const OS-start-2&InstrumentationHandler.java@16 Int)
+(assert (>= OS-start-2&InstrumentationHandler.java@16 0))
+(assert (<= OS-start-2&InstrumentationHandler.java@16 322))
+(declare-const OR-seats_num_51-2-1&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-2-1&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-2-1&TicketsOrderSim.java@100 322))
+(declare-const branch-2-0 Int)
+(assert (>= branch-2-0 0))
+(assert (<= branch-2-0 322))
+(declare-const OR-seats_647-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_647-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_647-2-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_252-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_252-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_252-2-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_629-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_629-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_629-2-1&TicketsOrderSim.java@101 322))
+(declare-const branch-2-1 Int)
+(assert (>= branch-2-1 0))
+(assert (<= branch-2-1 322))
+(declare-const OR-seats_647-2-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-seats_647-2-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-seats_647-2-2&TicketsOrderSim.java@110 322))
+(declare-const OR-ticket_252-2-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-ticket_252-2-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-ticket_252-2-2&TicketsOrderSim.java@110 322))
+(declare-const OR-seats_647-2-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-seats_647-2-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-seats_647-2-3&TicketsOrderSim.java@28 322))
+(declare-const OR-ticket_252-2-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-ticket_252-2-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-ticket_252-2-3&TicketsOrderSim.java@28 322))
+(declare-const OR-flight_629-2-1&TicketsOrderSim.java@28 Int)
+(assert (>= OR-flight_629-2-1&TicketsOrderSim.java@28 0))
+(assert (<= OR-flight_629-2-1&TicketsOrderSim.java@28 322))
+(declare-const branch-2-2 Int)
+(assert (>= branch-2-2 0))
+(assert (<= branch-2-2 322))
+(declare-const OR-seats_647-2-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-seats_647-2-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-seats_647-2-4&TicketsOrderSim.java@33 322))
+(declare-const OR-ticket_252-2-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-ticket_252-2-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-ticket_252-2-4&TicketsOrderSim.java@33 322))
+(declare-const OR-airline_629-2-1&TicketsOrderSim.java@33 Int)
+(assert (>= OR-airline_629-2-1&TicketsOrderSim.java@33 0))
+(assert (<= OR-airline_629-2-1&TicketsOrderSim.java@33 322))
+(declare-const branch-2-3 Int)
+(assert (>= branch-2-3 0))
+(assert (<= branch-2-3 322))
+(declare-const OR-seats_num_51-2-2&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-2-2&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-2-2&TicketsOrderSim.java@100 322))
+(declare-const branch-2-4 Int)
+(assert (>= branch-2-4 0))
+(assert (<= branch-2-4 322))
+(declare-const OR-seats_648-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_648-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_648-2-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_635-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_635-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_635-2-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_648-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_648-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_648-2-1&TicketsOrderSim.java@101 322))
+(declare-const branch-2-5 Int)
+(assert (>= branch-2-5 0))
+(assert (<= branch-2-5 322))
+(declare-const OR-seats_648-2-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-seats_648-2-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-seats_648-2-2&TicketsOrderSim.java@110 322))
+(declare-const OR-ticket_635-2-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-ticket_635-2-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-ticket_635-2-2&TicketsOrderSim.java@110 322))
+(declare-const OR-seats_648-2-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-seats_648-2-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-seats_648-2-3&TicketsOrderSim.java@28 322))
+(declare-const OR-ticket_635-2-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-ticket_635-2-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-ticket_635-2-3&TicketsOrderSim.java@28 322))
+(declare-const OR-flight_648-2-1&TicketsOrderSim.java@28 Int)
+(assert (>= OR-flight_648-2-1&TicketsOrderSim.java@28 0))
+(assert (<= OR-flight_648-2-1&TicketsOrderSim.java@28 322))
+(declare-const branch-2-6 Int)
+(assert (>= branch-2-6 0))
+(assert (<= branch-2-6 322))
+(declare-const OR-seats_648-2-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-seats_648-2-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-seats_648-2-4&TicketsOrderSim.java@33 322))
+(declare-const OR-ticket_635-2-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-ticket_635-2-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-ticket_635-2-4&TicketsOrderSim.java@33 322))
+(declare-const OR-airline_648-2-1&TicketsOrderSim.java@33 Int)
+(assert (>= OR-airline_648-2-1&TicketsOrderSim.java@33 0))
+(assert (<= OR-airline_648-2-1&TicketsOrderSim.java@33 322))
+(declare-const branch-2-7 Int)
+(assert (>= branch-2-7 0))
+(assert (<= branch-2-7 322))
+(declare-const OR-seats_num_51-2-3&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-2-3&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-2-3&TicketsOrderSim.java@100 322))
+(declare-const branch-2-8 Int)
+(assert (>= branch-2-8 0))
+(assert (<= branch-2-8 322))
+(declare-const OR-seats_649-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_649-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_649-2-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_649-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_649-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_649-2-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_650-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_650-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_650-2-1&TicketsOrderSim.java@101 322))
+(declare-const branch-2-9 Int)
+(assert (>= branch-2-9 0))
+(assert (<= branch-2-9 322))
+(declare-const OR-seats_649-2-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-seats_649-2-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-seats_649-2-2&TicketsOrderSim.java@110 322))
+(declare-const OR-ticket_649-2-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-ticket_649-2-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-ticket_649-2-2&TicketsOrderSim.java@110 322))
+(declare-const OR-seats_649-2-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-seats_649-2-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-seats_649-2-3&TicketsOrderSim.java@28 322))
+(declare-const OR-ticket_649-2-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-ticket_649-2-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-ticket_649-2-3&TicketsOrderSim.java@28 322))
+(declare-const OR-flight_650-2-1&TicketsOrderSim.java@28 Int)
+(assert (>= OR-flight_650-2-1&TicketsOrderSim.java@28 0))
+(assert (<= OR-flight_650-2-1&TicketsOrderSim.java@28 322))
+(declare-const branch-2-10 Int)
+(assert (>= branch-2-10 0))
+(assert (<= branch-2-10 322))
+(declare-const OR-seats_649-2-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-seats_649-2-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-seats_649-2-4&TicketsOrderSim.java@33 322))
+(declare-const OR-ticket_649-2-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-ticket_649-2-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-ticket_649-2-4&TicketsOrderSim.java@33 322))
+(declare-const OR-airline_650-2-1&TicketsOrderSim.java@33 Int)
+(assert (>= OR-airline_650-2-1&TicketsOrderSim.java@33 0))
+(assert (<= OR-airline_650-2-1&TicketsOrderSim.java@33 322))
+(declare-const branch-2-11 Int)
+(assert (>= branch-2-11 0))
+(assert (<= branch-2-11 322))
+(declare-const OR-seats_num_51-2-4&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-2-4&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-2-4&TicketsOrderSim.java@100 322))
+(declare-const branch-2-12 Int)
+(assert (>= branch-2-12 0))
+(assert (<= branch-2-12 322))
+(declare-const OR-seats_650-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_650-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_650-2-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_651-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_651-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_651-2-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_652-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_652-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_652-2-1&TicketsOrderSim.java@101 322))
+(declare-const branch-2-13 Int)
+(assert (>= branch-2-13 0))
+(assert (<= branch-2-13 322))
+(declare-const OR-seats_650-2-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-seats_650-2-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-seats_650-2-2&TicketsOrderSim.java@110 322))
+(declare-const OR-ticket_651-2-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-ticket_651-2-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-ticket_651-2-2&TicketsOrderSim.java@110 322))
+(declare-const OR-seats_650-2-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-seats_650-2-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-seats_650-2-3&TicketsOrderSim.java@28 322))
+(declare-const OR-ticket_651-2-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-ticket_651-2-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-ticket_651-2-3&TicketsOrderSim.java@28 322))
+(declare-const OR-flight_652-2-1&TicketsOrderSim.java@28 Int)
+(assert (>= OR-flight_652-2-1&TicketsOrderSim.java@28 0))
+(assert (<= OR-flight_652-2-1&TicketsOrderSim.java@28 322))
+(declare-const branch-2-14 Int)
+(assert (>= branch-2-14 0))
+(assert (<= branch-2-14 322))
+(declare-const OR-seats_650-2-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-seats_650-2-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-seats_650-2-4&TicketsOrderSim.java@33 322))
+(declare-const OR-ticket_651-2-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-ticket_651-2-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-ticket_651-2-4&TicketsOrderSim.java@33 322))
+(declare-const OR-airline_652-2-1&TicketsOrderSim.java@33 Int)
+(assert (>= OR-airline_652-2-1&TicketsOrderSim.java@33 0))
+(assert (<= OR-airline_652-2-1&TicketsOrderSim.java@33 322))
+(declare-const branch-2-15 Int)
+(assert (>= branch-2-15 0))
+(assert (<= branch-2-15 322))
+(declare-const OR-seats_num_51-2-5&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-2-5&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-2-5&TicketsOrderSim.java@100 322))
+(declare-const branch-2-16 Int)
+(assert (>= branch-2-16 0))
+(assert (<= branch-2-16 322))
+(declare-const OR-seats_651-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_651-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_651-2-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_653-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_653-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_653-2-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_654-2-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_654-2-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_654-2-1&TicketsOrderSim.java@101 322))
+(declare-const branch-2-17 Int)
+(assert (>= branch-2-17 0))
+(assert (<= branch-2-17 322))
+(declare-const OR-seats_651-2-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-seats_651-2-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-seats_651-2-2&TicketsOrderSim.java@110 322))
+(declare-const OR-ticket_653-2-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-ticket_653-2-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-ticket_653-2-2&TicketsOrderSim.java@110 322))
+(declare-const OR-seats_651-2-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-seats_651-2-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-seats_651-2-3&TicketsOrderSim.java@28 322))
+(declare-const OR-ticket_653-2-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-ticket_653-2-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-ticket_653-2-3&TicketsOrderSim.java@28 322))
+(declare-const OR-flight_654-2-1&TicketsOrderSim.java@28 Int)
+(assert (>= OR-flight_654-2-1&TicketsOrderSim.java@28 0))
+(assert (<= OR-flight_654-2-1&TicketsOrderSim.java@28 322))
+(declare-const branch-2-18 Int)
+(assert (>= branch-2-18 0))
+(assert (<= branch-2-18 322))
+(declare-const OR-seats_651-2-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-seats_651-2-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-seats_651-2-4&TicketsOrderSim.java@33 322))
+(declare-const OR-ticket_653-2-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-ticket_653-2-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-ticket_653-2-4&TicketsOrderSim.java@33 322))
+(declare-const OR-airline_654-2-1&TicketsOrderSim.java@33 Int)
+(assert (>= OR-airline_654-2-1&TicketsOrderSim.java@33 0))
+(assert (<= OR-airline_654-2-1&TicketsOrderSim.java@33 322))
+(declare-const branch-2-19 Int)
+(assert (>= branch-2-19 0))
+(assert (<= branch-2-19 322))
+(declare-const OR-seats_num_51-2-6&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-2-6&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-2-6&TicketsOrderSim.java@100 322))
+(declare-const branch-2-20 Int)
+(assert (>= branch-2-20 0))
+(assert (<= branch-2-20 322))
+(declare-const OS-exit-2&TicketsOrderSim.java@1 Int)
+(assert (>= OS-exit-2&TicketsOrderSim.java@1 0))
+(assert (<= OS-exit-2&TicketsOrderSim.java@1 322))
+(assert (! (< OS-start-2&InstrumentationHandler.java@16 OR-seats_num_51-2-1&TicketsOrderSim.java@100 branch-2-0 OR-seats_647-2-1&TicketsOrderSim.java@101 OR-ticket_252-2-1&TicketsOrderSim.java@101 OR-empty_629-2-1&TicketsOrderSim.java@101 branch-2-1 OR-seats_647-2-2&TicketsOrderSim.java@110 OR-ticket_252-2-2&TicketsOrderSim.java@110 OR-seats_647-2-3&TicketsOrderSim.java@28 OR-ticket_252-2-3&TicketsOrderSim.java@28 OR-flight_629-2-1&TicketsOrderSim.java@28 branch-2-2 OR-seats_647-2-4&TicketsOrderSim.java@33 OR-ticket_252-2-4&TicketsOrderSim.java@33 OR-airline_629-2-1&TicketsOrderSim.java@33 branch-2-3 OR-seats_num_51-2-2&TicketsOrderSim.java@100 branch-2-4 OR-seats_648-2-1&TicketsOrderSim.java@101 OR-ticket_635-2-1&TicketsOrderSim.java@101 OR-empty_648-2-1&TicketsOrderSim.java@101 branch-2-5 OR-seats_648-2-2&TicketsOrderSim.java@110 OR-ticket_635-2-2&TicketsOrderSim.java@110 OR-seats_648-2-3&TicketsOrderSim.java@28 OR-ticket_635-2-3&TicketsOrderSim.java@28 OR-flight_648-2-1&TicketsOrderSim.java@28 branch-2-6 OR-seats_648-2-4&TicketsOrderSim.java@33 OR-ticket_635-2-4&TicketsOrderSim.java@33 OR-airline_648-2-1&TicketsOrderSim.java@33 branch-2-7 OR-seats_num_51-2-3&TicketsOrderSim.java@100 branch-2-8 OR-seats_649-2-1&TicketsOrderSim.java@101 OR-ticket_649-2-1&TicketsOrderSim.java@101 OR-empty_650-2-1&TicketsOrderSim.java@101 branch-2-9 OR-seats_649-2-2&TicketsOrderSim.java@110 OR-ticket_649-2-2&TicketsOrderSim.java@110 OR-seats_649-2-3&TicketsOrderSim.java@28 OR-ticket_649-2-3&TicketsOrderSim.java@28 OR-flight_650-2-1&TicketsOrderSim.java@28 branch-2-10 OR-seats_649-2-4&TicketsOrderSim.java@33 OR-ticket_649-2-4&TicketsOrderSim.java@33 OR-airline_650-2-1&TicketsOrderSim.java@33 branch-2-11 OR-seats_num_51-2-4&TicketsOrderSim.java@100 branch-2-12 OR-seats_650-2-1&TicketsOrderSim.java@101 OR-ticket_651-2-1&TicketsOrderSim.java@101 OR-empty_652-2-1&TicketsOrderSim.java@101 branch-2-13 OR-seats_650-2-2&TicketsOrderSim.java@110 OR-ticket_651-2-2&TicketsOrderSim.java@110 OR-seats_650-2-3&TicketsOrderSim.java@28 OR-ticket_651-2-3&TicketsOrderSim.java@28 OR-flight_652-2-1&TicketsOrderSim.java@28 branch-2-14 OR-seats_650-2-4&TicketsOrderSim.java@33 OR-ticket_651-2-4&TicketsOrderSim.java@33 OR-airline_652-2-1&TicketsOrderSim.java@33 branch-2-15 OR-seats_num_51-2-5&TicketsOrderSim.java@100 branch-2-16 OR-seats_651-2-1&TicketsOrderSim.java@101 OR-ticket_653-2-1&TicketsOrderSim.java@101 OR-empty_654-2-1&TicketsOrderSim.java@101 branch-2-17 OR-seats_651-2-2&TicketsOrderSim.java@110 OR-ticket_653-2-2&TicketsOrderSim.java@110 OR-seats_651-2-3&TicketsOrderSim.java@28 OR-ticket_653-2-3&TicketsOrderSim.java@28 OR-flight_654-2-1&TicketsOrderSim.java@28 branch-2-18 OR-seats_651-2-4&TicketsOrderSim.java@33 OR-ticket_653-2-4&TicketsOrderSim.java@33 OR-airline_654-2-1&TicketsOrderSim.java@33 branch-2-19 OR-seats_num_51-2-6&TicketsOrderSim.java@100 branch-2-20 OS-exit-2&TicketsOrderSim.java@1):named MO2))
+
+(declare-const OS-start-3&InstrumentationHandler.java@16 Int)
+(assert (>= OS-start-3&InstrumentationHandler.java@16 0))
+(assert (<= OS-start-3&InstrumentationHandler.java@16 322))
+(declare-const OR-seats_num_51-3-1&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-3-1&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-3-1&TicketsOrderSim.java@100 322))
+(declare-const branch-3-0 Int)
+(assert (>= branch-3-0 0))
+(assert (<= branch-3-0 322))
+(declare-const OR-seats_647-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_647-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_647-3-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_252-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_252-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_252-3-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_629-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_629-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_629-3-1&TicketsOrderSim.java@101 322))
+(declare-const branch-3-1 Int)
+(assert (>= branch-3-1 0))
+(assert (<= branch-3-1 322))
+(declare-const OR-seats_647-3-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-seats_647-3-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-seats_647-3-2&TicketsOrderSim.java@110 322))
+(declare-const OR-ticket_252-3-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-ticket_252-3-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-ticket_252-3-2&TicketsOrderSim.java@110 322))
+(declare-const OR-seats_647-3-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-seats_647-3-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-seats_647-3-3&TicketsOrderSim.java@28 322))
+(declare-const OR-ticket_252-3-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-ticket_252-3-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-ticket_252-3-3&TicketsOrderSim.java@28 322))
+(declare-const OR-flight_629-3-1&TicketsOrderSim.java@28 Int)
+(assert (>= OR-flight_629-3-1&TicketsOrderSim.java@28 0))
+(assert (<= OR-flight_629-3-1&TicketsOrderSim.java@28 322))
+(declare-const branch-3-2 Int)
+(assert (>= branch-3-2 0))
+(assert (<= branch-3-2 322))
+(declare-const OR-seats_647-3-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-seats_647-3-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-seats_647-3-4&TicketsOrderSim.java@33 322))
+(declare-const OR-ticket_252-3-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-ticket_252-3-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-ticket_252-3-4&TicketsOrderSim.java@33 322))
+(declare-const OR-airline_629-3-1&TicketsOrderSim.java@33 Int)
+(assert (>= OR-airline_629-3-1&TicketsOrderSim.java@33 0))
+(assert (<= OR-airline_629-3-1&TicketsOrderSim.java@33 322))
+(declare-const branch-3-3 Int)
+(assert (>= branch-3-3 0))
+(assert (<= branch-3-3 322))
+(declare-const OR-seats_num_51-3-2&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-3-2&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-3-2&TicketsOrderSim.java@100 322))
+(declare-const branch-3-4 Int)
+(assert (>= branch-3-4 0))
+(assert (<= branch-3-4 322))
+(declare-const OR-seats_648-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_648-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_648-3-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_635-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_635-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_635-3-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_648-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_648-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_648-3-1&TicketsOrderSim.java@101 322))
+(declare-const branch-3-5 Int)
+(assert (>= branch-3-5 0))
+(assert (<= branch-3-5 322))
+(declare-const OR-seats_648-3-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-seats_648-3-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-seats_648-3-2&TicketsOrderSim.java@110 322))
+(declare-const OR-ticket_635-3-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-ticket_635-3-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-ticket_635-3-2&TicketsOrderSim.java@110 322))
+(declare-const OR-seats_648-3-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-seats_648-3-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-seats_648-3-3&TicketsOrderSim.java@28 322))
+(declare-const OR-ticket_635-3-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-ticket_635-3-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-ticket_635-3-3&TicketsOrderSim.java@28 322))
+(declare-const OR-flight_648-3-1&TicketsOrderSim.java@28 Int)
+(assert (>= OR-flight_648-3-1&TicketsOrderSim.java@28 0))
+(assert (<= OR-flight_648-3-1&TicketsOrderSim.java@28 322))
+(declare-const branch-3-6 Int)
+(assert (>= branch-3-6 0))
+(assert (<= branch-3-6 322))
+(declare-const OR-seats_648-3-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-seats_648-3-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-seats_648-3-4&TicketsOrderSim.java@33 322))
+(declare-const OR-ticket_635-3-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-ticket_635-3-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-ticket_635-3-4&TicketsOrderSim.java@33 322))
+(declare-const OR-airline_648-3-1&TicketsOrderSim.java@33 Int)
+(assert (>= OR-airline_648-3-1&TicketsOrderSim.java@33 0))
+(assert (<= OR-airline_648-3-1&TicketsOrderSim.java@33 322))
+(declare-const branch-3-7 Int)
+(assert (>= branch-3-7 0))
+(assert (<= branch-3-7 322))
+(declare-const OR-seats_num_51-3-3&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-3-3&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-3-3&TicketsOrderSim.java@100 322))
+(declare-const branch-3-8 Int)
+(assert (>= branch-3-8 0))
+(assert (<= branch-3-8 322))
+(declare-const OR-seats_649-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_649-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_649-3-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_649-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_649-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_649-3-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_650-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_650-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_650-3-1&TicketsOrderSim.java@101 322))
+(declare-const branch-3-9 Int)
+(assert (>= branch-3-9 0))
+(assert (<= branch-3-9 322))
+(declare-const OR-seats_649-3-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-seats_649-3-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-seats_649-3-2&TicketsOrderSim.java@110 322))
+(declare-const OR-ticket_649-3-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-ticket_649-3-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-ticket_649-3-2&TicketsOrderSim.java@110 322))
+(declare-const OR-seats_649-3-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-seats_649-3-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-seats_649-3-3&TicketsOrderSim.java@28 322))
+(declare-const OR-ticket_649-3-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-ticket_649-3-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-ticket_649-3-3&TicketsOrderSim.java@28 322))
+(declare-const OR-flight_650-3-1&TicketsOrderSim.java@28 Int)
+(assert (>= OR-flight_650-3-1&TicketsOrderSim.java@28 0))
+(assert (<= OR-flight_650-3-1&TicketsOrderSim.java@28 322))
+(declare-const branch-3-10 Int)
+(assert (>= branch-3-10 0))
+(assert (<= branch-3-10 322))
+(declare-const OR-seats_649-3-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-seats_649-3-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-seats_649-3-4&TicketsOrderSim.java@33 322))
+(declare-const OR-ticket_649-3-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-ticket_649-3-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-ticket_649-3-4&TicketsOrderSim.java@33 322))
+(declare-const OR-airline_650-3-1&TicketsOrderSim.java@33 Int)
+(assert (>= OR-airline_650-3-1&TicketsOrderSim.java@33 0))
+(assert (<= OR-airline_650-3-1&TicketsOrderSim.java@33 322))
+(declare-const branch-3-11 Int)
+(assert (>= branch-3-11 0))
+(assert (<= branch-3-11 322))
+(declare-const OR-seats_num_51-3-4&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-3-4&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-3-4&TicketsOrderSim.java@100 322))
+(declare-const branch-3-12 Int)
+(assert (>= branch-3-12 0))
+(assert (<= branch-3-12 322))
+(declare-const OR-seats_650-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_650-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_650-3-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_651-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_651-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_651-3-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_652-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_652-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_652-3-1&TicketsOrderSim.java@101 322))
+(declare-const branch-3-13 Int)
+(assert (>= branch-3-13 0))
+(assert (<= branch-3-13 322))
+(declare-const OR-seats_650-3-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-seats_650-3-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-seats_650-3-2&TicketsOrderSim.java@110 322))
+(declare-const OR-ticket_651-3-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-ticket_651-3-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-ticket_651-3-2&TicketsOrderSim.java@110 322))
+(declare-const OR-seats_650-3-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-seats_650-3-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-seats_650-3-3&TicketsOrderSim.java@28 322))
+(declare-const OR-ticket_651-3-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-ticket_651-3-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-ticket_651-3-3&TicketsOrderSim.java@28 322))
+(declare-const OR-flight_652-3-1&TicketsOrderSim.java@28 Int)
+(assert (>= OR-flight_652-3-1&TicketsOrderSim.java@28 0))
+(assert (<= OR-flight_652-3-1&TicketsOrderSim.java@28 322))
+(declare-const branch-3-14 Int)
+(assert (>= branch-3-14 0))
+(assert (<= branch-3-14 322))
+(declare-const OR-seats_650-3-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-seats_650-3-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-seats_650-3-4&TicketsOrderSim.java@33 322))
+(declare-const OR-ticket_651-3-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-ticket_651-3-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-ticket_651-3-4&TicketsOrderSim.java@33 322))
+(declare-const OR-airline_652-3-1&TicketsOrderSim.java@33 Int)
+(assert (>= OR-airline_652-3-1&TicketsOrderSim.java@33 0))
+(assert (<= OR-airline_652-3-1&TicketsOrderSim.java@33 322))
+(declare-const branch-3-15 Int)
+(assert (>= branch-3-15 0))
+(assert (<= branch-3-15 322))
+(declare-const OR-seats_num_51-3-5&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-3-5&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-3-5&TicketsOrderSim.java@100 322))
+(declare-const branch-3-16 Int)
+(assert (>= branch-3-16 0))
+(assert (<= branch-3-16 322))
+(declare-const OR-seats_651-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-seats_651-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-seats_651-3-1&TicketsOrderSim.java@101 322))
+(declare-const OR-ticket_653-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-ticket_653-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-ticket_653-3-1&TicketsOrderSim.java@101 322))
+(declare-const OR-empty_654-3-1&TicketsOrderSim.java@101 Int)
+(assert (>= OR-empty_654-3-1&TicketsOrderSim.java@101 0))
+(assert (<= OR-empty_654-3-1&TicketsOrderSim.java@101 322))
+(declare-const branch-3-17 Int)
+(assert (>= branch-3-17 0))
+(assert (<= branch-3-17 322))
+(declare-const OR-seats_651-3-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-seats_651-3-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-seats_651-3-2&TicketsOrderSim.java@110 322))
+(declare-const OR-ticket_653-3-2&TicketsOrderSim.java@110 Int)
+(assert (>= OR-ticket_653-3-2&TicketsOrderSim.java@110 0))
+(assert (<= OR-ticket_653-3-2&TicketsOrderSim.java@110 322))
+(declare-const OR-seats_651-3-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-seats_651-3-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-seats_651-3-3&TicketsOrderSim.java@28 322))
+(declare-const OR-ticket_653-3-3&TicketsOrderSim.java@28 Int)
+(assert (>= OR-ticket_653-3-3&TicketsOrderSim.java@28 0))
+(assert (<= OR-ticket_653-3-3&TicketsOrderSim.java@28 322))
+(declare-const OR-flight_654-3-1&TicketsOrderSim.java@28 Int)
+(assert (>= OR-flight_654-3-1&TicketsOrderSim.java@28 0))
+(assert (<= OR-flight_654-3-1&TicketsOrderSim.java@28 322))
+(declare-const branch-3-18 Int)
+(assert (>= branch-3-18 0))
+(assert (<= branch-3-18 322))
+(declare-const OR-seats_651-3-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-seats_651-3-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-seats_651-3-4&TicketsOrderSim.java@33 322))
+(declare-const OR-ticket_653-3-4&TicketsOrderSim.java@33 Int)
+(assert (>= OR-ticket_653-3-4&TicketsOrderSim.java@33 0))
+(assert (<= OR-ticket_653-3-4&TicketsOrderSim.java@33 322))
+(declare-const OR-airline_654-3-1&TicketsOrderSim.java@33 Int)
+(assert (>= OR-airline_654-3-1&TicketsOrderSim.java@33 0))
+(assert (<= OR-airline_654-3-1&TicketsOrderSim.java@33 322))
+(declare-const branch-3-19 Int)
+(assert (>= branch-3-19 0))
+(assert (<= branch-3-19 322))
+(declare-const OR-seats_num_51-3-6&TicketsOrderSim.java@100 Int)
+(assert (>= OR-seats_num_51-3-6&TicketsOrderSim.java@100 0))
+(assert (<= OR-seats_num_51-3-6&TicketsOrderSim.java@100 322))
+(declare-const branch-3-20 Int)
+(assert (>= branch-3-20 0))
+(assert (<= branch-3-20 322))
+(declare-const OS-exit-3&TicketsOrderSim.java@1 Int)
+(assert (>= OS-exit-3&TicketsOrderSim.java@1 0))
+(assert (<= OS-exit-3&TicketsOrderSim.java@1 322))
+(assert (! (< OS-start-3&InstrumentationHandler.java@16 OR-seats_num_51-3-1&TicketsOrderSim.java@100 branch-3-0 OR-seats_647-3-1&TicketsOrderSim.java@101 OR-ticket_252-3-1&TicketsOrderSim.java@101 OR-empty_629-3-1&TicketsOrderSim.java@101 branch-3-1 OR-seats_647-3-2&TicketsOrderSim.java@110 OR-ticket_252-3-2&TicketsOrderSim.java@110 OR-seats_647-3-3&TicketsOrderSim.java@28 OR-ticket_252-3-3&TicketsOrderSim.java@28 OR-flight_629-3-1&TicketsOrderSim.java@28 branch-3-2 OR-seats_647-3-4&TicketsOrderSim.java@33 OR-ticket_252-3-4&TicketsOrderSim.java@33 OR-airline_629-3-1&TicketsOrderSim.java@33 branch-3-3 OR-seats_num_51-3-2&TicketsOrderSim.java@100 branch-3-4 OR-seats_648-3-1&TicketsOrderSim.java@101 OR-ticket_635-3-1&TicketsOrderSim.java@101 OR-empty_648-3-1&TicketsOrderSim.java@101 branch-3-5 OR-seats_648-3-2&TicketsOrderSim.java@110 OR-ticket_635-3-2&TicketsOrderSim.java@110 OR-seats_648-3-3&TicketsOrderSim.java@28 OR-ticket_635-3-3&TicketsOrderSim.java@28 OR-flight_648-3-1&TicketsOrderSim.java@28 branch-3-6 OR-seats_648-3-4&TicketsOrderSim.java@33 OR-ticket_635-3-4&TicketsOrderSim.java@33 OR-airline_648-3-1&TicketsOrderSim.java@33 branch-3-7 OR-seats_num_51-3-3&TicketsOrderSim.java@100 branch-3-8 OR-seats_649-3-1&TicketsOrderSim.java@101 OR-ticket_649-3-1&TicketsOrderSim.java@101 OR-empty_650-3-1&TicketsOrderSim.java@101 branch-3-9 OR-seats_649-3-2&TicketsOrderSim.java@110 OR-ticket_649-3-2&TicketsOrderSim.java@110 OR-seats_649-3-3&TicketsOrderSim.java@28 OR-ticket_649-3-3&TicketsOrderSim.java@28 OR-flight_650-3-1&TicketsOrderSim.java@28 branch-3-10 OR-seats_649-3-4&TicketsOrderSim.java@33 OR-ticket_649-3-4&TicketsOrderSim.java@33 OR-airline_650-3-1&TicketsOrderSim.java@33 branch-3-11 OR-seats_num_51-3-4&TicketsOrderSim.java@100 branch-3-12 OR-seats_650-3-1&TicketsOrderSim.java@101 OR-ticket_651-3-1&TicketsOrderSim.java@101 OR-empty_652-3-1&TicketsOrderSim.java@101 branch-3-13 OR-seats_650-3-2&TicketsOrderSim.java@110 OR-ticket_651-3-2&TicketsOrderSim.java@110 OR-seats_650-3-3&TicketsOrderSim.java@28 OR-ticket_651-3-3&TicketsOrderSim.java@28 OR-flight_652-3-1&TicketsOrderSim.java@28 branch-3-14 OR-seats_650-3-4&TicketsOrderSim.java@33 OR-ticket_651-3-4&TicketsOrderSim.java@33 OR-airline_652-3-1&TicketsOrderSim.java@33 branch-3-15 OR-seats_num_51-3-5&TicketsOrderSim.java@100 branch-3-16 OR-seats_651-3-1&TicketsOrderSim.java@101 OR-ticket_653-3-1&TicketsOrderSim.java@101 OR-empty_654-3-1&TicketsOrderSim.java@101 branch-3-17 OR-seats_651-3-2&TicketsOrderSim.java@110 OR-ticket_653-3-2&TicketsOrderSim.java@110 OR-seats_651-3-3&TicketsOrderSim.java@28 OR-ticket_653-3-3&TicketsOrderSim.java@28 OR-flight_654-3-1&TicketsOrderSim.java@28 branch-3-18 OR-seats_651-3-4&TicketsOrderSim.java@33 OR-ticket_653-3-4&TicketsOrderSim.java@33 OR-airline_654-3-1&TicketsOrderSim.java@33 branch-3-19 OR-seats_num_51-3-6&TicketsOrderSim.java@100 branch-3-20 OS-exit-3&TicketsOrderSim.java@1):named MO3))
+
+(assert (distinct  OW-bug_occured_51-0-1&TicketsOrderSim.java@20 OW-bug_count_51-0-1&TicketsOrderSim.java@21 OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-0-1&TicketsOrderSim.java@177 OR-seats_num_51-0-2&TicketsOrderSim.java@180 branch-0-0 OW-empty_629-0-1&TicketsOrderSim.java@63 OW-status_629-0-1&TicketsOrderSim.java@64 OW-flight_629-0-1&TicketsOrderSim.java@65 OW-airline_629-0-1&TicketsOrderSim.java@66 OW-agent_name_629-0-1&TicketsOrderSim.java@67 OW-ticket_252-0-1&TicketsOrderSim.java@84 OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_num_51-0-3&TicketsOrderSim.java@180 branch-0-1 OW-empty_648-0-1&TicketsOrderSim.java@63 OW-status_648-0-1&TicketsOrderSim.java@64 OW-flight_648-0-1&TicketsOrderSim.java@65 OW-airline_648-0-1&TicketsOrderSim.java@66 OW-agent_name_648-0-1&TicketsOrderSim.java@67 OW-ticket_635-0-1&TicketsOrderSim.java@84 OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_num_51-0-4&TicketsOrderSim.java@180 branch-0-2 OW-empty_650-0-1&TicketsOrderSim.java@63 OW-status_650-0-1&TicketsOrderSim.java@64 OW-flight_650-0-1&TicketsOrderSim.java@65 OW-airline_650-0-1&TicketsOrderSim.java@66 OW-agent_name_650-0-1&TicketsOrderSim.java@67 OW-ticket_649-0-1&TicketsOrderSim.java@84 OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_num_51-0-5&TicketsOrderSim.java@180 branch-0-3 OW-empty_652-0-1&TicketsOrderSim.java@63 OW-status_652-0-1&TicketsOrderSim.java@64 OW-flight_652-0-1&TicketsOrderSim.java@65 OW-airline_652-0-1&TicketsOrderSim.java@66 OW-agent_name_652-0-1&TicketsOrderSim.java@67 OW-ticket_651-0-1&TicketsOrderSim.java@84 OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_num_51-0-6&TicketsOrderSim.java@180 branch-0-4 OW-empty_654-0-1&TicketsOrderSim.java@63 OW-status_654-0-1&TicketsOrderSim.java@64 OW-flight_654-0-1&TicketsOrderSim.java@65 OW-airline_654-0-1&TicketsOrderSim.java@66 OW-agent_name_654-0-1&TicketsOrderSim.java@67 OW-ticket_653-0-1&TicketsOrderSim.java@84 OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_num_51-0-7&TicketsOrderSim.java@180 branch-0-5 OS-fork_1-0-0&TicketsOrderSim.java@189 OS-fork_2-0-0&TicketsOrderSim.java@189 OS-fork_3-0-0&TicketsOrderSim.java@189 OS-join_1-0-0&TicketsOrderSim.java@194 OS-join_2-0-0&TicketsOrderSim.java@194 OS-join_3-0-0&TicketsOrderSim.java@194 OR-bug_occured_51-0-1&TicketsOrderSim.java@220 OR-bug_occured_51-0-2&TicketsOrderSim.java@221 OS-Assert-0&TicketsOrderSim.java@222 OS-start-1&InstrumentationHandler.java@16 OR-seats_num_51-1-1&TicketsOrderSim.java@100 branch-1-0 OR-seats_647-1-1&TicketsOrderSim.java@101 OR-ticket_252-1-1&TicketsOrderSim.java@101 OR-empty_629-1-1&TicketsOrderSim.java@101 branch-1-1 OR-seats_647-1-2&TicketsOrderSim.java@102 OR-seats_647-1-3&TicketsOrderSim.java@103 OR-ticket_252-1-2&TicketsOrderSim.java@103 OR-empty_629-1-2&TicketsOrderSim.java@103 branch-1-2 OR-seats_647-1-4&TicketsOrderSim.java@104 OR-ticket_252-1-3&TicketsOrderSim.java@104 OW-empty_629-1-1&TicketsOrderSim.java@72 OW-flight_629-1-1&TicketsOrderSim.java@73 OW-airline_629-1-1&TicketsOrderSim.java@74 OW-status_629-1-1&TicketsOrderSim.java@75 OW-agent_name_629-1-1&TicketsOrderSim.java@76 OR-seats_num_51-1-2&TicketsOrderSim.java@100 branch-1-3 OR-seats_648-1-1&TicketsOrderSim.java@101 OR-ticket_635-1-1&TicketsOrderSim.java@101 OR-empty_648-1-1&TicketsOrderSim.java@101 branch-1-4 OR-seats_648-1-2&TicketsOrderSim.java@102 OR-seats_648-1-3&TicketsOrderSim.java@103 OR-ticket_635-1-2&TicketsOrderSim.java@103 OR-empty_648-1-2&TicketsOrderSim.java@103 branch-1-5 OR-seats_648-1-4&TicketsOrderSim.java@104 OR-ticket_635-1-3&TicketsOrderSim.java@104 OW-empty_648-1-1&TicketsOrderSim.java@72 OW-flight_648-1-1&TicketsOrderSim.java@73 OW-airline_648-1-1&TicketsOrderSim.java@74 OW-status_648-1-1&TicketsOrderSim.java@75 OW-agent_name_648-1-1&TicketsOrderSim.java@76 OR-seats_num_51-1-3&TicketsOrderSim.java@100 branch-1-6 OR-seats_649-1-1&TicketsOrderSim.java@101 OR-ticket_649-1-1&TicketsOrderSim.java@101 OR-empty_650-1-1&TicketsOrderSim.java@101 branch-1-7 OR-seats_649-1-2&TicketsOrderSim.java@102 OR-seats_649-1-3&TicketsOrderSim.java@103 OR-ticket_649-1-2&TicketsOrderSim.java@103 OR-empty_650-1-2&TicketsOrderSim.java@103 branch-1-8 OR-seats_649-1-4&TicketsOrderSim.java@104 OR-ticket_649-1-3&TicketsOrderSim.java@104 OW-empty_650-1-1&TicketsOrderSim.java@72 OW-flight_650-1-1&TicketsOrderSim.java@73 OW-airline_650-1-1&TicketsOrderSim.java@74 OW-status_650-1-1&TicketsOrderSim.java@75 OW-agent_name_650-1-1&TicketsOrderSim.java@76 OR-seats_num_51-1-4&TicketsOrderSim.java@100 branch-1-9 OR-seats_650-1-1&TicketsOrderSim.java@101 OR-ticket_651-1-1&TicketsOrderSim.java@101 OR-empty_652-1-1&TicketsOrderSim.java@101 branch-1-10 OR-seats_650-1-2&TicketsOrderSim.java@102 OR-seats_650-1-3&TicketsOrderSim.java@103 OR-ticket_651-1-2&TicketsOrderSim.java@103 OR-empty_652-1-2&TicketsOrderSim.java@103 branch-1-11 OR-seats_650-1-4&TicketsOrderSim.java@104 OR-ticket_651-1-3&TicketsOrderSim.java@104 OW-empty_652-1-1&TicketsOrderSim.java@72 OW-flight_652-1-1&TicketsOrderSim.java@73 OW-airline_652-1-1&TicketsOrderSim.java@74 OW-status_652-1-1&TicketsOrderSim.java@75 OW-agent_name_652-1-1&TicketsOrderSim.java@76 OR-seats_num_51-1-5&TicketsOrderSim.java@100 branch-1-12 OR-seats_651-1-1&TicketsOrderSim.java@101 OR-ticket_653-1-1&TicketsOrderSim.java@101 OR-empty_654-1-1&TicketsOrderSim.java@101 branch-1-13 OR-seats_651-1-2&TicketsOrderSim.java@102 OR-seats_651-1-3&TicketsOrderSim.java@103 OR-ticket_653-1-2&TicketsOrderSim.java@103 OR-empty_654-1-2&TicketsOrderSim.java@103 branch-1-14 OR-seats_651-1-4&TicketsOrderSim.java@104 OR-ticket_653-1-3&TicketsOrderSim.java@104 OW-empty_654-1-1&TicketsOrderSim.java@72 OW-flight_654-1-1&TicketsOrderSim.java@73 OW-airline_654-1-1&TicketsOrderSim.java@74 OW-status_654-1-1&TicketsOrderSim.java@75 OW-agent_name_654-1-1&TicketsOrderSim.java@76 OR-seats_num_51-1-6&TicketsOrderSim.java@100 branch-1-15 OS-exit-1&TicketsOrderSim.java@1 OS-start-2&InstrumentationHandler.java@16 OR-seats_num_51-2-1&TicketsOrderSim.java@100 branch-2-0 OR-seats_647-2-1&TicketsOrderSim.java@101 OR-ticket_252-2-1&TicketsOrderSim.java@101 OR-empty_629-2-1&TicketsOrderSim.java@101 branch-2-1 OR-seats_647-2-2&TicketsOrderSim.java@110 OR-ticket_252-2-2&TicketsOrderSim.java@110 OR-seats_647-2-3&TicketsOrderSim.java@28 OR-ticket_252-2-3&TicketsOrderSim.java@28 OR-flight_629-2-1&TicketsOrderSim.java@28 branch-2-2 OR-seats_647-2-4&TicketsOrderSim.java@33 OR-ticket_252-2-4&TicketsOrderSim.java@33 OR-airline_629-2-1&TicketsOrderSim.java@33 branch-2-3 OR-seats_num_51-2-2&TicketsOrderSim.java@100 branch-2-4 OR-seats_648-2-1&TicketsOrderSim.java@101 OR-ticket_635-2-1&TicketsOrderSim.java@101 OR-empty_648-2-1&TicketsOrderSim.java@101 branch-2-5 OR-seats_648-2-2&TicketsOrderSim.java@110 OR-ticket_635-2-2&TicketsOrderSim.java@110 OR-seats_648-2-3&TicketsOrderSim.java@28 OR-ticket_635-2-3&TicketsOrderSim.java@28 OR-flight_648-2-1&TicketsOrderSim.java@28 branch-2-6 OR-seats_648-2-4&TicketsOrderSim.java@33 OR-ticket_635-2-4&TicketsOrderSim.java@33 OR-airline_648-2-1&TicketsOrderSim.java@33 branch-2-7 OR-seats_num_51-2-3&TicketsOrderSim.java@100 branch-2-8 OR-seats_649-2-1&TicketsOrderSim.java@101 OR-ticket_649-2-1&TicketsOrderSim.java@101 OR-empty_650-2-1&TicketsOrderSim.java@101 branch-2-9 OR-seats_649-2-2&TicketsOrderSim.java@110 OR-ticket_649-2-2&TicketsOrderSim.java@110 OR-seats_649-2-3&TicketsOrderSim.java@28 OR-ticket_649-2-3&TicketsOrderSim.java@28 OR-flight_650-2-1&TicketsOrderSim.java@28 branch-2-10 OR-seats_649-2-4&TicketsOrderSim.java@33 OR-ticket_649-2-4&TicketsOrderSim.java@33 OR-airline_650-2-1&TicketsOrderSim.java@33 branch-2-11 OR-seats_num_51-2-4&TicketsOrderSim.java@100 branch-2-12 OR-seats_650-2-1&TicketsOrderSim.java@101 OR-ticket_651-2-1&TicketsOrderSim.java@101 OR-empty_652-2-1&TicketsOrderSim.java@101 branch-2-13 OR-seats_650-2-2&TicketsOrderSim.java@110 OR-ticket_651-2-2&TicketsOrderSim.java@110 OR-seats_650-2-3&TicketsOrderSim.java@28 OR-ticket_651-2-3&TicketsOrderSim.java@28 OR-flight_652-2-1&TicketsOrderSim.java@28 branch-2-14 OR-seats_650-2-4&TicketsOrderSim.java@33 OR-ticket_651-2-4&TicketsOrderSim.java@33 OR-airline_652-2-1&TicketsOrderSim.java@33 branch-2-15 OR-seats_num_51-2-5&TicketsOrderSim.java@100 branch-2-16 OR-seats_651-2-1&TicketsOrderSim.java@101 OR-ticket_653-2-1&TicketsOrderSim.java@101 OR-empty_654-2-1&TicketsOrderSim.java@101 branch-2-17 OR-seats_651-2-2&TicketsOrderSim.java@110 OR-ticket_653-2-2&TicketsOrderSim.java@110 OR-seats_651-2-3&TicketsOrderSim.java@28 OR-ticket_653-2-3&TicketsOrderSim.java@28 OR-flight_654-2-1&TicketsOrderSim.java@28 branch-2-18 OR-seats_651-2-4&TicketsOrderSim.java@33 OR-ticket_653-2-4&TicketsOrderSim.java@33 OR-airline_654-2-1&TicketsOrderSim.java@33 branch-2-19 OR-seats_num_51-2-6&TicketsOrderSim.java@100 branch-2-20 OS-exit-2&TicketsOrderSim.java@1 OS-start-3&InstrumentationHandler.java@16 OR-seats_num_51-3-1&TicketsOrderSim.java@100 branch-3-0 OR-seats_647-3-1&TicketsOrderSim.java@101 OR-ticket_252-3-1&TicketsOrderSim.java@101 OR-empty_629-3-1&TicketsOrderSim.java@101 branch-3-1 OR-seats_647-3-2&TicketsOrderSim.java@110 OR-ticket_252-3-2&TicketsOrderSim.java@110 OR-seats_647-3-3&TicketsOrderSim.java@28 OR-ticket_252-3-3&TicketsOrderSim.java@28 OR-flight_629-3-1&TicketsOrderSim.java@28 branch-3-2 OR-seats_647-3-4&TicketsOrderSim.java@33 OR-ticket_252-3-4&TicketsOrderSim.java@33 OR-airline_629-3-1&TicketsOrderSim.java@33 branch-3-3 OR-seats_num_51-3-2&TicketsOrderSim.java@100 branch-3-4 OR-seats_648-3-1&TicketsOrderSim.java@101 OR-ticket_635-3-1&TicketsOrderSim.java@101 OR-empty_648-3-1&TicketsOrderSim.java@101 branch-3-5 OR-seats_648-3-2&TicketsOrderSim.java@110 OR-ticket_635-3-2&TicketsOrderSim.java@110 OR-seats_648-3-3&TicketsOrderSim.java@28 OR-ticket_635-3-3&TicketsOrderSim.java@28 OR-flight_648-3-1&TicketsOrderSim.java@28 branch-3-6 OR-seats_648-3-4&TicketsOrderSim.java@33 OR-ticket_635-3-4&TicketsOrderSim.java@33 OR-airline_648-3-1&TicketsOrderSim.java@33 branch-3-7 OR-seats_num_51-3-3&TicketsOrderSim.java@100 branch-3-8 OR-seats_649-3-1&TicketsOrderSim.java@101 OR-ticket_649-3-1&TicketsOrderSim.java@101 OR-empty_650-3-1&TicketsOrderSim.java@101 branch-3-9 OR-seats_649-3-2&TicketsOrderSim.java@110 OR-ticket_649-3-2&TicketsOrderSim.java@110 OR-seats_649-3-3&TicketsOrderSim.java@28 OR-ticket_649-3-3&TicketsOrderSim.java@28 OR-flight_650-3-1&TicketsOrderSim.java@28 branch-3-10 OR-seats_649-3-4&TicketsOrderSim.java@33 OR-ticket_649-3-4&TicketsOrderSim.java@33 OR-airline_650-3-1&TicketsOrderSim.java@33 branch-3-11 OR-seats_num_51-3-4&TicketsOrderSim.java@100 branch-3-12 OR-seats_650-3-1&TicketsOrderSim.java@101 OR-ticket_651-3-1&TicketsOrderSim.java@101 OR-empty_652-3-1&TicketsOrderSim.java@101 branch-3-13 OR-seats_650-3-2&TicketsOrderSim.java@110 OR-ticket_651-3-2&TicketsOrderSim.java@110 OR-seats_650-3-3&TicketsOrderSim.java@28 OR-ticket_651-3-3&TicketsOrderSim.java@28 OR-flight_652-3-1&TicketsOrderSim.java@28 branch-3-14 OR-seats_650-3-4&TicketsOrderSim.java@33 OR-ticket_651-3-4&TicketsOrderSim.java@33 OR-airline_652-3-1&TicketsOrderSim.java@33 branch-3-15 OR-seats_num_51-3-5&TicketsOrderSim.java@100 branch-3-16 OR-seats_651-3-1&TicketsOrderSim.java@101 OR-ticket_653-3-1&TicketsOrderSim.java@101 OR-empty_654-3-1&TicketsOrderSim.java@101 branch-3-17 OR-seats_651-3-2&TicketsOrderSim.java@110 OR-ticket_653-3-2&TicketsOrderSim.java@110 OR-seats_651-3-3&TicketsOrderSim.java@28 OR-ticket_653-3-3&TicketsOrderSim.java@28 OR-flight_654-3-1&TicketsOrderSim.java@28 branch-3-18 OR-seats_651-3-4&TicketsOrderSim.java@33 OR-ticket_653-3-4&TicketsOrderSim.java@33 OR-airline_654-3-1&TicketsOrderSim.java@33 branch-3-19 OR-seats_num_51-3-6&TicketsOrderSim.java@100 branch-3-20 OS-exit-3&TicketsOrderSim.java@1))
+
+(echo "READ-WRITE CONSTRAINTS -----")
+
+(declare-const R-airline_629-2-1 Int)
+
+(declare-const R-airline_629-3-1 Int)
+
+(declare-const R-airline_648-2-1 Int)
+
+(declare-const R-airline_648-3-1 Int)
+
+(declare-const R-airline_650-2-1 Int)
+
+(declare-const R-airline_650-3-1 Int)
+
+(declare-const R-airline_652-2-1 Int)
+
+(declare-const R-airline_652-3-1 Int)
+
+(declare-const R-airline_654-2-1 Int)
+
+(declare-const R-airline_654-3-1 Int)
+
+(declare-const R-bug_occured_51-0-1 Int)
+
+(declare-const R-bug_occured_51-0-2 Int)
+
+(declare-const R-empty_629-1-1 Int)
+
+(declare-const R-empty_629-1-2 Int)
+
+(declare-const R-empty_629-2-1 Int)
+
+(declare-const R-empty_629-3-1 Int)
+
+(declare-const R-empty_648-1-1 Int)
+
+(declare-const R-empty_648-1-2 Int)
+
+(declare-const R-empty_648-2-1 Int)
+
+(declare-const R-empty_648-3-1 Int)
+
+(declare-const R-empty_650-1-1 Int)
+
+(declare-const R-empty_650-1-2 Int)
+
+(declare-const R-empty_650-2-1 Int)
+
+(declare-const R-empty_650-3-1 Int)
+
+(declare-const R-empty_652-1-1 Int)
+
+(declare-const R-empty_652-1-2 Int)
+
+(declare-const R-empty_652-2-1 Int)
+
+(declare-const R-empty_652-3-1 Int)
+
+(declare-const R-empty_654-1-1 Int)
+
+(declare-const R-empty_654-1-2 Int)
+
+(declare-const R-empty_654-2-1 Int)
+
+(declare-const R-empty_654-3-1 Int)
+
+(declare-const R-flight_629-2-1 Int)
+
+(declare-const R-flight_629-3-1 Int)
+
+(declare-const R-flight_648-2-1 Int)
+
+(declare-const R-flight_648-3-1 Int)
+
+(declare-const R-flight_650-2-1 Int)
+
+(declare-const R-flight_650-3-1 Int)
+
+(declare-const R-flight_652-2-1 Int)
+
+(declare-const R-flight_652-3-1 Int)
+
+(declare-const R-flight_654-2-1 Int)
+
+(declare-const R-flight_654-3-1 Int)
+
+(declare-const R-seats_647-1-1 Int)
+
+(declare-const R-seats_647-1-2 Int)
+
+(declare-const R-seats_647-1-3 Int)
+
+(declare-const R-seats_647-1-4 Int)
+
+(declare-const R-seats_647-2-1 Int)
+
+(declare-const R-seats_647-2-2 Int)
+
+(declare-const R-seats_647-2-3 Int)
+
+(declare-const R-seats_647-2-4 Int)
+
+(declare-const R-seats_647-3-1 Int)
+
+(declare-const R-seats_647-3-2 Int)
+
+(declare-const R-seats_647-3-3 Int)
+
+(declare-const R-seats_647-3-4 Int)
+
+(declare-const R-seats_648-1-1 Int)
+
+(declare-const R-seats_648-1-2 Int)
+
+(declare-const R-seats_648-1-3 Int)
+
+(declare-const R-seats_648-1-4 Int)
+
+(declare-const R-seats_648-2-1 Int)
+
+(declare-const R-seats_648-2-2 Int)
+
+(declare-const R-seats_648-2-3 Int)
+
+(declare-const R-seats_648-2-4 Int)
+
+(declare-const R-seats_648-3-1 Int)
+
+(declare-const R-seats_648-3-2 Int)
+
+(declare-const R-seats_648-3-3 Int)
+
+(declare-const R-seats_648-3-4 Int)
+
+(declare-const R-seats_649-1-1 Int)
+
+(declare-const R-seats_649-1-2 Int)
+
+(declare-const R-seats_649-1-3 Int)
+
+(declare-const R-seats_649-1-4 Int)
+
+(declare-const R-seats_649-2-1 Int)
+
+(declare-const R-seats_649-2-2 Int)
+
+(declare-const R-seats_649-2-3 Int)
+
+(declare-const R-seats_649-2-4 Int)
+
+(declare-const R-seats_649-3-1 Int)
+
+(declare-const R-seats_649-3-2 Int)
+
+(declare-const R-seats_649-3-3 Int)
+
+(declare-const R-seats_649-3-4 Int)
+
+(declare-const R-seats_650-1-1 Int)
+
+(declare-const R-seats_650-1-2 Int)
+
+(declare-const R-seats_650-1-3 Int)
+
+(declare-const R-seats_650-1-4 Int)
+
+(declare-const R-seats_650-2-1 Int)
+
+(declare-const R-seats_650-2-2 Int)
+
+(declare-const R-seats_650-2-3 Int)
+
+(declare-const R-seats_650-2-4 Int)
+
+(declare-const R-seats_650-3-1 Int)
+
+(declare-const R-seats_650-3-2 Int)
+
+(declare-const R-seats_650-3-3 Int)
+
+(declare-const R-seats_650-3-4 Int)
+
+(declare-const R-seats_651-1-1 Int)
+
+(declare-const R-seats_651-1-2 Int)
+
+(declare-const R-seats_651-1-3 Int)
+
+(declare-const R-seats_651-1-4 Int)
+
+(declare-const R-seats_651-2-1 Int)
+
+(declare-const R-seats_651-2-2 Int)
+
+(declare-const R-seats_651-2-3 Int)
+
+(declare-const R-seats_651-2-4 Int)
+
+(declare-const R-seats_651-3-1 Int)
+
+(declare-const R-seats_651-3-2 Int)
+
+(declare-const R-seats_651-3-3 Int)
+
+(declare-const R-seats_651-3-4 Int)
+
+(declare-const R-seats_num_51-0-1 Int)
+
+(declare-const R-seats_num_51-0-2 Int)
+
+(declare-const R-seats_num_51-0-3 Int)
+
+(declare-const R-seats_num_51-0-4 Int)
+
+(declare-const R-seats_num_51-0-5 Int)
+
+(declare-const R-seats_num_51-0-6 Int)
+
+(declare-const R-seats_num_51-0-7 Int)
+
+(declare-const R-seats_num_51-1-1 Int)
+
+(declare-const R-seats_num_51-1-2 Int)
+
+(declare-const R-seats_num_51-1-3 Int)
+
+(declare-const R-seats_num_51-1-4 Int)
+
+(declare-const R-seats_num_51-1-5 Int)
+
+(declare-const R-seats_num_51-1-6 Int)
+
+(declare-const R-seats_num_51-2-1 Int)
+
+(declare-const R-seats_num_51-2-2 Int)
+
+(declare-const R-seats_num_51-2-3 Int)
+
+(declare-const R-seats_num_51-2-4 Int)
+
+(declare-const R-seats_num_51-2-5 Int)
+
+(declare-const R-seats_num_51-2-6 Int)
+
+(declare-const R-seats_num_51-3-1 Int)
+
+(declare-const R-seats_num_51-3-2 Int)
+
+(declare-const R-seats_num_51-3-3 Int)
+
+(declare-const R-seats_num_51-3-4 Int)
+
+(declare-const R-seats_num_51-3-5 Int)
+
+(declare-const R-seats_num_51-3-6 Int)
+
+(declare-const R-ticket_252-1-1 Int)
+
+(declare-const R-ticket_252-1-2 Int)
+
+(declare-const R-ticket_252-1-3 Int)
+
+(declare-const R-ticket_252-2-1 Int)
+
+(declare-const R-ticket_252-2-2 Int)
+
+(declare-const R-ticket_252-2-3 Int)
+
+(declare-const R-ticket_252-2-4 Int)
+
+(declare-const R-ticket_252-3-1 Int)
+
+(declare-const R-ticket_252-3-2 Int)
+
+(declare-const R-ticket_252-3-3 Int)
+
+(declare-const R-ticket_252-3-4 Int)
+
+(declare-const R-ticket_635-1-1 Int)
+
+(declare-const R-ticket_635-1-2 Int)
+
+(declare-const R-ticket_635-1-3 Int)
+
+(declare-const R-ticket_635-2-1 Int)
+
+(declare-const R-ticket_635-2-2 Int)
+
+(declare-const R-ticket_635-2-3 Int)
+
+(declare-const R-ticket_635-2-4 Int)
+
+(declare-const R-ticket_635-3-1 Int)
+
+(declare-const R-ticket_635-3-2 Int)
+
+(declare-const R-ticket_635-3-3 Int)
+
+(declare-const R-ticket_635-3-4 Int)
+
+(declare-const R-ticket_649-1-1 Int)
+
+(declare-const R-ticket_649-1-2 Int)
+
+(declare-const R-ticket_649-1-3 Int)
+
+(declare-const R-ticket_649-2-1 Int)
+
+(declare-const R-ticket_649-2-2 Int)
+
+(declare-const R-ticket_649-2-3 Int)
+
+(declare-const R-ticket_649-2-4 Int)
+
+(declare-const R-ticket_649-3-1 Int)
+
+(declare-const R-ticket_649-3-2 Int)
+
+(declare-const R-ticket_649-3-3 Int)
+
+(declare-const R-ticket_649-3-4 Int)
+
+(declare-const R-ticket_651-1-1 Int)
+
+(declare-const R-ticket_651-1-2 Int)
+
+(declare-const R-ticket_651-1-3 Int)
+
+(declare-const R-ticket_651-2-1 Int)
+
+(declare-const R-ticket_651-2-2 Int)
+
+(declare-const R-ticket_651-2-3 Int)
+
+(declare-const R-ticket_651-2-4 Int)
+
+(declare-const R-ticket_651-3-1 Int)
+
+(declare-const R-ticket_651-3-2 Int)
+
+(declare-const R-ticket_651-3-3 Int)
+
+(declare-const R-ticket_651-3-4 Int)
+
+(declare-const R-ticket_653-1-1 Int)
+
+(declare-const R-ticket_653-1-2 Int)
+
+(declare-const R-ticket_653-1-3 Int)
+
+(declare-const R-ticket_653-2-1 Int)
+
+(declare-const R-ticket_653-2-2 Int)
+
+(declare-const R-ticket_653-2-3 Int)
+
+(declare-const R-ticket_653-2-4 Int)
+
+(declare-const R-ticket_653-3-1 Int)
+
+(declare-const R-ticket_653-3-2 Int)
+
+(declare-const R-ticket_653-3-3 Int)
+
+(declare-const R-ticket_653-3-4 Int)
+
+(declare-const InitR-airline_629-2 Int)
+
+(assert (! (or (and (= R-airline_629-2-1 InitR-airline_629-2) (< OR-airline_629-2-1&TicketsOrderSim.java@33 OW-airline_629-0-1&TicketsOrderSim.java@66) (< OR-airline_629-2-1&TicketsOrderSim.java@33 OW-airline_629-1-1&TicketsOrderSim.java@74))
+ (and (= R-airline_629-2-1 -1) (< OW-airline_629-0-1&TicketsOrderSim.java@66 OR-airline_629-2-1&TicketsOrderSim.java@33) (or (< OW-airline_629-1-1&TicketsOrderSim.java@74 OW-airline_629-0-1&TicketsOrderSim.java@66) (< OR-airline_629-2-1&TicketsOrderSim.java@33 OW-airline_629-1-1&TicketsOrderSim.java@74)))
+ (and (= R-airline_629-2-1 8888) (< OW-airline_629-1-1&TicketsOrderSim.java@74 OR-airline_629-2-1&TicketsOrderSim.java@33) (or (< OW-airline_629-0-1&TicketsOrderSim.java@66 OW-airline_629-1-1&TicketsOrderSim.java@74) (< OR-airline_629-2-1&TicketsOrderSim.java@33 OW-airline_629-0-1&TicketsOrderSim.java@66)))):named RWC0))
+
+(declare-const InitR-airline_629-3 Int)
+
+(assert (! (or (and (= R-airline_629-3-1 InitR-airline_629-3) (< OR-airline_629-3-1&TicketsOrderSim.java@33 OW-airline_629-0-1&TicketsOrderSim.java@66) (< OR-airline_629-3-1&TicketsOrderSim.java@33 OW-airline_629-1-1&TicketsOrderSim.java@74))
+ (and (= R-airline_629-3-1 -1) (< OW-airline_629-0-1&TicketsOrderSim.java@66 OR-airline_629-3-1&TicketsOrderSim.java@33) (or (< OW-airline_629-1-1&TicketsOrderSim.java@74 OW-airline_629-0-1&TicketsOrderSim.java@66) (< OR-airline_629-3-1&TicketsOrderSim.java@33 OW-airline_629-1-1&TicketsOrderSim.java@74)))
+ (and (= R-airline_629-3-1 8888) (< OW-airline_629-1-1&TicketsOrderSim.java@74 OR-airline_629-3-1&TicketsOrderSim.java@33) (or (< OW-airline_629-0-1&TicketsOrderSim.java@66 OW-airline_629-1-1&TicketsOrderSim.java@74) (< OR-airline_629-3-1&TicketsOrderSim.java@33 OW-airline_629-0-1&TicketsOrderSim.java@66)))):named RWC1))
+
+(declare-const InitR-airline_648-2 Int)
+
+(assert (! (or (and (= R-airline_648-2-1 InitR-airline_648-2) (< OR-airline_648-2-1&TicketsOrderSim.java@33 OW-airline_648-0-1&TicketsOrderSim.java@66) (< OR-airline_648-2-1&TicketsOrderSim.java@33 OW-airline_648-1-1&TicketsOrderSim.java@74))
+ (and (= R-airline_648-2-1 -1) (< OW-airline_648-0-1&TicketsOrderSim.java@66 OR-airline_648-2-1&TicketsOrderSim.java@33) (or (< OW-airline_648-1-1&TicketsOrderSim.java@74 OW-airline_648-0-1&TicketsOrderSim.java@66) (< OR-airline_648-2-1&TicketsOrderSim.java@33 OW-airline_648-1-1&TicketsOrderSim.java@74)))
+ (and (= R-airline_648-2-1 8888) (< OW-airline_648-1-1&TicketsOrderSim.java@74 OR-airline_648-2-1&TicketsOrderSim.java@33) (or (< OW-airline_648-0-1&TicketsOrderSim.java@66 OW-airline_648-1-1&TicketsOrderSim.java@74) (< OR-airline_648-2-1&TicketsOrderSim.java@33 OW-airline_648-0-1&TicketsOrderSim.java@66)))):named RWC2))
+
+(declare-const InitR-airline_648-3 Int)
+
+(assert (! (or (and (= R-airline_648-3-1 InitR-airline_648-3) (< OR-airline_648-3-1&TicketsOrderSim.java@33 OW-airline_648-0-1&TicketsOrderSim.java@66) (< OR-airline_648-3-1&TicketsOrderSim.java@33 OW-airline_648-1-1&TicketsOrderSim.java@74))
+ (and (= R-airline_648-3-1 -1) (< OW-airline_648-0-1&TicketsOrderSim.java@66 OR-airline_648-3-1&TicketsOrderSim.java@33) (or (< OW-airline_648-1-1&TicketsOrderSim.java@74 OW-airline_648-0-1&TicketsOrderSim.java@66) (< OR-airline_648-3-1&TicketsOrderSim.java@33 OW-airline_648-1-1&TicketsOrderSim.java@74)))
+ (and (= R-airline_648-3-1 8888) (< OW-airline_648-1-1&TicketsOrderSim.java@74 OR-airline_648-3-1&TicketsOrderSim.java@33) (or (< OW-airline_648-0-1&TicketsOrderSim.java@66 OW-airline_648-1-1&TicketsOrderSim.java@74) (< OR-airline_648-3-1&TicketsOrderSim.java@33 OW-airline_648-0-1&TicketsOrderSim.java@66)))):named RWC3))
+
+(declare-const InitR-airline_650-2 Int)
+
+(assert (! (or (and (= R-airline_650-2-1 InitR-airline_650-2) (< OR-airline_650-2-1&TicketsOrderSim.java@33 OW-airline_650-0-1&TicketsOrderSim.java@66) (< OR-airline_650-2-1&TicketsOrderSim.java@33 OW-airline_650-1-1&TicketsOrderSim.java@74))
+ (and (= R-airline_650-2-1 -1) (< OW-airline_650-0-1&TicketsOrderSim.java@66 OR-airline_650-2-1&TicketsOrderSim.java@33) (or (< OW-airline_650-1-1&TicketsOrderSim.java@74 OW-airline_650-0-1&TicketsOrderSim.java@66) (< OR-airline_650-2-1&TicketsOrderSim.java@33 OW-airline_650-1-1&TicketsOrderSim.java@74)))
+ (and (= R-airline_650-2-1 8888) (< OW-airline_650-1-1&TicketsOrderSim.java@74 OR-airline_650-2-1&TicketsOrderSim.java@33) (or (< OW-airline_650-0-1&TicketsOrderSim.java@66 OW-airline_650-1-1&TicketsOrderSim.java@74) (< OR-airline_650-2-1&TicketsOrderSim.java@33 OW-airline_650-0-1&TicketsOrderSim.java@66)))):named RWC4))
+
+(declare-const InitR-airline_650-3 Int)
+
+(assert (! (or (and (= R-airline_650-3-1 InitR-airline_650-3) (< OR-airline_650-3-1&TicketsOrderSim.java@33 OW-airline_650-0-1&TicketsOrderSim.java@66) (< OR-airline_650-3-1&TicketsOrderSim.java@33 OW-airline_650-1-1&TicketsOrderSim.java@74))
+ (and (= R-airline_650-3-1 -1) (< OW-airline_650-0-1&TicketsOrderSim.java@66 OR-airline_650-3-1&TicketsOrderSim.java@33) (or (< OW-airline_650-1-1&TicketsOrderSim.java@74 OW-airline_650-0-1&TicketsOrderSim.java@66) (< OR-airline_650-3-1&TicketsOrderSim.java@33 OW-airline_650-1-1&TicketsOrderSim.java@74)))
+ (and (= R-airline_650-3-1 8888) (< OW-airline_650-1-1&TicketsOrderSim.java@74 OR-airline_650-3-1&TicketsOrderSim.java@33) (or (< OW-airline_650-0-1&TicketsOrderSim.java@66 OW-airline_650-1-1&TicketsOrderSim.java@74) (< OR-airline_650-3-1&TicketsOrderSim.java@33 OW-airline_650-0-1&TicketsOrderSim.java@66)))):named RWC5))
+
+(declare-const InitR-airline_652-2 Int)
+
+(assert (! (or (and (= R-airline_652-2-1 InitR-airline_652-2) (< OR-airline_652-2-1&TicketsOrderSim.java@33 OW-airline_652-0-1&TicketsOrderSim.java@66) (< OR-airline_652-2-1&TicketsOrderSim.java@33 OW-airline_652-1-1&TicketsOrderSim.java@74))
+ (and (= R-airline_652-2-1 -1) (< OW-airline_652-0-1&TicketsOrderSim.java@66 OR-airline_652-2-1&TicketsOrderSim.java@33) (or (< OW-airline_652-1-1&TicketsOrderSim.java@74 OW-airline_652-0-1&TicketsOrderSim.java@66) (< OR-airline_652-2-1&TicketsOrderSim.java@33 OW-airline_652-1-1&TicketsOrderSim.java@74)))
+ (and (= R-airline_652-2-1 8888) (< OW-airline_652-1-1&TicketsOrderSim.java@74 OR-airline_652-2-1&TicketsOrderSim.java@33) (or (< OW-airline_652-0-1&TicketsOrderSim.java@66 OW-airline_652-1-1&TicketsOrderSim.java@74) (< OR-airline_652-2-1&TicketsOrderSim.java@33 OW-airline_652-0-1&TicketsOrderSim.java@66)))):named RWC6))
+
+(declare-const InitR-airline_652-3 Int)
+
+(assert (! (or (and (= R-airline_652-3-1 InitR-airline_652-3) (< OR-airline_652-3-1&TicketsOrderSim.java@33 OW-airline_652-0-1&TicketsOrderSim.java@66) (< OR-airline_652-3-1&TicketsOrderSim.java@33 OW-airline_652-1-1&TicketsOrderSim.java@74))
+ (and (= R-airline_652-3-1 -1) (< OW-airline_652-0-1&TicketsOrderSim.java@66 OR-airline_652-3-1&TicketsOrderSim.java@33) (or (< OW-airline_652-1-1&TicketsOrderSim.java@74 OW-airline_652-0-1&TicketsOrderSim.java@66) (< OR-airline_652-3-1&TicketsOrderSim.java@33 OW-airline_652-1-1&TicketsOrderSim.java@74)))
+ (and (= R-airline_652-3-1 8888) (< OW-airline_652-1-1&TicketsOrderSim.java@74 OR-airline_652-3-1&TicketsOrderSim.java@33) (or (< OW-airline_652-0-1&TicketsOrderSim.java@66 OW-airline_652-1-1&TicketsOrderSim.java@74) (< OR-airline_652-3-1&TicketsOrderSim.java@33 OW-airline_652-0-1&TicketsOrderSim.java@66)))):named RWC7))
+
+(declare-const InitR-airline_654-2 Int)
+
+(assert (! (or (and (= R-airline_654-2-1 InitR-airline_654-2) (< OR-airline_654-2-1&TicketsOrderSim.java@33 OW-airline_654-0-1&TicketsOrderSim.java@66) (< OR-airline_654-2-1&TicketsOrderSim.java@33 OW-airline_654-1-1&TicketsOrderSim.java@74))
+ (and (= R-airline_654-2-1 -1) (< OW-airline_654-0-1&TicketsOrderSim.java@66 OR-airline_654-2-1&TicketsOrderSim.java@33) (or (< OW-airline_654-1-1&TicketsOrderSim.java@74 OW-airline_654-0-1&TicketsOrderSim.java@66) (< OR-airline_654-2-1&TicketsOrderSim.java@33 OW-airline_654-1-1&TicketsOrderSim.java@74)))
+ (and (= R-airline_654-2-1 8888) (< OW-airline_654-1-1&TicketsOrderSim.java@74 OR-airline_654-2-1&TicketsOrderSim.java@33) (or (< OW-airline_654-0-1&TicketsOrderSim.java@66 OW-airline_654-1-1&TicketsOrderSim.java@74) (< OR-airline_654-2-1&TicketsOrderSim.java@33 OW-airline_654-0-1&TicketsOrderSim.java@66)))):named RWC8))
+
+(declare-const InitR-airline_654-3 Int)
+
+(assert (! (or (and (= R-airline_654-3-1 InitR-airline_654-3) (< OR-airline_654-3-1&TicketsOrderSim.java@33 OW-airline_654-0-1&TicketsOrderSim.java@66) (< OR-airline_654-3-1&TicketsOrderSim.java@33 OW-airline_654-1-1&TicketsOrderSim.java@74))
+ (and (= R-airline_654-3-1 -1) (< OW-airline_654-0-1&TicketsOrderSim.java@66 OR-airline_654-3-1&TicketsOrderSim.java@33) (or (< OW-airline_654-1-1&TicketsOrderSim.java@74 OW-airline_654-0-1&TicketsOrderSim.java@66) (< OR-airline_654-3-1&TicketsOrderSim.java@33 OW-airline_654-1-1&TicketsOrderSim.java@74)))
+ (and (= R-airline_654-3-1 8888) (< OW-airline_654-1-1&TicketsOrderSim.java@74 OR-airline_654-3-1&TicketsOrderSim.java@33) (or (< OW-airline_654-0-1&TicketsOrderSim.java@66 OW-airline_654-1-1&TicketsOrderSim.java@74) (< OR-airline_654-3-1&TicketsOrderSim.java@33 OW-airline_654-0-1&TicketsOrderSim.java@66)))):named RWC9))
+
+(declare-const InitR-bug_occured_51-0 Int)
+
+(assert (! (or (and (= R-bug_occured_51-0-1 InitR-bug_occured_51-0) (< OR-bug_occured_51-0-1&TicketsOrderSim.java@220 OW-bug_occured_51-0-1&TicketsOrderSim.java@20))
+ (and (= R-bug_occured_51-0-1 0) (< OW-bug_occured_51-0-1&TicketsOrderSim.java@20 OR-bug_occured_51-0-1&TicketsOrderSim.java@220))):named RWC10))
+
+(assert (! (or (and (= R-bug_occured_51-0-2 InitR-bug_occured_51-0) (< OR-bug_occured_51-0-2&TicketsOrderSim.java@221 OW-bug_occured_51-0-1&TicketsOrderSim.java@20))
+ (and (= R-bug_occured_51-0-2 0) (< OW-bug_occured_51-0-1&TicketsOrderSim.java@20 OR-bug_occured_51-0-2&TicketsOrderSim.java@221))):named RWC11))
+
+(declare-const InitR-empty_629-1 Int)
+
+(assert (! (or (and (= R-empty_629-1-1 InitR-empty_629-1) (< OR-empty_629-1-1&TicketsOrderSim.java@101 OW-empty_629-0-1&TicketsOrderSim.java@63))
+ (and (= R-empty_629-1-1 1) (< OW-empty_629-0-1&TicketsOrderSim.java@63 OR-empty_629-1-1&TicketsOrderSim.java@101))):named RWC12))
+
+(assert (! (or (and (= R-empty_629-1-2 InitR-empty_629-1) (< OR-empty_629-1-2&TicketsOrderSim.java@103 OW-empty_629-0-1&TicketsOrderSim.java@63))
+ (and (= R-empty_629-1-2 1) (< OW-empty_629-0-1&TicketsOrderSim.java@63 OR-empty_629-1-2&TicketsOrderSim.java@103))):named RWC13))
+
+(declare-const InitR-empty_629-2 Int)
+
+(assert (! (or (and (= R-empty_629-2-1 InitR-empty_629-2) (< OR-empty_629-2-1&TicketsOrderSim.java@101 OW-empty_629-0-1&TicketsOrderSim.java@63) (< OR-empty_629-2-1&TicketsOrderSim.java@101 OW-empty_629-1-1&TicketsOrderSim.java@72))
+ (and (= R-empty_629-2-1 1) (< OW-empty_629-0-1&TicketsOrderSim.java@63 OR-empty_629-2-1&TicketsOrderSim.java@101) (or (< OW-empty_629-1-1&TicketsOrderSim.java@72 OW-empty_629-0-1&TicketsOrderSim.java@63) (< OR-empty_629-2-1&TicketsOrderSim.java@101 OW-empty_629-1-1&TicketsOrderSim.java@72)))
+ (and (= R-empty_629-2-1 0) (< OW-empty_629-1-1&TicketsOrderSim.java@72 OR-empty_629-2-1&TicketsOrderSim.java@101) (or (< OW-empty_629-0-1&TicketsOrderSim.java@63 OW-empty_629-1-1&TicketsOrderSim.java@72) (< OR-empty_629-2-1&TicketsOrderSim.java@101 OW-empty_629-0-1&TicketsOrderSim.java@63)))):named RWC14))
+
+(declare-const InitR-empty_629-3 Int)
+
+(assert (! (or (and (= R-empty_629-3-1 InitR-empty_629-3) (< OR-empty_629-3-1&TicketsOrderSim.java@101 OW-empty_629-0-1&TicketsOrderSim.java@63) (< OR-empty_629-3-1&TicketsOrderSim.java@101 OW-empty_629-1-1&TicketsOrderSim.java@72))
+ (and (= R-empty_629-3-1 1) (< OW-empty_629-0-1&TicketsOrderSim.java@63 OR-empty_629-3-1&TicketsOrderSim.java@101) (or (< OW-empty_629-1-1&TicketsOrderSim.java@72 OW-empty_629-0-1&TicketsOrderSim.java@63) (< OR-empty_629-3-1&TicketsOrderSim.java@101 OW-empty_629-1-1&TicketsOrderSim.java@72)))
+ (and (= R-empty_629-3-1 0) (< OW-empty_629-1-1&TicketsOrderSim.java@72 OR-empty_629-3-1&TicketsOrderSim.java@101) (or (< OW-empty_629-0-1&TicketsOrderSim.java@63 OW-empty_629-1-1&TicketsOrderSim.java@72) (< OR-empty_629-3-1&TicketsOrderSim.java@101 OW-empty_629-0-1&TicketsOrderSim.java@63)))):named RWC15))
+
+(declare-const InitR-empty_648-1 Int)
+
+(assert (! (or (and (= R-empty_648-1-1 InitR-empty_648-1) (< OR-empty_648-1-1&TicketsOrderSim.java@101 OW-empty_648-0-1&TicketsOrderSim.java@63))
+ (and (= R-empty_648-1-1 1) (< OW-empty_648-0-1&TicketsOrderSim.java@63 OR-empty_648-1-1&TicketsOrderSim.java@101))):named RWC16))
+
+(assert (! (or (and (= R-empty_648-1-2 InitR-empty_648-1) (< OR-empty_648-1-2&TicketsOrderSim.java@103 OW-empty_648-0-1&TicketsOrderSim.java@63))
+ (and (= R-empty_648-1-2 1) (< OW-empty_648-0-1&TicketsOrderSim.java@63 OR-empty_648-1-2&TicketsOrderSim.java@103))):named RWC17))
+
+(declare-const InitR-empty_648-2 Int)
+
+(assert (! (or (and (= R-empty_648-2-1 InitR-empty_648-2) (< OR-empty_648-2-1&TicketsOrderSim.java@101 OW-empty_648-0-1&TicketsOrderSim.java@63) (< OR-empty_648-2-1&TicketsOrderSim.java@101 OW-empty_648-1-1&TicketsOrderSim.java@72))
+ (and (= R-empty_648-2-1 1) (< OW-empty_648-0-1&TicketsOrderSim.java@63 OR-empty_648-2-1&TicketsOrderSim.java@101) (or (< OW-empty_648-1-1&TicketsOrderSim.java@72 OW-empty_648-0-1&TicketsOrderSim.java@63) (< OR-empty_648-2-1&TicketsOrderSim.java@101 OW-empty_648-1-1&TicketsOrderSim.java@72)))
+ (and (= R-empty_648-2-1 0) (< OW-empty_648-1-1&TicketsOrderSim.java@72 OR-empty_648-2-1&TicketsOrderSim.java@101) (or (< OW-empty_648-0-1&TicketsOrderSim.java@63 OW-empty_648-1-1&TicketsOrderSim.java@72) (< OR-empty_648-2-1&TicketsOrderSim.java@101 OW-empty_648-0-1&TicketsOrderSim.java@63)))):named RWC18))
+
+(declare-const InitR-empty_648-3 Int)
+
+(assert (! (or (and (= R-empty_648-3-1 InitR-empty_648-3) (< OR-empty_648-3-1&TicketsOrderSim.java@101 OW-empty_648-0-1&TicketsOrderSim.java@63) (< OR-empty_648-3-1&TicketsOrderSim.java@101 OW-empty_648-1-1&TicketsOrderSim.java@72))
+ (and (= R-empty_648-3-1 1) (< OW-empty_648-0-1&TicketsOrderSim.java@63 OR-empty_648-3-1&TicketsOrderSim.java@101) (or (< OW-empty_648-1-1&TicketsOrderSim.java@72 OW-empty_648-0-1&TicketsOrderSim.java@63) (< OR-empty_648-3-1&TicketsOrderSim.java@101 OW-empty_648-1-1&TicketsOrderSim.java@72)))
+ (and (= R-empty_648-3-1 0) (< OW-empty_648-1-1&TicketsOrderSim.java@72 OR-empty_648-3-1&TicketsOrderSim.java@101) (or (< OW-empty_648-0-1&TicketsOrderSim.java@63 OW-empty_648-1-1&TicketsOrderSim.java@72) (< OR-empty_648-3-1&TicketsOrderSim.java@101 OW-empty_648-0-1&TicketsOrderSim.java@63)))):named RWC19))
+
+(declare-const InitR-empty_650-1 Int)
+
+(assert (! (or (and (= R-empty_650-1-1 InitR-empty_650-1) (< OR-empty_650-1-1&TicketsOrderSim.java@101 OW-empty_650-0-1&TicketsOrderSim.java@63))
+ (and (= R-empty_650-1-1 1) (< OW-empty_650-0-1&TicketsOrderSim.java@63 OR-empty_650-1-1&TicketsOrderSim.java@101))):named RWC20))
+
+(assert (! (or (and (= R-empty_650-1-2 InitR-empty_650-1) (< OR-empty_650-1-2&TicketsOrderSim.java@103 OW-empty_650-0-1&TicketsOrderSim.java@63))
+ (and (= R-empty_650-1-2 1) (< OW-empty_650-0-1&TicketsOrderSim.java@63 OR-empty_650-1-2&TicketsOrderSim.java@103))):named RWC21))
+
+(declare-const InitR-empty_650-2 Int)
+
+(assert (! (or (and (= R-empty_650-2-1 InitR-empty_650-2) (< OR-empty_650-2-1&TicketsOrderSim.java@101 OW-empty_650-0-1&TicketsOrderSim.java@63) (< OR-empty_650-2-1&TicketsOrderSim.java@101 OW-empty_650-1-1&TicketsOrderSim.java@72))
+ (and (= R-empty_650-2-1 1) (< OW-empty_650-0-1&TicketsOrderSim.java@63 OR-empty_650-2-1&TicketsOrderSim.java@101) (or (< OW-empty_650-1-1&TicketsOrderSim.java@72 OW-empty_650-0-1&TicketsOrderSim.java@63) (< OR-empty_650-2-1&TicketsOrderSim.java@101 OW-empty_650-1-1&TicketsOrderSim.java@72)))
+ (and (= R-empty_650-2-1 0) (< OW-empty_650-1-1&TicketsOrderSim.java@72 OR-empty_650-2-1&TicketsOrderSim.java@101) (or (< OW-empty_650-0-1&TicketsOrderSim.java@63 OW-empty_650-1-1&TicketsOrderSim.java@72) (< OR-empty_650-2-1&TicketsOrderSim.java@101 OW-empty_650-0-1&TicketsOrderSim.java@63)))):named RWC22))
+
+(declare-const InitR-empty_650-3 Int)
+
+(assert (! (or (and (= R-empty_650-3-1 InitR-empty_650-3) (< OR-empty_650-3-1&TicketsOrderSim.java@101 OW-empty_650-0-1&TicketsOrderSim.java@63) (< OR-empty_650-3-1&TicketsOrderSim.java@101 OW-empty_650-1-1&TicketsOrderSim.java@72))
+ (and (= R-empty_650-3-1 1) (< OW-empty_650-0-1&TicketsOrderSim.java@63 OR-empty_650-3-1&TicketsOrderSim.java@101) (or (< OW-empty_650-1-1&TicketsOrderSim.java@72 OW-empty_650-0-1&TicketsOrderSim.java@63) (< OR-empty_650-3-1&TicketsOrderSim.java@101 OW-empty_650-1-1&TicketsOrderSim.java@72)))
+ (and (= R-empty_650-3-1 0) (< OW-empty_650-1-1&TicketsOrderSim.java@72 OR-empty_650-3-1&TicketsOrderSim.java@101) (or (< OW-empty_650-0-1&TicketsOrderSim.java@63 OW-empty_650-1-1&TicketsOrderSim.java@72) (< OR-empty_650-3-1&TicketsOrderSim.java@101 OW-empty_650-0-1&TicketsOrderSim.java@63)))):named RWC23))
+
+(declare-const InitR-empty_652-1 Int)
+
+(assert (! (or (and (= R-empty_652-1-1 InitR-empty_652-1) (< OR-empty_652-1-1&TicketsOrderSim.java@101 OW-empty_652-0-1&TicketsOrderSim.java@63))
+ (and (= R-empty_652-1-1 1) (< OW-empty_652-0-1&TicketsOrderSim.java@63 OR-empty_652-1-1&TicketsOrderSim.java@101))):named RWC24))
+
+(assert (! (or (and (= R-empty_652-1-2 InitR-empty_652-1) (< OR-empty_652-1-2&TicketsOrderSim.java@103 OW-empty_652-0-1&TicketsOrderSim.java@63))
+ (and (= R-empty_652-1-2 1) (< OW-empty_652-0-1&TicketsOrderSim.java@63 OR-empty_652-1-2&TicketsOrderSim.java@103))):named RWC25))
+
+(declare-const InitR-empty_652-2 Int)
+
+(assert (! (or (and (= R-empty_652-2-1 InitR-empty_652-2) (< OR-empty_652-2-1&TicketsOrderSim.java@101 OW-empty_652-0-1&TicketsOrderSim.java@63) (< OR-empty_652-2-1&TicketsOrderSim.java@101 OW-empty_652-1-1&TicketsOrderSim.java@72))
+ (and (= R-empty_652-2-1 1) (< OW-empty_652-0-1&TicketsOrderSim.java@63 OR-empty_652-2-1&TicketsOrderSim.java@101) (or (< OW-empty_652-1-1&TicketsOrderSim.java@72 OW-empty_652-0-1&TicketsOrderSim.java@63) (< OR-empty_652-2-1&TicketsOrderSim.java@101 OW-empty_652-1-1&TicketsOrderSim.java@72)))
+ (and (= R-empty_652-2-1 0) (< OW-empty_652-1-1&TicketsOrderSim.java@72 OR-empty_652-2-1&TicketsOrderSim.java@101) (or (< OW-empty_652-0-1&TicketsOrderSim.java@63 OW-empty_652-1-1&TicketsOrderSim.java@72) (< OR-empty_652-2-1&TicketsOrderSim.java@101 OW-empty_652-0-1&TicketsOrderSim.java@63)))):named RWC26))
+
+(declare-const InitR-empty_652-3 Int)
+
+(assert (! (or (and (= R-empty_652-3-1 InitR-empty_652-3) (< OR-empty_652-3-1&TicketsOrderSim.java@101 OW-empty_652-0-1&TicketsOrderSim.java@63) (< OR-empty_652-3-1&TicketsOrderSim.java@101 OW-empty_652-1-1&TicketsOrderSim.java@72))
+ (and (= R-empty_652-3-1 1) (< OW-empty_652-0-1&TicketsOrderSim.java@63 OR-empty_652-3-1&TicketsOrderSim.java@101) (or (< OW-empty_652-1-1&TicketsOrderSim.java@72 OW-empty_652-0-1&TicketsOrderSim.java@63) (< OR-empty_652-3-1&TicketsOrderSim.java@101 OW-empty_652-1-1&TicketsOrderSim.java@72)))
+ (and (= R-empty_652-3-1 0) (< OW-empty_652-1-1&TicketsOrderSim.java@72 OR-empty_652-3-1&TicketsOrderSim.java@101) (or (< OW-empty_652-0-1&TicketsOrderSim.java@63 OW-empty_652-1-1&TicketsOrderSim.java@72) (< OR-empty_652-3-1&TicketsOrderSim.java@101 OW-empty_652-0-1&TicketsOrderSim.java@63)))):named RWC27))
+
+(declare-const InitR-empty_654-1 Int)
+
+(assert (! (or (and (= R-empty_654-1-1 InitR-empty_654-1) (< OR-empty_654-1-1&TicketsOrderSim.java@101 OW-empty_654-0-1&TicketsOrderSim.java@63))
+ (and (= R-empty_654-1-1 1) (< OW-empty_654-0-1&TicketsOrderSim.java@63 OR-empty_654-1-1&TicketsOrderSim.java@101))):named RWC28))
+
+(assert (! (or (and (= R-empty_654-1-2 InitR-empty_654-1) (< OR-empty_654-1-2&TicketsOrderSim.java@103 OW-empty_654-0-1&TicketsOrderSim.java@63))
+ (and (= R-empty_654-1-2 1) (< OW-empty_654-0-1&TicketsOrderSim.java@63 OR-empty_654-1-2&TicketsOrderSim.java@103))):named RWC29))
+
+(declare-const InitR-empty_654-2 Int)
+
+(assert (! (or (and (= R-empty_654-2-1 InitR-empty_654-2) (< OR-empty_654-2-1&TicketsOrderSim.java@101 OW-empty_654-0-1&TicketsOrderSim.java@63) (< OR-empty_654-2-1&TicketsOrderSim.java@101 OW-empty_654-1-1&TicketsOrderSim.java@72))
+ (and (= R-empty_654-2-1 1) (< OW-empty_654-0-1&TicketsOrderSim.java@63 OR-empty_654-2-1&TicketsOrderSim.java@101) (or (< OW-empty_654-1-1&TicketsOrderSim.java@72 OW-empty_654-0-1&TicketsOrderSim.java@63) (< OR-empty_654-2-1&TicketsOrderSim.java@101 OW-empty_654-1-1&TicketsOrderSim.java@72)))
+ (and (= R-empty_654-2-1 0) (< OW-empty_654-1-1&TicketsOrderSim.java@72 OR-empty_654-2-1&TicketsOrderSim.java@101) (or (< OW-empty_654-0-1&TicketsOrderSim.java@63 OW-empty_654-1-1&TicketsOrderSim.java@72) (< OR-empty_654-2-1&TicketsOrderSim.java@101 OW-empty_654-0-1&TicketsOrderSim.java@63)))):named RWC30))
+
+(declare-const InitR-empty_654-3 Int)
+
+(assert (! (or (and (= R-empty_654-3-1 InitR-empty_654-3) (< OR-empty_654-3-1&TicketsOrderSim.java@101 OW-empty_654-0-1&TicketsOrderSim.java@63) (< OR-empty_654-3-1&TicketsOrderSim.java@101 OW-empty_654-1-1&TicketsOrderSim.java@72))
+ (and (= R-empty_654-3-1 1) (< OW-empty_654-0-1&TicketsOrderSim.java@63 OR-empty_654-3-1&TicketsOrderSim.java@101) (or (< OW-empty_654-1-1&TicketsOrderSim.java@72 OW-empty_654-0-1&TicketsOrderSim.java@63) (< OR-empty_654-3-1&TicketsOrderSim.java@101 OW-empty_654-1-1&TicketsOrderSim.java@72)))
+ (and (= R-empty_654-3-1 0) (< OW-empty_654-1-1&TicketsOrderSim.java@72 OR-empty_654-3-1&TicketsOrderSim.java@101) (or (< OW-empty_654-0-1&TicketsOrderSim.java@63 OW-empty_654-1-1&TicketsOrderSim.java@72) (< OR-empty_654-3-1&TicketsOrderSim.java@101 OW-empty_654-0-1&TicketsOrderSim.java@63)))):named RWC31))
+
+(declare-const InitR-flight_629-2 Int)
+
+(assert (! (or (and (= R-flight_629-2-1 InitR-flight_629-2) (< OR-flight_629-2-1&TicketsOrderSim.java@28 OW-flight_629-0-1&TicketsOrderSim.java@65) (< OR-flight_629-2-1&TicketsOrderSim.java@28 OW-flight_629-1-1&TicketsOrderSim.java@73))
+ (and (= R-flight_629-2-1 -1) (< OW-flight_629-0-1&TicketsOrderSim.java@65 OR-flight_629-2-1&TicketsOrderSim.java@28) (or (< OW-flight_629-1-1&TicketsOrderSim.java@73 OW-flight_629-0-1&TicketsOrderSim.java@65) (< OR-flight_629-2-1&TicketsOrderSim.java@28 OW-flight_629-1-1&TicketsOrderSim.java@73)))
+ (and (= R-flight_629-2-1 74721) (< OW-flight_629-1-1&TicketsOrderSim.java@73 OR-flight_629-2-1&TicketsOrderSim.java@28) (or (< OW-flight_629-0-1&TicketsOrderSim.java@65 OW-flight_629-1-1&TicketsOrderSim.java@73) (< OR-flight_629-2-1&TicketsOrderSim.java@28 OW-flight_629-0-1&TicketsOrderSim.java@65)))):named RWC32))
+
+(declare-const InitR-flight_629-3 Int)
+
+(assert (! (or (and (= R-flight_629-3-1 InitR-flight_629-3) (< OR-flight_629-3-1&TicketsOrderSim.java@28 OW-flight_629-0-1&TicketsOrderSim.java@65) (< OR-flight_629-3-1&TicketsOrderSim.java@28 OW-flight_629-1-1&TicketsOrderSim.java@73))
+ (and (= R-flight_629-3-1 -1) (< OW-flight_629-0-1&TicketsOrderSim.java@65 OR-flight_629-3-1&TicketsOrderSim.java@28) (or (< OW-flight_629-1-1&TicketsOrderSim.java@73 OW-flight_629-0-1&TicketsOrderSim.java@65) (< OR-flight_629-3-1&TicketsOrderSim.java@28 OW-flight_629-1-1&TicketsOrderSim.java@73)))
+ (and (= R-flight_629-3-1 74721) (< OW-flight_629-1-1&TicketsOrderSim.java@73 OR-flight_629-3-1&TicketsOrderSim.java@28) (or (< OW-flight_629-0-1&TicketsOrderSim.java@65 OW-flight_629-1-1&TicketsOrderSim.java@73) (< OR-flight_629-3-1&TicketsOrderSim.java@28 OW-flight_629-0-1&TicketsOrderSim.java@65)))):named RWC33))
+
+(declare-const InitR-flight_648-2 Int)
+
+(assert (! (or (and (= R-flight_648-2-1 InitR-flight_648-2) (< OR-flight_648-2-1&TicketsOrderSim.java@28 OW-flight_648-0-1&TicketsOrderSim.java@65) (< OR-flight_648-2-1&TicketsOrderSim.java@28 OW-flight_648-1-1&TicketsOrderSim.java@73))
+ (and (= R-flight_648-2-1 -1) (< OW-flight_648-0-1&TicketsOrderSim.java@65 OR-flight_648-2-1&TicketsOrderSim.java@28) (or (< OW-flight_648-1-1&TicketsOrderSim.java@73 OW-flight_648-0-1&TicketsOrderSim.java@65) (< OR-flight_648-2-1&TicketsOrderSim.java@28 OW-flight_648-1-1&TicketsOrderSim.java@73)))
+ (and (= R-flight_648-2-1 74721) (< OW-flight_648-1-1&TicketsOrderSim.java@73 OR-flight_648-2-1&TicketsOrderSim.java@28) (or (< OW-flight_648-0-1&TicketsOrderSim.java@65 OW-flight_648-1-1&TicketsOrderSim.java@73) (< OR-flight_648-2-1&TicketsOrderSim.java@28 OW-flight_648-0-1&TicketsOrderSim.java@65)))):named RWC34))
+
+(declare-const InitR-flight_648-3 Int)
+
+(assert (! (or (and (= R-flight_648-3-1 InitR-flight_648-3) (< OR-flight_648-3-1&TicketsOrderSim.java@28 OW-flight_648-0-1&TicketsOrderSim.java@65) (< OR-flight_648-3-1&TicketsOrderSim.java@28 OW-flight_648-1-1&TicketsOrderSim.java@73))
+ (and (= R-flight_648-3-1 -1) (< OW-flight_648-0-1&TicketsOrderSim.java@65 OR-flight_648-3-1&TicketsOrderSim.java@28) (or (< OW-flight_648-1-1&TicketsOrderSim.java@73 OW-flight_648-0-1&TicketsOrderSim.java@65) (< OR-flight_648-3-1&TicketsOrderSim.java@28 OW-flight_648-1-1&TicketsOrderSim.java@73)))
+ (and (= R-flight_648-3-1 74721) (< OW-flight_648-1-1&TicketsOrderSim.java@73 OR-flight_648-3-1&TicketsOrderSim.java@28) (or (< OW-flight_648-0-1&TicketsOrderSim.java@65 OW-flight_648-1-1&TicketsOrderSim.java@73) (< OR-flight_648-3-1&TicketsOrderSim.java@28 OW-flight_648-0-1&TicketsOrderSim.java@65)))):named RWC35))
+
+(declare-const InitR-flight_650-2 Int)
+
+(assert (! (or (and (= R-flight_650-2-1 InitR-flight_650-2) (< OR-flight_650-2-1&TicketsOrderSim.java@28 OW-flight_650-0-1&TicketsOrderSim.java@65) (< OR-flight_650-2-1&TicketsOrderSim.java@28 OW-flight_650-1-1&TicketsOrderSim.java@73))
+ (and (= R-flight_650-2-1 -1) (< OW-flight_650-0-1&TicketsOrderSim.java@65 OR-flight_650-2-1&TicketsOrderSim.java@28) (or (< OW-flight_650-1-1&TicketsOrderSim.java@73 OW-flight_650-0-1&TicketsOrderSim.java@65) (< OR-flight_650-2-1&TicketsOrderSim.java@28 OW-flight_650-1-1&TicketsOrderSim.java@73)))
+ (and (= R-flight_650-2-1 74721) (< OW-flight_650-1-1&TicketsOrderSim.java@73 OR-flight_650-2-1&TicketsOrderSim.java@28) (or (< OW-flight_650-0-1&TicketsOrderSim.java@65 OW-flight_650-1-1&TicketsOrderSim.java@73) (< OR-flight_650-2-1&TicketsOrderSim.java@28 OW-flight_650-0-1&TicketsOrderSim.java@65)))):named RWC36))
+
+(declare-const InitR-flight_650-3 Int)
+
+(assert (! (or (and (= R-flight_650-3-1 InitR-flight_650-3) (< OR-flight_650-3-1&TicketsOrderSim.java@28 OW-flight_650-0-1&TicketsOrderSim.java@65) (< OR-flight_650-3-1&TicketsOrderSim.java@28 OW-flight_650-1-1&TicketsOrderSim.java@73))
+ (and (= R-flight_650-3-1 -1) (< OW-flight_650-0-1&TicketsOrderSim.java@65 OR-flight_650-3-1&TicketsOrderSim.java@28) (or (< OW-flight_650-1-1&TicketsOrderSim.java@73 OW-flight_650-0-1&TicketsOrderSim.java@65) (< OR-flight_650-3-1&TicketsOrderSim.java@28 OW-flight_650-1-1&TicketsOrderSim.java@73)))
+ (and (= R-flight_650-3-1 74721) (< OW-flight_650-1-1&TicketsOrderSim.java@73 OR-flight_650-3-1&TicketsOrderSim.java@28) (or (< OW-flight_650-0-1&TicketsOrderSim.java@65 OW-flight_650-1-1&TicketsOrderSim.java@73) (< OR-flight_650-3-1&TicketsOrderSim.java@28 OW-flight_650-0-1&TicketsOrderSim.java@65)))):named RWC37))
+
+(declare-const InitR-flight_652-2 Int)
+
+(assert (! (or (and (= R-flight_652-2-1 InitR-flight_652-2) (< OR-flight_652-2-1&TicketsOrderSim.java@28 OW-flight_652-0-1&TicketsOrderSim.java@65) (< OR-flight_652-2-1&TicketsOrderSim.java@28 OW-flight_652-1-1&TicketsOrderSim.java@73))
+ (and (= R-flight_652-2-1 -1) (< OW-flight_652-0-1&TicketsOrderSim.java@65 OR-flight_652-2-1&TicketsOrderSim.java@28) (or (< OW-flight_652-1-1&TicketsOrderSim.java@73 OW-flight_652-0-1&TicketsOrderSim.java@65) (< OR-flight_652-2-1&TicketsOrderSim.java@28 OW-flight_652-1-1&TicketsOrderSim.java@73)))
+ (and (= R-flight_652-2-1 74721) (< OW-flight_652-1-1&TicketsOrderSim.java@73 OR-flight_652-2-1&TicketsOrderSim.java@28) (or (< OW-flight_652-0-1&TicketsOrderSim.java@65 OW-flight_652-1-1&TicketsOrderSim.java@73) (< OR-flight_652-2-1&TicketsOrderSim.java@28 OW-flight_652-0-1&TicketsOrderSim.java@65)))):named RWC38))
+
+(declare-const InitR-flight_652-3 Int)
+
+(assert (! (or (and (= R-flight_652-3-1 InitR-flight_652-3) (< OR-flight_652-3-1&TicketsOrderSim.java@28 OW-flight_652-0-1&TicketsOrderSim.java@65) (< OR-flight_652-3-1&TicketsOrderSim.java@28 OW-flight_652-1-1&TicketsOrderSim.java@73))
+ (and (= R-flight_652-3-1 -1) (< OW-flight_652-0-1&TicketsOrderSim.java@65 OR-flight_652-3-1&TicketsOrderSim.java@28) (or (< OW-flight_652-1-1&TicketsOrderSim.java@73 OW-flight_652-0-1&TicketsOrderSim.java@65) (< OR-flight_652-3-1&TicketsOrderSim.java@28 OW-flight_652-1-1&TicketsOrderSim.java@73)))
+ (and (= R-flight_652-3-1 74721) (< OW-flight_652-1-1&TicketsOrderSim.java@73 OR-flight_652-3-1&TicketsOrderSim.java@28) (or (< OW-flight_652-0-1&TicketsOrderSim.java@65 OW-flight_652-1-1&TicketsOrderSim.java@73) (< OR-flight_652-3-1&TicketsOrderSim.java@28 OW-flight_652-0-1&TicketsOrderSim.java@65)))):named RWC39))
+
+(declare-const InitR-flight_654-2 Int)
+
+(assert (! (or (and (= R-flight_654-2-1 InitR-flight_654-2) (< OR-flight_654-2-1&TicketsOrderSim.java@28 OW-flight_654-0-1&TicketsOrderSim.java@65) (< OR-flight_654-2-1&TicketsOrderSim.java@28 OW-flight_654-1-1&TicketsOrderSim.java@73))
+ (and (= R-flight_654-2-1 -1) (< OW-flight_654-0-1&TicketsOrderSim.java@65 OR-flight_654-2-1&TicketsOrderSim.java@28) (or (< OW-flight_654-1-1&TicketsOrderSim.java@73 OW-flight_654-0-1&TicketsOrderSim.java@65) (< OR-flight_654-2-1&TicketsOrderSim.java@28 OW-flight_654-1-1&TicketsOrderSim.java@73)))
+ (and (= R-flight_654-2-1 74721) (< OW-flight_654-1-1&TicketsOrderSim.java@73 OR-flight_654-2-1&TicketsOrderSim.java@28) (or (< OW-flight_654-0-1&TicketsOrderSim.java@65 OW-flight_654-1-1&TicketsOrderSim.java@73) (< OR-flight_654-2-1&TicketsOrderSim.java@28 OW-flight_654-0-1&TicketsOrderSim.java@65)))):named RWC40))
+
+(declare-const InitR-flight_654-3 Int)
+
+(assert (! (or (and (= R-flight_654-3-1 InitR-flight_654-3) (< OR-flight_654-3-1&TicketsOrderSim.java@28 OW-flight_654-0-1&TicketsOrderSim.java@65) (< OR-flight_654-3-1&TicketsOrderSim.java@28 OW-flight_654-1-1&TicketsOrderSim.java@73))
+ (and (= R-flight_654-3-1 -1) (< OW-flight_654-0-1&TicketsOrderSim.java@65 OR-flight_654-3-1&TicketsOrderSim.java@28) (or (< OW-flight_654-1-1&TicketsOrderSim.java@73 OW-flight_654-0-1&TicketsOrderSim.java@65) (< OR-flight_654-3-1&TicketsOrderSim.java@28 OW-flight_654-1-1&TicketsOrderSim.java@73)))
+ (and (= R-flight_654-3-1 74721) (< OW-flight_654-1-1&TicketsOrderSim.java@73 OR-flight_654-3-1&TicketsOrderSim.java@28) (or (< OW-flight_654-0-1&TicketsOrderSim.java@65 OW-flight_654-1-1&TicketsOrderSim.java@73) (< OR-flight_654-3-1&TicketsOrderSim.java@28 OW-flight_654-0-1&TicketsOrderSim.java@65)))):named RWC41))
+
+(declare-const InitR-seats_647-1 Int)
+
+(assert (! (or (and (= R-seats_647-1-1 InitR-seats_647-1) (< OR-seats_647-1-1&TicketsOrderSim.java@101 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-1-1 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-1-1&TicketsOrderSim.java@101))):named RWC42))
+
+(assert (! (or (and (= R-seats_647-1-2 InitR-seats_647-1) (< OR-seats_647-1-2&TicketsOrderSim.java@102 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-1-2 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-1-2&TicketsOrderSim.java@102))):named RWC43))
+
+(assert (! (or (and (= R-seats_647-1-3 InitR-seats_647-1) (< OR-seats_647-1-3&TicketsOrderSim.java@103 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-1-3 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-1-3&TicketsOrderSim.java@103))):named RWC44))
+
+(assert (! (or (and (= R-seats_647-1-4 InitR-seats_647-1) (< OR-seats_647-1-4&TicketsOrderSim.java@104 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-1-4 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-1-4&TicketsOrderSim.java@104))):named RWC45))
+
+(declare-const InitR-seats_647-2 Int)
+
+(assert (! (or (and (= R-seats_647-2-1 InitR-seats_647-2) (< OR-seats_647-2-1&TicketsOrderSim.java@101 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-2-1 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-2-1&TicketsOrderSim.java@101))):named RWC46))
+
+(assert (! (or (and (= R-seats_647-2-2 InitR-seats_647-2) (< OR-seats_647-2-2&TicketsOrderSim.java@110 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-2-2 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-2-2&TicketsOrderSim.java@110))):named RWC47))
+
+(assert (! (or (and (= R-seats_647-2-3 InitR-seats_647-2) (< OR-seats_647-2-3&TicketsOrderSim.java@28 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-2-3 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-2-3&TicketsOrderSim.java@28))):named RWC48))
+
+(assert (! (or (and (= R-seats_647-2-4 InitR-seats_647-2) (< OR-seats_647-2-4&TicketsOrderSim.java@33 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-2-4 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-2-4&TicketsOrderSim.java@33))):named RWC49))
+
+(declare-const InitR-seats_647-3 Int)
+
+(assert (! (or (and (= R-seats_647-3-1 InitR-seats_647-3) (< OR-seats_647-3-1&TicketsOrderSim.java@101 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-3-1 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-3-1&TicketsOrderSim.java@101))):named RWC50))
+
+(assert (! (or (and (= R-seats_647-3-2 InitR-seats_647-3) (< OR-seats_647-3-2&TicketsOrderSim.java@110 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-3-2 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-3-2&TicketsOrderSim.java@110))):named RWC51))
+
+(assert (! (or (and (= R-seats_647-3-3 InitR-seats_647-3) (< OR-seats_647-3-3&TicketsOrderSim.java@28 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-3-3 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-3-3&TicketsOrderSim.java@28))):named RWC52))
+
+(assert (! (or (and (= R-seats_647-3-4 InitR-seats_647-3) (< OR-seats_647-3-4&TicketsOrderSim.java@33 OW-seats_647-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_647-3-4 252) (< OW-seats_647-0-1&TicketsOrderSim.java@181 OR-seats_647-3-4&TicketsOrderSim.java@33))):named RWC53))
+
+(declare-const InitR-seats_648-1 Int)
+
+(assert (! (or (and (= R-seats_648-1-1 InitR-seats_648-1) (< OR-seats_648-1-1&TicketsOrderSim.java@101 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-1-1 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-1-1&TicketsOrderSim.java@101))):named RWC54))
+
+(assert (! (or (and (= R-seats_648-1-2 InitR-seats_648-1) (< OR-seats_648-1-2&TicketsOrderSim.java@102 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-1-2 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-1-2&TicketsOrderSim.java@102))):named RWC55))
+
+(assert (! (or (and (= R-seats_648-1-3 InitR-seats_648-1) (< OR-seats_648-1-3&TicketsOrderSim.java@103 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-1-3 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-1-3&TicketsOrderSim.java@103))):named RWC56))
+
+(assert (! (or (and (= R-seats_648-1-4 InitR-seats_648-1) (< OR-seats_648-1-4&TicketsOrderSim.java@104 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-1-4 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-1-4&TicketsOrderSim.java@104))):named RWC57))
+
+(declare-const InitR-seats_648-2 Int)
+
+(assert (! (or (and (= R-seats_648-2-1 InitR-seats_648-2) (< OR-seats_648-2-1&TicketsOrderSim.java@101 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-2-1 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-2-1&TicketsOrderSim.java@101))):named RWC58))
+
+(assert (! (or (and (= R-seats_648-2-2 InitR-seats_648-2) (< OR-seats_648-2-2&TicketsOrderSim.java@110 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-2-2 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-2-2&TicketsOrderSim.java@110))):named RWC59))
+
+(assert (! (or (and (= R-seats_648-2-3 InitR-seats_648-2) (< OR-seats_648-2-3&TicketsOrderSim.java@28 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-2-3 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-2-3&TicketsOrderSim.java@28))):named RWC60))
+
+(assert (! (or (and (= R-seats_648-2-4 InitR-seats_648-2) (< OR-seats_648-2-4&TicketsOrderSim.java@33 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-2-4 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-2-4&TicketsOrderSim.java@33))):named RWC61))
+
+(declare-const InitR-seats_648-3 Int)
+
+(assert (! (or (and (= R-seats_648-3-1 InitR-seats_648-3) (< OR-seats_648-3-1&TicketsOrderSim.java@101 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-3-1 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-3-1&TicketsOrderSim.java@101))):named RWC62))
+
+(assert (! (or (and (= R-seats_648-3-2 InitR-seats_648-3) (< OR-seats_648-3-2&TicketsOrderSim.java@110 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-3-2 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-3-2&TicketsOrderSim.java@110))):named RWC63))
+
+(assert (! (or (and (= R-seats_648-3-3 InitR-seats_648-3) (< OR-seats_648-3-3&TicketsOrderSim.java@28 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-3-3 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-3-3&TicketsOrderSim.java@28))):named RWC64))
+
+(assert (! (or (and (= R-seats_648-3-4 InitR-seats_648-3) (< OR-seats_648-3-4&TicketsOrderSim.java@33 OW-seats_648-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_648-3-4 635) (< OW-seats_648-0-1&TicketsOrderSim.java@181 OR-seats_648-3-4&TicketsOrderSim.java@33))):named RWC65))
+
+(declare-const InitR-seats_649-1 Int)
+
+(assert (! (or (and (= R-seats_649-1-1 InitR-seats_649-1) (< OR-seats_649-1-1&TicketsOrderSim.java@101 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-1-1 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-1-1&TicketsOrderSim.java@101))):named RWC66))
+
+(assert (! (or (and (= R-seats_649-1-2 InitR-seats_649-1) (< OR-seats_649-1-2&TicketsOrderSim.java@102 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-1-2 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-1-2&TicketsOrderSim.java@102))):named RWC67))
+
+(assert (! (or (and (= R-seats_649-1-3 InitR-seats_649-1) (< OR-seats_649-1-3&TicketsOrderSim.java@103 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-1-3 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-1-3&TicketsOrderSim.java@103))):named RWC68))
+
+(assert (! (or (and (= R-seats_649-1-4 InitR-seats_649-1) (< OR-seats_649-1-4&TicketsOrderSim.java@104 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-1-4 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-1-4&TicketsOrderSim.java@104))):named RWC69))
+
+(declare-const InitR-seats_649-2 Int)
+
+(assert (! (or (and (= R-seats_649-2-1 InitR-seats_649-2) (< OR-seats_649-2-1&TicketsOrderSim.java@101 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-2-1 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-2-1&TicketsOrderSim.java@101))):named RWC70))
+
+(assert (! (or (and (= R-seats_649-2-2 InitR-seats_649-2) (< OR-seats_649-2-2&TicketsOrderSim.java@110 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-2-2 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-2-2&TicketsOrderSim.java@110))):named RWC71))
+
+(assert (! (or (and (= R-seats_649-2-3 InitR-seats_649-2) (< OR-seats_649-2-3&TicketsOrderSim.java@28 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-2-3 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-2-3&TicketsOrderSim.java@28))):named RWC72))
+
+(assert (! (or (and (= R-seats_649-2-4 InitR-seats_649-2) (< OR-seats_649-2-4&TicketsOrderSim.java@33 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-2-4 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-2-4&TicketsOrderSim.java@33))):named RWC73))
+
+(declare-const InitR-seats_649-3 Int)
+
+(assert (! (or (and (= R-seats_649-3-1 InitR-seats_649-3) (< OR-seats_649-3-1&TicketsOrderSim.java@101 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-3-1 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-3-1&TicketsOrderSim.java@101))):named RWC74))
+
+(assert (! (or (and (= R-seats_649-3-2 InitR-seats_649-3) (< OR-seats_649-3-2&TicketsOrderSim.java@110 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-3-2 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-3-2&TicketsOrderSim.java@110))):named RWC75))
+
+(assert (! (or (and (= R-seats_649-3-3 InitR-seats_649-3) (< OR-seats_649-3-3&TicketsOrderSim.java@28 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-3-3 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-3-3&TicketsOrderSim.java@28))):named RWC76))
+
+(assert (! (or (and (= R-seats_649-3-4 InitR-seats_649-3) (< OR-seats_649-3-4&TicketsOrderSim.java@33 OW-seats_649-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_649-3-4 649) (< OW-seats_649-0-1&TicketsOrderSim.java@181 OR-seats_649-3-4&TicketsOrderSim.java@33))):named RWC77))
+
+(declare-const InitR-seats_650-1 Int)
+
+(assert (! (or (and (= R-seats_650-1-1 InitR-seats_650-1) (< OR-seats_650-1-1&TicketsOrderSim.java@101 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-1-1 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-1-1&TicketsOrderSim.java@101))):named RWC78))
+
+(assert (! (or (and (= R-seats_650-1-2 InitR-seats_650-1) (< OR-seats_650-1-2&TicketsOrderSim.java@102 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-1-2 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-1-2&TicketsOrderSim.java@102))):named RWC79))
+
+(assert (! (or (and (= R-seats_650-1-3 InitR-seats_650-1) (< OR-seats_650-1-3&TicketsOrderSim.java@103 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-1-3 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-1-3&TicketsOrderSim.java@103))):named RWC80))
+
+(assert (! (or (and (= R-seats_650-1-4 InitR-seats_650-1) (< OR-seats_650-1-4&TicketsOrderSim.java@104 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-1-4 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-1-4&TicketsOrderSim.java@104))):named RWC81))
+
+(declare-const InitR-seats_650-2 Int)
+
+(assert (! (or (and (= R-seats_650-2-1 InitR-seats_650-2) (< OR-seats_650-2-1&TicketsOrderSim.java@101 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-2-1 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-2-1&TicketsOrderSim.java@101))):named RWC82))
+
+(assert (! (or (and (= R-seats_650-2-2 InitR-seats_650-2) (< OR-seats_650-2-2&TicketsOrderSim.java@110 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-2-2 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-2-2&TicketsOrderSim.java@110))):named RWC83))
+
+(assert (! (or (and (= R-seats_650-2-3 InitR-seats_650-2) (< OR-seats_650-2-3&TicketsOrderSim.java@28 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-2-3 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-2-3&TicketsOrderSim.java@28))):named RWC84))
+
+(assert (! (or (and (= R-seats_650-2-4 InitR-seats_650-2) (< OR-seats_650-2-4&TicketsOrderSim.java@33 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-2-4 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-2-4&TicketsOrderSim.java@33))):named RWC85))
+
+(declare-const InitR-seats_650-3 Int)
+
+(assert (! (or (and (= R-seats_650-3-1 InitR-seats_650-3) (< OR-seats_650-3-1&TicketsOrderSim.java@101 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-3-1 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-3-1&TicketsOrderSim.java@101))):named RWC86))
+
+(assert (! (or (and (= R-seats_650-3-2 InitR-seats_650-3) (< OR-seats_650-3-2&TicketsOrderSim.java@110 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-3-2 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-3-2&TicketsOrderSim.java@110))):named RWC87))
+
+(assert (! (or (and (= R-seats_650-3-3 InitR-seats_650-3) (< OR-seats_650-3-3&TicketsOrderSim.java@28 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-3-3 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-3-3&TicketsOrderSim.java@28))):named RWC88))
+
+(assert (! (or (and (= R-seats_650-3-4 InitR-seats_650-3) (< OR-seats_650-3-4&TicketsOrderSim.java@33 OW-seats_650-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_650-3-4 651) (< OW-seats_650-0-1&TicketsOrderSim.java@181 OR-seats_650-3-4&TicketsOrderSim.java@33))):named RWC89))
+
+(declare-const InitR-seats_651-1 Int)
+
+(assert (! (or (and (= R-seats_651-1-1 InitR-seats_651-1) (< OR-seats_651-1-1&TicketsOrderSim.java@101 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-1-1 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-1-1&TicketsOrderSim.java@101))):named RWC90))
+
+(assert (! (or (and (= R-seats_651-1-2 InitR-seats_651-1) (< OR-seats_651-1-2&TicketsOrderSim.java@102 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-1-2 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-1-2&TicketsOrderSim.java@102))):named RWC91))
+
+(assert (! (or (and (= R-seats_651-1-3 InitR-seats_651-1) (< OR-seats_651-1-3&TicketsOrderSim.java@103 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-1-3 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-1-3&TicketsOrderSim.java@103))):named RWC92))
+
+(assert (! (or (and (= R-seats_651-1-4 InitR-seats_651-1) (< OR-seats_651-1-4&TicketsOrderSim.java@104 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-1-4 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-1-4&TicketsOrderSim.java@104))):named RWC93))
+
+(declare-const InitR-seats_651-2 Int)
+
+(assert (! (or (and (= R-seats_651-2-1 InitR-seats_651-2) (< OR-seats_651-2-1&TicketsOrderSim.java@101 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-2-1 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-2-1&TicketsOrderSim.java@101))):named RWC94))
+
+(assert (! (or (and (= R-seats_651-2-2 InitR-seats_651-2) (< OR-seats_651-2-2&TicketsOrderSim.java@110 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-2-2 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-2-2&TicketsOrderSim.java@110))):named RWC95))
+
+(assert (! (or (and (= R-seats_651-2-3 InitR-seats_651-2) (< OR-seats_651-2-3&TicketsOrderSim.java@28 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-2-3 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-2-3&TicketsOrderSim.java@28))):named RWC96))
+
+(assert (! (or (and (= R-seats_651-2-4 InitR-seats_651-2) (< OR-seats_651-2-4&TicketsOrderSim.java@33 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-2-4 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-2-4&TicketsOrderSim.java@33))):named RWC97))
+
+(declare-const InitR-seats_651-3 Int)
+
+(assert (! (or (and (= R-seats_651-3-1 InitR-seats_651-3) (< OR-seats_651-3-1&TicketsOrderSim.java@101 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-3-1 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-3-1&TicketsOrderSim.java@101))):named RWC98))
+
+(assert (! (or (and (= R-seats_651-3-2 InitR-seats_651-3) (< OR-seats_651-3-2&TicketsOrderSim.java@110 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-3-2 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-3-2&TicketsOrderSim.java@110))):named RWC99))
+
+(assert (! (or (and (= R-seats_651-3-3 InitR-seats_651-3) (< OR-seats_651-3-3&TicketsOrderSim.java@28 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-3-3 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-3-3&TicketsOrderSim.java@28))):named RWC100))
+
+(assert (! (or (and (= R-seats_651-3-4 InitR-seats_651-3) (< OR-seats_651-3-4&TicketsOrderSim.java@33 OW-seats_651-0-1&TicketsOrderSim.java@181))
+ (and (= R-seats_651-3-4 653) (< OW-seats_651-0-1&TicketsOrderSim.java@181 OR-seats_651-3-4&TicketsOrderSim.java@33))):named RWC101))
+
+(declare-const InitR-seats_num_51-0 Int)
+
+(assert (! (or (and (= R-seats_num_51-0-1 InitR-seats_num_51-0) (< OR-seats_num_51-0-1&TicketsOrderSim.java@177 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-0-1 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-0-1&TicketsOrderSim.java@177))):named RWC102))
+
+(assert (! (or (and (= R-seats_num_51-0-2 InitR-seats_num_51-0) (< OR-seats_num_51-0-2&TicketsOrderSim.java@180 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-0-2 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-0-2&TicketsOrderSim.java@180))):named RWC103))
+
+(assert (! (or (and (= R-seats_num_51-0-3 InitR-seats_num_51-0) (< OR-seats_num_51-0-3&TicketsOrderSim.java@180 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-0-3 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-0-3&TicketsOrderSim.java@180))):named RWC104))
+
+(assert (! (or (and (= R-seats_num_51-0-4 InitR-seats_num_51-0) (< OR-seats_num_51-0-4&TicketsOrderSim.java@180 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-0-4 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-0-4&TicketsOrderSim.java@180))):named RWC105))
+
+(assert (! (or (and (= R-seats_num_51-0-5 InitR-seats_num_51-0) (< OR-seats_num_51-0-5&TicketsOrderSim.java@180 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-0-5 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-0-5&TicketsOrderSim.java@180))):named RWC106))
+
+(assert (! (or (and (= R-seats_num_51-0-6 InitR-seats_num_51-0) (< OR-seats_num_51-0-6&TicketsOrderSim.java@180 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-0-6 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-0-6&TicketsOrderSim.java@180))):named RWC107))
+
+(assert (! (or (and (= R-seats_num_51-0-7 InitR-seats_num_51-0) (< OR-seats_num_51-0-7&TicketsOrderSim.java@180 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-0-7 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-0-7&TicketsOrderSim.java@180))):named RWC108))
+
+(declare-const InitR-seats_num_51-1 Int)
+
+(assert (! (or (and (= R-seats_num_51-1-1 InitR-seats_num_51-1) (< OR-seats_num_51-1-1&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-1-1 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-1-1&TicketsOrderSim.java@100))):named RWC109))
+
+(assert (! (or (and (= R-seats_num_51-1-2 InitR-seats_num_51-1) (< OR-seats_num_51-1-2&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-1-2 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-1-2&TicketsOrderSim.java@100))):named RWC110))
+
+(assert (! (or (and (= R-seats_num_51-1-3 InitR-seats_num_51-1) (< OR-seats_num_51-1-3&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-1-3 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-1-3&TicketsOrderSim.java@100))):named RWC111))
+
+(assert (! (or (and (= R-seats_num_51-1-4 InitR-seats_num_51-1) (< OR-seats_num_51-1-4&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-1-4 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-1-4&TicketsOrderSim.java@100))):named RWC112))
+
+(assert (! (or (and (= R-seats_num_51-1-5 InitR-seats_num_51-1) (< OR-seats_num_51-1-5&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-1-5 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-1-5&TicketsOrderSim.java@100))):named RWC113))
+
+(assert (! (or (and (= R-seats_num_51-1-6 InitR-seats_num_51-1) (< OR-seats_num_51-1-6&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-1-6 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-1-6&TicketsOrderSim.java@100))):named RWC114))
+
+(declare-const InitR-seats_num_51-2 Int)
+
+(assert (! (or (and (= R-seats_num_51-2-1 InitR-seats_num_51-2) (< OR-seats_num_51-2-1&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-2-1 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-2-1&TicketsOrderSim.java@100))):named RWC115))
+
+(assert (! (or (and (= R-seats_num_51-2-2 InitR-seats_num_51-2) (< OR-seats_num_51-2-2&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-2-2 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-2-2&TicketsOrderSim.java@100))):named RWC116))
+
+(assert (! (or (and (= R-seats_num_51-2-3 InitR-seats_num_51-2) (< OR-seats_num_51-2-3&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-2-3 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-2-3&TicketsOrderSim.java@100))):named RWC117))
+
+(assert (! (or (and (= R-seats_num_51-2-4 InitR-seats_num_51-2) (< OR-seats_num_51-2-4&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-2-4 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-2-4&TicketsOrderSim.java@100))):named RWC118))
+
+(assert (! (or (and (= R-seats_num_51-2-5 InitR-seats_num_51-2) (< OR-seats_num_51-2-5&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-2-5 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-2-5&TicketsOrderSim.java@100))):named RWC119))
+
+(assert (! (or (and (= R-seats_num_51-2-6 InitR-seats_num_51-2) (< OR-seats_num_51-2-6&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-2-6 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-2-6&TicketsOrderSim.java@100))):named RWC120))
+
+(declare-const InitR-seats_num_51-3 Int)
+
+(assert (! (or (and (= R-seats_num_51-3-1 InitR-seats_num_51-3) (< OR-seats_num_51-3-1&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-3-1 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-3-1&TicketsOrderSim.java@100))):named RWC121))
+
+(assert (! (or (and (= R-seats_num_51-3-2 InitR-seats_num_51-3) (< OR-seats_num_51-3-2&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-3-2 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-3-2&TicketsOrderSim.java@100))):named RWC122))
+
+(assert (! (or (and (= R-seats_num_51-3-3 InitR-seats_num_51-3) (< OR-seats_num_51-3-3&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-3-3 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-3-3&TicketsOrderSim.java@100))):named RWC123))
+
+(assert (! (or (and (= R-seats_num_51-3-4 InitR-seats_num_51-3) (< OR-seats_num_51-3-4&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-3-4 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-3-4&TicketsOrderSim.java@100))):named RWC124))
+
+(assert (! (or (and (= R-seats_num_51-3-5 InitR-seats_num_51-3) (< OR-seats_num_51-3-5&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-3-5 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-3-5&TicketsOrderSim.java@100))):named RWC125))
+
+(assert (! (or (and (= R-seats_num_51-3-6 InitR-seats_num_51-3) (< OR-seats_num_51-3-6&TicketsOrderSim.java@100 OW-seats_num_51-0-1&TicketsOrderSim.java@145))
+ (and (= R-seats_num_51-3-6 5) (< OW-seats_num_51-0-1&TicketsOrderSim.java@145 OR-seats_num_51-3-6&TicketsOrderSim.java@100))):named RWC126))
+
+(declare-const InitR-ticket_252-1 Int)
+
+(assert (! (or (and (= R-ticket_252-1-1 InitR-ticket_252-1) (< OR-ticket_252-1-1&TicketsOrderSim.java@101 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-1-1 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-1-1&TicketsOrderSim.java@101))):named RWC127))
+
+(assert (! (or (and (= R-ticket_252-1-2 InitR-ticket_252-1) (< OR-ticket_252-1-2&TicketsOrderSim.java@103 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-1-2 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-1-2&TicketsOrderSim.java@103))):named RWC128))
+
+(assert (! (or (and (= R-ticket_252-1-3 InitR-ticket_252-1) (< OR-ticket_252-1-3&TicketsOrderSim.java@104 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-1-3 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-1-3&TicketsOrderSim.java@104))):named RWC129))
+
+(declare-const InitR-ticket_252-2 Int)
+
+(assert (! (or (and (= R-ticket_252-2-1 InitR-ticket_252-2) (< OR-ticket_252-2-1&TicketsOrderSim.java@101 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-2-1 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-2-1&TicketsOrderSim.java@101))):named RWC130))
+
+(assert (! (or (and (= R-ticket_252-2-2 InitR-ticket_252-2) (< OR-ticket_252-2-2&TicketsOrderSim.java@110 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-2-2 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-2-2&TicketsOrderSim.java@110))):named RWC131))
+
+(assert (! (or (and (= R-ticket_252-2-3 InitR-ticket_252-2) (< OR-ticket_252-2-3&TicketsOrderSim.java@28 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-2-3 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-2-3&TicketsOrderSim.java@28))):named RWC132))
+
+(assert (! (or (and (= R-ticket_252-2-4 InitR-ticket_252-2) (< OR-ticket_252-2-4&TicketsOrderSim.java@33 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-2-4 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-2-4&TicketsOrderSim.java@33))):named RWC133))
+
+(declare-const InitR-ticket_252-3 Int)
+
+(assert (! (or (and (= R-ticket_252-3-1 InitR-ticket_252-3) (< OR-ticket_252-3-1&TicketsOrderSim.java@101 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-3-1 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-3-1&TicketsOrderSim.java@101))):named RWC134))
+
+(assert (! (or (and (= R-ticket_252-3-2 InitR-ticket_252-3) (< OR-ticket_252-3-2&TicketsOrderSim.java@110 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-3-2 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-3-2&TicketsOrderSim.java@110))):named RWC135))
+
+(assert (! (or (and (= R-ticket_252-3-3 InitR-ticket_252-3) (< OR-ticket_252-3-3&TicketsOrderSim.java@28 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-3-3 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-3-3&TicketsOrderSim.java@28))):named RWC136))
+
+(assert (! (or (and (= R-ticket_252-3-4 InitR-ticket_252-3) (< OR-ticket_252-3-4&TicketsOrderSim.java@33 OW-ticket_252-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_252-3-4 629) (< OW-ticket_252-0-1&TicketsOrderSim.java@84 OR-ticket_252-3-4&TicketsOrderSim.java@33))):named RWC137))
+
+(declare-const InitR-ticket_635-1 Int)
+
+(assert (! (or (and (= R-ticket_635-1-1 InitR-ticket_635-1) (< OR-ticket_635-1-1&TicketsOrderSim.java@101 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-1-1 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-1-1&TicketsOrderSim.java@101))):named RWC138))
+
+(assert (! (or (and (= R-ticket_635-1-2 InitR-ticket_635-1) (< OR-ticket_635-1-2&TicketsOrderSim.java@103 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-1-2 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-1-2&TicketsOrderSim.java@103))):named RWC139))
+
+(assert (! (or (and (= R-ticket_635-1-3 InitR-ticket_635-1) (< OR-ticket_635-1-3&TicketsOrderSim.java@104 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-1-3 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-1-3&TicketsOrderSim.java@104))):named RWC140))
+
+(declare-const InitR-ticket_635-2 Int)
+
+(assert (! (or (and (= R-ticket_635-2-1 InitR-ticket_635-2) (< OR-ticket_635-2-1&TicketsOrderSim.java@101 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-2-1 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-2-1&TicketsOrderSim.java@101))):named RWC141))
+
+(assert (! (or (and (= R-ticket_635-2-2 InitR-ticket_635-2) (< OR-ticket_635-2-2&TicketsOrderSim.java@110 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-2-2 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-2-2&TicketsOrderSim.java@110))):named RWC142))
+
+(assert (! (or (and (= R-ticket_635-2-3 InitR-ticket_635-2) (< OR-ticket_635-2-3&TicketsOrderSim.java@28 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-2-3 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-2-3&TicketsOrderSim.java@28))):named RWC143))
+
+(assert (! (or (and (= R-ticket_635-2-4 InitR-ticket_635-2) (< OR-ticket_635-2-4&TicketsOrderSim.java@33 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-2-4 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-2-4&TicketsOrderSim.java@33))):named RWC144))
+
+(declare-const InitR-ticket_635-3 Int)
+
+(assert (! (or (and (= R-ticket_635-3-1 InitR-ticket_635-3) (< OR-ticket_635-3-1&TicketsOrderSim.java@101 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-3-1 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-3-1&TicketsOrderSim.java@101))):named RWC145))
+
+(assert (! (or (and (= R-ticket_635-3-2 InitR-ticket_635-3) (< OR-ticket_635-3-2&TicketsOrderSim.java@110 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-3-2 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-3-2&TicketsOrderSim.java@110))):named RWC146))
+
+(assert (! (or (and (= R-ticket_635-3-3 InitR-ticket_635-3) (< OR-ticket_635-3-3&TicketsOrderSim.java@28 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-3-3 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-3-3&TicketsOrderSim.java@28))):named RWC147))
+
+(assert (! (or (and (= R-ticket_635-3-4 InitR-ticket_635-3) (< OR-ticket_635-3-4&TicketsOrderSim.java@33 OW-ticket_635-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_635-3-4 648) (< OW-ticket_635-0-1&TicketsOrderSim.java@84 OR-ticket_635-3-4&TicketsOrderSim.java@33))):named RWC148))
+
+(declare-const InitR-ticket_649-1 Int)
+
+(assert (! (or (and (= R-ticket_649-1-1 InitR-ticket_649-1) (< OR-ticket_649-1-1&TicketsOrderSim.java@101 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-1-1 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-1-1&TicketsOrderSim.java@101))):named RWC149))
+
+(assert (! (or (and (= R-ticket_649-1-2 InitR-ticket_649-1) (< OR-ticket_649-1-2&TicketsOrderSim.java@103 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-1-2 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-1-2&TicketsOrderSim.java@103))):named RWC150))
+
+(assert (! (or (and (= R-ticket_649-1-3 InitR-ticket_649-1) (< OR-ticket_649-1-3&TicketsOrderSim.java@104 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-1-3 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-1-3&TicketsOrderSim.java@104))):named RWC151))
+
+(declare-const InitR-ticket_649-2 Int)
+
+(assert (! (or (and (= R-ticket_649-2-1 InitR-ticket_649-2) (< OR-ticket_649-2-1&TicketsOrderSim.java@101 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-2-1 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-2-1&TicketsOrderSim.java@101))):named RWC152))
+
+(assert (! (or (and (= R-ticket_649-2-2 InitR-ticket_649-2) (< OR-ticket_649-2-2&TicketsOrderSim.java@110 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-2-2 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-2-2&TicketsOrderSim.java@110))):named RWC153))
+
+(assert (! (or (and (= R-ticket_649-2-3 InitR-ticket_649-2) (< OR-ticket_649-2-3&TicketsOrderSim.java@28 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-2-3 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-2-3&TicketsOrderSim.java@28))):named RWC154))
+
+(assert (! (or (and (= R-ticket_649-2-4 InitR-ticket_649-2) (< OR-ticket_649-2-4&TicketsOrderSim.java@33 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-2-4 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-2-4&TicketsOrderSim.java@33))):named RWC155))
+
+(declare-const InitR-ticket_649-3 Int)
+
+(assert (! (or (and (= R-ticket_649-3-1 InitR-ticket_649-3) (< OR-ticket_649-3-1&TicketsOrderSim.java@101 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-3-1 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-3-1&TicketsOrderSim.java@101))):named RWC156))
+
+(assert (! (or (and (= R-ticket_649-3-2 InitR-ticket_649-3) (< OR-ticket_649-3-2&TicketsOrderSim.java@110 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-3-2 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-3-2&TicketsOrderSim.java@110))):named RWC157))
+
+(assert (! (or (and (= R-ticket_649-3-3 InitR-ticket_649-3) (< OR-ticket_649-3-3&TicketsOrderSim.java@28 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-3-3 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-3-3&TicketsOrderSim.java@28))):named RWC158))
+
+(assert (! (or (and (= R-ticket_649-3-4 InitR-ticket_649-3) (< OR-ticket_649-3-4&TicketsOrderSim.java@33 OW-ticket_649-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_649-3-4 650) (< OW-ticket_649-0-1&TicketsOrderSim.java@84 OR-ticket_649-3-4&TicketsOrderSim.java@33))):named RWC159))
+
+(declare-const InitR-ticket_651-1 Int)
+
+(assert (! (or (and (= R-ticket_651-1-1 InitR-ticket_651-1) (< OR-ticket_651-1-1&TicketsOrderSim.java@101 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-1-1 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-1-1&TicketsOrderSim.java@101))):named RWC160))
+
+(assert (! (or (and (= R-ticket_651-1-2 InitR-ticket_651-1) (< OR-ticket_651-1-2&TicketsOrderSim.java@103 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-1-2 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-1-2&TicketsOrderSim.java@103))):named RWC161))
+
+(assert (! (or (and (= R-ticket_651-1-3 InitR-ticket_651-1) (< OR-ticket_651-1-3&TicketsOrderSim.java@104 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-1-3 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-1-3&TicketsOrderSim.java@104))):named RWC162))
+
+(declare-const InitR-ticket_651-2 Int)
+
+(assert (! (or (and (= R-ticket_651-2-1 InitR-ticket_651-2) (< OR-ticket_651-2-1&TicketsOrderSim.java@101 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-2-1 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-2-1&TicketsOrderSim.java@101))):named RWC163))
+
+(assert (! (or (and (= R-ticket_651-2-2 InitR-ticket_651-2) (< OR-ticket_651-2-2&TicketsOrderSim.java@110 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-2-2 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-2-2&TicketsOrderSim.java@110))):named RWC164))
+
+(assert (! (or (and (= R-ticket_651-2-3 InitR-ticket_651-2) (< OR-ticket_651-2-3&TicketsOrderSim.java@28 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-2-3 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-2-3&TicketsOrderSim.java@28))):named RWC165))
+
+(assert (! (or (and (= R-ticket_651-2-4 InitR-ticket_651-2) (< OR-ticket_651-2-4&TicketsOrderSim.java@33 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-2-4 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-2-4&TicketsOrderSim.java@33))):named RWC166))
+
+(declare-const InitR-ticket_651-3 Int)
+
+(assert (! (or (and (= R-ticket_651-3-1 InitR-ticket_651-3) (< OR-ticket_651-3-1&TicketsOrderSim.java@101 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-3-1 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-3-1&TicketsOrderSim.java@101))):named RWC167))
+
+(assert (! (or (and (= R-ticket_651-3-2 InitR-ticket_651-3) (< OR-ticket_651-3-2&TicketsOrderSim.java@110 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-3-2 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-3-2&TicketsOrderSim.java@110))):named RWC168))
+
+(assert (! (or (and (= R-ticket_651-3-3 InitR-ticket_651-3) (< OR-ticket_651-3-3&TicketsOrderSim.java@28 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-3-3 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-3-3&TicketsOrderSim.java@28))):named RWC169))
+
+(assert (! (or (and (= R-ticket_651-3-4 InitR-ticket_651-3) (< OR-ticket_651-3-4&TicketsOrderSim.java@33 OW-ticket_651-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_651-3-4 652) (< OW-ticket_651-0-1&TicketsOrderSim.java@84 OR-ticket_651-3-4&TicketsOrderSim.java@33))):named RWC170))
+
+(declare-const InitR-ticket_653-1 Int)
+
+(assert (! (or (and (= R-ticket_653-1-1 InitR-ticket_653-1) (< OR-ticket_653-1-1&TicketsOrderSim.java@101 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-1-1 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-1-1&TicketsOrderSim.java@101))):named RWC171))
+
+(assert (! (or (and (= R-ticket_653-1-2 InitR-ticket_653-1) (< OR-ticket_653-1-2&TicketsOrderSim.java@103 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-1-2 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-1-2&TicketsOrderSim.java@103))):named RWC172))
+
+(assert (! (or (and (= R-ticket_653-1-3 InitR-ticket_653-1) (< OR-ticket_653-1-3&TicketsOrderSim.java@104 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-1-3 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-1-3&TicketsOrderSim.java@104))):named RWC173))
+
+(declare-const InitR-ticket_653-2 Int)
+
+(assert (! (or (and (= R-ticket_653-2-1 InitR-ticket_653-2) (< OR-ticket_653-2-1&TicketsOrderSim.java@101 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-2-1 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-2-1&TicketsOrderSim.java@101))):named RWC174))
+
+(assert (! (or (and (= R-ticket_653-2-2 InitR-ticket_653-2) (< OR-ticket_653-2-2&TicketsOrderSim.java@110 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-2-2 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-2-2&TicketsOrderSim.java@110))):named RWC175))
+
+(assert (! (or (and (= R-ticket_653-2-3 InitR-ticket_653-2) (< OR-ticket_653-2-3&TicketsOrderSim.java@28 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-2-3 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-2-3&TicketsOrderSim.java@28))):named RWC176))
+
+(assert (! (or (and (= R-ticket_653-2-4 InitR-ticket_653-2) (< OR-ticket_653-2-4&TicketsOrderSim.java@33 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-2-4 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-2-4&TicketsOrderSim.java@33))):named RWC177))
+
+(declare-const InitR-ticket_653-3 Int)
+
+(assert (! (or (and (= R-ticket_653-3-1 InitR-ticket_653-3) (< OR-ticket_653-3-1&TicketsOrderSim.java@101 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-3-1 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-3-1&TicketsOrderSim.java@101))):named RWC178))
+
+(assert (! (or (and (= R-ticket_653-3-2 InitR-ticket_653-3) (< OR-ticket_653-3-2&TicketsOrderSim.java@110 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-3-2 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-3-2&TicketsOrderSim.java@110))):named RWC179))
+
+(assert (! (or (and (= R-ticket_653-3-3 InitR-ticket_653-3) (< OR-ticket_653-3-3&TicketsOrderSim.java@28 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-3-3 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-3-3&TicketsOrderSim.java@28))):named RWC180))
+
+(assert (! (or (and (= R-ticket_653-3-4 InitR-ticket_653-3) (< OR-ticket_653-3-4&TicketsOrderSim.java@33 OW-ticket_653-0-1&TicketsOrderSim.java@84))
+ (and (= R-ticket_653-3-4 654) (< OW-ticket_653-0-1&TicketsOrderSim.java@84 OR-ticket_653-3-4&TicketsOrderSim.java@33))):named RWC181))
+
+(echo "PATH CONSTRAINTS -----")
+
+(assert (! (< 0 R-seats_num_51-0-2):named PC0_T0))
+
+(assert (! (< 1 R-seats_num_51-0-3):named PC1_T0))
+
+(assert (! (< 2 R-seats_num_51-0-4):named PC2_T0))
+
+(assert (! (< 3 R-seats_num_51-0-5):named PC3_T0))
+
+(assert (! (< 4 R-seats_num_51-0-6):named PC4_T0))
+
+(assert (! (>= 5 R-seats_num_51-0-7):named PC5_T0))
+
+(assert (! (= R-bug_occured_51-0-1 0):named PC6_T0_BUGCOND))
+
+(assert (! (< 0 R-seats_num_51-1-1):named PC0_T1))
+
+(assert (! (not (= R-empty_629-1-1 0)):named PC1_T1))
+
+(assert (! (not (= R-empty_629-1-2 0)):named PC2_T1))
+
+(assert (! (< 1 R-seats_num_51-1-2):named PC3_T1))
+
+(assert (! (not (= R-empty_648-1-1 0)):named PC4_T1))
+
+(assert (! (not (= R-empty_648-1-2 0)):named PC5_T1))
+
+(assert (! (< 2 R-seats_num_51-1-3):named PC6_T1))
+
+(assert (! (not (= R-empty_650-1-1 0)):named PC7_T1))
+
+(assert (! (not (= R-empty_650-1-2 0)):named PC8_T1))
+
+(assert (! (< 3 R-seats_num_51-1-4):named PC9_T1))
+
+(assert (! (not (= R-empty_652-1-1 0)):named PC10_T1))
+
+(assert (! (not (= R-empty_652-1-2 0)):named PC11_T1))
+
+(assert (! (< 4 R-seats_num_51-1-5):named PC12_T1))
+
+(assert (! (not (= R-empty_654-1-1 0)):named PC13_T1))
+
+(assert (! (not (= R-empty_654-1-2 0)):named PC14_T1))
+
+(assert (! (>= 5 R-seats_num_51-1-6):named PC15_T1))
+
+(assert (! (< 0 R-seats_num_51-2-1):named PC0_T2))
+
+(assert (! (= R-empty_629-2-1 0):named PC1_T2))
+
+(assert (! (= R-flight_629-2-1 74721):named PC2_T2))
+
+(assert (! (= R-airline_629-2-1 8888):named PC3_T2))
+
+(assert (! (< 1 R-seats_num_51-2-2):named PC4_T2))
+
+(assert (! (= R-empty_648-2-1 0):named PC5_T2))
+
+(assert (! (= R-flight_648-2-1 74721):named PC6_T2))
+
+(assert (! (= R-airline_648-2-1 8888):named PC7_T2))
+
+(assert (! (< 2 R-seats_num_51-2-3):named PC8_T2))
+
+(assert (! (= R-empty_650-2-1 0):named PC9_T2))
+
+(assert (! (= R-flight_650-2-1 74721):named PC10_T2))
+
+(assert (! (= R-airline_650-2-1 8888):named PC11_T2))
+
+(assert (! (< 3 R-seats_num_51-2-4):named PC12_T2))
+
+(assert (! (= R-empty_652-2-1 0):named PC13_T2))
+
+(assert (! (= R-flight_652-2-1 74721):named PC14_T2))
+
+(assert (! (= R-airline_652-2-1 8888):named PC15_T2))
+
+(assert (! (< 4 R-seats_num_51-2-5):named PC16_T2))
+
+(assert (! (= R-empty_654-2-1 0):named PC17_T2))
+
+(assert (! (= R-flight_654-2-1 74721):named PC18_T2))
+
+(assert (! (= R-airline_654-2-1 8888):named PC19_T2))
+
+(assert (! (>= 5 R-seats_num_51-2-6):named PC20_T2))
+
+(assert (! (< 0 R-seats_num_51-3-1):named PC0_T3))
+
+(assert (! (= R-empty_629-3-1 0):named PC1_T3))
+
+(assert (! (= R-flight_629-3-1 74721):named PC2_T3))
+
+(assert (! (= R-airline_629-3-1 8888):named PC3_T3))
+
+(assert (! (< 1 R-seats_num_51-3-2):named PC4_T3))
+
+(assert (! (= R-empty_648-3-1 0):named PC5_T3))
+
+(assert (! (= R-flight_648-3-1 74721):named PC6_T3))
+
+(assert (! (= R-airline_648-3-1 8888):named PC7_T3))
+
+(assert (! (< 2 R-seats_num_51-3-3):named PC8_T3))
+
+(assert (! (= R-empty_650-3-1 0):named PC9_T3))
+
+(assert (! (= R-flight_650-3-1 74721):named PC10_T3))
+
+(assert (! (= R-airline_650-3-1 8888):named PC11_T3))
+
+(assert (! (< 3 R-seats_num_51-3-4):named PC12_T3))
+
+(assert (! (= R-empty_652-3-1 0):named PC13_T3))
+
+(assert (! (= R-flight_652-3-1 74721):named PC14_T3))
+
+(assert (! (= R-airline_652-3-1 8888):named PC15_T3))
+
+(assert (! (< 4 R-seats_num_51-3-5):named PC16_T3))
+
+(assert (! (= R-empty_654-3-1 0):named PC17_T3))
+
+(assert (! (= R-flight_654-3-1 74721):named PC18_T3))
+
+(assert (! (= R-airline_654-3-1 8888):named PC19_T3))
+
+(assert (! (>= 5 R-seats_num_51-3-6):named PC20_T3))
+
+(echo "LOCKING CONSTRAINTS -----")
+
+(echo "FORK-START CONSTRAINTS -----")
+
+(assert (! (< OS-fork_1-0-0&TicketsOrderSim.java@189 OS-start-1&InstrumentationHandler.java@16):named FSC0))
+
+(assert (! (< OS-fork_2-0-0&TicketsOrderSim.java@189 OS-start-2&InstrumentationHandler.java@16):named FSC1))
+
+(assert (! (< OS-fork_3-0-0&TicketsOrderSim.java@189 OS-start-3&InstrumentationHandler.java@16):named FSC2))
+
+(echo "JOIN-EXIT CONSTRAINTS -----")
+
+(assert (! (> OS-join_1-0-0&TicketsOrderSim.java@194 OS-exit-1&TicketsOrderSim.java@1):named JEC0))
+
+(assert (! (> OS-join_2-0-0&TicketsOrderSim.java@194 OS-exit-2&TicketsOrderSim.java@1):named JEC1))
+
+(assert (! (> OS-join_3-0-0&TicketsOrderSim.java@194 OS-exit-3&TicketsOrderSim.java@1):named JEC2))
+
+(echo "WAIT-SIGNAL CONSTRAINTS -----")
+
+(echo "BARRIER CONSTRAINTS -----")
+
+(check-sat)
+
+(get-model)
+
+(get-unsat-core)
+
+(echo "end")
+(reset)
+

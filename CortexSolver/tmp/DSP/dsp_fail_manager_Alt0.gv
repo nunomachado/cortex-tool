@@ -1,0 +1,1463 @@
+digraph G {
+	center=1;
+	ranksep=.25; size = "7.5,10";
+	node [shape=record]
+
+labelloc=top;
+labeljust=left;
+f0 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1" port="252" bgcolor="red">Manager.java LOW-rel_counter_lock_51-0-1&amp;Manager.java@10</td></tr>
+		<tr><td align="left" border="1" port="162" bgcolor="red">Manager.java LOW-notes_lock_51-0-1&amp;Manager.java@11</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-0-1&amp;Manager.java@12</td></tr>
+		<tr><td align="left" border="1" port="462" bgcolor="red">Manager.java LOW-request_counter_51-0-2&amp;Manager.java@35</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-request_counter_51-0-1&amp;Manager.java@36</td></tr>
+		<tr><td align="left" border="1">Manager.java LOS-fork_1-0-0&amp;Manager.java@82</td></tr>
+		<tr><td align="left" border="1">Manager.java LOS-fork_2-0-0&amp;Manager.java@86</td></tr>
+		<tr><td align="left" border="1">Manager.java LOS-fork_3-0-0&amp;Manager.java@86</td></tr>
+		<tr><td align="left" border="1">Manager.java LOS-fork_4-0-0&amp;Manager.java@86</td></tr>
+	</table>>
+]
+
+f1 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-flag_51-1-1&amp;TmemoryHandler.java@11</td></tr>
+	</table>>
+]
+
+f2 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-2</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-2&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-released_counter_51-2-1&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1" port="322" bgcolor="red">Trelease.java LOW-released_counter_51-2-1&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-3&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-3&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="232" bgcolor="red">Manager.java LOW-num_of_notes_set_51-2-2&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-2-2&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-3</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-flag_51-2-2&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+f3 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-0</td></tr>
+		<tr><td align="left" border="1" port="461" bgcolor="red">Trelease.java LOR-request_counter_51-3-1&amp;Trelease.java@15</td></tr>
+	</table>>
+]
+
+f4 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="472" bgcolor="red">TmemoryHandler.java LOW-request_counter_51-1-1&amp;TmemoryHandler.java@17</td></tr>
+		<tr><td align="left" border="1" port="122" bgcolor="red">TmemoryHandler.java LOW-flag_51-1-1&amp;TmemoryHandler.java@18</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-4&amp;TmemoryHandler.java@8</td></tr>
+		<tr><td align="left" border="1">branch-1-3</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-5&amp;TmemoryHandler.java@10</td></tr>
+	</table>>
+]
+
+f5 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-1</td></tr>
+		<tr><td align="left" border="1" port="121" bgcolor="red">Trelease.java LOR-flag_51-3-2&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-3-2</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-3-1&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="471" bgcolor="red">Trelease.java LOR-request_counter_51-3-2&amp;Trelease.java@23</td></tr>
+		<tr><td align="left" border="1">branch-3-3</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-1&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1" port="231" bgcolor="red">Manager.java LOR-num_of_notes_set_51-3-1&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-3-1&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1" port="12" bgcolor="red">Trelease.java LOW-flag_51-3-1&amp;Trelease.java@53</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-2&amp;Manager.java@123</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-3-2&amp;Manager.java@125</td></tr>
+		<tr><td align="left" border="1">branch-3-4</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-3-2&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1" port="321" bgcolor="red">Trelease.java LOR-released_counter_51-3-1&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1" port="302" bgcolor="red">Trelease.java LOW-released_counter_51-3-1&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-3&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-3-3&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="222" bgcolor="red">Manager.java LOW-num_of_notes_set_51-3-2&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="481" bgcolor="red">Trelease.java LOR-request_counter_51-3-3&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-3-5</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-flag_51-3-3&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+f6 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="11" bgcolor="red">TmemoryHandler.java LOR-flag_51-1-3&amp;TmemoryHandler.java@11</td></tr>
+		<tr><td align="left" border="1">branch-1-4</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-6&amp;TmemoryHandler.java@17</td></tr>
+		<tr><td align="left" border="1" port="392" bgcolor="red">TmemoryHandler.java LOW-request_counter_51-1-2&amp;TmemoryHandler.java@17</td></tr>
+		<tr><td align="left" border="1" port="62" bgcolor="red">TmemoryHandler.java LOW-flag_51-1-2&amp;TmemoryHandler.java@18</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-7&amp;TmemoryHandler.java@8</td></tr>
+		<tr><td align="left" border="1">branch-1-5</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-8&amp;TmemoryHandler.java@10</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-flag_51-1-4&amp;TmemoryHandler.java@11</td></tr>
+		<tr><td align="left" border="1">branch-1-6</td></tr>
+	</table>>
+]
+
+f7 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="491" bgcolor="red">Trelease.java LOR-request_counter_51-3-4&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-3-7</td></tr>
+		<tr><td align="left" border="1" port="131" bgcolor="red">Trelease.java LOR-flag_51-3-4&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-3-8</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-3-3&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="501" bgcolor="red">Trelease.java LOR-request_counter_51-3-5&amp;Trelease.java@23</td></tr>
+		<tr><td align="left" border="1">branch-3-9</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-4&amp;Manager.java@106</td></tr>
+	</table>>
+]
+
+f8 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="391" bgcolor="red">Trelease.java LOR-request_counter_51-2-3&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-5</td></tr>
+		<tr><td align="left" border="1" port="61" bgcolor="red">Trelease.java LOR-flag_51-2-3&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-2-6</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-3&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="401" bgcolor="red">Trelease.java LOR-request_counter_51-2-4&amp;Trelease.java@23</td></tr>
+		<tr><td align="left" border="1">branch-2-7</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-4&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1" port="221" bgcolor="red">Manager.java LOR-num_of_notes_set_51-2-4&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-2-3&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1" port="72" bgcolor="red">Trelease.java LOW-flag_51-2-2&amp;Trelease.java@53</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-5&amp;Manager.java@123</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-5&amp;Manager.java@125</td></tr>
+		<tr><td align="left" border="1">branch-2-8</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-4&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1" port="301" bgcolor="red">Trelease.java LOR-released_counter_51-2-2&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1" port="332" bgcolor="red">Trelease.java LOW-released_counter_51-2-2&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-6&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-6&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="242" bgcolor="red">Manager.java LOW-num_of_notes_set_51-2-4&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="411" bgcolor="red">Trelease.java LOR-request_counter_51-2-5&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-9</td></tr>
+		<tr><td align="left" border="1" port="71" bgcolor="red">Trelease.java LOR-flag_51-2-4&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-10</td></tr>
+	</table>>
+]
+
+f9 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">branch-4-0</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-4-1&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-4-1</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-flag_51-4-2&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-4-2</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-4-2&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-4-3</td></tr>
+		<tr><td align="left" border="1" port="151" bgcolor="red">Trelease.java LOR-flag_51-4-3&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-4-4</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-4-3&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-4-5</td></tr>
+	</table>>
+]
+
+f10 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="241" bgcolor="red">Manager.java LOR-num_of_notes_set_51-3-4&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-3-3&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1" port="22" bgcolor="red">Trelease.java LOW-flag_51-3-2&amp;Trelease.java@53</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-5&amp;Manager.java@123</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-3-5&amp;Manager.java@125</td></tr>
+		<tr><td align="left" border="1">branch-3-10</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-3-4&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1" port="331" bgcolor="red">Trelease.java LOR-released_counter_51-3-2&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOW-released_counter_51-3-2&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-6&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-3-6&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-3-4&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="511" bgcolor="red">Trelease.java LOR-request_counter_51-3-6&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-3-11</td></tr>
+		<tr><td align="left" border="1" port="141" bgcolor="red">Trelease.java LOR-flag_51-3-5&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-3-12</td></tr>
+	</table>>
+]
+
+f11 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="21" bgcolor="red">TmemoryHandler.java LOR-flag_51-1-5&amp;TmemoryHandler.java@11</td></tr>
+		<tr><td align="left" border="1">branch-1-7</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-9&amp;TmemoryHandler.java@17</td></tr>
+		<tr><td align="left" border="1" port="422" bgcolor="red">TmemoryHandler.java LOW-request_counter_51-1-3&amp;TmemoryHandler.java@17</td></tr>
+	</table>>
+]
+
+f12 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="421" bgcolor="red">Trelease.java LOR-request_counter_51-2-6&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-11</td></tr>
+		<tr><td align="left" border="1" port="81" bgcolor="red">Trelease.java LOR-flag_51-2-5&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-2-12</td></tr>
+		<tr><td align="left" border="1" port="431" bgcolor="red">Trelease.java LOR-request_counter_51-2-7&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-2-13</td></tr>
+	</table>>
+]
+
+f13 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="92" bgcolor="red">TmemoryHandler.java LOW-flag_51-1-3&amp;TmemoryHandler.java@18</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-10&amp;TmemoryHandler.java@8</td></tr>
+		<tr><td align="left" border="1">branch-1-8</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-11&amp;TmemoryHandler.java@10</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-flag_51-1-6&amp;TmemoryHandler.java@11</td></tr>
+		<tr><td align="left" border="1">branch-1-9</td></tr>
+	</table>>
+]
+
+f14 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="91" bgcolor="red">Trelease.java LOR-flag_51-2-6&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-2-14</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-5&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="441" bgcolor="red">Trelease.java LOR-request_counter_51-2-8&amp;Trelease.java@23</td></tr>
+		<tr><td align="left" border="1">branch-2-15</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-7&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-7&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-2-5&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1" port="32" bgcolor="red">Trelease.java LOW-flag_51-2-3&amp;Trelease.java@53</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-8&amp;Manager.java@123</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-8&amp;Manager.java@125</td></tr>
+		<tr><td align="left" border="1">branch-2-16</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-6&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-released_counter_51-2-3&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1" port="312" bgcolor="red">Trelease.java LOW-released_counter_51-2-3&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-9&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-9&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="192" bgcolor="red">Manager.java LOW-num_of_notes_set_51-2-6&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="451" bgcolor="red">Trelease.java LOR-request_counter_51-2-9&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-17</td></tr>
+	</table>>
+]
+
+f15 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="31" bgcolor="red">TmemoryHandler.java LOR-flag_51-1-7&amp;TmemoryHandler.java@11</td></tr>
+		<tr><td align="left" border="1">branch-1-10</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-12&amp;TmemoryHandler.java@17</td></tr>
+		<tr><td align="left" border="1" port="342" bgcolor="red">TmemoryHandler.java LOW-request_counter_51-1-4&amp;TmemoryHandler.java@17</td></tr>
+	</table>>
+]
+
+f16 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-flag_51-2-7&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-18</td></tr>
+		<tr><td align="left" border="1" port="341" bgcolor="red">Trelease.java LOR-request_counter_51-2-10&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+f17 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="102" bgcolor="red">TmemoryHandler.java LOW-flag_51-1-4&amp;TmemoryHandler.java@18</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-13&amp;TmemoryHandler.java@8</td></tr>
+		<tr><td align="left" border="1">branch-1-11</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-14&amp;TmemoryHandler.java@10</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-flag_51-1-8&amp;TmemoryHandler.java@11</td></tr>
+	</table>>
+]
+
+f18 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-19</td></tr>
+		<tr><td align="left" border="1" port="101" bgcolor="red">Trelease.java LOR-flag_51-2-8&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-2-20</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-7&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="351" bgcolor="red">Trelease.java LOR-request_counter_51-2-11&amp;Trelease.java@23</td></tr>
+		<tr><td align="left" border="1">branch-2-21</td></tr>
+		<tr><td align="left" border="1" port="161" bgcolor="red">Manager.java LOR-notes_lock_51-2-10&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1" port="191" bgcolor="red">Manager.java LOR-num_of_notes_set_51-2-10&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1" port="202" bgcolor="red">Manager.java LOW-num_of_notes_set_51-2-7&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1" port="42" bgcolor="red">Trelease.java LOW-flag_51-2-4&amp;Trelease.java@53</td></tr>
+		<tr><td align="left" border="1" port="171" bgcolor="red">Manager.java LOR-notes_lock_51-2-11&amp;Manager.java@123</td></tr>
+		<tr><td align="left" border="1" port="201" bgcolor="red">Manager.java LOR-num_of_notes_set_51-2-11&amp;Manager.java@125</td></tr>
+		<tr><td align="left" border="1">branch-2-22</td></tr>
+		<tr><td align="left" border="1" port="251" bgcolor="red">Trelease.java LOR-rel_counter_lock_51-2-8&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1" port="311" bgcolor="red">Trelease.java LOR-released_counter_51-2-4&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1" port="272" bgcolor="red">Trelease.java LOW-released_counter_51-2-4&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1" port="181" bgcolor="red">Manager.java LOR-notes_lock_51-2-12&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1" port="211" bgcolor="red">Manager.java LOR-num_of_notes_set_51-2-12&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-2-8&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="361" bgcolor="red">Trelease.java LOR-request_counter_51-2-12&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-23</td></tr>
+		<tr><td align="left" border="1" port="111" bgcolor="red">Trelease.java LOR-flag_51-2-9&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-24</td></tr>
+	</table>>
+]
+
+f19 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="41" bgcolor="red">TmemoryHandler.java LOR-flag_51-1-9&amp;TmemoryHandler.java@11</td></tr>
+		<tr><td align="left" border="1">branch-1-13</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-15&amp;TmemoryHandler.java@17</td></tr>
+		<tr><td align="left" border="1" port="372" bgcolor="red">TmemoryHandler.java LOW-request_counter_51-1-5&amp;TmemoryHandler.java@17</td></tr>
+		<tr><td align="left" border="1" port="52" bgcolor="red">TmemoryHandler.java LOW-flag_51-1-5&amp;TmemoryHandler.java@18</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-16&amp;TmemoryHandler.java@8</td></tr>
+		<tr><td align="left" border="1">branch-1-14</td></tr>
+	</table>>
+]
+
+f20 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-14</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-3-5&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-3-8&amp;Trelease.java@23</td></tr>
+		<tr><td align="left" border="1">branch-3-15</td></tr>
+	</table>>
+]
+
+f21 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="371" bgcolor="red">Trelease.java LOR-request_counter_51-2-13&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-25</td></tr>
+		<tr><td align="left" border="1" port="51" bgcolor="red">Trelease.java LOR-flag_51-2-10&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-2-26</td></tr>
+		<tr><td align="left" border="1" port="261" bgcolor="red">Trelease.java LOR-rel_counter_lock_51-2-9&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="381" bgcolor="red">Trelease.java LOR-request_counter_51-2-14&amp;Trelease.java@23</td></tr>
+		<tr><td align="left" border="1">branch-2-27</td></tr>
+	</table>>
+]
+
+f22 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-4-1&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-4-4&amp;Trelease.java@23</td></tr>
+		<tr><td align="left" border="1">branch-4-7</td></tr>
+	</table>>
+]
+
+f23 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1" port="271" bgcolor="red">Manager.java LOR-released_counter_51-0-1&amp;Manager.java@41</td></tr>
+		<tr><td align="left" border="1" port="281" bgcolor="red">Manager.java LOR-released_counter_51-0-2&amp;Manager.java@49</td></tr>
+		<tr><td align="left" border="1" port="291" bgcolor="red">Manager.java LOR-released_counter_51-0-3&amp;Manager.java@50</td></tr>
+	</table>>
+]
+
+f0 -> f1;
+f1 -> f2;
+f2 -> f3;
+f3 -> f4;
+f4 -> f5;
+f5 -> f6;
+f6 -> f7;
+f7 -> f8;
+f8 -> f9;
+f9 -> f10;
+f10 -> f11;
+f11 -> f12;
+f12 -> f13;
+f13 -> f14;
+f14 -> f15;
+f15 -> f16;
+f16 -> f17;
+f17 -> f18;
+f18 -> f19;
+f19 -> f20;
+f20 -> f21;
+f21 -> f22;
+f22 -> f23;
+f5:12:e -> f6:11:e [color="red", fontcolor="red", style=bold] ;
+
+
+f10:22:e -> f11:21:e [color="red", fontcolor="red", style=bold] ;
+
+
+f14:32:e -> f15:31:e [color="red", fontcolor="red", style=bold] ;
+
+
+f18:42:e -> f19:41:e [color="red", fontcolor="red", style=bold] ;
+
+
+f19:52:e -> f21:51:e [color="red", fontcolor="red", style=bold] ;
+
+
+f6:62:e -> f8:61:e [color="red", fontcolor="red", style=bold] ;
+
+
+f8:72:e -> f8:71:e [color="red", fontcolor="red", style=bold] ;
+
+
+f10:22:e -> f12:81:e [color="red", fontcolor="red", style=bold] ;
+
+
+f13:92:e -> f14:91:e [color="red", fontcolor="red", style=bold] ;
+
+
+f17:102:e -> f18:101:e [color="red", fontcolor="red", style=bold] ;
+
+
+f18:42:e -> f18:111:e [color="red", fontcolor="red", style=bold] ;
+
+
+f4:122:e -> f5:121:e [color="red", fontcolor="red", style=bold] ;
+
+
+f6:62:e -> f7:131:e [color="red", fontcolor="red", style=bold] ;
+
+
+f10:22:e -> f10:141:e [color="red", fontcolor="red", style=bold] ;
+
+
+f8:72:e -> f9:151:e [color="red", fontcolor="red", style=bold] ;
+
+
+f0:162:e -> f18:161:e [color="red", fontcolor="red", style=bold] ;
+
+
+f0:162:e -> f18:171:e [color="red", fontcolor="red", style=bold] ;
+
+
+f0:162:e -> f18:181:e [color="red", fontcolor="red", style=bold] ;
+
+
+f14:192:e -> f18:191:e [color="red", fontcolor="red", style=bold] ;
+
+
+f18:202:e -> f18:201:e [color="red", fontcolor="red", style=bold] ;
+
+
+f18:202:e -> f18:211:e [color="red", fontcolor="red", style=bold] ;
+
+
+f5:222:e -> f8:221:e [color="red", fontcolor="red", style=bold] ;
+
+
+f2:232:e -> f5:231:e [color="red", fontcolor="red", style=bold] ;
+
+
+f8:242:e -> f10:241:e [color="red", fontcolor="red", style=bold] ;
+
+
+f0:252:e -> f18:251:e [color="red", fontcolor="red", style=bold] ;
+
+
+f0:252:e -> f21:261:e [color="red", fontcolor="red", style=bold] ;
+
+
+f18:272:e -> f23:271:e [color="red", fontcolor="red", style=bold] ;
+
+
+f18:272:e -> f23:281:e [color="red", fontcolor="red", style=bold] ;
+
+
+f18:272:e -> f23:291:e [color="red", fontcolor="red", style=bold] ;
+
+
+f5:302:e -> f8:301:e [color="red", fontcolor="red", style=bold] ;
+
+
+f14:312:e -> f18:311:e [color="red", fontcolor="red", style=bold] ;
+
+
+f2:322:e -> f5:321:e [color="red", fontcolor="red", style=bold] ;
+
+
+f8:332:e -> f10:331:e [color="red", fontcolor="red", style=bold] ;
+
+
+f15:342:e -> f16:341:e [color="red", fontcolor="red", style=bold] ;
+
+
+f15:342:e -> f18:351:e [color="red", fontcolor="red", style=bold] ;
+
+
+f15:342:e -> f18:361:e [color="red", fontcolor="red", style=bold] ;
+
+
+f19:372:e -> f21:371:e [color="red", fontcolor="red", style=bold] ;
+
+
+f19:372:e -> f21:381:e [color="red", fontcolor="red", style=bold] ;
+
+
+f6:392:e -> f8:391:e [color="red", fontcolor="red", style=bold] ;
+
+
+f6:392:e -> f8:401:e [color="red", fontcolor="red", style=bold] ;
+
+
+f6:392:e -> f8:411:e [color="red", fontcolor="red", style=bold] ;
+
+
+f11:422:e -> f12:421:e [color="red", fontcolor="red", style=bold] ;
+
+
+f11:422:e -> f12:431:e [color="red", fontcolor="red", style=bold] ;
+
+
+f11:422:e -> f14:441:e [color="red", fontcolor="red", style=bold] ;
+
+
+f11:422:e -> f14:451:e [color="red", fontcolor="red", style=bold] ;
+
+
+f0:462:e -> f3:461:e [color="red", fontcolor="red", style=bold] ;
+
+
+f4:472:e -> f5:471:e [color="red", fontcolor="red", style=bold] ;
+
+
+f4:472:e -> f5:481:e [color="red", fontcolor="red", style=bold] ;
+
+
+f6:392:e -> f7:491:e [color="red", fontcolor="red", style=bold] ;
+
+
+f6:392:e -> f7:501:e [color="red", fontcolor="red", style=bold] ;
+
+
+f6:392:e -> f10:511:e [color="red", fontcolor="red", style=bold] ;
+
+
+a0 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-rel_counter_lock_51-0-1&amp;Manager.java@10</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-notes_lock_51-0-1&amp;Manager.java@11</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-0-1&amp;Manager.java@12</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-request_counter_51-0-2&amp;Manager.java@35</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-request_counter_51-0-1&amp;Manager.java@36</td></tr>
+		<tr><td align="left" border="1">Manager.java LOS-fork_1-0-0&amp;Manager.java@82</td></tr>
+		<tr><td align="left" border="1">Manager.java LOS-fork_2-0-0&amp;Manager.java@86</td></tr>
+	</table>>
+]
+
+a1 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">Manager.java LOS-fork_3-0-0&amp;Manager.java@86</td></tr>
+	</table>>
+]
+
+a2 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-flag_51-1-1&amp;TmemoryHandler.java@11</td></tr>
+	</table>>
+]
+
+a3 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">Manager.java LOS-fork_4-0-0&amp;Manager.java@86</td></tr>
+	</table>>
+]
+
+a4 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-2</td></tr>
+	</table>>
+]
+
+a5 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-2&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-released_counter_51-2-1&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1" port="202" bgcolor="green">Trelease.java LOW-released_counter_51-2-1&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-3&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-3&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="142" bgcolor="green">Manager.java LOW-num_of_notes_set_51-2-2&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-2-2&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-3</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-flag_51-2-2&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+a6 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="252" bgcolor="green">TmemoryHandler.java LOW-request_counter_51-1-1&amp;TmemoryHandler.java@17</td></tr>
+		<tr><td align="left" border="1" port="52" bgcolor="green">TmemoryHandler.java LOW-flag_51-1-1&amp;TmemoryHandler.java@18</td></tr>
+	</table>>
+]
+
+a7 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-0</td></tr>
+	</table>>
+]
+
+a8 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="251" bgcolor="green">Trelease.java LOR-request_counter_51-2-3&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-5</td></tr>
+		<tr><td align="left" border="1" port="51" bgcolor="green">Trelease.java LOR-flag_51-2-3&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-2-6</td></tr>
+	</table>>
+]
+
+a9 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-3&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="261" bgcolor="green">Trelease.java LOR-request_counter_51-2-4&amp;Trelease.java@23</td></tr>
+	</table>>
+]
+
+a10 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-4&amp;TmemoryHandler.java@8</td></tr>
+	</table>>
+]
+
+a11 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-7</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-4&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1" port="141" bgcolor="green">Manager.java LOR-num_of_notes_set_51-2-4&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-2-3&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1" port="12" bgcolor="green">Trelease.java LOW-flag_51-2-2&amp;Trelease.java@53</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-5&amp;Manager.java@123</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-5&amp;Manager.java@125</td></tr>
+		<tr><td align="left" border="1">branch-2-8</td></tr>
+	</table>>
+]
+
+a12 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">branch-1-3</td></tr>
+	</table>>
+]
+
+a13 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-4&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1" port="201" bgcolor="green">Trelease.java LOR-released_counter_51-2-2&amp;Trelease.java@61</td></tr>
+	</table>>
+]
+
+a14 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-5&amp;TmemoryHandler.java@10</td></tr>
+		<tr><td align="left" border="1" port="11" bgcolor="green">TmemoryHandler.java LOR-flag_51-1-3&amp;TmemoryHandler.java@11</td></tr>
+		<tr><td align="left" border="1">branch-1-4</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-6&amp;TmemoryHandler.java@17</td></tr>
+	</table>>
+]
+
+a15 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="212" bgcolor="green">Trelease.java LOW-released_counter_51-2-2&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-6&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-6&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="152" bgcolor="green">Manager.java LOW-num_of_notes_set_51-2-4&amp;Manager.java@115</td></tr>
+	</table>>
+]
+
+a16 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="271" bgcolor="green">Trelease.java LOR-request_counter_51-2-5&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+a17 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">branch-4-0</td></tr>
+	</table>>
+]
+
+a18 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="282" bgcolor="green">TmemoryHandler.java LOW-request_counter_51-1-2&amp;TmemoryHandler.java@17</td></tr>
+	</table>>
+]
+
+a19 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-9</td></tr>
+	</table>>
+]
+
+a20 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-4-1&amp;Trelease.java@15</td></tr>
+	</table>>
+]
+
+a21 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="321" bgcolor="green">Trelease.java LOR-request_counter_51-3-1&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-3-1</td></tr>
+	</table>>
+]
+
+a22 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">branch-4-1</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-flag_51-4-2&amp;Trelease.java@15</td></tr>
+	</table>>
+]
+
+a23 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="102" bgcolor="green">TmemoryHandler.java LOW-flag_51-1-2&amp;TmemoryHandler.java@18</td></tr>
+	</table>>
+]
+
+a24 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="101" bgcolor="green">Trelease.java LOR-flag_51-3-2&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-3-2</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-3-1&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="331" bgcolor="green">Trelease.java LOR-request_counter_51-3-2&amp;Trelease.java@23</td></tr>
+		<tr><td align="left" border="1">branch-3-3</td></tr>
+	</table>>
+]
+
+a25 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-7&amp;TmemoryHandler.java@8</td></tr>
+	</table>>
+]
+
+a26 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-1&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1" port="151" bgcolor="green">Manager.java LOR-num_of_notes_set_51-3-1&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-3-1&amp;Manager.java@110</td></tr>
+	</table>>
+]
+
+a27 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">branch-1-5</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-8&amp;TmemoryHandler.java@10</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-flag_51-1-4&amp;TmemoryHandler.java@11</td></tr>
+	</table>>
+]
+
+a28 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="22" bgcolor="green">Trelease.java LOW-flag_51-3-1&amp;Trelease.java@53</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-2&amp;Manager.java@123</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-3-2&amp;Manager.java@125</td></tr>
+		<tr><td align="left" border="1">branch-3-4</td></tr>
+	</table>>
+]
+
+a29 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="61" bgcolor="green">Trelease.java LOR-flag_51-2-4&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+a30 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-3-2&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1" port="211" bgcolor="green">Trelease.java LOR-released_counter_51-3-1&amp;Trelease.java@61</td></tr>
+	</table>>
+]
+
+a31 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">branch-1-6</td></tr>
+	</table>>
+]
+
+a32 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="222" bgcolor="green">Trelease.java LOW-released_counter_51-3-1&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-3&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-3-3&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="162" bgcolor="green">Manager.java LOW-num_of_notes_set_51-3-2&amp;Manager.java@115</td></tr>
+	</table>>
+]
+
+a33 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="21" bgcolor="green">TmemoryHandler.java LOR-flag_51-1-5&amp;TmemoryHandler.java@11</td></tr>
+	</table>>
+]
+
+a34 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-10</td></tr>
+	</table>>
+]
+
+a35 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="341" bgcolor="green">Trelease.java LOR-request_counter_51-3-3&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+a36 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">branch-1-7</td></tr>
+	</table>>
+]
+
+a37 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-5</td></tr>
+	</table>>
+]
+
+a38 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">branch-4-2</td></tr>
+	</table>>
+]
+
+a39 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-flag_51-3-3&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+a40 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-9&amp;TmemoryHandler.java@17</td></tr>
+	</table>>
+]
+
+a41 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="281" bgcolor="green">Trelease.java LOR-request_counter_51-2-6&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-11</td></tr>
+	</table>>
+]
+
+a42 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-4-2&amp;Trelease.java@15</td></tr>
+	</table>>
+]
+
+a43 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="71" bgcolor="green">Trelease.java LOR-flag_51-2-5&amp;Trelease.java@15</td></tr>
+	</table>>
+]
+
+a44 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">branch-4-3</td></tr>
+		<tr><td align="left" border="1" port="131" bgcolor="green">Trelease.java LOR-flag_51-4-3&amp;Trelease.java@15</td></tr>
+	</table>>
+]
+
+a45 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-12</td></tr>
+	</table>>
+]
+
+a46 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">branch-4-4</td></tr>
+	</table>>
+]
+
+a47 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="291" bgcolor="green">Trelease.java LOR-request_counter_51-2-7&amp;Trelease.java@15</td></tr>
+	</table>>
+]
+
+a48 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-4-3&amp;Trelease.java@15</td></tr>
+	</table>>
+]
+
+a49 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="352" bgcolor="green">TmemoryHandler.java LOW-request_counter_51-1-3&amp;TmemoryHandler.java@17</td></tr>
+	</table>>
+]
+
+a50 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="112" bgcolor="green">TmemoryHandler.java LOW-flag_51-1-3&amp;TmemoryHandler.java@18</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-10&amp;TmemoryHandler.java@8</td></tr>
+	</table>>
+]
+
+a51 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="351" bgcolor="green">Trelease.java LOR-request_counter_51-3-4&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+a52 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">branch-1-8</td></tr>
+	</table>>
+]
+
+a53 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-7</td></tr>
+	</table>>
+]
+
+a54 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-11&amp;TmemoryHandler.java@10</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-flag_51-1-6&amp;TmemoryHandler.java@11</td></tr>
+		<tr><td align="left" border="1">branch-1-9</td></tr>
+	</table>>
+]
+
+a55 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="111" bgcolor="green">Trelease.java LOR-flag_51-3-4&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-3-8</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-3-3&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="361" bgcolor="green">Trelease.java LOR-request_counter_51-3-5&amp;Trelease.java@23</td></tr>
+		<tr><td align="left" border="1">branch-3-9</td></tr>
+	</table>>
+]
+
+a56 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-13</td></tr>
+	</table>>
+]
+
+a57 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-4&amp;Manager.java@106</td></tr>
+	</table>>
+]
+
+a58 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">branch-4-5</td></tr>
+	</table>>
+]
+
+a59 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="161" bgcolor="green">Manager.java LOR-num_of_notes_set_51-3-4&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-3-3&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1" port="32" bgcolor="green">Trelease.java LOW-flag_51-3-2&amp;Trelease.java@53</td></tr>
+	</table>>
+]
+
+a60 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="31" bgcolor="green">TmemoryHandler.java LOR-flag_51-1-7&amp;TmemoryHandler.java@11</td></tr>
+		<tr><td align="left" border="1">branch-1-10</td></tr>
+	</table>>
+]
+
+a61 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-5&amp;Manager.java@123</td></tr>
+	</table>>
+]
+
+a62 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-12&amp;TmemoryHandler.java@17</td></tr>
+	</table>>
+]
+
+a63 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-3-5&amp;Manager.java@125</td></tr>
+		<tr><td align="left" border="1">branch-3-10</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-3-4&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1" port="221" bgcolor="green">Trelease.java LOR-released_counter_51-3-2&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOW-released_counter_51-3-2&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-3-6&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-3-6&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-3-4&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="371" bgcolor="green">Trelease.java LOR-request_counter_51-3-6&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+a64 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="302" bgcolor="green">TmemoryHandler.java LOW-request_counter_51-1-4&amp;TmemoryHandler.java@17</td></tr>
+		<tr><td align="left" border="1" port="82" bgcolor="green">TmemoryHandler.java LOW-flag_51-1-4&amp;TmemoryHandler.java@18</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-13&amp;TmemoryHandler.java@8</td></tr>
+		<tr><td align="left" border="1">branch-1-11</td></tr>
+	</table>>
+]
+
+a65 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="81" bgcolor="green">Trelease.java LOR-flag_51-2-6&amp;Trelease.java@15</td></tr>
+	</table>>
+]
+
+a66 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-14&amp;TmemoryHandler.java@10</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-flag_51-1-8&amp;TmemoryHandler.java@11</td></tr>
+	</table>>
+]
+
+a67 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-14</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-5&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="301" bgcolor="green">Trelease.java LOR-request_counter_51-2-8&amp;Trelease.java@23</td></tr>
+	</table>>
+]
+
+a68 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-15</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-7&amp;Manager.java@106</td></tr>
+	</table>>
+]
+
+a69 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-11</td></tr>
+	</table>>
+]
+
+a70 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-7&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-2-5&amp;Manager.java@110</td></tr>
+		<tr><td align="left" border="1" port="42" bgcolor="green">Trelease.java LOW-flag_51-2-3&amp;Trelease.java@53</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-8&amp;Manager.java@123</td></tr>
+	</table>>
+]
+
+a71 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="41" bgcolor="green">TmemoryHandler.java LOR-flag_51-1-9&amp;TmemoryHandler.java@11</td></tr>
+		<tr><td align="left" border="1">branch-1-13</td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-15&amp;TmemoryHandler.java@17</td></tr>
+	</table>>
+]
+
+a72 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-8&amp;Manager.java@125</td></tr>
+		<tr><td align="left" border="1">branch-2-16</td></tr>
+	</table>>
+]
+
+a73 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="121" bgcolor="green">Trelease.java LOR-flag_51-3-5&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+a74 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-6&amp;Trelease.java@57</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-released_counter_51-2-3&amp;Trelease.java@61</td></tr>
+		<tr><td align="left" border="1" port="172" bgcolor="green">Trelease.java LOW-released_counter_51-2-3&amp;Trelease.java@61</td></tr>
+	</table>>
+]
+
+a75 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-12</td></tr>
+	</table>>
+]
+
+a76 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-notes_lock_51-2-9&amp;Manager.java@106</td></tr>
+		<tr><td align="left" border="1">Manager.java LOR-num_of_notes_set_51-2-9&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1">Manager.java LOW-num_of_notes_set_51-2-6&amp;Manager.java@115</td></tr>
+		<tr><td align="left" border="1" port="311" bgcolor="green">Trelease.java LOR-request_counter_51-2-9&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+a77 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="232" bgcolor="green">TmemoryHandler.java LOW-request_counter_51-1-5&amp;TmemoryHandler.java@17</td></tr>
+	</table>>
+]
+
+a78 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-17</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-flag_51-2-7&amp;Trelease.java@29</td></tr>
+	</table>>
+]
+
+a79 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="92" bgcolor="green">TmemoryHandler.java LOW-flag_51-1-5&amp;TmemoryHandler.java@18</td></tr>
+	</table>>
+]
+
+a80 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">TmemoryHandler.java LOR-request_counter_51-1-16&amp;TmemoryHandler.java@8</td></tr>
+	</table>>
+]
+
+a81 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">branch-1-14</td></tr>
+	</table>>
+]
+
+a82 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-14</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-3-5&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-3-8&amp;Trelease.java@23</td></tr>
+	</table>>
+]
+
+a83 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-15</td></tr>
+	</table>>
+]
+
+a84 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-4-1&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-request_counter_51-4-4&amp;Trelease.java@23</td></tr>
+	</table>>
+]
+
+a85 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-18</td></tr>
+		<tr><td align="left" border="1" port="231" bgcolor="green">Trelease.java LOR-request_counter_51-2-10&amp;Trelease.java@29</td></tr>
+		<tr><td align="left" border="1">branch-2-19</td></tr>
+		<tr><td align="left" border="1" port="91" bgcolor="green">Trelease.java LOR-flag_51-2-8&amp;Trelease.java@15</td></tr>
+		<tr><td align="left" border="1">branch-2-20</td></tr>
+		<tr><td align="left" border="1">Trelease.java LOR-rel_counter_lock_51-2-7&amp;Trelease.java@21</td></tr>
+		<tr><td align="left" border="1" port="241" bgcolor="green">Trelease.java LOR-request_counter_51-2-11&amp;Trelease.java@23</td></tr>
+	</table>>
+]
+
+a86 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">branch-4-7</td></tr>
+	</table>>
+]
+
+a87 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-21</td></tr>
+	</table>>
+]
+
+a88 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1" port="171" bgcolor="green">Manager.java LOR-released_counter_51-0-1&amp;Manager.java@41</td></tr>
+		<tr><td align="left" border="1" port="181" bgcolor="green">Manager.java LOR-released_counter_51-0-2&amp;Manager.java@49</td></tr>
+		<tr><td align="left" border="1" port="191" bgcolor="green">Manager.java LOR-released_counter_51-0-3&amp;Manager.java@50</td></tr>
+	</table>>
+]
+
+a0 -> a1;
+a1 -> a2;
+a2 -> a3;
+a3 -> a4;
+a4 -> a5;
+a5 -> a6;
+a6 -> a7;
+a7 -> a8;
+a8 -> a9;
+a9 -> a10;
+a10 -> a11;
+a11 -> a12;
+a12 -> a13;
+a13 -> a14;
+a14 -> a15;
+a15 -> a16;
+a16 -> a17;
+a17 -> a18;
+a18 -> a19;
+a19 -> a20;
+a20 -> a21;
+a21 -> a22;
+a22 -> a23;
+a23 -> a24;
+a24 -> a25;
+a25 -> a26;
+a26 -> a27;
+a27 -> a28;
+a28 -> a29;
+a29 -> a30;
+a30 -> a31;
+a31 -> a32;
+a32 -> a33;
+a33 -> a34;
+a34 -> a35;
+a35 -> a36;
+a36 -> a37;
+a37 -> a38;
+a38 -> a39;
+a39 -> a40;
+a40 -> a41;
+a41 -> a42;
+a42 -> a43;
+a43 -> a44;
+a44 -> a45;
+a45 -> a46;
+a46 -> a47;
+a47 -> a48;
+a48 -> a49;
+a49 -> a50;
+a50 -> a51;
+a51 -> a52;
+a52 -> a53;
+a53 -> a54;
+a54 -> a55;
+a55 -> a56;
+a56 -> a57;
+a57 -> a58;
+a58 -> a59;
+a59 -> a60;
+a60 -> a61;
+a61 -> a62;
+a62 -> a63;
+a63 -> a64;
+a64 -> a65;
+a65 -> a66;
+a66 -> a67;
+a67 -> a68;
+a68 -> a69;
+a69 -> a70;
+a70 -> a71;
+a71 -> a72;
+a72 -> a73;
+a73 -> a74;
+a74 -> a75;
+a75 -> a76;
+a76 -> a77;
+a77 -> a78;
+a78 -> a79;
+a79 -> a80;
+a80 -> a81;
+a81 -> a82;
+a82 -> a83;
+a83 -> a84;
+a84 -> a85;
+a85 -> a86;
+a86 -> a87;
+a87 -> a88;
+a11:12:e -> a14:11:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a28:22:e -> a33:21:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a59:32:e -> a60:31:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a70:42:e -> a71:41:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a6:52:e -> a8:51:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a28:22:e -> a29:61:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a28:22:e -> a43:71:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a64:82:e -> a65:81:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a79:92:e -> a85:91:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a23:102:e -> a24:101:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a50:112:e -> a55:111:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a70:42:e -> a73:121:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a28:22:e -> a44:131:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a5:142:e -> a11:141:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a15:152:e -> a26:151:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a32:162:e -> a59:161:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a74:172:e -> a88:171:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a74:172:e -> a88:181:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a74:172:e -> a88:191:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a5:202:e -> a13:201:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a15:212:e -> a30:211:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a32:222:e -> a63:221:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a77:232:e -> a85:231:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a77:232:e -> a85:241:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a6:252:e -> a8:251:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a6:252:e -> a9:261:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a6:252:e -> a16:271:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a18:282:e -> a41:281:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a18:282:e -> a47:291:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a64:302:e -> a67:301:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a64:302:e -> a76:311:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a18:282:e -> a21:321:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a18:282:e -> a24:331:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a18:282:e -> a35:341:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a49:352:e -> a51:351:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a49:352:e -> a55:361:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a49:352:e -> a63:371:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+}

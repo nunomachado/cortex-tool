@@ -1,0 +1,71 @@
+digraph G {
+	center=1;
+	ranksep=.25; size = "7.5,10";
+	node [shape=record]
+
+labelloc=top;
+labeljust=left;
+label="FOUND BUG AVOIDING SCHEDULE:\nOW-Num_Of_Seats_Sold_51-7-1&airline.java@113\n should execute after \n OR-Num_Of_Seats_Sold_51-0-4&airline.java@86\n\n\n"
+
+f0 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">airline.java LOW-Num_Of_Seats_Sold_51-0-2&amp;airline.java@53</td></tr>
+	</table>>
+]
+
+f1 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="2" color="#A00000" cellspacing="0">
+		<tr><td border="1" bgcolor="blue"><font point-size="14">T7</font></td></tr>
+		<tr><td align="left" border="1" port="12" bgcolor="red">airline.java LOW-Num_Of_Seats_Sold_51-7-1&amp;airline.java@113</td></tr>
+	</table>>
+]
+
+f2 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1" port="11" bgcolor="red">airline.java LOR-Num_Of_Seats_Sold_51-0-4&amp;airline.java@86</td></tr>
+		<tr><td align="left" border="1">airline.java LOR-Num_Of_Seats_Sold_51-0-5&amp;airline.java@87</td></tr>
+	</table>>
+]
+
+f0 -> f1;
+f1 -> f2;
+f1:12:e -> f2:11:e [color="red", fontcolor="red", style=bold, label="6"] ;
+
+
+a0 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1" port="12" bgcolor="green">airline.java LOW-Num_Of_Seats_Sold_51-0-2&amp;airline.java@53</td></tr>
+	</table>>
+]
+
+a1 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1" port="11" bgcolor="green">airline.java LOR-Num_Of_Seats_Sold_51-0-4&amp;airline.java@86</td></tr>
+	</table>>
+]
+
+a2 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="2" color="darkgreen" cellspacing="0">
+		<tr><td border="1" bgcolor="blue"><font point-size="14">T7</font></td></tr>
+		<tr><td align="left" border="1">airline.java LOW-Num_Of_Seats_Sold_51-7-1&amp;airline.java@113</td></tr>
+	</table>>
+]
+
+a3 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">airline.java LOR-Num_Of_Seats_Sold_51-0-5&amp;airline.java@87</td></tr>
+	</table>>
+]
+
+a0 -> a1;
+a1 -> a2;
+a2 -> a3;
+a0:12:e -> a1:11:e [color="darkgreen", fontcolor="darkgreen", style=bold, label="5"] ;
+
+
+}

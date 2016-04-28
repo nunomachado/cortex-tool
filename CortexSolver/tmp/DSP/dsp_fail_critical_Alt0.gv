@@ -1,0 +1,110 @@
+digraph G {
+	center=1;
+	ranksep=.25; size = "7.5,10";
+	node [shape=record]
+
+labelloc=top;
+labeljust=left;
+f0 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">Critical.java LOW-bug_607-1-1&amp;Critical.java@45</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_607-1-1&amp;Critical.java@48</td></tr>
+		<tr><td align="left" border="1">Critical.java LOW-turn_603-1-1&amp;Critical.java@48</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_607-1-2&amp;Critical.java@50</td></tr>
+	</table>>
+]
+
+f1 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="22" bgcolor="red">Critical.java LOW-turn_603-2-1&amp;Critical.java@64</td></tr>
+	</table>>
+]
+
+f2 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="21" bgcolor="red">Critical.java LOR-turn_603-1-1&amp;Critical.java@50</td></tr>
+		<tr><td align="left" border="1">branch-1-0</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_607-1-3&amp;Critical.java@52</td></tr>
+	</table>>
+]
+
+f3 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_608-2-2&amp;Critical.java@66</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-turn_603-2-1&amp;Critical.java@66</td></tr>
+		<tr><td align="left" border="1">branch-2-0</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_608-2-3&amp;Critical.java@68</td></tr>
+		<tr><td align="left" border="1" port="32" bgcolor="red">Critical.java LOW-turn_603-2-2&amp;Critical.java@68</td></tr>
+	</table>>
+]
+
+f4 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="31" bgcolor="red">Critical.java LOR-turn_603-1-2&amp;Critical.java@52</td></tr>
+		<tr><td align="left" border="1">branch-1-1</td></tr>
+		<tr><td align="left" border="1" port="12" bgcolor="red">Critical.java LOW-bug_607-1-2&amp;Critical.java@53</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_607-1-4&amp;Critical.java@50</td></tr>
+		<tr><td align="left" border="1" port="41" bgcolor="red">Critical.java LOR-turn_603-1-3&amp;Critical.java@50</td></tr>
+		<tr><td align="left" border="1">branch-1-2</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_607-1-5&amp;Critical.java@56</td></tr>
+		<tr><td align="left" border="1">Critical.java LOW-turn_603-1-2&amp;Critical.java@56</td></tr>
+		<tr><td align="left" border="1" port="11" bgcolor="red">Critical.java LOR-bug_607-1-1&amp;Critical.java@58</td></tr>
+	</table>>
+]
+
+f0 -> f1;
+f1 -> f2;
+f2 -> f3;
+f3 -> f4;
+f4:12:e -> f4:11:e [color="red", fontcolor="red", style=bold] ;
+
+
+f1:22:e -> f2:21:e [color="red", fontcolor="red", style=bold] ;
+
+
+f3:32:e -> f4:31:e [color="red", fontcolor="red", style=bold] ;
+
+
+f3:32:e -> f4:41:e [color="red", fontcolor="red", style=bold] ;
+
+
+a0 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="4" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="12" bgcolor="green">Critical.java LOW-bug_607-1-1&amp;Critical.java@45</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_607-1-1&amp;Critical.java@48</td></tr>
+		<tr><td align="left" border="1" port="22" bgcolor="green">Critical.java LOW-turn_603-1-1&amp;Critical.java@48</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_607-1-2&amp;Critical.java@50</td></tr>
+		<tr><td align="left" border="1" port="21" bgcolor="green">Critical.java LOR-turn_603-1-1&amp;Critical.java@50</td></tr>
+		<tr><td align="left" border="1">branch-1-0</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_607-1-3&amp;Critical.java@56</td></tr>
+		<tr><td align="left" border="1">Critical.java LOW-turn_603-1-2&amp;Critical.java@56</td></tr>
+		<tr><td align="left" border="1" port="11" bgcolor="green">Critical.java LOR-bug_607-1-1&amp;Critical.java@58</td></tr>
+	</table>>
+]
+
+a1 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">Critical.java LOW-turn_603-2-1&amp;Critical.java@64</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_608-2-2&amp;Critical.java@66</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-turn_603-2-1&amp;Critical.java@66</td></tr>
+		<tr><td align="left" border="1">branch-2-0</td></tr>
+		<tr><td align="left" border="1">Critical.java LOR-t_608-2-3&amp;Critical.java@68</td></tr>
+		<tr><td align="left" border="1">Critical.java LOW-turn_603-2-2&amp;Critical.java@68</td></tr>
+	</table>>
+]
+
+a0 -> a1;
+a0:12:e -> a0:11:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a0:22:e -> a0:21:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+}

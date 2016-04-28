@@ -1,0 +1,1429 @@
+digraph G {
+	center=1;
+	ranksep=.25; size = "7.5,10";
+	node [shape=record]
+
+labelloc=top;
+labeljust=left;
+f0 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="2" color="#A00000" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1" port="42" bgcolor="red">GarageManager.java LOW-printedCard_51-0-1&amp;GarageManager.java@17</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-bugOccured_609-0-1&amp;GarageManager.java@19</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-managerArrived_648-0-1&amp;GarageManager.java@273</td></tr>
+		<tr><td align="left" border="1" port="132" bgcolor="red">GarageManager.java LOW-workersInTask_648-0-1&amp;GarageManager.java@278</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-status_609-0-1&amp;GarageManager.java@131</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_657-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_657-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_657-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_657-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_1-0-0&amp;GarageManager.java@140</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_10-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_10-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_10-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_10-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_2-0-0&amp;GarageManager.java@140</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_254-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_254-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_254-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_254-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_3-0-0&amp;GarageManager.java@140</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_622-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_622-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_622-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_622-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_4-0-0&amp;GarageManager.java@140</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_9-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_9-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_9-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_9-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_5-0-0&amp;GarageManager.java@140</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_674-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_674-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_674-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_674-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_6-0-0&amp;GarageManager.java@140</td></tr>
+	</table>>
+]
+
+f1 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_674-6-2&amp;GarageManager.java@336</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-6-2&amp;GarageManager.java@336</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-managerArrived_648-6-1&amp;GarageManager.java@283</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L333 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L343 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-printedCard_51-6-1&amp;GarageManager.java@427</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-printedCard_51-6-2&amp;GarageManager.java@428</td></tr>
+		<tr><td align="left" border="1">branch-6-0</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L472 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_674-6-3&amp;GarageManager.java@353</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-6-3&amp;GarageManager.java@353</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L353 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_674-6-4&amp;GarageManager.java@355</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-6-4&amp;GarageManager.java@355</td></tr>
+		<tr><td align="left" border="1" port="151" bgcolor="red">GarageManager.java LOR-workersInTask_648-6-1&amp;GarageManager.java@298</td></tr>
+		<tr><td align="left" border="1">branch-6-1</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L353 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L343 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-printedCard_51-6-3&amp;GarageManager.java@427</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-printedCard_51-6-4&amp;GarageManager.java@428</td></tr>
+		<tr><td align="left" border="1">branch-6-2</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L472 unlock(lock);</td></tr>
+	</table>>
+]
+
+f2 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-1&amp;GarageManager.java@486</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-3-1&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-3-0</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-3-2&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-3-1</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workerName_254-3-1&amp;GarageManager.java@551</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_254-3-1&amp;GarageManager.java@555</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_254-3-1&amp;GarageManager.java@556</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1" port="131" bgcolor="red">GarageManager.java LOR-workersInTask_648-3-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workersInTask_648-3-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-taskTime_254-3-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_651-3-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-working_254-3-1&amp;GarageManager.java@413</td></tr>
+		<tr><td align="left" border="1">branch-3-2</td></tr>
+		<tr><td align="left" border="1" port="41" bgcolor="red">GarageManager.java LOR-printedCard_51-3-1&amp;GarageManager.java@416</td></tr>
+		<tr><td align="left" border="1" port="52" bgcolor="red">GarageManager.java LOW-printedCard_51-3-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+f3 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-5-1&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-5-0</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-5-2&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-5-1</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workerName_9-5-1&amp;GarageManager.java@551</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_9-5-1&amp;GarageManager.java@555</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_9-5-1&amp;GarageManager.java@556</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workersInTask_648-5-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1" port="142" bgcolor="red">GarageManager.java LOW-workersInTask_648-5-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-taskTime_9-5-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_653-5-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-working_9-5-1&amp;GarageManager.java@413</td></tr>
+		<tr><td align="left" border="1">branch-5-2</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-printedCard_51-5-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+f4 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-4-1&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-4-0</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-4-2&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-4-1</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workerName_622-4-1&amp;GarageManager.java@551</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_622-4-1&amp;GarageManager.java@555</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_622-4-1&amp;GarageManager.java@556</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1" port="141" bgcolor="red">GarageManager.java LOR-workersInTask_648-4-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1" port="122" bgcolor="red">GarageManager.java LOW-workersInTask_648-4-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-taskTime_622-4-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_652-4-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-working_622-4-1&amp;GarageManager.java@413</td></tr>
+		<tr><td align="left" border="1">branch-4-2</td></tr>
+		<tr><td align="left" border="1" port="51" bgcolor="red">GarageManager.java LOR-printedCard_51-4-1&amp;GarageManager.java@416</td></tr>
+		<tr><td align="left" border="1" port="22" bgcolor="red">GarageManager.java LOW-printedCard_51-4-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+f5 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-1&amp;GarageManager.java@486</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-1-1&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-1-0</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-1-2&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-1-1</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workerName_657-1-1&amp;GarageManager.java@551</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_657-1-1&amp;GarageManager.java@555</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_657-1-1&amp;GarageManager.java@556</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1" port="121" bgcolor="red">GarageManager.java LOR-workersInTask_648-1-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workersInTask_648-1-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-taskTime_657-1-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_649-1-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-working_657-1-1&amp;GarageManager.java@413</td></tr>
+		<tr><td align="left" border="1">branch-1-2</td></tr>
+		<tr><td align="left" border="1" port="21" bgcolor="red">GarageManager.java LOR-printedCard_51-1-1&amp;GarageManager.java@416</td></tr>
+		<tr><td align="left" border="1" port="32" bgcolor="red">GarageManager.java LOW-printedCard_51-1-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+f6 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-1&amp;GarageManager.java@486</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-2-1&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-2-0</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-2-2&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-2-1</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workerName_10-2-1&amp;GarageManager.java@551</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_10-2-1&amp;GarageManager.java@555</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_10-2-1&amp;GarageManager.java@556</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workersInTask_648-2-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workersInTask_648-2-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-taskTime_10-2-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_650-2-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-working_10-2-1&amp;GarageManager.java@413</td></tr>
+		<tr><td align="left" border="1">branch-2-2</td></tr>
+		<tr><td align="left" border="1" port="31" bgcolor="red">GarageManager.java LOR-printedCard_51-2-1&amp;GarageManager.java@416</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-printedCard_51-2-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+f7 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1" port="12" bgcolor="red">GarageManager.java LOW-printedCard_51-5-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+f8 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L353 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_674-6-6&amp;GarageManager.java@355</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-6-6&amp;GarageManager.java@355</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workersInTask_648-6-2&amp;GarageManager.java@298</td></tr>
+		<tr><td align="left" border="1">branch-6-3</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L353 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L364 lock(lock);</td></tr>
+		<tr><td align="left" border="1" port="71" bgcolor="red">GarageManager.java LOR-printedCard_51-6-5&amp;GarageManager.java@397</td></tr>
+		<tr><td align="left" border="1">branch-6-4</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L397 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L364 lock(lock);</td></tr>
+		<tr><td align="left" border="1" port="81" bgcolor="red">GarageManager.java LOR-printedCard_51-6-6&amp;GarageManager.java@397</td></tr>
+		<tr><td align="left" border="1">branch-6-5</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L397 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L364 lock(lock);</td></tr>
+		<tr><td align="left" border="1" port="91" bgcolor="red">GarageManager.java LOR-printedCard_51-6-7&amp;GarageManager.java@397</td></tr>
+		<tr><td align="left" border="1">branch-6-6</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L397 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L364 lock(lock);</td></tr>
+		<tr><td align="left" border="1" port="101" bgcolor="red">GarageManager.java LOR-printedCard_51-6-8&amp;GarageManager.java@397</td></tr>
+		<tr><td align="left" border="1">branch-6-7</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L397 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L374 lock(lock);</td></tr>
+		<tr><td align="left" border="1" port="111" bgcolor="red">GarageManager.java LOR-printedCard_51-6-9&amp;GarageManager.java@427</td></tr>
+		<tr><td align="left" border="1" port="61" bgcolor="red">GarageManager.java LOR-printedCard_51-6-10&amp;GarageManager.java@428</td></tr>
+		<tr><td align="left" border="1">branch-6-8</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L472 unlock(lock);</td></tr>
+	</table>>
+]
+
+f9 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-join_3-0-0&amp;GarageManager.java@147</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-join_4-0-0&amp;GarageManager.java@147</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-join_5-0-0&amp;GarageManager.java@147</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-join_6-0-0&amp;GarageManager.java@147</td></tr>
+		<tr><td align="left" border="1" port="11" bgcolor="red">GarageManager.java LOR-printedCard_51-0-1&amp;GarageManager.java@153</td></tr>
+	</table>>
+]
+
+f0 -> f1;
+f1 -> f2;
+f2 -> f3;
+f3 -> f4;
+f4 -> f5;
+f5 -> f6;
+f6 -> f7;
+f7 -> f8;
+f8 -> f9;
+f7:12:e -> f9:11:e [color="red", fontcolor="red", style=bold] ;
+
+
+f4:22:e -> f5:21:e [color="red", fontcolor="red", style=bold] ;
+
+
+f5:32:e -> f6:31:e [color="red", fontcolor="red", style=bold] ;
+
+
+f0:42:e -> f2:41:e [color="red", fontcolor="red", style=bold] ;
+
+
+f2:52:e -> f4:51:e [color="red", fontcolor="red", style=bold] ;
+
+
+f7:12:e -> f8:61:e [color="red", fontcolor="red", style=bold] ;
+
+
+f7:12:e -> f8:71:e [color="red", fontcolor="red", style=bold] ;
+
+
+f7:12:e -> f8:81:e [color="red", fontcolor="red", style=bold] ;
+
+
+f7:12:e -> f8:91:e [color="red", fontcolor="red", style=bold] ;
+
+
+f7:12:e -> f8:101:e [color="red", fontcolor="red", style=bold] ;
+
+
+f7:12:e -> f8:111:e [color="red", fontcolor="red", style=bold] ;
+
+
+f4:122:e -> f5:121:e [color="red", fontcolor="red", style=bold] ;
+
+
+f0:132:e -> f2:131:e [color="red", fontcolor="red", style=bold] ;
+
+
+f3:142:e -> f4:141:e [color="red", fontcolor="red", style=bold] ;
+
+
+f0:132:e -> f1:151:e [color="red", fontcolor="red", style=bold] ;
+
+
+a0 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="2" color="darkgreen" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1" port="32" bgcolor="green">GarageManager.java LOW-printedCard_51-0-1&amp;GarageManager.java@17</td></tr>
+		<tr><td align="left" border="1" port="12" bgcolor="green">GarageManager.java LOW-bugOccured_609-0-1&amp;GarageManager.java@19</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-managerArrived_648-0-1&amp;GarageManager.java@273</td></tr>
+		<tr><td align="left" border="1" port="232" bgcolor="green">GarageManager.java LOW-workersInTask_648-0-1&amp;GarageManager.java@278</td></tr>
+		<tr><td align="left" border="1" port="102" bgcolor="green">GarageManager.java LOW-status_609-0-1&amp;GarageManager.java@131</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_657-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_657-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_657-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_657-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_1-0-0&amp;GarageManager.java@140</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_10-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_10-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_10-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_10-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_2-0-0&amp;GarageManager.java@140</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_254-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_254-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_254-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_254-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_3-0-0&amp;GarageManager.java@140</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_622-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_622-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_622-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_622-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_4-0-0&amp;GarageManager.java@140</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-this$0_9-0-1&amp;GarageManager.java@317</td></tr>
+	</table>>
+]
+
+a1 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_9-0-1&amp;GarageManager.java@311</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_9-0-1&amp;GarageManager.java@312</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_9-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_5-0-0&amp;GarageManager.java@140</td></tr>
+		<tr><td align="left" border="1" port="152" bgcolor="green">GarageManager.java LOW-this$0_674-0-1&amp;GarageManager.java@317</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_674-0-1&amp;GarageManager.java@311</td></tr>
+	</table>>
+]
+
+a2 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_674-0-1&amp;GarageManager.java@312</td></tr>
+	</table>>
+]
+
+a3 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workerName_674-0-1&amp;GarageManager.java@320</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-fork_6-0-0&amp;GarageManager.java@140</td></tr>
+	</table>>
+]
+
+a4 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_674-6-2&amp;GarageManager.java@336</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-6-2&amp;GarageManager.java@336</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-managerArrived_648-6-1&amp;GarageManager.java@283</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L333 unlock(lock);</td></tr>
+	</table>>
+]
+
+a5 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 lock(lock);</td></tr>
+	</table>>
+]
+
+a6 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-1&amp;GarageManager.java@486</td></tr>
+	</table>>
+]
+
+a7 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-2&amp;GarageManager.java@488</td></tr>
+	</table>>
+]
+
+a8 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-1&amp;GarageManager.java@486</td></tr>
+	</table>>
+]
+
+a9 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-4-1&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-4-0</td></tr>
+	</table>>
+]
+
+a10 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-3&amp;GarageManager.java@494</td></tr>
+	</table>>
+]
+
+a11 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L343 lock(lock);</td></tr>
+	</table>>
+]
+
+a12 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-4-2&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-4-1</td></tr>
+	</table>>
+]
+
+a13 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-1&amp;GarageManager.java@486</td></tr>
+	</table>>
+]
+
+a14 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 unlock(lock);</td></tr>
+	</table>>
+]
+
+a15 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-3-1&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-3-0</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-3&amp;GarageManager.java@494</td></tr>
+	</table>>
+]
+
+a16 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-printedCard_51-6-1&amp;GarageManager.java@427</td></tr>
+	</table>>
+]
+
+a17 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-3&amp;GarageManager.java@494</td></tr>
+	</table>>
+]
+
+a18 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workerName_622-4-1&amp;GarageManager.java@551</td></tr>
+	</table>>
+]
+
+a19 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-3-2&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-3-1</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 unlock(lock);</td></tr>
+	</table>>
+]
+
+a20 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-5-1&amp;GarageManager.java@288</td></tr>
+	</table>>
+]
+
+a21 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workerName_254-3-1&amp;GarageManager.java@551</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_254-3-1&amp;GarageManager.java@555</td></tr>
+	</table>>
+]
+
+a22 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">branch-5-0</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-3&amp;GarageManager.java@494</td></tr>
+	</table>>
+]
+
+a23 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_254-3-1&amp;GarageManager.java@556</td></tr>
+	</table>>
+]
+
+a24 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-5-2&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-5-1</td></tr>
+	</table>>
+]
+
+a25 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-4&amp;GarageManager.java@558</td></tr>
+	</table>>
+]
+
+a26 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_622-4-1&amp;GarageManager.java@555</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_622-4-1&amp;GarageManager.java@556</td></tr>
+	</table>>
+]
+
+a27 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 unlock(lock);</td></tr>
+	</table>>
+]
+
+a28 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-4&amp;GarageManager.java@558</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1" port="231" bgcolor="green">GarageManager.java LOR-workersInTask_648-4-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1" port="222" bgcolor="green">GarageManager.java LOW-workersInTask_648-4-1&amp;GarageManager.java@293</td></tr>
+	</table>>
+]
+
+a29 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workerName_9-5-1&amp;GarageManager.java@551</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_9-5-1&amp;GarageManager.java@555</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_9-5-1&amp;GarageManager.java@556</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-4&amp;GarageManager.java@558</td></tr>
+	</table>>
+]
+
+a30 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 unlock(lock);</td></tr>
+	</table>>
+]
+
+a31 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 lock(lock);</td></tr>
+	</table>>
+]
+
+a32 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-4&amp;GarageManager.java@558</td></tr>
+	</table>>
+]
+
+a33 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1" port="221" bgcolor="green">GarageManager.java LOR-workersInTask_648-3-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workersInTask_648-3-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 unlock(lock);</td></tr>
+	</table>>
+]
+
+a34 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workersInTask_648-5-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1" port="212" bgcolor="green">GarageManager.java LOW-workersInTask_648-5-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 unlock(lock);</td></tr>
+	</table>>
+]
+
+a35 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-2-1&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-2-0</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-2-2&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-2-1</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workerName_10-2-1&amp;GarageManager.java@551</td></tr>
+	</table>>
+]
+
+a36 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 lock(lock);</td></tr>
+	</table>>
+]
+
+a37 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_10-2-1&amp;GarageManager.java@555</td></tr>
+	</table>>
+]
+
+a38 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_9-5-7&amp;GarageManager.java@408</td></tr>
+	</table>>
+]
+
+a39 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_10-2-1&amp;GarageManager.java@556</td></tr>
+	</table>>
+]
+
+a40 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-printedCard_51-6-2&amp;GarageManager.java@428</td></tr>
+	</table>>
+]
+
+a41 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-5-7&amp;GarageManager.java@408</td></tr>
+	</table>>
+]
+
+a42 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-4&amp;GarageManager.java@558</td></tr>
+	</table>>
+]
+
+a43 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-6&amp;GarageManager.java@406</td></tr>
+	</table>>
+]
+
+a44 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-4&amp;GarageManager.java@558</td></tr>
+	</table>>
+]
+
+a45 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-taskTime_9-5-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_653-5-1&amp;GarageManager.java@408</td></tr>
+	</table>>
+]
+
+a46 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">branch-6-0</td></tr>
+	</table>>
+]
+
+a47 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-6&amp;GarageManager.java@406</td></tr>
+	</table>>
+]
+
+a48 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 unlock(lock);</td></tr>
+	</table>>
+]
+
+a49 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L472 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_674-6-3&amp;GarageManager.java@353</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-6-3&amp;GarageManager.java@353</td></tr>
+	</table>>
+]
+
+a50 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-2&amp;GarageManager.java@488</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-1-1&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-1-0</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-3&amp;GarageManager.java@494</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-managerArrived_648-1-2&amp;GarageManager.java@288</td></tr>
+		<tr><td align="left" border="1">branch-1-1</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L486 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workerName_657-1-1&amp;GarageManager.java@551</td></tr>
+	</table>>
+]
+
+a51 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 lock(lock);</td></tr>
+	</table>>
+]
+
+a52 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_657-1-1&amp;GarageManager.java@555</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-working_657-1-1&amp;GarageManager.java@556</td></tr>
+	</table>>
+]
+
+a53 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_622-4-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-4-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-taskTime_622-4-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_652-4-1&amp;GarageManager.java@408</td></tr>
+	</table>>
+]
+
+a54 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-4&amp;GarageManager.java@558</td></tr>
+	</table>>
+]
+
+a55 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 unlock(lock);</td></tr>
+	</table>>
+]
+
+a56 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-4&amp;GarageManager.java@558</td></tr>
+	</table>>
+]
+
+a57 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L353 lock(lock);</td></tr>
+	</table>>
+]
+
+a58 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-working_622-4-1&amp;GarageManager.java@413</td></tr>
+	</table>>
+]
+
+a59 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_674-6-4&amp;GarageManager.java@355</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-6-4&amp;GarageManager.java@355</td></tr>
+		<tr><td align="left" border="1" port="241" bgcolor="green">GarageManager.java LOR-workersInTask_648-6-1&amp;GarageManager.java@298</td></tr>
+		<tr><td align="left" border="1">branch-6-1</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L353 unlock(lock);</td></tr>
+	</table>>
+]
+
+a60 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1" port="211" bgcolor="green">GarageManager.java LOR-workersInTask_648-1-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workersInTask_648-1-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 unlock(lock);</td></tr>
+	</table>>
+]
+
+a61 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 lock(lock);</td></tr>
+	</table>>
+]
+
+a62 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L343 lock(lock);</td></tr>
+	</table>>
+]
+
+a63 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-5&amp;GarageManager.java@560</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workersInTask_648-2-1&amp;GarageManager.java@293</td></tr>
+	</table>>
+]
+
+a64 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-6&amp;GarageManager.java@406</td></tr>
+	</table>>
+]
+
+a65 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-printedCard_51-6-3&amp;GarageManager.java@427</td></tr>
+	</table>>
+]
+
+a66 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-workersInTask_648-2-1&amp;GarageManager.java@293</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L558 unlock(lock);</td></tr>
+	</table>>
+]
+
+a67 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-6&amp;GarageManager.java@406</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_657-1-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-1-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-taskTime_657-1-1&amp;GarageManager.java@408</td></tr>
+	</table>>
+]
+
+a68 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-printedCard_51-6-4&amp;GarageManager.java@428</td></tr>
+	</table>>
+]
+
+a69 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_649-1-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-working_657-1-1&amp;GarageManager.java@413</td></tr>
+	</table>>
+]
+
+a70 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-6&amp;GarageManager.java@406</td></tr>
+	</table>>
+]
+
+a71 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">branch-1-2</td></tr>
+	</table>>
+]
+
+a72 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">branch-6-2</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L472 unlock(lock);</td></tr>
+	</table>>
+]
+
+a73 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-6&amp;GarageManager.java@406</td></tr>
+	</table>>
+]
+
+a74 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-6&amp;GarageManager.java@406</td></tr>
+	</table>>
+]
+
+a75 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-6&amp;GarageManager.java@406</td></tr>
+	</table>>
+]
+
+a76 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_10-2-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-2-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-taskTime_10-2-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_650-2-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-working_10-2-1&amp;GarageManager.java@413</td></tr>
+	</table>>
+]
+
+a77 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="31" bgcolor="green">GarageManager.java LOR-printedCard_51-1-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+a78 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L353 lock(lock);</td></tr>
+	</table>>
+]
+
+a79 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1" port="52" bgcolor="green">GarageManager.java LOW-printedCard_51-1-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+a80 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_674-6-6&amp;GarageManager.java@355</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-6-6&amp;GarageManager.java@355</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-workersInTask_648-6-2&amp;GarageManager.java@298</td></tr>
+		<tr><td align="left" border="1">branch-6-3</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L353 unlock(lock);</td></tr>
+	</table>>
+]
+
+a81 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 lock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-this$0_254-3-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-status_609-3-7&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-taskTime_254-3-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-taskTime_651-3-1&amp;GarageManager.java@408</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L406 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-working_254-3-1&amp;GarageManager.java@413</td></tr>
+	</table>>
+]
+
+a82 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1">branch-4-2</td></tr>
+	</table>>
+]
+
+a83 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1">branch-3-2</td></tr>
+	</table>>
+]
+
+a84 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-working_9-5-1&amp;GarageManager.java@413</td></tr>
+		<tr><td align="left" border="1">branch-5-2</td></tr>
+	</table>>
+]
+
+a85 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="mediumpurple"><font point-size="14">T3</font></td></tr>
+		<tr><td align="left" border="1" port="51" bgcolor="green">GarageManager.java LOR-printedCard_51-3-1&amp;GarageManager.java@416</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOW-printedCard_51-3-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+a86 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">branch-2-2</td></tr>
+	</table>>
+]
+
+a87 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="khaki1"><font point-size="14">T5</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOR-printedCard_51-5-1&amp;GarageManager.java@416</td></tr>
+		<tr><td align="left" border="1" port="62" bgcolor="green">GarageManager.java LOW-printedCard_51-5-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+a88 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L364 lock(lock);</td></tr>
+	</table>>
+]
+
+a89 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkgoldenrod1"><font point-size="14">T4</font></td></tr>
+		<tr><td align="left" border="1" port="61" bgcolor="green">GarageManager.java LOR-printedCard_51-4-1&amp;GarageManager.java@416</td></tr>
+		<tr><td align="left" border="1" port="42" bgcolor="green">GarageManager.java LOW-printedCard_51-4-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+a90 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="41" bgcolor="green">GarageManager.java LOR-printedCard_51-2-1&amp;GarageManager.java@416</td></tr>
+		<tr><td align="left" border="1" port="22" bgcolor="green">GarageManager.java LOW-printedCard_51-2-1&amp;GarageManager.java@416</td></tr>
+	</table>>
+]
+
+a91 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1" port="71" bgcolor="green">GarageManager.java LOR-printedCard_51-6-5&amp;GarageManager.java@397</td></tr>
+		<tr><td align="left" border="1">branch-6-4</td></tr>
+		<tr><td align="left" border="1">GarageManager.java L397 unlock(lock);</td></tr>
+	</table>>
+]
+
+a92 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L374 lock(lock);</td></tr>
+		<tr><td align="left" border="1" port="81" bgcolor="green">GarageManager.java LOR-printedCard_51-6-6&amp;GarageManager.java@427</td></tr>
+	</table>>
+]
+
+a93 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1" port="91" bgcolor="green">GarageManager.java LOR-printedCard_51-6-7&amp;GarageManager.java@428</td></tr>
+		<tr><td align="left" border="1">branch-6-5</td></tr>
+		<tr><td align="left" border="1" port="181" bgcolor="green">GarageManager.java LOR-this$0_674-6-7&amp;GarageManager.java@436</td></tr>
+		<tr><td align="left" border="1" port="121" bgcolor="green">GarageManager.java LOR-status_609-6-7&amp;GarageManager.java@436</td></tr>
+		<tr><td align="left" border="1" port="191" bgcolor="green">GarageManager.java LOR-this$0_674-6-8&amp;GarageManager.java@436</td></tr>
+	</table>>
+]
+
+a94 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1" port="131" bgcolor="green">GarageManager.java LOR-status_609-6-8&amp;GarageManager.java@436</td></tr>
+		<tr><td align="left" border="1" port="201" bgcolor="green">GarageManager.java LOR-this$0_674-6-9&amp;GarageManager.java@436</td></tr>
+		<tr><td align="left" border="1" port="141" bgcolor="green">GarageManager.java LOR-status_609-6-9&amp;GarageManager.java@436</td></tr>
+		<tr><td align="left" border="1" port="151" bgcolor="green">GarageManager.java LOR-this$0_674-6-10&amp;GarageManager.java@436</td></tr>
+	</table>>
+]
+
+a95 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1" port="101" bgcolor="green">GarageManager.java LOR-status_609-6-10&amp;GarageManager.java@436</td></tr>
+	</table>>
+]
+
+a96 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1" port="161" bgcolor="green">GarageManager.java LOR-this$0_674-6-11&amp;GarageManager.java@441</td></tr>
+		<tr><td align="left" border="1" port="111" bgcolor="green">GarageManager.java LOR-status_609-6-11&amp;GarageManager.java@441</td></tr>
+	</table>>
+]
+
+a97 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1" port="171" bgcolor="green">GarageManager.java LOR-this$0_674-6-12&amp;GarageManager.java@447</td></tr>
+		<tr><td align="left" border="1" port="11" bgcolor="green">GarageManager.java LOR-bugOccured_609-6-1&amp;GarageManager.java@19</td></tr>
+	</table>>
+]
+
+a98 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">branch-6-6</td></tr>
+	</table>>
+]
+
+a99 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-join_3-0-0&amp;GarageManager.java@147</td></tr>
+	</table>>
+]
+
+a100 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkviolet"><font point-size="14">T6</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java L464 unlock(lock);</td></tr>
+	</table>>
+]
+
+a101 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-join_4-0-0&amp;GarageManager.java@147</td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-join_5-0-0&amp;GarageManager.java@147</td></tr>
+	</table>>
+]
+
+a102 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="salmon"><font point-size="14">T0</font></td></tr>
+		<tr><td align="left" border="1">GarageManager.java LOS-join_6-0-0&amp;GarageManager.java@147</td></tr>
+		<tr><td align="left" border="1" port="21" bgcolor="green">GarageManager.java LOR-printedCard_51-0-1&amp;GarageManager.java@153</td></tr>
+	</table>>
+]
+
+a0 -> a1;
+a1 -> a2;
+a2 -> a3;
+a3 -> a4;
+a4 -> a5;
+a5 -> a6;
+a6 -> a7;
+a7 -> a8;
+a8 -> a9;
+a9 -> a10;
+a10 -> a11;
+a11 -> a12;
+a12 -> a13;
+a13 -> a14;
+a14 -> a15;
+a15 -> a16;
+a16 -> a17;
+a17 -> a18;
+a18 -> a19;
+a19 -> a20;
+a20 -> a21;
+a21 -> a22;
+a22 -> a23;
+a23 -> a24;
+a24 -> a25;
+a25 -> a26;
+a26 -> a27;
+a27 -> a28;
+a28 -> a29;
+a29 -> a30;
+a30 -> a31;
+a31 -> a32;
+a32 -> a33;
+a33 -> a34;
+a34 -> a35;
+a35 -> a36;
+a36 -> a37;
+a37 -> a38;
+a38 -> a39;
+a39 -> a40;
+a40 -> a41;
+a41 -> a42;
+a42 -> a43;
+a43 -> a44;
+a44 -> a45;
+a45 -> a46;
+a46 -> a47;
+a47 -> a48;
+a48 -> a49;
+a49 -> a50;
+a50 -> a51;
+a51 -> a52;
+a52 -> a53;
+a53 -> a54;
+a54 -> a55;
+a55 -> a56;
+a56 -> a57;
+a57 -> a58;
+a58 -> a59;
+a59 -> a60;
+a60 -> a61;
+a61 -> a62;
+a62 -> a63;
+a63 -> a64;
+a64 -> a65;
+a65 -> a66;
+a66 -> a67;
+a67 -> a68;
+a68 -> a69;
+a69 -> a70;
+a70 -> a71;
+a71 -> a72;
+a72 -> a73;
+a73 -> a74;
+a74 -> a75;
+a75 -> a76;
+a76 -> a77;
+a77 -> a78;
+a78 -> a79;
+a79 -> a80;
+a80 -> a81;
+a81 -> a82;
+a82 -> a83;
+a83 -> a84;
+a84 -> a85;
+a85 -> a86;
+a86 -> a87;
+a87 -> a88;
+a88 -> a89;
+a89 -> a90;
+a90 -> a91;
+a91 -> a92;
+a92 -> a93;
+a93 -> a94;
+a94 -> a95;
+a95 -> a96;
+a96 -> a97;
+a97 -> a98;
+a98 -> a99;
+a99 -> a100;
+a100 -> a101;
+a101 -> a102;
+a0:12:e -> a97:11:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a90:22:e -> a102:21:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a0:32:e -> a77:31:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a89:42:e -> a90:41:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a79:52:e -> a85:51:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a87:62:e -> a89:61:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a90:22:e -> a91:71:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a90:22:e -> a92:81:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a90:22:e -> a93:91:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a0:102:e -> a95:101:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a0:102:e -> a96:111:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a0:102:e -> a93:121:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a0:102:e -> a94:131:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a0:102:e -> a94:141:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a1:152:e -> a94:151:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a1:152:e -> a96:161:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a1:152:e -> a97:171:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a1:152:e -> a93:181:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a1:152:e -> a93:191:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a1:152:e -> a94:201:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a34:212:e -> a60:211:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a28:222:e -> a33:221:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a0:232:e -> a28:231:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+a34:212:e -> a59:241:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+}

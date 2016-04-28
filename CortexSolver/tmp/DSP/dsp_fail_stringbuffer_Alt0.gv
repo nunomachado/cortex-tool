@@ -1,0 +1,368 @@
+digraph G {
+	center=1;
+	ranksep=.25; size = "7.5,10";
+	node [shape=record]
+
+labelloc=top;
+labeljust=left;
+f0 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1" port="12" bgcolor="red">StringBuffer.java LOW-count_8-2-2&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+	</table>>
+]
+
+f1 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L449 lock(lock);</td></tr>
+	</table>>
+]
+
+f2 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-4&amp;StringBufferTest.java@27</td></tr>
+	</table>>
+]
+
+f3 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">branch-1-17</td></tr>
+		<tr><td align="left" border="1" port="11" bgcolor="red">StringBuffer.java LOR-count_8-1-10&amp;StringBuffer.java@325</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L1 unlock(lock);</td></tr>
+	</table>>
+]
+
+f4 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-7&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-4</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-8&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-3&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-5&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-9&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-5</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-2&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-6</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-10&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-11&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-4&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-6&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-12&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-7</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-13&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-5&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-7&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-14&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-8</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-3&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-9</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-15&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-16&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-6&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-8&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-17&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-10</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-18&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-7&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-9&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-19&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-11</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-4&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-12</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-20&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-21&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-8&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-10&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-22&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-13</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-23&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-9&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-11&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-24&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-14</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-5&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-15</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-25&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-26&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-10&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-12&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-27&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-16</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-28&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-11&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-13&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-29&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-17</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-6&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-18</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-30&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-31&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-12&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-14&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-32&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-19</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-33&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-13&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-15&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-34&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-20</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-7&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-21</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-35&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-36&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-14&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-16&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-37&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-22</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-38&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-15&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-17&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-39&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-23</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-8&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-24</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-40&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-41&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-16&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-18&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-42&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-25</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-43&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-17&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-19&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-44&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-26</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-9&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-27</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-45&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-46&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-18&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-20&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-47&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-28</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-48&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-19&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+	</table>>
+]
+
+f5 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="0" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L2 unlock(lock);</td></tr>
+	</table>>
+]
+
+f0 -> f1;
+f1 -> f2;
+f2 -> f3;
+f3 -> f4;
+f4 -> f5;
+f0:12:e -> f3:11:e [color="red", fontcolor="red", style=bold] ;
+
+
+a0 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="4" cellspacing="0">
+		<tr><td border="1" bgcolor="darkolivegreen3"><font point-size="14">T2</font></td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-2&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-4&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-7&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-4</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-8&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-3&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-5&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-9&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-5</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-2&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-6</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-10&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-11&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-4&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-6&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-12&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-7</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-13&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-5&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-7&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-14&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-8</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-3&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-9</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-15&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-16&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-6&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-8&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-17&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-10</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-18&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-7&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-9&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-19&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-11</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-4&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-12</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-20&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-21&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-8&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-10&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-22&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-13</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-23&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-9&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-11&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-24&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-14</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-5&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-15</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-25&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-26&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-10&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-12&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-27&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-16</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-28&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-11&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-13&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-29&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-17</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-6&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-18</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-30&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-31&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-12&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-14&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-32&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-19</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-33&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-13&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-15&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-34&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-20</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-7&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-21</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-35&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-36&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-14&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-16&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-37&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-22</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-38&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-15&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-17&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-39&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-23</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-8&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-24</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-40&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-41&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-16&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-18&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-42&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-25</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-43&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-17&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-19&amp;StringBufferTest.java@26</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L26 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-44&amp;StringBuffer.java@658</td></tr>
+		<tr><td align="left" border="1">branch-2-26</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-shared_8-2-9&amp;StringBuffer.java@665</td></tr>
+		<tr><td align="left" border="1">branch-2-27</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-45&amp;StringBuffer.java@667</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-46&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOW-count_8-2-18&amp;StringBuffer.java@668</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L670 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java LOR-buf_51-2-20&amp;StringBufferTest.java@27</td></tr>
+		<tr><td align="left" border="1">StringBufferTest.java L27 lock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-47&amp;StringBuffer.java@405</td></tr>
+		<tr><td align="left" border="1">branch-2-28</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java LOR-count_8-2-48&amp;StringBuffer.java@408</td></tr>
+		<tr><td align="left" border="1" port="12" bgcolor="green">StringBuffer.java LOW-count_8-2-19&amp;StringBuffer.java@409</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L410 unlock(lock);</td></tr>
+	</table>>
+]
+
+a1 [fontname="Helvetica", fontsize="11", shape=none, margin=0,
+	label=<<table border="4" cellspacing="0">
+		<tr><td border="1" bgcolor="lightsteelblue2"><font point-size="14">T1</font></td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L449 lock(lock);</td></tr>
+		<tr><td align="left" border="1">branch-1-17</td></tr>
+		<tr><td align="left" border="1" port="11" bgcolor="green">StringBuffer.java LOR-count_8-1-10&amp;StringBuffer.java@325</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L1 unlock(lock);</td></tr>
+		<tr><td align="left" border="1">StringBuffer.java L2 unlock(lock);</td></tr>
+	</table>>
+]
+
+a0 -> a1;
+a0:12:e -> a1:11:e [color="darkgreen", fontcolor="darkgreen", style=bold] ;
+
+
+}
