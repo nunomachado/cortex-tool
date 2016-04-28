@@ -24,7 +24,7 @@ CORTEX_RT=$CORTEX_HOME/CortexRuntime
 RT_CP=./bin:$INST_RT:. #java classpath 
 
 #number of production runs to record
-RUNS=1
+RUNS=100
 
 #path to Cortex Symbolic Execution Engine (Java PathFinder)
 CORTEX_SE=$CORTEX_HOME/CortexSE/jpf-symbiosis
