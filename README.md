@@ -1,6 +1,4 @@
-# cortex-tool
-Cortex -- Production-guided Concurrency Debugging
-
+# Cortex Tutorial
 
 Cortex is a tool to help developers expose and diagnose concurrency bugs in Java multithreaded applications. For more information check our [PPoPP'16 paper](http://www.gsd.inesc-id.pt/~nmachado/papers/ppopp16-nmachado.pdf).
 
