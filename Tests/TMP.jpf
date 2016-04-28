@@ -1,15 +1,15 @@
-target=bank.Bank
-target_args=
-classpath=/home/symbiosis/work/cortex/CortexTransformer/CortexJPF;\
-		  /home/symbiosis/work/cortex/CortexSE/jpf-symbiosis/build/main;\
-		  /home/symbiosis/work/cortex/CortexSE/jpf-core/build/main;\
-		  /home/symbiosis/work/cortex/CortexSE/jpf-symbc/build/main;
-sourcepath=~/work/cortex/Tests/critical/src
+target=airline.airline
+target_args=out.txt,little
+classpath=CORTEX_HOME/CortexTransformer/CortexJPF;\
+		  CORTEX_HOME/CortexSE/jpf-symbiosis/build/main;\
+		  CORTEX_HOME/CortexSE/jpf-core/build/main;\
+		  CORTEX_HOME/CortexSE/jpf-symbc/build/main;
+sourcepath=CORTEX_HOME/Tests/airline/src
 symbolic.dp=no_solver
 symbolic.string_dp_timeout_ms=0
 listener=pt.tecnico.jpf.symbiosis.SymbiosisListener
-symbiosis.bbtrace=/home/symbiosis/work/cortex/Tests/account/PRuns/account_1331193859_0.ok
-symbiosis.sharedAccesses=/home/symbiosis/work/cortex/CortexTransformer/CortexJPF/bank.Bank.accesses
-symbiosis.tracefolder=/home/symbiosis/work/cortex/Tests/account/Symbolic
-cortex.flipfile=/home/symbiosis/work/cortex/CortexSolver/tmp/flipFile.txt
+symbiosis.bbtrace=CORTEX_HOME/Tests/airline/PRuns/airline_-1269176005_0.ok
+symbiosis.sharedAccesses=CORTEX_HOME/CortexTransformer/CortexJPF/airline.airline.accesses
+symbiosis.tracefolder=CORTEX_HOME/Tests/airline/Symbolic
+#cortex.flipfile=CORTEX_HOME/CortexSolver/tmp/flipFile.txt
 search.class=.search.heuristic.BFSHeuristic

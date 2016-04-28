@@ -11,7 +11,7 @@ NO_INIT=
 
 #### CORTEX RUNTIME ####
 #output folder to store the production run traces
-PRFOLDER=~/work/cortex/Tests/manager/PRuns
+PRFOLDER=$CORTEX_HOME/Tests/manager/PRuns
 
 #add "-full" to record a full execution trace, instead of just up to the assertion
 FULLREC=
@@ -22,7 +22,7 @@ TRACE=$PRFOLDER/manager
 
 #### CORTEX SOLVER ####
 #path to program's Java PathFinder configuration file
-JPFFILE=~/work/cortex/CortexSE/jpf-symbiosis/src/examples/Manager.jpf
+JPFFILE=$CORTEX_HOME/CortexSE/jpf-symbiosis/src/examples/Manager.jpf
 
 #Symbolic execution timeout (in seconds)
 JPFTIMEOUT=10

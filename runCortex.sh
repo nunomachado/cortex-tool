@@ -4,39 +4,41 @@
 # VARIABLES #
 #############
 #test case name (there must exist a folder with this name under /cortex/Tests/)
-PROG=$2 
-CONFIG=~/work/cortex/Tests/$PROG/config.sh
+CORTEX_HOME=$PWD
+echo "Home folder: $CORTEX_HOME"
+PROG=$2
+CONFIG=$CORTEX_HOME/Tests/$PROG/config.sh
 . $CONFIG
 #echo $CONFIG
 
 #path to Cortex Instrumenter
-CORTEX_INST=~/work/cortex/CortexTransformer/
-INST_CP=./bin:~/work/cortex/Tests/$PROG/bin:./lib/jasminclasses-2.4.0.jar:./lib/sootclasses-2.4.0.mine.jar:./lib/polyglotclasses-1.3.5.jar #java classpath 
+CORTEX_INST=$CORTEX_HOME/CortexTransformer/
+INST_CP=./bin:$CORTEX_HOME/Tests/$PROG/bin:./lib/jasminclasses-2.4.0.jar:./lib/sootclasses-2.4.0.mine.jar:./lib/polyglotclasses-1.3.5.jar #java classpath 
 
 #path to folder containing the instrumented classes
 INST_RT=$CORTEX_INST/CortexRuntime
 INST_JPF=$CORTEX_INST/CortexJPF
 
 #path to Cortex Runtime
-CORTEX_RT=~/work/cortex/CortexRuntime
+CORTEX_RT=$CORTEX_HOME/CortexRuntime
 RT_CP=./bin:$INST_RT:. #java classpath 
 
 #number of production runs to record
-RUNS=100
+RUNS=1
 
 #path to Cortex Symbolic Execution Engine (Java PathFinder)
-CORTEX_SE=~/work/cortex/CortexSE/jpf-symbiosis
-TMPFILE=~/work/cortex/Tests/TMP.jpf
+CORTEX_SE=$CORTEX_HOME/CortexSE/jpf-symbiosis
+TMPFILE=$CORTEX_HOME/Tests/TMP.jpf
 
 #path to Cortex Solver
-CORTEX_SOLVER=~/work/cortex/CortexSolver
-SYMB_FOLDER=/home/symbiosis/work/cortex/Tests/$PROG/Symbolic
+CORTEX_SOLVER=$CORTEX_HOME/CortexSolver
+SYMB_FOLDER=$CORTEX_HOME/Tests/$PROG/Symbolic
 MODEL=$CORTEX_SOLVER/tmp/model_$PROG.txt
 FAILSCH=$CORTEX_SOLVER/tmp/fail_$PROG.txt
-SRC_FOLDER=/home/symbiosis/work/cortex/Tests/$PROG/src
+SRC_FOLDER=$CORTEX_HOME/Tests/$PROG/src
 
 #path to SMT solver
-SMTSOLVER=~/work/z3-4.3.2/bin/z3
+SMTSOLVER=$CORTEX_HOME/z3-4.3.2/z3_linux
 
 ##############
 # EXEC MODES #
@@ -67,14 +69,15 @@ while getopts "irsed" opt; do
     s) 	#SYMBOLIC TRACE GENERATION
         cp $JPFFILE $TMPFILE
         cd $PRFOLDER
+        sed -i "s?CORTEX_HOME?$CORTEX_HOME?" $TMPFILE
         sed -i "s/^cortex.flipfile=/#cortex.flipfile=/" $TMPFILE
         for f in *.ok; do
 	    echo $'\n'=== SYMBOLIC EXECUTION - $f
             #change the trace used by JPF
-            sed -i "s/.*symbiosis.bbtrace.*/symbiosis.bbtrace=\/home\/symbiosis\/work\/cortex\/Tests\/$PROG\/PRuns\/$f/" $TMPFILE
+            sed -i "s?.*symbiosis.bbtrace.*?symbiosis.bbtrace=$CORTEX_HOME/Tests/$PROG/PRuns/$f?" $TMPFILE
             #run Cortex SE (JPF)
             cd $CORTEX_SE
-            java -Xmx1500m -jar ~/work/cortex/CortexSE/jpf-core/build/RunJPF.jar +shell.port=4242 $TMPFILE
+            java -Xmx1500m -jar $CORTEX_HOME/CortexSE/jpf-core/build/RunJPF.jar +shell.port=4242 $TMPFILE
         done
         sed -i "s/^#cortex.flipfile=/cortex.flipfile=/" $TMPFILE
         ;;
