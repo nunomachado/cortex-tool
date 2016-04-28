@@ -190,8 +190,8 @@ string getVarNameFromCodeLine(string codeLine)
 string getLockVarName(string filename, int line)
 {
     string codeLine = "lock";
-    if(!sourceFilePath.empty())
-        codeLine = graphgen::getCodeLine(line, filename,"lock"); //search for actual line of code
+    //if(!sourceFilePath.empty())
+       // codeLine = graphgen::getCodeLine(line, filename,"lock"); //Nuno: search for actual line of code
     return getVarNameFromCodeLine(codeLine);
 }
 
@@ -1014,8 +1014,8 @@ string makeInstrFriendly(string instruction){
             return friendlyInstr;
         }
         string codeLine = instruction;
-        if(!sourceFilePath.empty())
-            codeLine = graphgen::getCodeLine(line, filename, ""); //search for actual line of code
+        //if(!sourceFilePath.empty())
+           // codeLine = graphgen::getCodeLine(line, filename, ""); //Nuno: search for actual line of code
         friendlyInstr = filename+" L"+codeLine;
     }
     //cout << friendlyInstr << endl;
