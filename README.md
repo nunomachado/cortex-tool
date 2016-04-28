@@ -2,7 +2,7 @@
 Cortex -- Production-guided Concurrency Debugging
 
 
-Cortex is a tool to help developers expose and diagnose concurrency bugs in Java multithreaded applications. For more information check our [paper](http://www.gsd.inesc-id.pt/~nmachado/papers/ppopp16-nmachado.pdf)
+Cortex is a tool to help developers expose and diagnose concurrency bugs in Java multithreaded applications. For more information check our [PPoPP'16 paper](http://www.gsd.inesc-id.pt/~nmachado/papers/ppopp16-nmachado.pdf).
 
 #### Download our VM image with Cortex ready to use: http://www.gsd.inesc-id.pt/~nmachado/cortex-vm.ova  (username: cortex ; password: cortex2015)
     
@@ -20,6 +20,8 @@ This repository contains all the necessary code and scripts to run Cortex:
 * **CortexSolver** contains the code responsible for building and solving the SMT formulae during Cortex’s production-guided search.
 
 * **Tests** contains several benchmarks. Each benchmark program has its own folder containing: a configuration file (named config.sh), the program’s source code, the Java compiled classes, production run traces, and symbolic traces.
+
+* **z3-4.3.2** contains two executables (for Mac OS and Linux, respectively) of the Z3 SMT Solver.
 
 * **runCortex.sh** is the main script used to run Cortex.
 
