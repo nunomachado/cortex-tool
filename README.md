@@ -34,7 +34,7 @@ command:
 ```
 ./runCortex.sh OPTION bench
 ```
-, where OPTION corresponds to one of the aforementioned execution steps. In particular, the possible values of OPTION are the following:
+where ```OPTION``` corresponds to one of the aforementioned execution steps, and ```bench``` is the name of the benchmark folder. In particular, the possible values of OPTION are the following:
 
 * **-i** instruments the program and performs a static analysis to identify the shared variables in the code. E.g. ```./runCortex.sh -i airline```
 
