@@ -36,16 +36,20 @@ command:
 ```
 where ```OPTION``` corresponds to one of the aforementioned execution steps, and ```bench``` is the name of the benchmark folder. In particular, the possible values of OPTION are the following:
 
-* **-i** instruments the program and performs a static analysis to identify the shared variables in the code. E.g. ```./runCortex.sh -i airline```
+* **-i** instruments the program and performs a static analysis to identify the shared variables in the code. 
+(E.g. ```./runCortex.sh -i airline```)
 
-* **-r** runs the instrumented version of the program a number RUNS of times (the value of RUNS is set to 100 by default, but it can be changed by editing the respective variable in runCortex.sh), recording an execution path profile per production run. The generated traces will be placed in .../Tests/bench/PRuns. Traces from correct runs will have the extension **.ok**, whereas traces from failing runs will have the extension **.fail**. E.g. ```./runCortex.sh -r airline```
+* **-r** runs the instrumented version of the program a number RUNS of times (the value of RUNS is set to 100 by default, but it can be changed by editing the respective variable in runCortex.sh), recording an execution path profile per production run. The generated traces will be placed in .../Tests/bench/PRuns. Traces from correct runs will have the extension **.ok**, whereas traces from failing runs will have the extension **.fail**. 
+(E.g. ```./runCortex.sh -r airline```)
 
-* **-s** generates the corresponding per-thread symbolic traces for each of the **.ok** traces recorded in the previous step. The symbolic traces will be stored under .../Tests/bench/Symbolic. E.g. ```./runCortex.sh -s airline```
+* **-s** generates the corresponding per-thread symbolic traces for each of the **.ok** traces recorded in the previous step. The symbolic traces will be stored under .../Tests/bench/Symbolic. (E.g. ```./runCortex.sh -s airline```)
 
 * **-e** performs the production-guided search to find a failing schedule. Here, Cortex uses the symbolic traces obtained before to guide the exploration of the space of possible paths and schedules. Cortex also synthesizes new symbolic traces if necessary.
-The failing schedule (when found) will be output as a file named **fail_bench.txt** under .../CortexSolver/tmp. In turn, the data regarding the number of attempts and the number of branch conditions flipped required to expose the concurrency bug will be output in the console.
+The failing schedule (when found) will be output as a file named **fail_bench.txt** under .../CortexSolver/tmp. In turn, the data regarding the number of attempts and the number of branch conditions flipped required to expose the concurrency bug will be output in the console. 
+(E.g. ```./runCortex.sh -r airline```)
 
 * **-d** produces an alternate non-failing schedule via event pair reordering and computes the corresponding DSP, which helps isolating the bug’s root cause. The alternate schedule will be output as a file named **fail_benchALT.txt** under .../Cortex- Solver/tmp, whereas the DSP will be output as a file named **dsp_fail_bench Alt0.gv** under .../CortexSolver/tmp/DSP.
+(E.g. ```./runCortex.sh -d airline```)
 
 
 As a remark, note that the name of the benchmark passed as parameter to runCortex.sh must match the name of the corresponding folder in .../Tests/. Also, as our Cortex prototype uses Soot (for instrumentation) and Java PathFinder (for symbolic execution), it requires Java 6.
