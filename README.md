@@ -44,7 +44,7 @@ where ```OPTION``` corresponds to one of the aforementioned execution steps, and
 
 * **-e** performs the production-guided search to find a failing schedule. Here, Cortex uses the symbolic traces obtained before to guide the exploration of the space of possible paths and schedules. Cortex also synthesizes new symbolic traces if necessary.
 The failing schedule (when found) will be output as a file named **fail_bench.txt** under .../CortexSolver/tmp. In turn, the data regarding the number of attempts and the number of branch conditions flipped required to expose the concurrency bug will be output in the console. 
-(E.g. ```./runCortex.sh -r airline```)
+(E.g. ```./runCortex.sh -e airline```)
 
 * **-d** produces an alternate non-failing schedule via event pair reordering and computes the corresponding DSP, which helps isolating the bug’s root cause. The alternate schedule will be output as a file named **fail_benchALT.txt** under .../Cortex- Solver/tmp, whereas the DSP will be output as a file named **dsp_fail_bench Alt0.gv** under .../CortexSolver/tmp/DSP.
 (E.g. ```./runCortex.sh -d airline```)
