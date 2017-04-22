@@ -1,8 +1,8 @@
 # Cortex Tutorial
 
-Cortex is a tool to help developers expose and diagnose concurrency bugs in Java multithreaded applications. For more information check our [PPoPP'16 paper](http://www.gsd.inesc-id.pt/~nmachado/papers/ppopp16-nmachado.pdf).
+Cortex is a tool to help developers expose and diagnose concurrency bugs in Java multithreaded applications. For more information check our [PPoPP'16 paper](http://homepages.gsd.inesc-id.pt/~nmachado/papers/ppopp16-nmachado.pdf).
 
-#### Download our VM image with Cortex ready to use: http://www.gsd.inesc-id.pt/~nmachado/cortex-vm.ova  (username: cortex ; password: cortex2015)
+#### Download our VM image with Cortex ready to use: http://homepages.gsd.inesc-id.pt/~nmachado/cortex-vm.ova  (username: cortex ; password: cortex2015)
     
 
 ### Folder Description 
