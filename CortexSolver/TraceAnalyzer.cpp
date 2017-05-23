@@ -426,9 +426,9 @@ void TraceAnalyzer::flipBranch(map<string,string> *traceComb)
         
         scheduleLIB::printSch(failScheduleOrd);
         //save solution schedule
-        //solutionFile.insert(solutionFile.find(".txt"),"ALT");
-        map<string,string> tmp;
-        scheduleLIB::saveScheduleFile(solutionFile,scheduleLIB::schedule2string(failScheduleOrd), tmp); 
+        string altFile = solutionFile;
+        altFile.insert(solutionFile.find(".txt"),"ALT");
+        scheduleLIB::saveScheduleFile(altFile,scheduleLIB::schedule2string(failScheduleOrd), *traceComb);
         
         //find assertion event
         vector<Operation*>::reverse_iterator tmpit = failScheduleOrd.rbegin();
@@ -562,7 +562,7 @@ void TraceAnalyzer::generateFlipBranchFile(string tid, int flipPos)
 {
     //generate file with flipped branches
     std::ofstream flipFile;
-    string filename = "/home/symbiosis/work/cortex/CortexSolver/tmp/flipFile.txt";
+    string filename = "/Users/nunomachado/Dropbox/Cortex/CortexSolver/cortexsolver/tmp/flipFile.txt";
     flipFile.open(filename, ios::trunc);
     cout << "Creating file: " << filename << endl;
     if(!flipFile.is_open())
@@ -589,7 +589,7 @@ void TraceAnalyzer::synthesizeNewSymbolicTraces()
     }*/
     
     int procR, procW;
-    string seExePath = "cd /home/symbiosis/work/cortex/CortexSE/jpf-symbiosis/bin; java -Xmx1500m -jar /home/symbiosis/work/cortex/CortexSE/jpf-core/build/RunJPF.jar +shell.port=4242 "+jpfFile+" 2>&1 & sleep "+jpftimeout+"; kill $!; echo \"endSE\"";
+    string seExePath = "cd /Users/nunomachado/Dropbox/workspace/jpf-symbiosis/bin; /usr/local/bin/java6 -Xmx1500m -jar /Users/nunomachado/Dropbox/workspace/jpf-core/build/RunJPF.jar +shell.port=4242 "+jpfFile+" 2>&1 & sleep "+jpftimeout+"; kill $!; echo \"endSE\"";
     char *command = (char *)seExePath.c_str();
     
     int sepid = util::popen2(command, &procW, &procR);
@@ -604,7 +604,7 @@ void TraceAnalyzer::synthesizeNewSymbolicTraces()
     
     //Create log file
     std::ofstream logFile;
-    string filename = "/home/symbiosis/work/cortex/SE_LOGFILE.txt";
+    string filename = "/Users/nunomachado/Desktop/SE_LOGFILE.txt";
     logFile.open(filename, ios::trunc);
     //cout << "Creating logfile: " << filename << endl;
     if(!logFile.is_open())
