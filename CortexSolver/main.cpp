@@ -1762,7 +1762,7 @@ bool findBugRootCause(map<EventPair, vector<string>>* altSchedules)
     }
     
     //2) if we haven't found any alternate schedule by manipulating the events in the bug condition
-    //let's broad the search scope to consider all reads on variables that appear in the bug condition
+    //let's broaden the search scope to consider all reads on variables that appear in the bug condition
     if(!success)
     {
         cout << "\n\n>> No alternate schedule found! Increase search scope to consider other read operations on the variables contained in the bug condition.\n";
@@ -1791,7 +1791,7 @@ bool findBugRootCause(map<EventPair, vector<string>>* altSchedules)
         
         //generate event pairs with the new set of operations
         eventPairs.clear();
-        eventPairs = generateEventPairs(mapOpToId, opsToInvert); //NOTE: the unsat at this point might be different from the first one.. this might cut-off some events (?)
+        eventPairs = generateEventPairs(mapOpToId, opsToInvert); //NOTE: the unsat at this point might be different from the first one.. this might cut-out some events (?)
         
         //generate the respective new schedule and attempt to solve the model again
         for(vector<EventPair>::iterator it = eventPairs.begin(); it!=eventPairs.end();++it)
@@ -1955,7 +1955,7 @@ int main(int argc, char *const* argv)
             //load failing and alternate schedules from file
             success = true;
             map<string,string> tmp;
-            cout << "\n>> Loading failing schedule from file: "<< solutionAltFile <<"\n";
+            cout << "\n>> Loading failing schedule from file: "<< solutionFile <<"\n";
             loadScheduleFromFile(solutionFile, &solution, &tmp);
             cout << ">> Loading alternate schedule from file: "<< solutionAltFile <<"\n";
             loadScheduleFromFile(solutionAltFile,&altScheduleOrd,&tmp);
