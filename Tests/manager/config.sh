@@ -28,7 +28,7 @@ JPFFILE=$CORTEX_HOME/CortexSE/jpf-symbiosis/src/examples/Manager.jpf
 JPFTIMEOUT=10
 
 #cortex search parameters
-CORTEX_D=1
+CORTEX_D=2
 CORTEX_N=1
 
 #add "--csr" to apply context switch reduction
