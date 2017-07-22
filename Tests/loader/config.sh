@@ -32,5 +32,5 @@ CORTEX_D=11
 CORTEX_N=1
 
 #add "--csr" to apply context switch reduction
-CSR='--csr=true'
+CSR="--csr"
 

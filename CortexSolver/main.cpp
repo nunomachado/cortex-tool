@@ -99,7 +99,7 @@ void parse_configFile()
             else if(key == "debug" && value == "true"){
                 debug = true;
             }
-            else if(key == "csr" && value == "true"){
+            else if(key == "csr"){
                 useCSR = true;
             }
         }
@@ -143,7 +143,7 @@ void parse_args(int argc, char *const* argv)
             {"jpf-timeout", required_argument, 0, 't'},
             {"cortex-n", required_argument, 0, 'n'},
             {"cortex-d", required_argument, 0, 'x'},
-            {"csr", required_argument, 0, 'c'},
+            {"csr", no_argument, 0, 'c'},
             {"help", no_argument, 0, 'h'},
             {"", }
             
