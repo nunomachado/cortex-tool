@@ -332,6 +332,7 @@ void ConstModelGen::addLockingConstraints(map<string, vector<LockPairOperation> 
     
     z3solver.writeLineZ3("(echo \"LOCKING CONSTRAINTS -----\")\n");
     int labelCounter = 0;
+    
     for(map<string, vector<LockPairOperation> >::iterator it = lockpairset.begin(); it != lockpairset.end(); ++it)
     {
         vector<LockPairOperation> lockvec = it->second;
@@ -339,124 +340,25 @@ void ConstModelGen::addLockingConstraints(map<string, vector<LockPairOperation> 
         
         if(lockSize > 1)
         {
-            numLO++; //account for constraint Oau < Oal'
-            for(int i=0; i < lockSize; i++)
-            {
-                vector<LockPairOperation> lockpairPrime = lockvec;
-                LockPairOperation main = lockpairPrime[i];
-                lockpairPrime.erase(lockpairPrime.begin()+i);
-                
-                //OPTIMIZATION - remove unnecessary lock pairs (i.e. those belonging to the same thread
-                //  that either happen before the closest pair to this one, or after this pair)
-                // 1 - find the closest lock pair to the main, from the same thread
-                // 2 - remove all other locking pairs from the same thread
-                //cout << "MAIN: "; main.print();
-                if(i == 0){
-                    //erase all subsequent locking pairs from the same thread
-                    for(vector<LockPairOperation>::iterator remIt = lockpairPrime.begin(); remIt!=lockpairPrime.end();)
-                    {
-                        if(remIt->getThreadId() == main.getThreadId()){
-                            //cout << "\terase "; remIt->print();
-                            lockpairPrime.erase(remIt);
-                        }
-                        else{
-                            //cout << "\tbreak\n";
-                            break;
-                        }
-                    }
+            for(int i=0; i < lockSize; i++){
+                for(int j=(i+1); j < lockSize; j++){
+                    LockPairOperation pairi = lockvec[i];
+                    LockPairOperation pairj = lockvec[j];
+                    
+                    //there is no need to add constraints for locking pairs of the same thread
+                    //as they are already encoded in the program order constraints
+                    if(pairi.getThreadId()==pairj.getThreadId())
+                        continue;
+                    
+                    numLO+=2;
+                    string label = "LC"+util::stringValueOf(labelCounter++); //** label to uniquely identify this constraint
+                    
+                    // Ui < Lj || Uj < Li
+                    string cnstUi_Lj = z3solver.cLt(pairi.getUnlockOrderConstraintName(), pairj.getLockOrderConstraintName());
+                    string cnstUj_Li = z3solver.cLt(pairj.getUnlockOrderConstraintName(), pairi.getLockOrderConstraintName());
+                    string cnst = z3solver.cOr(cnstUi_Lj, cnstUj_Li);
+                    z3solver.writeLineZ3(z3solver.postNamedAssert(cnst,label));
                 }
-                else{
-                    LockPairOperation closestPair = lockpairPrime[i-1];
-                    
-                    bool flag = false; //flag indicating that we reached the subset of locking pairs of the same thread (this avoids iterating over unncessary cases)
-                    for(vector<LockPairOperation>::iterator remIt = lockpairPrime.begin(); remIt!=lockpairPrime.end();)
-                    {
-                        if(remIt->getThreadId() == main.getThreadId())
-                        {
-                            flag = true;
-                            if(remIt->getLockOrderConstraintName() != closestPair.getLockOrderConstraintName()
-                               || remIt->getUnlockOrderConstraintName() != closestPair.getUnlockOrderConstraintName())
-                            {
-                                //cout << "\terase "; remIt->print();
-                                //this already accounts for the cases where closestPair is from another thread
-                                lockpairPrime.erase(remIt);
-                            }
-                            else{
-                                //cout << "\tok "; remIt->print();
-                                ++remIt;
-                            }
-                        }
-                        else if(flag){
-                            //cout << "\tbreak\n";
-                            break;
-                        }
-                        else{
-                            //cout << "\tok "; remIt->print();
-                            ++remIt;
-                        }
-                    }
-                }
-                // ----- end of optimization
-                
-                //if there are no remaning locks to generate constraints continue to next locking pair
-                if(lockpairPrime.size() == 0){
-                    continue;
-                }
-                
-                numLO = numLO + 1 + 2*lockpairPrime.size(); //account for constraints Oal > Oau' && Oal'' > Oau || Oau'' < Oal'
-                string globalOr = "";
-                string firstAnd = "";
-                
-                for(int j = 0; j < lockpairPrime.size(); j++)
-                {
-                    vector<LockPairOperation> lockpairDoublePrime = lockpairPrime;
-                    LockPairOperation mainPrime = lockpairDoublePrime[j];
-                    
-                    //if(main.getThreadId() == mainPrime.getThreadId())
-                    //  continue;
-                    
-                    lockpairDoublePrime.erase(lockpairDoublePrime.begin()+j);
-                    string secondAnd = "";
-                    
-                    
-                    if(mainPrime.getUnlockLine() != -1){
-                        //const: Oal > Oau'
-                        secondAnd.insert(0, z3solver.cGt(main.getLockOrderConstraintName(),mainPrime.getUnlockOrderConstraintName()));
-                    }
-                    
-                    for(int u = 0; u < lockpairDoublePrime.size(); u++)
-                    {
-                        LockPairOperation doublePrime = lockpairDoublePrime[u];
-                        
-                        if(main.getUnlockLine() != -1 && doublePrime.getUnlockLine() != -1){
-                            //const: Oal'' > Oau || Oau'' < Oal'
-                            secondAnd.append(z3solver.cOr(z3solver.cGt(doublePrime.getLockOrderConstraintName(),main.getUnlockOrderConstraintName()),
-                                                          z3solver.cLt(doublePrime.getUnlockOrderConstraintName(),mainPrime.getLockOrderConstraintName())));
-                        }
-                        else if(main.getUnlockLine() != -1){ //discard the constraint Oau'' < Oal'
-                            //const: Oal'' > Oau
-                            secondAnd.append(z3solver.cGt(doublePrime.getLockOrderConstraintName(),main.getUnlockOrderConstraintName()));
-                        }
-                        else if(doublePrime.getUnlockLine() != -1){  //discard the constraint Oal'' > Oau
-                            //const: Oau'' < Oal'
-                            secondAnd.append(z3solver.cLt(doublePrime.getUnlockOrderConstraintName(),mainPrime.getLockOrderConstraintName()));
-                        }
-                    }
-                    
-                    if(main.getUnlockLine() != -1){
-                        //const: Oau < Oal'
-                        firstAnd.append(z3solver.cLt(main.getUnlockOrderConstraintName(), mainPrime.getLockOrderConstraintName()));
-                    }
-                    
-                    globalOr.append("\n"+z3solver.cAnd(secondAnd));
-                }
-                
-                //if(!firstAnd.empty()) //remove case where there are no unlock operations
-                globalOr.insert(0, z3solver.cAnd(firstAnd));
-                
-                string label = "LC"+util::stringValueOf(labelCounter); //** label to uniquely identify this constraint
-                labelCounter++;
-                z3solver.writeLineZ3(z3solver.postNamedAssert(z3solver.cOr(globalOr),label));
             }
         }
     }
